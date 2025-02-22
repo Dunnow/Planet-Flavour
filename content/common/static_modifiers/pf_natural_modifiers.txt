@@ -39,7 +39,7 @@ pf_pm_overgrown = {
 
 pf_pm_floating_rocks = {
 	planet_jobs_physics_research_produces_mult = 0.25
-	planet_jobs_researchers_physics_produces_add = 1
+	planet_researchers_physics_research_produces_add = 1
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_gravity_aftermath_modifier.dds"
 	icon_frame = 1
