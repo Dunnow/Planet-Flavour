@@ -26,3 +26,5 @@
   pf_pm_tidal_surges_desc: "This planet's large moon produces abnormally strong tidal forces. Coastal environments experience particularly extreme waves and surges."
   pf_pm_fungal_world: "Fungal World"
   pf_pm_fungal_world_desc: "This world's ecosystem is unusually dominated by fungal life. Much of the native plant life is marginal and occupies relatively few ecological niches."
+  pf_pm_extraplanetary_life: "Extraplanetary Life"
+  pf_pm_extraplanetary_life_desc: "Life on this world shares a common origin with that of another planet in the system. It is unclear whether its origins are natural or artificial."

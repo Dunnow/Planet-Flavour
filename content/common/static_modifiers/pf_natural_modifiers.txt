@@ -100,4 +100,11 @@ pf_pm_fungal_world = {
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_nature.dds"
 	icon_frame = 1
 }
+
+# This would be a relatively common modifier, especially on higher hab counts, so don't overdo the values
+pf_pm_extraplanetary_life = {
+	planet_jobs_society_research_produces_mult = 0.10
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_extensive_moon_system.dds"
+	icon_frame = 1
 }
