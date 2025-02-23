@@ -16,6 +16,7 @@ pf_pm_floral_world = {
 
 pf_pm_biocrystals = {
 	planet_jobs_rare_crystals_produces_mult = 0.15
+	planet_farmers_rare_crystals_produces_add = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_resonating_crystals.dds"
 	icon_frame = 1
