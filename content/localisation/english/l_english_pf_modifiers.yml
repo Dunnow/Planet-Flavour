@@ -22,3 +22,7 @@
   pf_pm_subterranean_cave_systems_desc: "This world has an enormous network of underground caves just below the surface."
   pf_pm_dim_world: "Dim World"
   pf_pm_dim_world_desc: "This planet receives relatively little light from its parent star. Its surface is gloomy and dark."
+  pf_pm_tidal_surges: "Tidal Surges"
+  pf_pm_tidal_surges_desc: "This planet's large moon produces abnormally strong tidal forces. Coastal environments experience particularly extreme waves and surges."
+  pf_pm_fungal_world: "Fungal World"
+  pf_pm_fungal_world_desc: "This world's ecosystem is unusually dominated by fungal life. Much of the native plant life is marginal and occupies relatively few ecological niches."

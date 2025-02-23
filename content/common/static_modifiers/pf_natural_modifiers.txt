@@ -84,3 +84,20 @@ pf_pm_dim_world = {
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_dim_world.dds"
 	icon_frame = 3
 }
+
+pf_pm_tidal_surges = {
+	pop_environment_tolerance = -0.1
+	planet_jobs_energy_produces_mult = 0.05
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_wild_storms.dds"
+	icon_frame = 3
+}
+
+pf_pm_fungal_world = {
+	planet_jobs_society_research_produces_mult = 0.1
+	planet_farmers_society_research_produces_add = 1
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_nature.dds"
+	icon_frame = 1
+}
+}
