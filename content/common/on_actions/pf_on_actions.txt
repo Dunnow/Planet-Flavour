@@ -2,5 +2,6 @@ on_game_start = {
     events = {
         pf_setup.0      # Set mod flag
         pf_setup.10     # Apply extraplanetary life modifier
+        pf_setup.11     # Apply planetary rings modifier
     }
 }

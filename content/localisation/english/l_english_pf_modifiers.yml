@@ -28,3 +28,5 @@
   pf_pm_fungal_world_desc: "This world's ecosystem is unusually dominated by fungal life. Much of the native plant life is marginal and occupies relatively few ecological niches."
   pf_pm_extraplanetary_life: "Extraplanetary Life"
   pf_pm_extraplanetary_life_desc: "Life on this world shares a common origin with that of another planet in the system. It is unclear whether its origins are natural or artificial."
+  pf_pm_planetary_rings: "Planetary Rings"
+  pf_pm_planetary_rings_desc: "This planet is surrounded by a disc of orbiting rock and ice. The ring system provides easy access to minerals and is spectacular to behold."

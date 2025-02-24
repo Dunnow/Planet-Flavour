@@ -35,3 +35,23 @@ event = {
         }
     }
 }
+
+event = {
+    id = pf_setup.11
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        every_system = {
+            limit = {
+                any_system_planet = {
+                    has_ring = yes
+                }
+            }
+            every_system_planet = {
+                limit = { has_ring = yes }
+                add_modifier = { modifier = pf_pm_planetary_rings }
+            }
+        }
+    }
+}
