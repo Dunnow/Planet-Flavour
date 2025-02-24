@@ -1,4 +1,7 @@
 ﻿l_english:
+  # Misc
+  mod_planet_farmers_rare_crystals_produces_add: "£rare_crystals£ $rare_crystals$ from £job_farmer£ $job_farmer_plural$"
+
   # Modifiers
   pf_pm_ice_age: "Planetary Ice Age"
   pf_pm_ice_age_desc: "This planet's climate appears to be in the middle of a particularly cold period. Glaciers reach far from the poles and most regions experience heavy snowfall."
@@ -30,3 +33,11 @@
   pf_pm_extraplanetary_life_desc: "Life on this world shares a common origin with that of another planet in the system. It is unclear whether its origins are natural or artificial."
   pf_pm_planetary_rings: "Planetary Rings"
   pf_pm_planetary_rings_desc: "This planet is surrounded by a disc of orbiting rock and ice. The ring system provides easy access to minerals and is spectacular to behold."
+  pf_pm_megacoral_reefs: "Megacoral Reefs"
+  pf_pm_megacoral_reefs_desc: "This planet's oceans are home to enormous coral ecosystems. The seas around these reefs are incredibly productive."
+  pf_pm_bioluminescent_flora: "Bioluminescent Flora"
+  pf_pm_bioluminescent_flora_desc: "The plant life of this world exhibits a unique form of bioluminescence. It has a calming effect on most sentient beings."
+  pf_pm_toxic_spores: "Toxic Spores"
+  pf_pm_toxic_spores_desc: "The atmosphere of this world is filled with countless millions of toxic spores. Although harmless to the indigenous lifeforms, it is particularly hazardous for non-native life"
+  pf_pm_abundant_parasites: "Abundant Parasites"
+  pf_pm_abundant_parasites_desc: "The ecosystem of this world hosts an enormous variety and abundance of parasitic life. This presents challenges to agriculture and colonization."
