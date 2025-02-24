@@ -185,6 +185,10 @@ pf_pm_overgrown = {
 			factor = 1.5
 			has_planet_modifier = "pm_lush"
 		}
+		modifier = {
+			factor = 4
+			has_planet_modifier = "pm_hyper_ecosystem"
+		}
 
 		modifier = {
 			factor = 0
