@@ -109,8 +109,9 @@ pf_pm_extraplanetary_life = {
 	icon_frame = 1
 }
 
-# Also a relatively common modifier
+# Also a relatively common modifiers
 pf_pm_planetary_rings = {
+	district_mining_max = 2
 	planet_jobs_minerals_produces_mult = 0.10
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_asteroid_belt.dds"
