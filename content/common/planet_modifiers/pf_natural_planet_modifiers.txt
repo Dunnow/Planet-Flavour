@@ -1,4 +1,4 @@
-pm_pf_ice_age = {
+pf_pm_ice_age = {
 	spawn_chance = {
 		modifier = {
 			add = 5
@@ -23,7 +23,7 @@ pm_pf_ice_age = {
 
 		modifier = {
 			factor = 0
-			has_planet_modifier = "pm_pf_ice_age"
+			has_planet_modifier = "pf_pm_ice_age"
 		}
 
 		modifier = {
@@ -34,7 +34,7 @@ pm_pf_ice_age = {
 	modifier = "pf_pm_ice_age"
 }
 
-pm_pf_floral_world = {
+pf_pm_floral_world = {
 	spawn_chance = {
 		modifier = {
 			add = 15
@@ -67,7 +67,7 @@ pm_pf_floral_world = {
 
 		modifier = {
 			factor = 0
-			has_planet_modifier = "pm_pf_floral_world"
+			has_planet_modifier = "pf_pm_floral_world"
 		}
 
 		modifier = {
