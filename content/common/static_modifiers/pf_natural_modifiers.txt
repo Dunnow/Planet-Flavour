@@ -16,7 +16,7 @@ pf_pm_floral_world = {
 
 pf_pm_biocrystals = {
 	planet_jobs_rare_crystals_produces_mult = 0.15
-	planet_farmers_rare_crystals_produces_add = 0.25
+	planet_farmers_rare_crystals_produces_add = 0.2
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_resonating_crystals.dds"
 	icon_frame = 1
@@ -63,7 +63,7 @@ pf_pm_thin_atmosphere = {
 
 pf_pm_irradiated_world = {
 	pop_environment_tolerance = -0.1
-	planet_jobs_energy_produces_mult = 0.1
+	planet_technician_energy_produces_add = 1
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_irradiated.dds"
 	icon_frame = 3
@@ -149,4 +149,52 @@ pf_pm_abundant_parasites = {
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_nature.dds"
 	icon_frame = 3
+}
+
+pf_pm_canyon_world = {
+	district_mining_max = 2
+	planet_miners_volatile_motes_produces_add = 0.1
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_canyons.dds"
+	icon_frame = 1
+}
+
+pf_pm_tropical_archipelagos = {
+	pop_happiness = 0.1
+	planet_jobs_food_produces_mult = 0.15
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_tropical_island.dds"
+	icon_frame = 1
+}
+
+pf_pm_snowball_world = {
+	pop_environment_tolerance = -0.2
+	planet_max_districts_add = -2
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_arctic_planet.dds"
+	icon_frame = 3
+}
+
+pf_pm_volcanic_soils = {
+	planet_jobs_food_produces_mult = 0.3
+	district_farming_max = 4
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_obsidian_lakes.dds"
+	icon_frame = 1
+}
+
+pf_pm_chirping_plains = {
+	pop_happiness = 0.1
+	planet_jobs_society_research_produces_mult = 0.15
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_animal_wildlife.dds"
+	icon_frame = 1
+}
+
+pf_pm_bone_world = {
+	planet_researchers_society_research_produces_add = 1
+	planet_jobs_society_research_produces_mult = 0.20
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_bone_world.dds"
+	icon_frame = 1
 }

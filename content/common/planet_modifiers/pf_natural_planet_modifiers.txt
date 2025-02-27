@@ -171,6 +171,7 @@ pf_pm_overgrown = {
 		modifier = {
 			add = 5
 			is_planet_class = "pc_gaia"
+			NOT = { has_modifier = holy_planet }
 		}
 
 		modifier = {
@@ -813,4 +814,214 @@ pf_pm_abundant_parasites = {
 		}
 	}
 	modifier = "pf_pm_abundant_parasites"
+}
+
+pf_pm_canyon_world = {
+	spawn_chance = {
+		modifier = {
+			add = 30
+			is_planet_class = "pc_arid"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_continental"
+		}
+		modifier = {
+			add = 20
+			is_planet_class = "pc_savannah"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_desert"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_canyon_world"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_canyon_world"
+}
+
+pf_pm_tropical_archipelagos = {
+	spawn_chance = {
+		modifier = {
+			add = 20
+			is_planet_class = "pc_ocean"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_tropical_archipelagos"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_tropical_archipelagos"
+}
+
+pf_pm_snowball_world = {
+	spawn_chance = {
+		modifier = {
+			add = 20
+			is_planet_class = "pc_arctic"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_snowball_world"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_ice_age"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_irradiated_world"
+		}
+		modifier = {
+			factor = 2
+			has_planet_modifier = "pf_pm_dim_world"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_snowball_world"
+}
+
+pf_pm_volcanic_soils = {
+	spawn_chance = {
+		modifier = {
+			add = 10
+			is_planet_class = "pc_arctic"
+		}
+		modifier = {
+			add = 30
+			is_planet_class = "pc_tundra"
+		}
+		modifier = {
+			add = 20
+			is_planet_class = "pc_alpine"
+		}
+
+		modifier = {
+			add = 20
+			is_planet_class = "pc_continental"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_tropical"
+		}
+		modifier = {
+			add = 30
+			is_planet_class = "pc_ocean"
+		}
+
+		modifier = {
+			add = 10
+			is_planet_class = "pc_savannah"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_arid"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_volcanic_soils"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_volcanic_soils"
+}
+
+pf_pm_chirping_plains = {
+	spawn_chance = {
+		modifier = {
+			add = 20
+			is_planet_class = "pc_tundra"
+		}
+
+		modifier = {
+			add = 20
+			is_planet_class = "pc_continental"
+		}
+
+		modifier = {
+			add = 10
+			is_planet_class = "pc_desert"
+		}
+		modifier = {
+			add = 30
+			is_planet_class = "pc_savannah"
+		}
+		modifier = {
+			add = 20
+			is_planet_class = "pc_arid"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_chirping_plains"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_chirping_plains"
+}
+
+pf_pm_bone_world= {
+	spawn_chance = {
+		modifier = {
+			add = 10
+			is_planet_class = "pc_tundra"
+		}
+
+		modifier = {
+			add = 10
+			is_planet_class = "pc_continental"
+		}
+
+		modifier = {
+			add = 30
+			is_planet_class = "pc_desert"
+		}
+		modifier = {
+			add = 30
+			is_planet_class = "pc_savannah"
+		}
+		modifier = {
+			add = 30
+			is_planet_class = "pc_arid"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_bone_world"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_bone_world"
 }
