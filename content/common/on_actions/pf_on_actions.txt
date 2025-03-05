@@ -3,6 +3,8 @@ on_game_start = {
         pf_core.0      # Set mod flag
         pf_core.10     # Apply extraplanetary life modifier
         pf_core.11     # Apply planetary rings modifier
+        pf_core.30     # Apply dry world entity
+        pf_core.31     # Apply swamp world blockers
     }
 }
 

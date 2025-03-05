@@ -198,3 +198,20 @@ pf_pm_bone_world = {
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_bone_world.dds"
 	icon_frame = 1
 }
+
+pf_pm_dry_world = {
+	pop_environment_tolerance = -0.3
+	terraforming_cost_mult = 0.75
+	terraform_speed_mult = -0.75
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_desert_world.dds"
+	icon_frame = 3
+}
+
+pf_pm_swamp_world = {
+	pop_environment_tolerance = -0.2
+	planet_jobs_society_research_produces_mult = 0.10
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_swamp_world.dds"
+	icon_frame = 2
+}

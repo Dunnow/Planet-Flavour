@@ -53,3 +53,7 @@
   pf_pm_chirping_plains_desc: "The wildlife of this world has a unique method of communication. Complex rhythms of chirps, clicks and growls create a passable imitation of music."
   pf_pm_bone_world: "Fossil World"
   pf_pm_bone_world_desc: "The surface of this world is covered with the scattered bones of long dead creatures. Their unusual abundance and excellent preservation provides a physical timeline of this world's evolutionary history."
+  pf_pm_dry_world: "Dry World"
+  pf_pm_dry_world_desc: "Water is extraordinarily rare on this world; the native life has adapted to subsist in the extremely dry conditions. The lack of water makes any effort to terraform the world into a more normal environment challenging."
+  pf_pm_swamp_world: "Swamp World"
+  pf_pm_swamp_world_desc: "Extensive areas of this world's surface are dominated by enormous swamp ecosystems. The terrain is treacherous and difficult to traverse without significant engineering work."

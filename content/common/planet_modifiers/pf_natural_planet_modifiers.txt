@@ -612,6 +612,11 @@ pf_pm_tidal_surges = {
 
 		modifier = {
 			factor = 0
+			has_moon = no
+		}
+
+		modifier = {
+			factor = 0
 			num_modifiers > 1
 		}
 	}
@@ -1024,4 +1029,50 @@ pf_pm_bone_world= {
 		}
 	}
 	modifier = "pf_pm_bone_world"
+}
+
+pf_pm_dry_world= {
+	spawn_chance = {
+		modifier = {
+			add = 20
+			is_planet_class = "pc_desert"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_dry_world"
+		}
+
+		# We don't want the custom entities to clash
+		modifier = {
+			factor = 0
+			has_modifier = metal_planet
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_dry_world"
+}
+
+pf_pm_swamp_world= {
+	spawn_chance = {
+		modifier = {
+			add = 20
+			is_planet_class = "pc_tropical"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_swamp_world"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_swamp_world"
 }

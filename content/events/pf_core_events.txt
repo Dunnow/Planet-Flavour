@@ -1,5 +1,6 @@
 namespace = pf_core
 
+# Set mod flag
 event = {
 	id = pf_core.0
 	hide_window = yes
@@ -8,6 +9,7 @@ event = {
 	immediate = { set_global_flag = planet_flavour_is_active }
 }
 
+# Add extraterrestrial life modifier
 event = {
     id = pf_core.10
 	hide_window = yes
@@ -36,6 +38,7 @@ event = {
     }
 }
 
+# Add planetary rings modifier
 event = {
     id = pf_core.11
 	hide_window = yes
@@ -56,12 +59,16 @@ event = {
     }
 }
 
+# Terraforming cleanup
 planet_event = {
     id = pf_core.20
     hide_window = yes
     is_triggered_only = yes
 
     immediate = {
+        # Always change these
+        remove_modifier = pf_pm_swamp_world
+        remove_modifier = pf_pm_dry_world
         # Changed to a wet world
         if = {
             limit = { is_wet = yes }
@@ -189,6 +196,56 @@ planet_event = {
             remove_modifier = pf_pm_volcanic_soils
             remove_modifier = pf_pm_chirping_plains
             remove_modifier = pf_pm_bone_world
+        }
+    }
+}
+
+# Add dry world modifier effects
+event = {
+    id = pf_core.30
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        every_system = {
+            limit = {
+                any_system_planet = {
+                    has_modifier = pf_pm_dry_world
+                }
+            }
+            every_system_planet = {
+                limit = { has_modifier = pf_pm_dry_world }
+                set_planet_flag = pf_dry_world
+                set_planet_entity = {
+                    entity = planet_flavour_dry_desert_planet_entity
+                }
+            }
+        }
+    }
+}
+
+# Add swamp world modifier effects
+event = {
+    id = pf_core.31
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        every_system = {
+            limit = {
+                any_system_planet = {
+                    has_modifier = pf_pm_swamp_world
+                }
+            }
+            every_system_planet = {
+                limit = { has_modifier = pf_pm_swamp_world }
+                set_planet_flag = pf_swamp_world
+                while = {
+                    count = 4
+                    add_deposit = d_noxious_swamp
+                }
+                add_deposit = d_bubbling_swamp
+            }
         }
     }
 }
