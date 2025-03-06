@@ -57,3 +57,6 @@
   pf_pm_dry_world_desc: "Water is extraordinarily rare on this world; the native life has adapted to subsist in the extremely dry conditions. The lack of water makes any effort to terraform the world into a more normal environment challenging."
   pf_pm_swamp_world: "Swamp World"
   pf_pm_swamp_world_desc: "Extensive areas of this world's surface are dominated by enormous swamp ecosystems. The terrain is treacherous and difficult to traverse without significant engineering work."
+  pf_pm_aurora_lights: "Aurora Lights"
+  pf_pm_aurora_lights_desc: "The powerful energies of this planet's star interact with its magnetic field to produce a dazzling array of lights stretching from the poles to the equator."
+  
