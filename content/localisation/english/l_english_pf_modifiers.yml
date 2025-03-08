@@ -1,7 +1,4 @@
 ﻿l_english:
-  # Misc
-  mod_planet_farmers_rare_crystals_produces_add: "£rare_crystals£ $rare_crystals$ from £job_farmer£ $job_farmer_plural$"
-
   # Modifiers
   pf_pm_ice_age: "Planetary Ice Age"
   pf_pm_ice_age_desc: "This planet's climate appears to be in the middle of a particularly cold period. Glaciers reach far from the poles and most regions experience heavy snowfall."
@@ -59,4 +56,5 @@
   pf_pm_swamp_world_desc: "Extensive areas of this world's surface are dominated by enormous swamp ecosystems. The terrain is treacherous and difficult to traverse without significant engineering work."
   pf_pm_aurora_lights: "Aurora Lights"
   pf_pm_aurora_lights_desc: "The powerful energies of this planet's star interact with its magnetic field to produce a dazzling array of lights stretching from the poles to the equator."
-  
+  pf_pm_multi_planetary_ecosystem: "Multiplanetary Ecosystem"
+  pf_pm_multi_planetary_ecosystem_desc: "Through a unique quirk of this moon's orbit, its upper atmosphere periodically intersects with that of other habitable moons. This constant exchange of lifeforms has formed a unique ecosystem stretching across multiple planets.\n\n§RWill be removed by terraforming.§!"

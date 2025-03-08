@@ -12,5 +12,6 @@ on_planet_class_changed = {
     events = {
         pf_core.20      # Normal habitable class change
         pf_core.21      # Limited / No biosphere class changes
+        pf_core.22      # Multi planetary ecosystem class change check
     }
 }

@@ -200,6 +200,60 @@ planet_event = {
     }
 }
 
+# Multi planet ecosystem handling
+# Doing it seperate since it's a little bit more extra stuff
+planet_event = {
+    id = pf_core.22
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        # Multi planetary ecosystem
+        if = {
+            limit = {
+                NOR = {
+                    is_planet_class = pc_tropical
+                    is_planet_class = pc_gaia
+                }
+            }
+            remove_modifier = pf_pm_multi_planetary_ecosystem
+            # If only one other world has tropical or gaia, we want to remove the modifier from it too as it's no longer multiplanetary.
+            if = {
+                limit = {
+                    solar_system = {
+                        count_system_planet = {
+                            count = 1
+                            limit = {
+                                has_modifier = pf_pm_multi_planetary_ecosystem
+                            }
+                        }
+                    }
+                }
+                solar_system = {
+                    random_system_planet = {
+                        limit = { has_modifier = pf_pm_multi_planetary_ecosystem}
+                        planet_event = { id = pf_core.23 }
+                    }
+                }
+            }
+        }
+    }
+}
+
+planet_event = {
+    id = pf_core.23
+	title = pf_core.23.name
+	desc = "pf_core.23.desc"
+	picture  = GFX_evt_alien_nature
+	location = this
+    is_triggered_only = yes
+
+	option = {
+		name = pf_core.23.a
+		remove_modifier = pf_pm_multi_planetary_ecosystem
+	}
+}
+
 # Add dry world modifier effects
 event = {
     id = pf_core.30

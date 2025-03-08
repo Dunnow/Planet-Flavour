@@ -223,3 +223,10 @@ pf_pm_aurora_lights = {
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_aurora_borealis.dds"
 	icon_frame = 1
 }
+
+pf_pm_multi_planetary_ecosystem = {
+	planet_jobs_society_research_produces_mult = 0.50
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_overgrowth.dds"
+	icon_frame = 1
+}
