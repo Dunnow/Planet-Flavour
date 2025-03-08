@@ -116,7 +116,6 @@ pf_zolqhast_initializer = {
 	}
 
 	planet = {
-		name = "NAME_Saturn"
 		class = "pc_gas_giant"
 		orbit_distance = 25
 		orbit_angle = -170
@@ -125,7 +124,6 @@ pf_zolqhast_initializer = {
 		change_orbit = 7
 
 		moon = {
-			name = "NAME_Titan"
 			class = "pc_frozen"
 			size = 8
 			orbit_distance = 12
