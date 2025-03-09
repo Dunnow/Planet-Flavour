@@ -4,3 +4,11 @@
 
   # Planet Stuff
   NAME_pf_Zolqhast: "Zolqhast"
+
+  # Planet Class Stuff
+   pc_pf_dry_marginal: "Dry Marginal World"
+   pc_pf_dry_marginal_desc: "TODO"
+   pc_pf_dry_marginal_adj: "Dry Marginal"
+   trait_pc_pf_dry_marginal_preference: "TODO"
+   trait_pc_pf_dry_marginal_preference_desc: "TODO"
+   mod_pc_pf_dry_marginal_habitability: "TODO"
