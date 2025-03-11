@@ -230,3 +230,4 @@ pf_pm_multi_planetary_ecosystem = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_overgrowth.dds"
 	icon_frame = 1
 }
+
