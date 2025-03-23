@@ -100,7 +100,7 @@ planet_event = {
             remove_modifier = pf_pm_tropical_archipelagos
 
             remove_modifier = pf_pm_volcanic_soils
-            remove_modifier = pf_pm_megaflora_habitats
+            remove_modifier = pf_pm_arboreal_ecosystem
         }
 
         # Changed to a cold world
@@ -120,7 +120,7 @@ planet_event = {
             remove_modifier = pf_pm_canyon_world
 
             remove_modifier = pf_pm_severe_droughts
-            remove_modifier = pf_pm_megaflora_habitats
+            remove_modifier = pf_pm_arboreal_ecosystem
 
             if = {
                 limit = { NOT = { is_planet_class = pc_arctic}}

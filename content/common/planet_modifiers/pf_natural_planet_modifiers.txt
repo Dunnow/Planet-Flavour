@@ -1141,24 +1141,20 @@ pf_pm_aurora_lights= {
 	modifier = "pf_pm_aurora_lights"
 }
 
-pf_pm_megaflora_habitats = {
+pf_pm_arboreal_ecosystem = {
 	spawn_chance = {
 		modifier = {
 			add = 10
 			is_planet_class = "pc_tropical"
 		}
 		modifier = {
-			add = 10
+			add = 5
 			is_planet_class = "pc_continental"
-		}
-		modifier = {
-			add = 10
-			is_planet_class = "pc_ocean"
 		}
 
 		modifier = {
 			factor = 0
-			has_planet_modifier = "pf_pm_megaflora_habitats"
+			has_planet_modifier = "pf_pm_arboreal_ecosystem"
 		}
 
 		modifier = {
@@ -1166,5 +1162,5 @@ pf_pm_megaflora_habitats = {
 			num_modifiers > 1
 		}
 	}
-	modifier = "pf_pm_megaflora_habitats"
+	modifier = "pf_pm_arboreal_ecosystem"
 }

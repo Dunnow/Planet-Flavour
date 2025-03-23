@@ -231,9 +231,9 @@ pf_pm_multi_planetary_ecosystem = {
 	icon_frame = 1
 }
 
-pf_pm_megaflora_habitats = {
-	planet_researchers_food_produces_add = 1
-	planet_farmers_society_research_produces_add = 1
+pf_pm_arboreal_ecosystem = {
+	planet_researchers_food_produces_add = 2
+	planet_farmers_society_research_produces_add = 2
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_huge_tree.dds"
 	icon_frame = 1
