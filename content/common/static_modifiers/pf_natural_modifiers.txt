@@ -232,9 +232,8 @@ pf_pm_multi_planetary_ecosystem = {
 }
 
 pf_pm_megaflora_habitats = {
-	planet_jobs_society_research_produces_mult = 0.1
-	planet_farmers_society_research_produces_add = 1
 	planet_researchers_food_produces_add = 1
+	planet_farmers_society_research_produces_add = 1
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_huge_tree.dds"
 	icon_frame = 1

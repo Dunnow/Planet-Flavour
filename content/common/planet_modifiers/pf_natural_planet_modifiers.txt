@@ -1158,7 +1158,7 @@ pf_pm_megaflora_habitats = {
 
 		modifier = {
 			factor = 0
-			has_planet_modifier = "pf_pm_megaflora_habitats
+			has_planet_modifier = "pf_pm_megaflora_habitats"
 		}
 
 		modifier = {

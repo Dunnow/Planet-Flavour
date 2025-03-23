@@ -100,6 +100,7 @@ planet_event = {
             remove_modifier = pf_pm_tropical_archipelagos
 
             remove_modifier = pf_pm_volcanic_soils
+            remove_modifier = pf_pm_megaflora_habitats
         }
 
         # Changed to a cold world
@@ -119,6 +120,7 @@ planet_event = {
             remove_modifier = pf_pm_canyon_world
 
             remove_modifier = pf_pm_severe_droughts
+            remove_modifier = pf_pm_megaflora_habitats
 
             if = {
                 limit = { NOT = { is_planet_class = pc_arctic}}
@@ -152,7 +154,7 @@ planet_event = {
             }
             if = {
                 limit = {
-                    # Going "up" a tier so we remove more negative mdoifiers
+                    # Going "up" a tier so we remove more negative modifiers
                     OR = {
                         is_planet_class = pc_city
                         is_planet_class = pc_machine
