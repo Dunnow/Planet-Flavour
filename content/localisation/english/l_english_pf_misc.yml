@@ -1,6 +1,7 @@
 ﻿l_english:
   # Misc
   mod_planet_farmers_rare_crystals_produces_add: "£rare_crystals£ $rare_crystals$ from £job_farmer£ $job_farmer_plural$"
+  mod_planet_farmers_sr_zro_produces_add: "£zro£ $sr_zro$ from £job_farmer£ $job_farmer_plural$"
   mod_planet_researchers_food_produces_add: "£food£ $food$ from £job_researcher£ $job_researcher_plural$"
 
   # Planet Stuff
