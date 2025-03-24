@@ -179,7 +179,7 @@ pf_pm_volcanic_soils = {
 	planet_jobs_food_produces_mult = 0.3
 	district_farming_max = 4
 
-	icon = "gfx/interface/icons/planet_modifiers/pf_pm_fertile_soils.dds"
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_volcanic_soils.dds"
 	icon_frame = 1
 }
 
