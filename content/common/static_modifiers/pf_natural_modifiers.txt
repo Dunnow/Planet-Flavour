@@ -239,11 +239,9 @@ pf_pm_arboreal_ecosystem = {
 	icon_frame = 1
 }
 
-# NOT IMPLEMENTED
-#pf_pm_worm_world = {
-#	pop_environment_tolerance = -0.2
-#	planet_farmers_sr_zro_produces_add = 0.5
-#
-#	icon = "gfx/interface/icons/planet_modifiers/unused/pf_pm_worms.dds"
-#	icon_frame = 2
-#}
+pf_pm_harsh = {
+	pop_environment_tolerance = -0.20
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_wasteland.dds"
+	icon_frame = 3
+}
