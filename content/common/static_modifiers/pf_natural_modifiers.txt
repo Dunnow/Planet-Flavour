@@ -26,7 +26,7 @@ pf_pm_severe_droughts = {
 	pop_environment_tolerance = -0.1
 	planet_jobs_food_produces_mult = -0.15
 
-	icon = "gfx/interface/icons/planet_modifiers/pf_pm_drylands.dds"
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_droughts.dds"
 	icon_frame = 3
 }
 
