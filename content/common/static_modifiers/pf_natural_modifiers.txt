@@ -277,3 +277,25 @@ pf_pm_equatorial_deserts = {
 	icon_frame = 3
 }
 
+pf_pm_ideal_sunshine = {
+	pop_environment_tolerance = 0.10
+	pop_happiness = 0.05
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_star.dds"
+	icon_frame = 1
+}
+
+pf_pm_harmonious_ecosystems = {
+	pop_environment_tolerance = 0.05
+	pop_happiness = 0.1
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_nature.dds"
+	icon_frame = 1
+}
+
+pf_pm_wild_sandstorms = {
+	pop_environment_tolerance = -0.10
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_thick_atmosphere.dds"
+	icon_frame = 3
+}

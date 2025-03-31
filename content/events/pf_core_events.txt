@@ -81,6 +81,7 @@ planet_event = {
             remove_modifier = pf_pm_snowball_world
             remove_modifier = pf_pm_bone_world
             remove_modifier = pf_pm_abundant_parasites
+            remove_modifier = pf_pm_wild_sandstorms
         }
         # Changed to a dry world
         if = {
@@ -123,6 +124,7 @@ planet_event = {
 
             remove_modifier = pf_pm_severe_droughts
             remove_modifier = pf_pm_arboreal_ecosystem
+            remove_modifier = pf_pm_wild_sandstorms
 
             if = {
                 limit = { NOT = { is_planet_class = pc_arctic}}
@@ -168,6 +170,7 @@ planet_event = {
                 remove_modifier = pf_pm_irradiated_world
                 remove_modifier = pf_pm_severe_droughts
                 remove_modifier = pf_pm_harsh
+                remove_modifier = pf_pm_wild_sandstorms
             }
             if = {
                 limit = {
@@ -204,6 +207,7 @@ planet_event = {
 
             remove_modifier = pf_pm_abyssal_seas
             remove_modifier = pf_pm_subglacial_seas
+            remove_modifier = pf_pm_harmonious_ecosystems
         }
     }
 }
