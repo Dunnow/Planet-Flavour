@@ -1226,3 +1226,32 @@ pf_pm_harsh = {
 	}
 	modifier = "pf_pm_harsh"
 }
+
+pf_pm_abyssal_seas = {
+	spawn_chance = {
+		modifier = {
+			add = 5
+			is_planet_class = "pc_ocean"
+		}
+		modifier = {
+			add = 15
+			is_planet_class = "pc_ocean"
+		}
+
+		modifier = {
+			add = 5
+			is_planet_class = "pc_arctic"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_abyssal_seas"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_abyssal_seas"
+}

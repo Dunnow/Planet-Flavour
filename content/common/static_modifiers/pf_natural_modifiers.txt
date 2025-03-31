@@ -245,3 +245,12 @@ pf_pm_harsh = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_wasteland.dds"
 	icon_frame = 3
 }
+
+pf_pm_abyssal_seas = {
+	planet_jobs_society_research_produces_mult = 0.10
+	planet_anglers_society_research_produces_add = 2
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_abyssal_seas.dds"
+	icon_frame = 1
+}
+
