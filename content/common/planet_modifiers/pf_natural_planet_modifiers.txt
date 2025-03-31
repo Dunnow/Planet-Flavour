@@ -1232,6 +1232,7 @@ pf_pm_abyssal_seas = {
 		modifier = {
 			add = 5
 			is_planet_class = "pc_ocean"
+			is_planet_class = "pc_continental"
 		}
 		modifier = {
 			add = 15
