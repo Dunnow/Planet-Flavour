@@ -101,6 +101,7 @@ planet_event = {
 
             remove_modifier = pf_pm_volcanic_soils
             remove_modifier = pf_pm_arboreal_ecosystem
+            remove_modifier = pf_pm_abyssal_seas
         }
 
         # Changed to a cold world
@@ -165,6 +166,7 @@ planet_event = {
                 }
                 remove_modifier = pf_pm_irradiated_world
                 remove_modifier = pf_pm_severe_droughts
+                remove_modifier = pf_pm_harsh
             }
             if = {
                 limit = {
@@ -198,6 +200,8 @@ planet_event = {
             remove_modifier = pf_pm_volcanic_soils
             remove_modifier = pf_pm_chirping_plains
             remove_modifier = pf_pm_bone_world
+
+            remove_modifier = pf_pm_abyssal_seas
         }
     }
 }
