@@ -269,3 +269,11 @@ pf_pm_subglacial_seas = {
 	icon_frame = 1
 }
 
+pf_pm_equatorial_deserts = {
+	pop_environment_tolerance = -0.10
+	planet_max_districts_mult = -0.1
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_desert_world.dds"
+	icon_frame = 3
+}
+

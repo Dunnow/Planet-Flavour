@@ -68,4 +68,6 @@
   pf_pm_irregular_orbit_desc: "This planet's orbit is warped by several large neighbouring bodies. Its seasons are highly inconsistent and its temperatures fluctuate significantly. "
   pf_pm_subglacial_seas: "Subglacial Seas"
   pf_pm_subglacial_seas_desc: "A thriving underwater ecosystem exists beneath this planet's thick ice caps. The bounty is immense, but so are the potential engineering challenges."
+  pf_pm_equatorial_deserts: "Equatorial Deserts"
+  pf_pm_equatorial_deserts_desc: "The equatorial region of this world is a harsh, sun-blasted wasteland. Little can survive the intense heat and droughts."
 

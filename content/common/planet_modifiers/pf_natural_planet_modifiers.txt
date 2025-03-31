@@ -1347,3 +1347,31 @@ pf_pm_subglacial_seas = {
 	}
 	modifier = "pf_pm_subglacial_seas"
 }
+
+pf_pm_equatorial_deserts = {
+	spawn_chance = {
+		modifier = {
+			add = 5
+			is_planet_class = "pc_savannah"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_desert"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_arid"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_equatorial_deserts"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_equatorial_deserts"
+}
