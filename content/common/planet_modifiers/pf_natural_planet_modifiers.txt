@@ -1231,7 +1231,6 @@ pf_pm_abyssal_seas = {
 	spawn_chance = {
 		modifier = {
 			add = 5
-			is_planet_class = "pc_ocean"
 			is_planet_class = "pc_continental"
 		}
 		modifier = {
@@ -1255,4 +1254,63 @@ pf_pm_abyssal_seas = {
 		}
 	}
 	modifier = "pf_pm_abyssal_seas"
+}
+
+pf_pm_irregular_orbit = {
+	spawn_chance = {
+		modifier = {
+			add = 10
+			is_planet_class = "pc_ocean"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_continental"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_tropical"
+		}
+
+		modifier = {
+			add = 10
+			is_planet_class = "pc_tundra"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_arctic"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_alpine"
+		}
+
+		modifier = {
+			add = 10
+			is_planet_class = "pc_desert"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_arid"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_savannah"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_irregular_orbit"
+		}
+
+		modifier = {
+			factor = 1.5
+			has_moon = no
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_irregular_orbit"
 }

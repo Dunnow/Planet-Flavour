@@ -64,3 +64,8 @@
   pf_pm_harsh_desc: "Life on this inhospitable planet is a constant challenge. The local flora and fauna is highly specialized to survive in the hostile and resource-scarce environment."
   pf_pm_abyssal_seas: "Abyssal Seas"
   pf_pm_abyssal_seas_desc: "The oceans of this world are exceedingly deep, hosting innumerable and exotic forms of life within their inky depths."
+  pf_pm_irregular_orbit: "Irregular Orbit"
+  pf_pm_irregular_orbit_desc: "This planet's orbit is warped by several large neighbouring bodies. Its seasons are highly inconsistent and its temperatures fluctuate significantly. "
+  pf_pm_subglacial_seas: "Subglacial Seas"
+  pf_pm_subglacial_seas_desc: ""
+

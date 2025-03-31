@@ -254,3 +254,9 @@ pf_pm_abyssal_seas = {
 	icon_frame = 1
 }
 
+pf_pm_irregular_orbit = {
+	pop_environment_tolerance = -0.10
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_tidal_locked.dds"
+	icon_frame = 3
+}
