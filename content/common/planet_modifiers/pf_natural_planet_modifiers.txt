@@ -1314,3 +1314,36 @@ pf_pm_irregular_orbit = {
 	}
 	modifier = "pf_pm_irregular_orbit"
 }
+
+pf_pm_subglacial_seas = {
+	spawn_chance = {
+		modifier = {
+			add = 2
+			is_planet_class = "pc_continental"
+		}
+
+		modifier = {
+			add = 5
+			is_planet_class = "pc_tundra"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_arctic"
+		}
+		modifier = {
+			add = 10
+			is_planet_class = "pc_alpine"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_subglacial_seas"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_subglacial_seas"
+}

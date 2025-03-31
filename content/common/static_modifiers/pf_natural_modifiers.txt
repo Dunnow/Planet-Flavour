@@ -260,3 +260,12 @@ pf_pm_irregular_orbit = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_tidal_locked.dds"
 	icon_frame = 3
 }
+pf_pm_subglacial_seas = {
+	planet_farmers_engineering_research_produces_add = 1
+	planet_anglers_engineering_research_produces_add = 2
+	planet_jobs_food_produces_mult = 0.1
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_ice_age.dds"
+	icon_frame = 1
+}
+

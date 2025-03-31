@@ -1,9 +1,11 @@
 ﻿l_english:
   # Misc
   mod_planet_farmers_rare_crystals_produces_add: "£rare_crystals£ $rare_crystals$ from £job_farmer£ $job_farmer_plural$"
+  mod_planet_farmers_engineering_research_produces_add: "£engineering_research£ $engineering_research$ from £job_farmer£ $job_farmer_plural$"
   mod_planet_farmers_sr_zro_produces_add: "£zro£ $sr_zro$ from £job_farmer£ $job_farmer_plural$"
   mod_planet_researchers_food_produces_add: "£food£ $food$ from £job_researcher£ $job_researcher_plural$"
   mod_planet_anglers_society_research_produces_add: "£society_research£ $society_research$ from £job_angler£ $job_angler_plural$"
+  mod_planet_anglers_engineering_research_produces_add: "£engineering_research£ $engineering_research$ from £job_angler£ $job_angler_plural$"
 
   # Planet Stuff
   NAME_pf_Zolqhast: "Zolqhast"
