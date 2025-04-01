@@ -1,0 +1,151 @@
+@distance = 50
+@base_moon_distance = 10
+@jumps = 3
+
+
+### Sol System
+pf_zolqhast_initializer = {
+	name = "NAME_pf_Zolqhast"
+
+	class = "sc_g"
+
+	spawn_chance = 250
+	usage_odds = {
+		base = 100
+		modifier = {
+			factor = 0
+			has_paragon_dlc = no
+		}
+		modifier = {
+			factor = 0
+			is_fe_cluster = yes
+		}
+		modifier = {
+			factor = 0
+			has_star_flag = empire_cluster
+		}
+	}
+
+	usage = misc_system_init
+	max_instances = 1
+
+	planet = {
+		name = "NAME_pf_Zolqhast"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 40
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_toxic"
+		orbit_distance = 25
+		orbit_angle = 97
+		size = 17
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+		orbit_distance = 25
+		orbit_angle = 128
+		size = 13
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = -208
+		size = 35
+		has_ring = no
+		change_orbit = 6
+
+		moon = {
+			class = "pc_tropical"
+			size = 12
+			orbit_distance = 10
+			orbit_angle = 110
+			has_ring = no
+
+			init_effect = {
+				clear_planet_modifiers = yes
+				add_modifier = { modifier = pf_pm_multi_planetary_ecosystem }
+			}
+		}
+		moon = {
+			class = "pc_tropical"
+			size = 15
+			orbit_distance = 2.5
+			orbit_angle = 190
+			has_ring = no
+
+			init_effect = {
+				clear_planet_modifiers = yes
+				add_modifier = { modifier = pf_pm_multi_planetary_ecosystem }
+			}
+		}
+		moon = {
+			class = "pc_tropical"
+			size = 10
+			orbit_distance = 2.5
+			orbit_angle = 80
+			has_ring = no
+
+			init_effect = {
+				clear_planet_modifiers = yes
+				add_modifier = { modifier = pf_pm_multi_planetary_ecosystem }
+			}
+		}
+		moon = {
+			class = "pc_frozen"
+			size = 7
+			orbit_distance = 2.5
+			orbit_angle = -155
+			has_ring = no
+		}
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = -170
+		size = 30
+		has_ring = yes
+		change_orbit = 7
+
+		moon = {
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 12
+			orbit_angle = 320
+			has_ring = no
+		}
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 195
+		size = 20
+		has_ring = no
+		change_orbit = 4
+
+		moon = {
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 7
+			orbit_angle = 247
+			has_ring = no
+		}
+	}
+}

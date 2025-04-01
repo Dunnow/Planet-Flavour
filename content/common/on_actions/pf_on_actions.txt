@@ -1,7 +1,17 @@
 on_game_start = {
     events = {
-        pf_setup.0      # Set mod flag
-        pf_setup.10     # Apply extraplanetary life modifier
-        pf_setup.11     # Apply planetary rings modifier
+        pf_core.0      # Set mod flag
+        pf_core.10     # Apply extraplanetary life modifier
+        pf_core.11     # Apply planetary rings modifier
+        pf_core.30     # Apply dry world entity
+        pf_core.31     # Apply swamp world blockers
+    }
+}
+
+on_planet_class_changed = {
+    events = {
+        pf_core.20      # Normal habitable class change
+        pf_core.21      # Limited / No biosphere class changes
+        pf_core.22      # Multi planetary ecosystem class change check
     }
 }
