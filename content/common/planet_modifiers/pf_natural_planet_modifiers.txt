@@ -815,6 +815,11 @@ pf_pm_abundant_parasites = {
 
 		modifier = {
 			factor = 0
+			has_planet_modifier = "pf_pm_harmonious_ecosystems"
+		}
+
+		modifier = {
+			factor = 0
 			num_modifiers > 1
 		}
 	}
