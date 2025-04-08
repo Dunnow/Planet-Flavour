@@ -244,26 +244,12 @@ planet_event = {
                 solar_system = {
                     random_system_planet = {
                         limit = { has_modifier = pf_pm_multi_planetary_ecosystem}
-                        planet_event = { id = pf_core.23 }
+                        planet_event = { id = pf_content.10 }
                     }
                 }
             }
         }
     }
-}
-
-planet_event = {
-    id = pf_core.23
-	title = pf_core.23.name
-	desc = "pf_core.23.desc"
-	picture  = GFX_evt_alien_nature
-	location = this
-    is_triggered_only = yes
-
-	option = {
-		name = pf_core.23.a
-		remove_modifier = pf_pm_multi_planetary_ecosystem
-	}
 }
 
 # Add dry world modifier effects
