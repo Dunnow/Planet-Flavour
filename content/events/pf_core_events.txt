@@ -347,7 +347,10 @@ event = {
                         add_modifier = { modifier = pf_pm_recent_asteroid_impact }
                         #planet_event = { id = pf_core.41 days =  }
                     }
-                    5 = { add_modifier = { modifier = pf_pm_recovering_biosphere } }
+                    5 = {
+                        add_modifier = { modifier = pf_pm_recovering_biosphere }
+                        set_planet_entity = { entity = planet_flavour_recovering_tomb_planet_entity }
+                    }
                 }
             }
         }
