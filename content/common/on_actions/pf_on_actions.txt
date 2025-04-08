@@ -5,6 +5,7 @@ on_game_start = {
         pf_core.11     # Apply planetary rings modifier
         pf_core.30     # Apply dry world entity
         pf_core.31     # Apply swamp world blockers
+        pf_core.40     # Apply tomb world modifiers
     }
 }
 

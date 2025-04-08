@@ -76,4 +76,16 @@
   pf_pm_harmonious_ecosystems_desc: "The native life of this world has evolved to take advantage of numerous symbiotic relationships for mutual benefit. Parasitism and large predators are rare."
   pf_pm_wild_sandstorms: "Wild Sandstorms"
   pf_pm_wild_sandstorms_desc: "This world is prone to massive sandstorms, engulfing large areas of the planet at a time."
-
+  # Tomb World Modifiers
+  pf_pm_glassed_world: "Glassed World"
+  pf_pm_glassed_world_desc: "This world was subjected to intense plasma bombardment, leaving little more than fused, glassy wastelands."
+  pf_pm_nuclear_exchange: "Nuclear Winter"
+  pf_pm_nuclear_exchange_desc: "This world was devastated by a nuclear exchange initiated by its native civilization. The shattered ruins of dead cities provide fascinating insight into long-dead cultures."
+  pf_pm_asteroid_impact: "Asteroid Impact"
+  pf_pm_asteroid_impact_desc: "This planet has experienced mass extinctions and worldwide devastation as the result of a major asteroid impact."
+  pf_pm_recent_asteroid_impact: "Recent Asteroid Impact"
+  pf_pm_recent_asteroid_impact_desc: "This planet was struck by a large asteroid or comet very recently. The biosphere is devastated with most large lifeforms dying off and photosynthesis shutting down."
+  pf_pm_recovering_biosphere: "Recovering Biosphere"
+  pf_pm_recovering_biosphere_desc: "Although this planet experienced a cataclysm in its past, the native lifeforms have begun to recover as the ecosystem repairs itself."
+  pf_pm_junk_world: "Junk World"
+  pf_pm_junk_world_desc: "Towering piles of trash cover this world. Enterprising recyclers can recover valuable resource from the debris."

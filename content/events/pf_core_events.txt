@@ -315,3 +315,54 @@ event = {
         }
     }
 }
+
+# Add tomb world modifiers
+event = {
+    id = pf_core.40
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        every_system = {
+            limit = {
+                any_system_planet = {
+                    is_planet_class = pc_nuked
+                }
+                NOR = {
+                    has_star_flag = ratling_system
+                    has_star_flag = superflare_system
+                }
+            }
+            every_system_planet = {
+                limit = {
+                    is_planet_class = pc_nuked
+                    is_colony = no # No modifiers on colony worlds.
+                }
+                random_list = {
+                    20 = {}
+                    5 = { add_modifier = { modifier = pf_pm_nuclear_exchange }}
+                    5 = { add_modifier = { modifier = pf_pm_glassed_world }}
+                    5 = { add_modifier = { modifier = pf_pm_asteroid_impact }}
+                    1 = {
+                        add_modifier = { modifier = pf_pm_recent_asteroid_impact }
+                        #planet_event = { id = pf_core.41 days =  }
+                    }
+                    5 = { add_modifier = { modifier = pf_pm_recovering_biosphere } }
+                }
+            }
+        }
+
+        # Special systems
+        every_system = {
+            limit = {
+                has_star_flag = ratling_system
+            }
+            every_system_planet = {
+                limit = {
+                    is_planet_class = pc_nuked
+                }
+                add_modifier = { modifier = pf_pm_junk_world }
+            }
+        }
+    }
+}
