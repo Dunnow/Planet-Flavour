@@ -331,7 +331,8 @@ event = {
                     5 = { add_modifier = { modifier = pf_pm_asteroid_impact }}
                     1 = {
                         add_modifier = { modifier = pf_pm_recent_asteroid_impact }
-                        #planet_event = { id = pf_core.41 days =  }
+                        # 25 years + 50 year random delay.
+                        planet_event = { id = pf_content.20 days = 9000 random = 18000 }
                     }
                     5 = {
                         add_modifier = { modifier = pf_pm_recovering_biosphere }
