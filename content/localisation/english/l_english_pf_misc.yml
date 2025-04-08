@@ -6,6 +6,7 @@
   mod_planet_researchers_food_produces_add: "£food£ $food$ from £job_researcher£ $job_researcher_plural$"
   mod_planet_anglers_society_research_produces_add: "£society_research£ $society_research$ from £job_angler£ $job_angler_plural$"
   mod_planet_anglers_engineering_research_produces_add: "£engineering_research£ $engineering_research$ from £job_angler£ $job_angler_plural$"
+  mod_planet_miners_consumer_goods_produces_add: "£consumer_goods£ $consumer_goods$ from £job_miner£ $job_miner$"
 
   # Planet Stuff
   NAME_pf_Zolqhast: "Zolqhast"

@@ -1,0 +1,30 @@
+namespace = pf_content
+
+planet_event = {
+    id = pf_content.10
+	title = pf_content.10.name
+	desc = "pf_content.10.desc"
+	picture  = GFX_evt_alien_nature
+	location = this
+    is_triggered_only = yes
+
+	option = {
+		name = pf_content.10.a
+		remove_modifier = pf_pm_multi_planetary_ecosystem
+	}
+}
+
+planet_event = {
+    id = pf_content.20
+	title = pf_content.20.name
+	desc = "pf_content.20.desc"
+	picture  = GFX_evt_asteroid_approaching_planet
+	location = this
+    is_triggered_only = yes
+
+	option = {
+		name = pf_content.20.a
+		remove_modifier = pf_pm_recent_asteroid_impact
+		add_modifier = { modifier = pf_pm_asteroid_impact }
+	}
+}

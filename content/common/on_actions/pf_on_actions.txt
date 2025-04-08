@@ -5,6 +5,8 @@ on_game_start = {
         pf_core.11     # Apply planetary rings modifier
         pf_core.30     # Apply dry world entity
         pf_core.31     # Apply swamp world blockers
+        pf_core.40     # Apply tomb world modifiers
+        pf_core.43     # Apply nuclear winter to old foes system
     }
 }
 
@@ -13,5 +15,14 @@ on_planet_class_changed = {
         pf_core.20      # Normal habitable class change
         pf_core.21      # Limited / No biosphere class changes
         pf_core.22      # Multi planetary ecosystem class change check
+        pf_core.42      # Apply nuclear winter to pre-ftl nuclear exchanges
     }
+}
+
+# This = Planet
+# From = Bombarder
+on_planet_zero_pops = {
+	events = {
+		pf_core.41      # Add glassing modifier on armageddon bombard
+	}
 }
