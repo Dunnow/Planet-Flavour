@@ -356,3 +356,86 @@ event = {
         }
     }
 }
+
+# Add glassing modifier on armageddon bombard
+planet_event = {
+	id = pf_core.41
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_orbital_bombardment_stance = armageddon
+		from = {
+			OR = {
+				is_country_type = default
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+		}
+		habitable_planet = yes
+	}
+
+	immediate = {
+		random_list = {
+            5 = {}
+            5 = {
+                add_modifier = { modifier = pf_pm_glassed_world }
+            }
+        }
+	}
+}
+
+# Add nuclear exchange modifier for pre-ftl nukings
+planet_event = {
+	id = pf_core.42
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_planet_class = pc_nuked
+        OR = {
+            has_planet_flag = pre_ftls_nuked_themselves
+            AND = {
+                exists = owner
+                owner = {
+                    is_primitive = yes
+                }
+            }
+        }
+	}
+
+	immediate = {
+		add_modifier = { modifier = pf_pm_nuclear_exchange }
+	}
+}
+
+# Add Pyorun and Czryni nuclear exchange
+event = {
+    id = pf_core.43
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        random_system = {
+            limit = {
+                any_system_planet = {
+                    OR = {
+                        has_planet_flag = czyrni_planet
+                        has_planet_flag = pyorun_planet
+                    }
+                }
+            }
+            every_system_planet = {
+                limit = {
+                    OR = {
+                        has_planet_flag = czyrni_planet
+                        has_planet_flag = pyorun_planet
+                    }
+                }
+                add_modifier = { modifier = pf_pm_nuclear_exchange }
+            }
+        }
+    }
+}
