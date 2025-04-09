@@ -80,6 +80,9 @@ planet_event = {
         remove_modifier = pf_pm_nuclear_exchange
         remove_modifier = pf_pm_junk_world
 		
+        remove_modifier = pf_pm_saline_seas
+        remove_modifier = pf_pm_impenetrable_jungles
+
         # Changed to a wet world
         if = {
             limit = { is_wet = yes }
@@ -92,6 +95,8 @@ planet_event = {
             remove_modifier = pf_pm_bone_world
             remove_modifier = pf_pm_abundant_parasites
             remove_modifier = pf_pm_wild_sandstorms
+
+            remove_modifier = pf_pm_fertile_tundras
         }
         # Changed to a dry world
         if = {
@@ -114,6 +119,7 @@ planet_event = {
             remove_modifier = pf_pm_volcanic_soils
             remove_modifier = pf_pm_arboreal_ecosystem
             remove_modifier = pf_pm_abyssal_seas
+            remove_modifier = pf_pm_fertile_tundras
         }
 
         # Changed to a cold world
@@ -143,6 +149,7 @@ planet_event = {
         }
     }
 }
+# TODO: This doesnt correctly remove nature modifiers
 # Terraforming to worlds with no / limited biosphere.
 planet_event = {
     id = pf_core.21
@@ -181,6 +188,7 @@ planet_event = {
                 remove_modifier = pf_pm_severe_droughts
                 remove_modifier = pf_pm_harsh
                 remove_modifier = pf_pm_wild_sandstorms
+                remove_modifier = pf_pm_fertile_tundras
             }
             if = {
                 limit = {
