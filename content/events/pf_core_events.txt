@@ -188,7 +188,7 @@ planet_event = {
                 remove_modifier = pf_pm_severe_droughts
                 remove_modifier = pf_pm_harsh
                 remove_modifier = pf_pm_wild_sandstorms
-                remove_modifier = pf_pm_fertile_tundras
+                remove_modifier = pf_pm_canyon_world
             }
             if = {
                 limit = {
@@ -226,6 +226,10 @@ planet_event = {
             remove_modifier = pf_pm_abyssal_seas
             remove_modifier = pf_pm_subglacial_seas
             remove_modifier = pf_pm_harmonious_ecosystems
+            remove_modifier = pf_pm_saline_seas
+
+            remove_modifier = pf_pm_fertile_tundras
+            remove_modifier = pf_pm_impenetrable_jungles
         }
     }
 }
