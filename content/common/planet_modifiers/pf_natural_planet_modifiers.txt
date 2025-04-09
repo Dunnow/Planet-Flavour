@@ -1056,6 +1056,11 @@ pf_pm_dry_world= {
 
 		modifier = {
 			factor = 0
+			has_planet_modifier = "pf_pm_saline_seas"
+		}
+
+		modifier = {
+			factor = 0
 			num_modifiers > 1
 		}
 	}
@@ -1478,7 +1483,7 @@ pf_pm_wild_sandstorms = {
 		}
 
 		modifier = {
-			add = 5
+			add = 10
 			is_planet_class = "pc_savannah"
 		}
 
@@ -1493,4 +1498,78 @@ pf_pm_wild_sandstorms = {
 		}
 	}
 	modifier = "pf_pm_wild_sandstorms"
+}
+
+pf_pm_saline_seas = {
+	spawn_chance = {
+		modifier = {
+			add = 5
+			is_planet_class = "pc_desert"
+		}
+
+		modifier = {
+			add = 15
+			is_planet_class = "pc_arid"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_saline_seas"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_dry_world"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_saline_seas"
+}
+
+pf_pm_impenetrable_jungles = {
+	spawn_chance = {
+		modifier = {
+			add = 15
+			is_planet_class = "pc_tropical"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_impenetrable_jungles"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_impenetrable_jungles"
+}
+
+pf_pm_fertile_tundras = {
+	spawn_chance = {
+		modifier = {
+			add = 15
+			is_planet_class = "pc_tundra"
+		}
+		modifier = {
+			add = 5
+			is_planet_class = "pc_alpine"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_fertile_tundras"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_fertile_tundras"
 }
