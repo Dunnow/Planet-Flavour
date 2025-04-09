@@ -77,11 +77,11 @@
   pf_pm_wild_sandstorms: "Wild Sandstorms"
   pf_pm_wild_sandstorms_desc: "This world is prone to massive sandstorms, engulfing large areas of the planet at a time."
   pf_pm_saline_seas: "Saline Seas"
-  pf_pm_saline_seas_desc : "Many of the water bodies on this planet are shallow and salty, unfit for supporting life."
+  pf_pm_saline_seas_desc: "Many of the water bodies on this planet are shallow and salty, unfit for supporting life."
   pf_pm_impenetrable_jungles: "Impenetrable Jungles"
-  pf_pm_impenetrable_jungles_desc : "The equatorial regions of this planet are dominated by immense, thick jungles."
+  pf_pm_impenetrable_jungles_desc: "The equatorial regions of this planet are dominated by immense, thick jungles."
   pf_pm_fertile_tundras: "Fertile Tundras"
-  pf_pm_fertile_tundras_desc : "Rich soils and hardy plant life support large and thriving ecosystems across this planet's polar wastes."
+  pf_pm_fertile_tundras_desc: "Rich soils and hardy plant life support large and thriving ecosystems across this planet's polar wastes."
 
   # Tomb World Modifiers
   pf_pm_glassed_world: "Glassed World"
