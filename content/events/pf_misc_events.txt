@@ -1,0 +1,36 @@
+namespace = pf_misc
+
+# Hive Stars spawn system
+system_event = {
+	id = pf_misc.100
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		spawn_system = {
+			min_distance >= 30
+			max_distance <= 75
+			direction = rimwards
+			#initializer = the_chosen_home_initializer
+			initializer = pf_hive_stars_core_initializer
+			hyperlane = no
+		}
+	}
+}
+
+event = {
+	id = pf_misc.110
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		random_list = {
+			#3 = { } # nothing
+			1 = {
+				random_rim_system = {
+					system_event = { id = pf_misc.100 }
+				}
+			}
+		}
+	}
+}

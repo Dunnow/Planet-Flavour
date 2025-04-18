@@ -3,7 +3,7 @@
 @jumps = 3
 
 
-### Sol System
+### Zolqhast System
 pf_zolqhast_initializer = {
 	name = "NAME_pf_Zolqhast"
 
@@ -148,4 +148,80 @@ pf_zolqhast_initializer = {
 			has_ring = no
 		}
 	}
+}
+
+pf_hive_stars_core_initializer = {
+	class = "sc_g"
+
+	flags = {
+		pf_hive_stars
+		crisis_spawn_exclude
+	}
+
+	spawn_chance = 0
+	usage_odds = {
+		base = 0
+	}
+
+	usage = misc_system_init
+	max_instances = 1
+
+	init_effect = {
+		set_spawn_system_batch = begin
+		spawn_system = {
+			min_distance >= 15
+			max_distance <= 30
+			#initializer = the_chosen_resources_initializer
+			initializer = random
+			hyperlane = no
+
+			effect = {
+				add_hyperlane = {
+					from = this
+					to = prev
+				}
+				save_event_target_as = first_neighbor
+			}
+		}
+		while = {
+			count = 2
+			spawn_system = {
+				min_distance >= 8
+				max_distance <= 20
+				initializer = random
+				hyperlane = no
+				effect = {
+					set_star_flag = chosen_system
+					set_star_flag = crisis_spawn_exclude
+					add_hyperlane = {
+						from = this
+						to = prev
+					}
+					add_hyperlane = {
+						from = this
+						to = event_target:first_neighbor
+					}
+				}
+			}
+		}
+		set_spawn_system_batch = end
+	}
+
+	planet = {
+		#name = "NAME_pf_Zolqhast"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 40
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+	}
+
 }
