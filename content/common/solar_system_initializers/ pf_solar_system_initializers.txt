@@ -154,7 +154,7 @@ pf_hive_stars_core_initializer = {
 	class = "sc_g"
 
 	flags = {
-		pf_hive_stars
+		pf_hive_star_system
 		crisis_spawn_exclude
 	}
 
@@ -176,6 +176,8 @@ pf_hive_stars_core_initializer = {
 			hyperlane = no
 
 			effect = {
+				set_star_flag = pf_hive_star_system
+				set_star_flag = crisis_spawn_exclude
 				add_hyperlane = {
 					from = this
 					to = prev
@@ -184,14 +186,14 @@ pf_hive_stars_core_initializer = {
 			}
 		}
 		while = {
-			count = 2
+			count = 3
 			spawn_system = {
 				min_distance >= 8
 				max_distance <= 20
 				initializer = random
 				hyperlane = no
 				effect = {
-					set_star_flag = chosen_system
+					set_star_flag = pf_hive_star_system
 					set_star_flag = crisis_spawn_exclude
 					add_hyperlane = {
 						from = this

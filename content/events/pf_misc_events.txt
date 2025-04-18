@@ -8,8 +8,8 @@ system_event = {
 
 	immediate = {
 		spawn_system = {
-			min_distance >= 30
-			max_distance <= 75
+			min_distance >= 50
+			max_distance <= 90
 			direction = rimwards
 			#initializer = the_chosen_home_initializer
 			initializer = pf_hive_stars_core_initializer
