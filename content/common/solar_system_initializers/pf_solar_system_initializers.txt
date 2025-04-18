@@ -155,6 +155,7 @@ pf_hive_stars_core_initializer = {
 
 	flags = {
 		pf_hive_star_system
+		pf_hive_star_system_core
 		crisis_spawn_exclude
 	}
 
@@ -167,32 +168,6 @@ pf_hive_stars_core_initializer = {
 	max_instances = 1
 
 	init_effect = {
-		create_country = {
-			name = "NAME_Lost_Swarm"
-			type = faction
-			flag = {
-				icon = {
-					category = "domination"
-					file = "domination_14.dds"
-				}
-				background = {
-					category = "backgrounds"
-					file = "00_solid.dds"
-				}
-				colors = {
-					"black"
-					"black"
-					"null"
-					"null"
-				}
-			}
-			effect = {
-				set_graphical_culture = swarm_01
-				set_country_flag = pf_straggler_swarms
-				save_global_event_target_as = pf_straggler_swarms_country
-			}
-		}
-
 		set_spawn_system_batch = begin
 		spawn_system = {
 			min_distance >= 15
@@ -261,12 +236,13 @@ pf_hive_stars_core_initializer = {
 	}
 
 	planet = {
-		class = "pc_hive"
+		class = "pc_infested"
 		orbit_distance = 60
 		orbit_angle = 75
 		size = 16
 		has_ring = yes
 		init_effect = {
+			set_owner = event_target:pf_straggler_swarms_country
 		}
 	}
 }

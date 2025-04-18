@@ -7,6 +7,32 @@ system_event = {
 	hide_window = yes
 
 	immediate = {
+		create_country = {
+			name = "NAME_Lost_Swarm"
+			type = pf_straggler_swarm
+			flag = {
+				icon = {
+					category = "domination"
+					file = "domination_14.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors = {
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				set_graphical_culture = swarm_01
+				set_country_flag = pf_straggler_swarms
+				save_global_event_target_as = pf_straggler_swarms_country
+			}
+		}
+
 		spawn_system = {
 			min_distance >= 50
 			max_distance <= 90
