@@ -191,7 +191,7 @@ pf_hive_stars_core_initializer = {
 			spawn_system = {
 				min_distance >= 10
 				max_distance <= 25
-				initializer = random
+				initializer = pf_hive_stars_generic_initializer
 				hyperlane = no
 				effect = {
 					set_star_flag = pf_hive_star_system
@@ -243,6 +243,77 @@ pf_hive_stars_core_initializer = {
 		has_ring = yes
 		init_effect = {
 			set_owner = event_target:pf_straggler_swarms_country
+		}
+	}
+}
+
+pf_hive_stars_generic_initializer = {
+	class = "rl_standard_stars"
+
+	flags = {
+		pf_hive_star_system
+		crisis_spawn_exclude
+	}
+
+	spawn_chance = 0
+	usage_odds = {
+		base = 0
+	}
+
+	usage = misc_system_init
+	max_instances = 3
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+	planet = {
+		count = { min = 1 max = 4 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+		class = random_non_colonizable
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 2 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		class = "pc_infested"
+		orbit_distance = 60
+		orbit_angle = 75
+		size = 16
+		has_ring = no
+		init_effect = {
+			set_owner = event_target:pf_straggler_swarms_country
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 3 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+		class = random_non_colonizable
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 2 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
 		}
 	}
 }
