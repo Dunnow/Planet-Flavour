@@ -207,6 +207,10 @@ pf_hive_stars_core_initializer = {
 			}
 		}
 		set_spawn_system_batch = end
+		create_nebula = {
+			radius = 30
+			name = NAME_pf_hive_star_nebula
+		}
 	}
 
 	planet = {
