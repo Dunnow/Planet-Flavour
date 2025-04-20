@@ -34,10 +34,9 @@ system_event = {
 		}
 
 		spawn_system = {
-			min_distance >= 50
-			max_distance <= 90
+			min_distance >= 90
+			max_distance <= 100
 			direction = rimwards
-			#initializer = the_chosen_home_initializer
 			initializer = pf_hive_stars_core_initializer
 			hyperlane = no
 		}
