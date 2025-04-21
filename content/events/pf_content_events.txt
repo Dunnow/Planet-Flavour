@@ -28,3 +28,35 @@ planet_event = {
 		add_modifier = { modifier = pf_pm_asteroid_impact }
 	}
 }
+
+ship_event = {
+	id = pf_content.100
+	title = pf_content.100.name
+	desc = "pf_content.100.desc"
+	picture  = GFX_evt_infested
+	location = this
+    is_triggered_only = yes
+
+	trigger = {
+		solar_system = {
+			has_star_flag = pf_hive_star_system
+		}
+		owner = {
+			not = { has_country_flag = pf_has_encountered_hive_stars}
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_country_flag = pf_has_encountered_hive_stars
+			establish_communications_no_message = event_target:pf_straggler_swarms_country
+		}
+	}
+
+	option = {
+		name = pf_content.100.a
+		owner = {
+			add_resource = { society_research = 500 }
+		}
+	}
+}
