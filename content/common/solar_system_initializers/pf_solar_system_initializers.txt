@@ -210,6 +210,20 @@ pf_hive_stars_core_initializer = {
 		create_nebula = {
 			radius = 30
 			name = NAME_pf_hive_star_nebula
+		#}
+		star = {
+			create_ambient_object = {
+				type = "swarm_1"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_ambient_object_flag = swarm_system_effect
+				set_location = {
+					target = prev
+					distance = 0
+					angle = random
+				}
+			}
 		}
 	}
 
@@ -334,6 +348,23 @@ pf_hive_stars_generic_initializer = {
 			orbit_distance = 5
 		}
 	}
+
+	init_effect = {
+		star = {
+			create_ambient_object = {
+				type = "swarm_1"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_ambient_object_flag = swarm_system_effect
+				set_location = {
+					target = prev
+					distance = 0
+					angle = random
+				}
+			}
+		}
+	}
 }
 
 pf_hive_stars_battlefield_initializer = {
@@ -411,6 +442,20 @@ pf_hive_stars_battlefield_initializer = {
 				}
 			}
 		}
+		star = {
+			create_ambient_object = {
+				type = "swarm_1"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_ambient_object_flag = swarm_system_effect
+				set_location = {
+					target = prev
+					distance = 0
+					angle = random
+				}
+			}
+		}
 	}
 }
 
@@ -481,6 +526,23 @@ pf_hive_stars_last_stand_initializer = {
 			class = random_non_colonizable
 			orbit_angle = { min = 90 max = 270 }
 			orbit_distance = 5
+		}
+	}
+
+	init_effect = {
+		star = {
+			create_ambient_object = {
+				type = "swarm_1"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_ambient_object_flag = swarm_system_effect
+				set_location = {
+					target = prev
+					distance = 0
+					angle = random
+				}
+			}
 		}
 	}
 }
