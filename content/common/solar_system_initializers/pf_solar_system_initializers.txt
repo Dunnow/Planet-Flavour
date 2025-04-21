@@ -210,7 +210,7 @@ pf_hive_stars_core_initializer = {
 		create_nebula = {
 			radius = 30
 			name = NAME_pf_hive_star_nebula
-		#}
+		}
 		star = {
 			create_ambient_object = {
 				type = "swarm_1"
