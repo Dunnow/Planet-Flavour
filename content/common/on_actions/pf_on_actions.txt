@@ -37,3 +37,11 @@ on_entering_system_first_time = {
         pf_content.100          # Hive stars first encounter event
     }
 }
+# A ship has surveyed a planet.
+# Scope = Ship
+# From = Planet
+on_survey_planet = {
+	events = {
+        pf_content.101
+    }
+}
