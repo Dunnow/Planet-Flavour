@@ -1,18 +1,20 @@
 pf_spawn_straggler_swarm_fleet_large = {
-    create_leader = {
-        class = commander
-        species = event_target:pf_straggler_prethoryn_species
-        name = random
-        skill = 3
-        set_age = 1125
-        # TODO: Could give it a cool "cut off from hivemind" negative trait
-        #traits = {
-        #    trait = leader_trait_hive_affinity
-        #}
-    }
+	event_target:pf_straggler_swarms_country = {
+		create_leader = {
+			class = commander
+			species = event_target:pf_straggler_prethoryn_species
+			name = random
+			skill = 3
+			set_age = 1125
+			# TODO: Could give it a cool "cut off from hivemind" negative trait
+			#traits = {
+			#    trait = leader_trait_hive_affinity
+			#}
+		}
+	}
     save_event_target_as = spawn_location
     create_fleet = {
-		name = "NAME_Prethoryn_Star_Brood"
+		name = "NAME_pf_straggler_swarms_fleet"
 		effect = {
 			set_owner = event_target:pf_straggler_swarms_country
 			create_ship = {
@@ -55,20 +57,22 @@ pf_spawn_straggler_swarm_fleet_large = {
 }
 
 pf_spawn_straggler_swarm_fleet_medium = {
-    create_leader = {
-        class = commander
-        species = event_target:pf_straggler_prethoryn_species
-        name = random
-        skill = 3
-        set_age = 1125
-        # TODO: Could give it a cool "cut off from hivemind" negative trait
-        #traits = {
-        #    trait = leader_trait_hive_affinity
-        #}
-    }
+	event_target:pf_straggler_swarms_country = {
+		create_leader = {
+			class = commander
+			species = event_target:pf_straggler_prethoryn_species
+			name = random
+			skill = 3
+			set_age = 1125
+			# TODO: Could give it a cool "cut off from hivemind" negative trait
+			#traits = {
+			#    trait = leader_trait_hive_affinity
+			#}
+		}
+	}
     save_event_target_as = spawn_location
     create_fleet = {
-		name = "NAME_Prethoryn_Star_Brood"
+		name = "NAME_pf_straggler_swarms_fleet"
 		effect = {
 			set_owner = event_target:pf_straggler_swarms_country
 			create_ship = {
@@ -111,20 +115,22 @@ pf_spawn_straggler_swarm_fleet_medium = {
 }
 
 pf_spawn_straggler_swarm_fleet_small = {
-    create_leader = {
-        class = commander
-        species = event_target:pf_straggler_prethoryn_species
-        name = random
-        skill = 3
-        set_age = 1125
-        # TODO: Could give it a cool "cut off from hivemind" negative trait
-        #traits = {
-        #    trait = leader_trait_hive_affinity
-        #}
-    }
+	event_target:pf_straggler_swarms_country = {
+		create_leader = {
+			class = commander
+			species = event_target:pf_straggler_prethoryn_species
+			name = random
+			skill = 3
+			set_age = 1125
+			# TODO: Could give it a cool "cut off from hivemind" negative trait
+			#traits = {
+			#    trait = leader_trait_hive_affinity
+			#}
+		}
+	}
     save_event_target_as = spawn_location
     create_fleet = {
-		name = "NAME_Prethoryn_Star_Brood"
+		name = "NAME_pf_straggler_swarms_fleet"
 		effect = {
 			set_owner = event_target:pf_straggler_swarms_country
 			assign_leader = last_created_leader

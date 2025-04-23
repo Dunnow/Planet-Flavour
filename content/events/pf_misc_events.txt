@@ -7,21 +7,33 @@ system_event = {
 	hide_window = yes
 
 	immediate = {
+		create_species = {
+			name = "NAME_Prethoryn"
+			class = SWARM
+			namelist = Prethoryn
+			portrait = random
+			traits = random
+			immortal = yes
+
+			effect = { save_event_target_as = pf_straggler_prethoryn_species }
+		}
+
 		create_country = {
-			name = "NAME_Lost_Swarm"
+			name = "NAME_pf_straggler_swarms"
 			type = pf_straggler_swarm
+
 			flag = {
-				icon = {
-					category = "domination"
-					file = "domination_14.dds"
+				icon= {
+					category = "special"
+					file = "the_swarm.dds"
 				}
-				background = {
+				background= {
 					category = "backgrounds"
-					file = "00_solid.dds"
+					file = "new_dawn.dds"
 				}
-				colors = {
-					"black"
-					"black"
+				colors={
+					"grey"
+					"orange"
 					"null"
 					"null"
 				}
