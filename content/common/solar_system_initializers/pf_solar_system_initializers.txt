@@ -514,11 +514,14 @@ pf_hive_stars_last_stand_initializer = {
 	}
 
 	planet = {
-		class = "pc_arid"
+		class = "pc_relic"
 		orbit_distance = 60
 		orbit_angle = 75
 		size = 16
 		has_ring = no
+		init_effect = {
+			add_modifier = { modifier = pf_pm_infested_world }
+		}
 	}
 
 	planet = {

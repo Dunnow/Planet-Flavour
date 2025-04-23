@@ -13,3 +13,7 @@
   NAME_pf_hive_star_nebula: "Kypellic Cloud"
   NAME_pf_straggler_swarms: "Straggler Swarms"
   NAME_pf_straggler_swarms_fleet: "Forgotten Cluster"
+
+  # Decisions
+  decision_pf_remove_prethoryn_biomass: "Remove Alien Biomass"
+  decision_pf_remove_prethoryn_biomass_desc: "[This.GetName] is choked by an omnipresent infestation of alien biomass. We must burn it, clear it and sterilize it to allow the colony to function."
