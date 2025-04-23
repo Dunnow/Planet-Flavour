@@ -224,6 +224,7 @@ pf_hive_stars_core_initializer = {
 					angle = random
 				}
 			}
+			pf_spawn_straggler_swarm_fleet_medium = yes
 		}
 	}
 
@@ -363,6 +364,12 @@ pf_hive_stars_generic_initializer = {
 					angle = random
 				}
 			}
+			random_list = {
+				5 = { pf_spawn_straggler_swarm_fleet_large = yes }
+				10 = { pf_spawn_straggler_swarm_fleet_medium = yes }
+				5 = { pf_spawn_straggler_swarm_fleet_small = yes }
+				5 = { }
+			}
 		}
 	}
 }
@@ -455,6 +462,7 @@ pf_hive_stars_battlefield_initializer = {
 					angle = random
 				}
 			}
+			pf_spawn_straggler_swarm_fleet_large = yes
 		}
 	}
 }
@@ -543,6 +551,7 @@ pf_hive_stars_last_stand_initializer = {
 					angle = random
 				}
 			}
+			pf_spawn_straggler_swarm_fleet_large = yes
 		}
 	}
 }
