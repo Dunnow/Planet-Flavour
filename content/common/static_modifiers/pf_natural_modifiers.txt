@@ -136,7 +136,7 @@ pf_pm_bioluminescent_flora = {
 
 pf_pm_toxic_spores = {
 	pop_environment_tolerance = -0.10
-	pop_growth_speed = -0.10
+	logistic_growth_mult = -0.10
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_microscopic_life.dds"
 	icon_frame = 3

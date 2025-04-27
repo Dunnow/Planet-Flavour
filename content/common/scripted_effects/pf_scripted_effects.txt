@@ -51,7 +51,6 @@ pf_spawn_straggler_swarm_fleet_large = {
 			set_fleet_stance = aggressive
 			set_aggro_range = 500
 			set_aggro_range_measure_from = self
-			set_fleet_bombardment_stance = armageddon
 		}
 	}
 }
@@ -109,7 +108,6 @@ pf_spawn_straggler_swarm_fleet_medium = {
 			set_fleet_stance = aggressive
 			set_aggro_range = 500
 			set_aggro_range_measure_from = self
-			set_fleet_bombardment_stance = armageddon
 		}
 	}
 }
@@ -162,7 +160,6 @@ pf_spawn_straggler_swarm_fleet_small = {
 			set_fleet_stance = aggressive
 			set_aggro_range = 500
 			set_aggro_range_measure_from = self
-			set_fleet_bombardment_stance = armageddon
 		}
 	}
 }
