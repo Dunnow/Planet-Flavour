@@ -4,5 +4,18 @@ planet_anglers = {
 	generate_add_modifiers = {
 		produces
 	}
-	modifier_category = pop
+	modifier_category = pop_job
+}
+
+planet_researchers = {
+	icon = "job_researcher"
+	parent = planet_jobs_specialist
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+	}
+	modifier_category = pop_job
 }

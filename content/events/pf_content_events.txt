@@ -28,3 +28,100 @@ planet_event = {
 		add_modifier = { modifier = pf_pm_asteroid_impact }
 	}
 }
+
+ship_event = {
+	id = pf_content.100
+	title = pf_content.100.name
+	desc = "pf_content.100.desc"
+	picture  = GFX_evt_infested
+	location = this
+    is_triggered_only = yes
+
+	trigger = {
+		solar_system = {
+			has_star_flag = pf_hive_star_system
+		}
+		owner = {
+			not = { has_country_flag = pf_has_encountered_hive_stars}
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_country_flag = pf_has_encountered_hive_stars
+			establish_communications_no_message = event_target:pf_straggler_swarms_country
+		}
+	}
+
+	option = {
+		name = pf_content.100.a
+		owner = {
+			add_resource = { society_research = 500 }
+		}
+	}
+}
+
+ship_event = {
+	id = pf_content.101
+    is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		solar_system = {
+			has_star_flag = pf_hive_star_system
+		}
+		# From = planet that was surveyed
+		from = {
+			is_planet_class = pc_infested
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					not = { has_country_flag = pf_has_surveyed_hive_star_planet}
+				}
+			}
+			owner = {
+				set_country_flag = pf_has_surveyed_hive_star_planet
+			}
+			solar_system = {
+				save_event_target_as = pf_first_hive_star_system_surveyed
+			}
+		}
+
+		else = {
+			if = {
+				limit = {
+					owner = {
+						not = { has_country_flag = pf_has_surveyed_second_hive_star_planet }
+					}
+				}
+				from = {
+					save_event_target_as = pf_second_infested_world_surveyed
+				}
+				ship_event = { id = pf_content.102 }
+				owner = {
+					set_country_flag = pf_has_surveyed_second_hive_star_planet
+				}
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = pf_content.102
+	title = pf_content.102.name
+	desc = "pf_content.102.desc"
+	picture  = GFX_evt_infested
+	location = this
+    is_triggered_only = yes
+
+	option = {
+		name = pf_content.102.a
+		owner = {
+			add_resource = { society_research = 500 }
+		}
+	}
+}

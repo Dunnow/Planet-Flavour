@@ -1,0 +1,165 @@
+pf_spawn_straggler_swarm_fleet_large = {
+	event_target:pf_straggler_swarms_country = {
+		create_leader = {
+			class = commander
+			species = event_target:pf_straggler_prethoryn_species
+			name = random
+			skill = 3
+			set_age = 1125
+			# TODO: Could give it a cool "cut off from hivemind" negative trait
+			#traits = {
+			#    trait = leader_trait_hive_affinity
+			#}
+		}
+	}
+    save_event_target_as = spawn_location
+    create_fleet = {
+		name = "NAME_pf_straggler_swarms_fleet_large"
+		effect = {
+			set_owner = event_target:pf_straggler_swarms_country
+			create_ship = {
+				name = random
+				design = "NAME_Swarm_Queen"
+				graphical_culture = "swarm_01"
+			}
+			assign_leader = last_created_leader
+			while = {
+				count = 10
+				create_ship = {
+					name = random
+					design = "NAME_Swarm_Large"
+					graphical_culture = "swarm_01"
+				}
+			}
+			while = {
+				count = 8
+				create_ship = {
+					name = random
+					design = "NAME_Swarm_Carrier"
+					graphical_culture = "swarm_01"
+				}
+			}
+			while = {
+				count = 35
+				create_ship = {
+					name = random
+					design = "NAME_Swarm_Small"
+					graphical_culture = "swarm_01"
+				}
+			}
+			set_location = event_target:spawn_location
+			set_fleet_stance = aggressive
+			set_aggro_range = 500
+			set_aggro_range_measure_from = self
+		}
+	}
+}
+
+pf_spawn_straggler_swarm_fleet_medium = {
+	event_target:pf_straggler_swarms_country = {
+		create_leader = {
+			class = commander
+			species = event_target:pf_straggler_prethoryn_species
+			name = random
+			skill = 3
+			set_age = 1125
+			# TODO: Could give it a cool "cut off from hivemind" negative trait
+			#traits = {
+			#    trait = leader_trait_hive_affinity
+			#}
+		}
+	}
+    save_event_target_as = spawn_location
+    create_fleet = {
+		name = "NAME_pf_straggler_swarms_fleet_medium"
+		effect = {
+			set_owner = event_target:pf_straggler_swarms_country
+			create_ship = {
+				name = random
+				design = "NAME_Swarm_Queen"
+				graphical_culture = "swarm_01"
+			}
+			assign_leader = last_created_leader
+			while = {
+				count = 6
+				create_ship = {
+					name = random
+					design = "NAME_Swarm_Large"
+					graphical_culture = "swarm_01"
+				}
+			}
+			while = {
+				count = 4
+				create_ship = {
+					name = random
+					design = "NAME_Swarm_Carrier"
+					graphical_culture = "swarm_01"
+				}
+			}
+			while = {
+				count = 25
+				create_ship = {
+					name = random
+					design = "NAME_Swarm_Small"
+					graphical_culture = "swarm_01"
+				}
+			}
+			set_location = event_target:spawn_location
+			set_fleet_stance = aggressive
+			set_aggro_range = 500
+			set_aggro_range_measure_from = self
+		}
+	}
+}
+
+pf_spawn_straggler_swarm_fleet_small = {
+	event_target:pf_straggler_swarms_country = {
+		create_leader = {
+			class = commander
+			species = event_target:pf_straggler_prethoryn_species
+			name = random
+			skill = 3
+			set_age = 1125
+			# TODO: Could give it a cool "cut off from hivemind" negative trait
+			#traits = {
+			#    trait = leader_trait_hive_affinity
+			#}
+		}
+	}
+    save_event_target_as = spawn_location
+    create_fleet = {
+		name = "NAME_pf_straggler_swarms_fleet_small"
+		effect = {
+			set_owner = event_target:pf_straggler_swarms_country
+			assign_leader = last_created_leader
+			while = {
+				count = 3
+				create_ship = {
+					name = random
+					design = "NAME_Swarm_Large"
+					graphical_culture = "swarm_01"
+				}
+			}
+			while = {
+				count = 2
+				create_ship = {
+					name = random
+					design = "NAME_Swarm_Carrier"
+					graphical_culture = "swarm_01"
+				}
+			}
+			while = {
+				count = 15
+				create_ship = {
+					name = random
+					design = "NAME_Swarm_Small"
+					graphical_culture = "swarm_01"
+				}
+			}
+			set_location = event_target:spawn_location
+			set_fleet_stance = aggressive
+			set_aggro_range = 500
+			set_aggro_range_measure_from = self
+		}
+	}
+}

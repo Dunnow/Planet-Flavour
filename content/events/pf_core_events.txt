@@ -70,6 +70,7 @@ planet_event = {
         remove_modifier = pf_pm_swamp_world
         remove_modifier = pf_pm_dry_world
         remove_modifier = pf_pm_equatorial_deserts
+        remove_modifier = pf_pm_infested_world
         # Changed to a wet world
         if = {
             limit = { is_wet = yes }

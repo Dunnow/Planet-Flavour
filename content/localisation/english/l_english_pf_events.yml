@@ -5,5 +5,12 @@
 
   pf_content.20.name: "After the Ashes"
   pf_content.20.desc: "Decades after the dramatic meteor strike that devastated [This.GetName], the worst affects are abating.\n\nThe choking dust clouds are fading and the biosphere has begun to re-establish itself. It will take thousands of years before the climate stabilises, but as [This.GetName] no longer resembles the [This.Owner.GetSpeciesName] underworld, life can begin to recover."
-  pf_content.20.a: "Excellent"
+  pf_content.20.a: "Excellent."
 
+  pf_content.100.name: "Tainted Worlds"
+  pf_content.100.desc: "The sensors of the [This.GetName] have detected an abnormally high level of biological matter in the [This.solar_system.GetName] system.\n\nThe source appears to be one of the inner planets in the solar system - a habitable world that is completely overgrown by festering alien biomass."
+  pf_content.100.a: "Curious."
+
+  pf_content.102.name: "Familiar Contamination"
+  pf_content.102.desc: "Scans taken by the [This.GetName] of the biological material covering [event_target:pf_second_infested_world_surveyed.GetName] show near-identical genetic markers to the samples taken in the [event_target:pf_first_hive_star_system_surveyed.GetName] system.\n\nThey appear to be part of a common interstellar ecosystem composed of planetary and spacefaring lifeforms. It is unclear just how far they have spread throughout the cluster."
+  pf_content.102.a: "Alarming."
