@@ -96,6 +96,7 @@
   pf_pm_recovering_biosphere_desc: "Although this planet experienced a cataclysm in its past, the native lifeforms have begun to recover as the ecosystem repairs itself."
   pf_pm_junk_world: "Junk World"
   pf_pm_junk_world_desc: "Towering piles of trash cover this world. Enterprising recyclers can recover valuable resource from the debris."
+
   # Relic World Modifiers
   pf_pm_infested_world: "Infested World"
   pf_pm_infested_world_desc: "The ruined spires and cityscapes of this world are buried beneath a choking layer of alien biomass."
