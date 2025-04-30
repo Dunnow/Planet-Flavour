@@ -62,7 +62,7 @@ event = {
 
 	immediate = {
 		random_list = {
-			#3 = { } # nothing
+			3 = { } # nothing
 			1 = {
 				random_rim_system = {
 					system_event = { id = pf_misc.100 }
