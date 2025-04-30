@@ -12,7 +12,9 @@
   NAME_pf_Zolqhast: "Zolqhast"
   NAME_pf_hive_star_nebula: "Kypellic Cloud"
   NAME_pf_straggler_swarms: "Straggler Swarms"
-  NAME_pf_straggler_swarms_fleet: "Forgotten Cluster"
+  NAME_pf_straggler_swarms_fleet_large: "Forgotten Cluster"
+  NAME_pf_straggler_swarms_fleet_medium: "Feral Swarm"
+  NAME_pf_straggler_swarms_fleet_small: "Stray Brood"
 
   # Decisions
   decision_pf_remove_prethoryn_biomass: "Remove Alien Biomass"

@@ -14,7 +14,7 @@ pf_spawn_straggler_swarm_fleet_large = {
 	}
     save_event_target_as = spawn_location
     create_fleet = {
-		name = "NAME_pf_straggler_swarms_fleet"
+		name = "NAME_pf_straggler_swarms_fleet_large"
 		effect = {
 			set_owner = event_target:pf_straggler_swarms_country
 			create_ship = {
@@ -71,7 +71,7 @@ pf_spawn_straggler_swarm_fleet_medium = {
 	}
     save_event_target_as = spawn_location
     create_fleet = {
-		name = "NAME_pf_straggler_swarms_fleet"
+		name = "NAME_pf_straggler_swarms_fleet_medium"
 		effect = {
 			set_owner = event_target:pf_straggler_swarms_country
 			create_ship = {
@@ -128,7 +128,7 @@ pf_spawn_straggler_swarm_fleet_small = {
 	}
     save_event_target_as = spawn_location
     create_fleet = {
-		name = "NAME_pf_straggler_swarms_fleet"
+		name = "NAME_pf_straggler_swarms_fleet_small"
 		effect = {
 			set_owner = event_target:pf_straggler_swarms_country
 			assign_leader = last_created_leader

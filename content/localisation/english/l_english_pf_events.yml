@@ -12,5 +12,5 @@
   pf_content.100.a: "Curious."
 
   pf_content.102.name: "Familiar Contamination"
-  pf_content.102.desc: "TODO"
-  pf_content.102.a: "TODO"
+  pf_content.102.desc: "Scans taken by the [This.GetName] of the biological material covering [event_target:pf_second_infested_world_surveyed.GetName] show near-identical genetic markers to the samples taken in the [event_target:pf_first_hive_star_system_surveyed.GetName] system.\n\nThey appear to be part of a common interstellar ecosystem composed of planetary and spacefaring lifeforms. It is unclear just how far they have spread throughout the cluster."
+  pf_content.102.a: "Alarming."

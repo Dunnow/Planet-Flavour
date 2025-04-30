@@ -86,6 +86,9 @@ ship_event = {
 			owner = {
 				set_country_flag = pf_has_surveyed_hive_star_planet
 			}
+			solar_system = {
+				save_event_target_as = pf_first_hive_star_system_surveyed
+			}
 		}
 
 		else = {
@@ -94,6 +97,9 @@ ship_event = {
 					owner = {
 						not = { has_country_flag = pf_has_surveyed_second_hive_star_planet }
 					}
+				}
+				from = {
+					save_event_target_as = pf_second_infested_world_surveyed
 				}
 				ship_event = { id = pf_content.102 }
 				owner = {
