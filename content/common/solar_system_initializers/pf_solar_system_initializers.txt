@@ -863,6 +863,7 @@ pf_hive_stars_last_stand_initializer = {
 		size = 16
 		has_ring = no
 		init_effect = {
+			relic_world_deposits = yes
 			add_modifier = { modifier = pf_pm_infested_world }
 		}
 	}
