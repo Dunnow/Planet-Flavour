@@ -268,6 +268,7 @@ pf_hive_stars_core_initializer = {
 		has_ring = yes
 		init_effect = {
 			set_owner = event_target:pf_straggler_swarms_country
+			set_planet_flag = pf_hive_star_world
 		}
 	}
 
@@ -331,6 +332,7 @@ pf_hive_stars_generic_initializer = {
 		has_ring = no
 		init_effect = {
 			set_owner = event_target:pf_straggler_swarms_country
+			set_planet_flag = pf_hive_star_world
 		}
 	}
 
