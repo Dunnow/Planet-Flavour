@@ -304,7 +304,7 @@ pf_pm_saline_seas = {
 	pop_environment_tolerance = -0.05
 	planet_jobs_food_produces_mult = -0.1
 
-	icon = "gfx/interface/icons/planet_modifiers/pm_arid_planet.dds"
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_arid_planet.dds"
 	icon_frame = 3
 }
 
