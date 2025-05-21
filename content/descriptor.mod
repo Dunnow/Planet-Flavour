@@ -3,4 +3,4 @@ tags={
 	"Galaxy Generation"
 }
 name="Planet Flavour"
-supported_version="v3.13.0"
+supported_version="v4.0.*"
