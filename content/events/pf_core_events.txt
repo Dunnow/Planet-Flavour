@@ -59,6 +59,10 @@ event = {
     }
 }
 
+# TODO: It may be worth refactoring this to work with NOT. Ie if it is NOT a dry, non-special world, remove oasis.
+# TODO: Additionally, breaking into one event per type, so we have an always remove event, a no longer wet event, a no longer cold event.
+# TODO: Additionally let's use some proper triggers to make this more readable.
+
 # Terraforming cleanup
 planet_event = {
     id = pf_core.20
@@ -82,6 +86,8 @@ planet_event = {
 		
         remove_modifier = pf_pm_saline_seas
         remove_modifier = pf_pm_impenetrable_jungles
+        remove_modifier = pf_pm_harsh_badlands
+        remove_modifier = pf_pm_flash_floods
 
         # Changed to a wet world
         if = {
@@ -97,6 +103,8 @@ planet_event = {
             remove_modifier = pf_pm_wild_sandstorms
 
             remove_modifier = pf_pm_fertile_tundras
+            remove_modifier = pf_pm_verdant_oases
+            remove_modifier = pf_pm_fertile_silts
         }
         # Changed to a dry world
         if = {
@@ -141,6 +149,9 @@ planet_event = {
             remove_modifier = pf_pm_severe_droughts
             remove_modifier = pf_pm_arboreal_ecosystem
             remove_modifier = pf_pm_wild_sandstorms
+            remove_modifier = pf_pm_verdant_oases
+
+            remove_modifier = pf_pm_fertile_silts
 
             if = {
                 limit = { NOT = { is_planet_class = pc_arctic}}

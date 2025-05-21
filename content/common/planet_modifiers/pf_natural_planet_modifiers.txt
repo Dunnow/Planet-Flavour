@@ -1573,3 +1573,132 @@ pf_pm_fertile_tundras = {
 	}
 	modifier = "pf_pm_fertile_tundras"
 }
+
+pf_pm_harsh_badlands = {
+	spawn_chance = {
+		modifier = {
+			add = 10
+			is_planet_class = "pc_desert"
+		}
+
+		modifier = {
+			add = 15
+			is_planet_class = "pc_arid"
+		}
+
+		modifier = {
+			add = 10
+			is_planet_class = "pc_savannah"
+		}
+
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_verdant_oases"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_harsh_badlands"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_harsh_badlands"
+}
+
+pf_pm_verdant_oases = {
+	spawn_chance = {
+		modifier = {
+			add = 15
+			is_planet_class = "pc_desert"
+		}
+
+		modifier = {
+			add = 10
+			is_planet_class = "pc_arid"
+		}
+
+		modifier = {
+			add = 15
+			is_planet_class = "pc_savannah"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_harsh_badlands"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_verdant_oases"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_verdant_oases"
+}
+
+pf_pm_flash_floods = {
+	spawn_chance = {
+		modifier = {
+			add = 5
+			is_planet_class = "pc_desert"
+		}
+
+		modifier = {
+			add = 10
+			is_planet_class = "pc_arid"
+		}
+
+		modifier = {
+			add = 15
+			is_planet_class = "pc_savannah"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_flash_floods"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_flash_floods"
+}
+
+pf_pm_fertile_silts = {
+	spawn_chance = {
+		modifier = {
+			add = 10
+			is_planet_class = "pc_desert"
+		}
+
+		modifier = {
+			add = 15
+			is_planet_class = "pc_arid"
+		}
+
+		modifier = {
+			add = 15
+			is_planet_class = "pc_savannah"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_fertile_silts"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_fertile_silts"
+}

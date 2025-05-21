@@ -8,7 +8,7 @@ pf_pm_ice_age = { #I'd like this to spawn some special glaciers too
 
 pf_pm_floral_world = {
 	pop_happiness = 0.1
-	planet_amenities_add = 100
+	planet_amenities_add = 500
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_natural_beauty.dds"
 	icon_frame = 1
@@ -321,5 +321,36 @@ pf_pm_fertile_tundras = {
 	planet_jobs_food_produces_mult = 0.1
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_tundra.dds"
+	icon_frame = 1
+}
+
+pf_pm_harsh_badlands = {
+	pop_environment_tolerance = -0.05
+	planet_jobs_food_produces_mult = -0.1
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_red_deserts.dds"
+	icon_frame = 3
+}
+
+pf_pm_verdant_oases = {
+	pop_environment_tolerance = 0.10
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_oasis.dds"
+	icon_frame = 1
+}
+
+# TODO: add an occasional event to add some devastation and a decision to remove it.
+pf_pm_flash_floods = {
+	pop_environment_tolerance = -0.05
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_river.dds"
+	icon_frame = 3
+}
+
+pf_pm_fertile_silts = {
+	district_farming_max = 3
+	planet_jobs_food_produces_mult = 0.1
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_river.dds"
 	icon_frame = 1
 }

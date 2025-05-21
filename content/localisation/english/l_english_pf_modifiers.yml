@@ -82,6 +82,14 @@
   pf_pm_impenetrable_jungles_desc: "The equatorial regions of this planet are dominated by immense, thick jungles."
   pf_pm_fertile_tundras: "Fertile Tundras"
   pf_pm_fertile_tundras_desc: "Rich soils and hardy plant life support large and thriving ecosystems across this planet's polar wastes."
+  pf_pm_harsh_badlands: "Harsh Badlands"
+  pf_pm_harsh_badlands_desc: "Much of this world's surface is hot, dry and inhospitable. Only a few specially adapted native lifeforms can exist here."
+  pf_pm_verdant_oases: "Verdant Oases"
+  pf_pm_verdant_oases_desc: "This planet is dotted with many small oases and wadis that form lush islands of vegetation amidst the dry landscape."
+  pf_pm_flash_floods: "Flash Floods"
+  pf_pm_flash_floods_desc: "Periodic rainfall surges typically result in sudden flooding of the water bodies of this world."
+  pf_pm_fertile_silts: "Fertile Silts"
+  pf_pm_fertile_silts_desc: "Regular and stable cycles of flood and erosion have deposited abundant nutrients into the fertile soils that border this world's rivers."
 
   # Tomb World Modifiers
   pf_pm_glassed_world: "Glassed World"
