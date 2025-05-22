@@ -24,6 +24,35 @@ decision_pf_remove_prethoryn_biomass = {
 
     ai_weight = {
         base = 100
+    }
+}
+
+decision_pf_clear_impenetrable_jungles = {
+    owned_planets_only = yes
+    icon = pf_decision_jungles
+	
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2000
+		}
+	}
+
+    potential = {
+        has_modifier = pf_pm_impenetrable_jungles
+    }
+
+    allow = {
+        always = yes
+    }
+
+    effect = {
+		remove_modifier = pf_pm_impenetrable_jungles
+    }
+
+    ai_weight = {
+        base = 10
         modifier = {
             mult = 10
             owner = {
@@ -34,9 +63,10 @@ decision_pf_remove_prethoryn_biomass = {
             }
         }
         modifier = {
-            add = 50
+            add = 10
             years_passed > 30
         }
+		
         modifier = {
             add = 100
             owner = {

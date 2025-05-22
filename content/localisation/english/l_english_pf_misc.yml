@@ -19,3 +19,6 @@
   # Decisions
   decision_pf_remove_prethoryn_biomass: "Remove Alien Biomass"
   decision_pf_remove_prethoryn_biomass_desc: "[This.GetName] is choked by an omnipresent infestation of alien biomass. We must burn it, clear it and sterilize it to allow the colony to function."
+
+  decision_pf_clear_impenetrable_jungles: "Clear Impenetrable Jungles"
+  decision_pf_clear_impenetrable_jungles_desc: "A campaign of defoliation and cutbacks to render the land usable and open to development."

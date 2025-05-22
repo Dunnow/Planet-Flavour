@@ -76,6 +76,21 @@
   pf_pm_harmonious_ecosystems_desc: "The native life of this world has evolved to take advantage of numerous symbiotic relationships for mutual benefit. Parasitism and large predators are rare."
   pf_pm_wild_sandstorms: "Wild Sandstorms"
   pf_pm_wild_sandstorms_desc: "This world is prone to massive sandstorms, engulfing large areas of the planet at a time."
+  pf_pm_saline_seas: "Saline Seas"
+  pf_pm_saline_seas_desc: "Many of the water bodies on this planet are shallow and salty, unfit for supporting life."
+  pf_pm_impenetrable_jungles: "Impenetrable Jungles"
+  pf_pm_impenetrable_jungles_desc: "The equatorial regions of this planet are dominated by immense, thick jungles."
+  pf_pm_fertile_tundras: "Fertile Tundras"
+  pf_pm_fertile_tundras_desc: "Rich soils and hardy plant life support large and thriving ecosystems across this planet's polar wastes."
+  pf_pm_harsh_badlands: "Harsh Badlands"
+  pf_pm_harsh_badlands_desc: "Much of this world's surface is hot, dry and inhospitable. Only a few specially adapted native lifeforms can exist here."
+  pf_pm_verdant_oases: "Verdant Oases"
+  pf_pm_verdant_oases_desc: "This planet is dotted with many small oases and wadis that form lush islands of vegetation amidst the dry landscape."
+  pf_pm_flash_floods: "Flash Floods"
+  pf_pm_flash_floods_desc: "Periodic rainfall surges typically result in sudden flooding of the water bodies of this world."
+  pf_pm_fertile_silts: "Fertile Silts"
+  pf_pm_fertile_silts_desc: "Regular and stable cycles of flood and erosion have deposited abundant nutrients into the fertile soils that border this world's rivers."
+
   # Tomb World Modifiers
   pf_pm_glassed_world: "Glassed World"
   pf_pm_glassed_world_desc: "This world was subjected to intense plasma bombardment, leaving little more than fused, glassy wastelands."
@@ -89,6 +104,7 @@
   pf_pm_recovering_biosphere_desc: "Although this planet experienced a cataclysm in its past, the native lifeforms have begun to recover as the ecosystem repairs itself."
   pf_pm_junk_world: "Junk World"
   pf_pm_junk_world_desc: "Towering piles of trash cover this world. Enterprising recyclers can recover valuable resource from the debris."
+
   # Relic World Modifiers
   pf_pm_infested_world: "Infested World"
   pf_pm_infested_world_desc: "The ruined spires and cityscapes of this world are buried beneath a choking layer of alien biomass."

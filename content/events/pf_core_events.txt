@@ -59,6 +59,10 @@ event = {
     }
 }
 
+# TODO: It may be worth refactoring this to work with NOT. Ie if it is NOT a dry, non-special world, remove oasis.
+# TODO: Additionally, breaking into one event per type, so we have an always remove event, a no longer wet event, a no longer cold event.
+# TODO: Additionally let's use some proper triggers to make this more readable.
+
 # Terraforming cleanup
 planet_event = {
     id = pf_core.20
@@ -71,6 +75,20 @@ planet_event = {
         remove_modifier = pf_pm_dry_world
         remove_modifier = pf_pm_equatorial_deserts
         remove_modifier = pf_pm_infested_world
+
+        # Always remove these tomb modifiers
+        remove_modifier = pf_pm_glassed_world
+        remove_modifier = pf_pm_asteroid_impact
+        remove_modifier = pf_pm_recent_asteroid_impact
+        remove_modifier = pf_pm_recovering_biosphere
+        remove_modifier = pf_pm_nuclear_exchange
+        remove_modifier = pf_pm_junk_world
+		
+        remove_modifier = pf_pm_saline_seas
+        remove_modifier = pf_pm_impenetrable_jungles
+        remove_modifier = pf_pm_harsh_badlands
+        remove_modifier = pf_pm_flash_floods
+
         # Changed to a wet world
         if = {
             limit = { is_wet = yes }
@@ -83,6 +101,10 @@ planet_event = {
             remove_modifier = pf_pm_bone_world
             remove_modifier = pf_pm_abundant_parasites
             remove_modifier = pf_pm_wild_sandstorms
+
+            remove_modifier = pf_pm_fertile_tundras
+            remove_modifier = pf_pm_verdant_oases
+            remove_modifier = pf_pm_fertile_silts
         }
         # Changed to a dry world
         if = {
@@ -105,6 +127,7 @@ planet_event = {
             remove_modifier = pf_pm_volcanic_soils
             remove_modifier = pf_pm_arboreal_ecosystem
             remove_modifier = pf_pm_abyssal_seas
+            remove_modifier = pf_pm_fertile_tundras
         }
 
         # Changed to a cold world
@@ -126,6 +149,9 @@ planet_event = {
             remove_modifier = pf_pm_severe_droughts
             remove_modifier = pf_pm_arboreal_ecosystem
             remove_modifier = pf_pm_wild_sandstorms
+            remove_modifier = pf_pm_verdant_oases
+
+            remove_modifier = pf_pm_fertile_silts
 
             if = {
                 limit = { NOT = { is_planet_class = pc_arctic}}
@@ -134,6 +160,7 @@ planet_event = {
         }
     }
 }
+# TODO: This doesnt correctly remove nature modifiers
 # Terraforming to worlds with no / limited biosphere.
 planet_event = {
     id = pf_core.21
@@ -172,6 +199,7 @@ planet_event = {
                 remove_modifier = pf_pm_severe_droughts
                 remove_modifier = pf_pm_harsh
                 remove_modifier = pf_pm_wild_sandstorms
+                remove_modifier = pf_pm_canyon_world
             }
             if = {
                 limit = {
@@ -209,6 +237,10 @@ planet_event = {
             remove_modifier = pf_pm_abyssal_seas
             remove_modifier = pf_pm_subglacial_seas
             remove_modifier = pf_pm_harmonious_ecosystems
+            remove_modifier = pf_pm_saline_seas
+
+            remove_modifier = pf_pm_fertile_tundras
+            remove_modifier = pf_pm_impenetrable_jungles
         }
     }
 }
