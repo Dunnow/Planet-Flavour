@@ -1,0 +1,21 @@
+pf_clear_always_removed_modifiers = {
+    remove_modifier = pf_pm_swamp_world
+    remove_modifier = pf_pm_dry_world
+    remove_modifier = pf_pm_equatorial_deserts
+    remove_modifier = pf_pm_infested_world
+
+    remove_modifier = pf_pm_saline_seas
+    remove_modifier = pf_pm_impenetrable_jungles
+    remove_modifier = pf_pm_harsh_badlands
+    remove_modifier = pf_pm_flash_floods
+
+    remove_modifier = pf_pm_bone_world
+
+    # Always remove these tomb modifiers
+    remove_modifier = pf_pm_glassed_world
+    remove_modifier = pf_pm_asteroid_impact
+    remove_modifier = pf_pm_recent_asteroid_impact
+    remove_modifier = pf_pm_recovering_biosphere
+    remove_modifier = pf_pm_nuclear_exchange
+    remove_modifier = pf_pm_junk_world
+}

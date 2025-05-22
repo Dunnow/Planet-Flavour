@@ -11,3 +11,18 @@ pf_is_valid_planet_for_extraplanetary_life = {
         is_planet_class = pc_machine
     }
 }
+
+pf_is_world_with_ecosystems = {
+    is_colonizable = yes
+    is_artificial = no
+
+    NOR = {
+        is_planet_class = pc_nuked
+        is_planet_class = pc_city
+        is_planet_class = pc_relic
+        is_planet_class = pc_hive
+        is_planet_class = pc_machine
+    }
+}
+
+pf_
