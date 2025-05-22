@@ -59,10 +59,6 @@ event = {
     }
 }
 
-# TODO: It may be worth refactoring this to work with NOT. Ie if it is NOT a dry, non-special world, remove oasis.
-# TODO: Additionally, breaking into one event per type, so we have an always remove event, a no longer wet event, a no longer cold event.
-# TODO: Additionally let's use some proper triggers to make this more readable.
-
 # Terraforming cleanup
 planet_event = {
     id = pf_core.20
@@ -71,23 +67,7 @@ planet_event = {
 
     immediate = {
         # Always change these
-        remove_modifier = pf_pm_swamp_world
-        remove_modifier = pf_pm_dry_world
-        remove_modifier = pf_pm_equatorial_deserts
-        remove_modifier = pf_pm_infested_world
-
-        # Always remove these tomb modifiers
-        remove_modifier = pf_pm_glassed_world
-        remove_modifier = pf_pm_asteroid_impact
-        remove_modifier = pf_pm_recent_asteroid_impact
-        remove_modifier = pf_pm_recovering_biosphere
-        remove_modifier = pf_pm_nuclear_exchange
-        remove_modifier = pf_pm_junk_world
-		
-        remove_modifier = pf_pm_saline_seas
-        remove_modifier = pf_pm_impenetrable_jungles
-        remove_modifier = pf_pm_harsh_badlands
-        remove_modifier = pf_pm_flash_floods
+        pf_clear_always_removed_modifiers = yes
 
         # Changed to a wet world
         if = {
@@ -98,11 +78,10 @@ planet_event = {
             remove_modifier = pf_pm_canyon_world
             
             remove_modifier = pf_pm_snowball_world
-            remove_modifier = pf_pm_bone_world
             remove_modifier = pf_pm_abundant_parasites
             remove_modifier = pf_pm_wild_sandstorms
-
             remove_modifier = pf_pm_fertile_tundras
+
             remove_modifier = pf_pm_verdant_oases
             remove_modifier = pf_pm_fertile_silts
         }
@@ -117,14 +96,13 @@ planet_event = {
             remove_modifier = pf_pm_tidal_surges
             remove_modifier = pf_pm_toxic_spores
             remove_modifier = pf_pm_snowball_world
-            remove_modifier = pf_pm_bone_world
-
             remove_modifier = pf_pm_megacoral_reefs
+
             remove_modifier = pf_pm_bioluminescent_flora
             remove_modifier = pf_pm_abundant_parasites
             remove_modifier = pf_pm_tropical_archipelagos
-
             remove_modifier = pf_pm_volcanic_soils
+
             remove_modifier = pf_pm_arboreal_ecosystem
             remove_modifier = pf_pm_abyssal_seas
             remove_modifier = pf_pm_fertile_tundras
@@ -135,11 +113,8 @@ planet_event = {
             limit = { is_cold = yes }
             remove_modifier = pf_pm_biocrystals
             remove_modifier = pf_pm_floral_world
-
             remove_modifier = pf_pm_tidal_surges
             remove_modifier = pf_pm_toxic_spores
-            remove_modifier = pf_pm_snowball_world
-            remove_modifier = pf_pm_bone_world
 
             remove_modifier = pf_pm_megacoral_reefs
             remove_modifier = pf_pm_abundant_parasites
@@ -171,18 +146,7 @@ planet_event = {
     immediate = {
         if = {
             limit = {
-                OR = {
-                    is_planet_class = pc_city
-                    is_planet_class = pc_machine
-                    is_planet_class = pc_hive
-                    is_planet_class = pc_nanotech
-                    is_planet_class = pc_nuked
-                    is_artificial = yes
-                    AND = {
-                        is_colony = no
-                        is_colonizable = no
-                    }
-                }
+                pf_is_world_with_ecosystems = no
             }
             if = {
                 limit = {
@@ -195,11 +159,14 @@ planet_event = {
                         is_artificial = yes
                     }
                 }
+                # Remove these as it does make sense for tomb worlds to have them, but otherwise should be removed.
                 remove_modifier = pf_pm_irradiated_world
                 remove_modifier = pf_pm_severe_droughts
                 remove_modifier = pf_pm_harsh
                 remove_modifier = pf_pm_wild_sandstorms
+
                 remove_modifier = pf_pm_canyon_world
+
             }
             if = {
                 limit = {
@@ -214,6 +181,8 @@ planet_event = {
                 }
                 remove_modifier = pf_pm_extraplanetary_life
             }
+
+            # Always remove these no matter what as there is no ecosystem anymore
             remove_modifier = pf_pm_ice_age
             remove_modifier = pf_pm_floral_world
             remove_modifier = pf_pm_biocrystals
@@ -234,13 +203,19 @@ planet_event = {
             remove_modifier = pf_pm_chirping_plains
             remove_modifier = pf_pm_bone_world
 
+            remove_modifier = pf_pm_arboreal_ecosystem
             remove_modifier = pf_pm_abyssal_seas
+            remove_modifier = pf_pm_equatorial_deserts
             remove_modifier = pf_pm_subglacial_seas
+
             remove_modifier = pf_pm_harmonious_ecosystems
             remove_modifier = pf_pm_saline_seas
-
             remove_modifier = pf_pm_fertile_tundras
             remove_modifier = pf_pm_impenetrable_jungles
+
+            remove_modifier = pf_pm_verdant_oases
+            remove_modifier = pf_pm_flash_floods
+            remove_modifier = pf_pm_fertile_silts
         }
     }
 }
