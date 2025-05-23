@@ -1,0 +1,91 @@
+pf_pm_mega_storms = {
+    spawn_chance = {
+		modifier = {
+			add = 20
+			is_planet_class = "pc_gas_giant"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_mega_storms"
+		}
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+
+	modifier = "pf_pm_mega_storms"
+}
+
+pf_pm_tidal_forces = {
+    spawn_chance = {
+		modifier = {
+			add = 20
+			is_planet_class = "pc_barren_cold"
+		}
+		modifier = {
+			add = 20
+			is_planet_class = "pc_barren"
+		}
+		modifier = {
+			factor = 0
+			is_moon = no
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_tidal_forces"
+		}
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+		modifier = {
+			factor = 0.5
+			planet_size > 10
+		}
+		modifier = {
+			factor = 2.0
+			planet_size < 6
+		}
+	}
+
+	modifier = "pf_pm_tidal_forces"
+}
+
+pf_pm_isotopic_atmosphere = {
+    spawn_chance = {
+		modifier = {
+			add = 5
+			is_planet_class = "pc_gas_giant"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_isotopic_atmosphere"
+		}
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+
+	modifier = "pf_pm_isotopic_atmosphere"
+}
+
+pf_pm_ancient_impact_sites = {
+    spawn_chance = {
+		modifier = {
+			add = 5
+			is_planet_class = "pc_barren"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_ancient_impact_sites"
+		}
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+
+	modifier = "pf_pm_ancient_impact_sites"
+}

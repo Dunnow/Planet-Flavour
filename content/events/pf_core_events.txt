@@ -448,7 +448,6 @@ event = {
     }
 }
 
-
 # Swap micro terraforming environmental enhancement deposits
 planet_event = {
     id = pf_core.50
@@ -495,8 +494,162 @@ planet_event = {
             remove_deposit = d_pf_environmental_enhancements_wet
 
             add_deposit = d_pf_environmental_enhancements_cold
+		}
+	}
+}
+
+# Clear uninhabitable modifiers from invalid systems
+event = {
+    id = pf_core.100
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_system = {
+            limit = {
+                OR = {
+                    any_system_planet = { is_colony = yes }
+                    has_owner = yes
+                }
+            }
+            every_system_planet = {
+                remove_modifier = pf_pm_mega_storms
+                remove_modifier = pf_pm_tidal_forces
+                remove_modifier = pf_pm_isotopic_atmosphere
+                remove_modifier = pf_pm_ancient_impact_sites
+            }
         }
     }
+}
+
+# Add deposits for gas modifiers
+ship_event = {
+	id = pf_core.101
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			NOT = {
+				has_planet_flag = deposit_added
+			}
+			is_colonizable = no
+			OR = {
+				has_modifier = pf_pm_isotopic_atmosphere
+			}
+			NOR = {
+				has_deposit = d_exotic_gases_4
+				has_deposit = d_exotic_gases_5
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			prevent_anomaly = yes
+			hidden_effect = {
+				from = {
+					if = {
+						limit = {
+							NOT = { has_deposit_for = shipclass_mining_station }
+						}
+						clear_deposits = yes
+					}
+					set_planet_flag = deposit_added
+					add_deposit = d_exotic_gases_3
+				}
+			}
+		}
+	}
+}
+
+# Add deposits for motes modifiers
+ship_event = {
+	id = pf_core.102
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			NOT = {
+				has_planet_flag = deposit_added
+			}
+			is_colonizable = no
+			OR = {
+				has_modifier = pf_pm_ancient_impact_sites
+			}
+			NOR = {
+				has_deposit = d_volatile_motes_4
+				has_deposit = d_volatile_motes_5
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			prevent_anomaly = yes
+			hidden_effect = {
+				from = {
+					if = {
+						limit = {
+							NOT = { has_deposit_for = shipclass_mining_station }
+						}
+						clear_deposits = yes
+					}
+					set_planet_flag = deposit_added
+					add_deposit = d_volatile_motes_3
+				}
+			}
+		}
+	}
+}
+
+# Add deposits for energy modifiers
+ship_event = {
+	id = pf_core.103
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			NOT = {
+				has_planet_flag = deposit_added
+			}
+			is_colonizable = no
+			OR = {
+				has_modifier = pf_pm_mega_storms
+                has_modifier = pf_pm_tidal_forces
+			}
+			NOR = {
+				has_deposit = d_energy_7
+				has_deposit = d_energy_8
+				has_deposit = d_energy_9
+				has_deposit = d_energy_10
+				has_deposit = d_guardian_dragon_hoard
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			prevent_anomaly = yes
+			hidden_effect = {
+				from = {
+					if = {
+						limit = {
+							NOT = { has_deposit_for = shipclass_mining_station }
+						}
+						clear_deposits = yes
+					}
+					set_planet_flag = deposit_added
+					add_deposit = d_energy_6
+				}
+			}
+		}
+	}
 }
 
 # Rare Resource distribution event

@@ -9,6 +9,7 @@ on_game_start = {
         pf_core.43     # Apply nuclear winter to old foes system
         pf_misc.110    # Roll to spawn Hive Stars
         pf_core.200    # Distribute luxury homeworlds
+        pf_core.100    # Clear invalid modifiers from planets
     }
 }
 
@@ -46,5 +47,7 @@ on_survey_planet = {
 	events = {
         pf_content.101      # Hive Stars Surveying Event
         pf_content.200          # Luxury Resources discovered event
+        pf_content.101 # (Hidden) hive stars tracker
+		pf_core.100	# (Hidden) add deposits for pf non colonisable modifiers
     }
 }

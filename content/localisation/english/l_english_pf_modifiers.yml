@@ -134,3 +134,14 @@
   pf_pm_fungal_caves_homeworld_desc: "The caves of this world are the home to a rare form of fungal life that has unique psychoactive properties for almost all lifeforms. Cultivation is challenging."
   pf_pm_marsh_roots_homeworld: "Fragrant Marsh Roots: Homeworld"
   pf_pm_marsh_roots_homeworld_desc: "A small region of cold bogs of this world are the native habitat of a specific variety of tree. The roots produce a pleasing aroma when burned as a form of incense."
+
+  # Uninhabitable Modifiers
+  pf_pm_mega_storms: "Atmospheric Megastorms"
+  pf_pm_mega_storms_desc: "Massive swirling maelstroms cover large sections of the giant's atmosphere."
+  pf_pm_tidal_forces: "Tidal Forces"
+  pf_pm_tidal_forces_desc: "The tidal forces of this moon's parent planet unleash enormous geothermal energies."
+  pf_pm_isotopic_atmosphere: "Isotopic Atmosphere"
+  pf_pm_isotopic_atmosphere_desc: "Scattered concentrations of valuable Exotic Gases can be found in this world's atmosphere."
+  pf_pm_ancient_impact_sites: "Ancient Impact Basins"
+  pf_pm_ancient_impact_sites_desc: "Billion-year-old asteroid impacts have left valuable Volatile Mote deposits on this world's surface."
+

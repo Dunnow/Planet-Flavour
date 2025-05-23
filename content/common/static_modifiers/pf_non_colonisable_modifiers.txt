@@ -1,0 +1,28 @@
+# For gas giants
+pf_pm_mega_storms = {
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_gas_giant_red.dds"
+	icon_frame = 1
+}
+
+# For moons
+pf_pm_tidal_forces = {
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_chthonian_planet.dds"
+	icon_frame = 1
+}
+
+# Gas Giants
+pf_pm_isotopic_atmosphere = {
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_gas_giant_red.dds"
+	icon_frame = 1
+}
+
+# Barren
+pf_pm_ancient_impact_sites = {
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_unstable_tectonics.dds"
+	icon_frame = 1
+
+}
