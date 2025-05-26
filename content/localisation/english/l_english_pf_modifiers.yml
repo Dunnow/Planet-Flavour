@@ -108,3 +108,7 @@
   # Relic World Modifiers
   pf_pm_infested_world: "Infested World"
   pf_pm_infested_world_desc: "The ruined spires and cityscapes of this world are buried beneath a choking layer of alien biomass."
+
+  # Special Modifiers
+  pf_pm_psionic_gaia_world: "Psionic World"
+  pf_pm_psionic_gaia_world_desc: "Life on this planet is interconnected, sharing a deep telepathic link with the environment around it."
