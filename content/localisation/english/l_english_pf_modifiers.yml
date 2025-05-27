@@ -144,4 +144,5 @@
   pf_pm_isotopic_atmosphere_desc: "Scattered concentrations of valuable Exotic Gases can be found in this world's atmosphere."
   pf_pm_ancient_impact_sites: "Ancient Impact Basins"
   pf_pm_ancient_impact_sites_desc: "Billion-year-old asteroid impacts have left valuable Volatile Mote deposits on this world's surface."
-
+  pf_pm_primordial_world: "Primordial World"
+  pf_pm_primordial_world_desc: "This planet has only recently formed. Magma showers and asteroid impacts are abundant across its surface."

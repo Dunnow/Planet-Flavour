@@ -89,3 +89,23 @@ pf_pm_ancient_impact_sites = {
 
 	modifier = "pf_pm_ancient_impact_sites"
 }
+
+pf_pm_primordial_world = {
+    spawn_chance = {
+		modifier = {
+			add = 15
+			is_planet_class = "pc_molten"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_primordial_world"
+		}
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+
+	modifier = "pf_pm_primordial_world"
+
+}

@@ -24,5 +24,11 @@ pf_pm_ancient_impact_sites = {
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_unstable_tectonics.dds"
 	icon_frame = 1
+}
 
+# Volcanic
+pf_pm_primordial_world = {
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_molten_planet.dds"
+	icon_frame = 1
 }

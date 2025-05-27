@@ -18,4 +18,11 @@ pf_clear_always_removed_modifiers = {
     remove_modifier = pf_pm_recovering_biosphere
     remove_modifier = pf_pm_nuclear_exchange
     remove_modifier = pf_pm_junk_world
+
+    # Always remove these non-habitable modifiers
+    remove_modifier = pf_pm_mega_storms
+    remove_modifier = pf_pm_tidal_forces
+    remove_modifier = pf_pm_isotopic_atmosphere
+    remove_modifier = pf_pm_ancient_impact_sites
+    remove_modifier = pf_pm_primordial_world
 }
