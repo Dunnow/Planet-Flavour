@@ -57,3 +57,42 @@ d_pf_psionic_fungi = {
 		}
 	}
 }
+
+d_pf_imposing_canyon = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_pf_grand_canyon
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	# Disabled for now as the way to add new zones is extremely bad for compatibility.
+	#custom_tooltip = unlocks_zone_pf_psionic_fungi_all
+	planet_modifier = {
+		district_mining_max = 4
+		planet_miners_society_research_produces_add = 1
+	}
+
+	drop_weight = {
+		weight = 0
+		modifier = {
+			add = @high_rare
+			is_dry = yes
+		}
+		modifier = {
+			factor = 3
+			has_modifier = pf_pm_canyon_world
+		}
+		modifier = {
+			factor = 0
+			solar_system = {
+				OR = {
+					has_star_flag = empire_home_system
+					has_star_flag = sol_system
+					has_star_flag = deneb_system
+				}
+			}
+		}
+	}
+}
