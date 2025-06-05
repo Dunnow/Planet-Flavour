@@ -71,3 +71,21 @@ event = {
 		}
 	}
 }
+
+# Chance to spawn Ark Cluster. Maybe merge with hive stars?
+event = {
+	id = pf_misc.120
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		random_list = {
+			3 = { } # nothing
+			1 = {
+				random_rim_system = {
+					system_event = { id = pf_misc.100 }
+				}
+			}
+		}
+	}
+}

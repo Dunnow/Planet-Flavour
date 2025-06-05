@@ -902,3 +902,165 @@ pf_hive_stars_last_stand_initializer = {
 		}
 	}
 }
+
+
+### The Sanctuary
+pf_sanctuary_system = {
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+	usage = misc_system_init
+	usage_odds = {
+		base = @spawn_system_common
+		inline_script = "solar_system_initializers/initializer_modifiers_habitable_world_systems"
+	}
+	#max_instances = 1
+	#primitive_system = yes	# usage odds modified by primitives setup slider
+
+	flags = { sanctuary_system ring_world_built }
+	scaled_spawn_chance = 2	# scales by galaxy size (1000 stars = 10x base)
+
+	name = "NAME_Sanctuary"
+
+	class = "sc_g"
+
+	planet = {
+		class = star
+		orbit_distance = 0
+	}
+
+	change_orbit = 45
+
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "NAME_Sanctuary_A"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "NAME_Sanctuary-B"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "NAME_Sanctuary-C"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "NAME_Sanctuary-D"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+	}
+
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "NAME_Sanctuary-E"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "NAME_Sanctuary-F"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "NAME_Sanctuary-G"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = { entity = pf_infested_ringworld_habitable_entity }
+		}
+	}
+
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "NAME_Sanctuary-H"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "NAME_Sanctuary-I"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+
+	planet = {
+		class = "pc_ringworld_habitable"
+		name = "NAME_Sanctuary-J"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+	}
+
+	planet = {
+		class = "pc_ringworld_tech"
+		name = "NAME_Sanctuary-K"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+
+	planet = {
+		class = "pc_ringworld_seam"
+		name = "NAME_Sanctuary-L"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+
+	change_orbit = 105
+
+	planet = {
+		count = { min = 1 max = 4 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 45
+
+	planet = {
+		class = pc_gas_giant
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 1 max = 4 }
+			size = { min = 8 max = 20 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 6
+		}
+	}
+
+	change_orbit = 30
+
+	planet = {
+		count = { min = 0 max = 2 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+	}
+}
