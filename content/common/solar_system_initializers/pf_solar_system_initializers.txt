@@ -903,7 +903,7 @@ pf_hive_stars_last_stand_initializer = {
 	}
 }
 
-
+# WIP, NOT USED ATM
 ### The Sanctuary
 pf_sanctuary_system = {
 	asteroid_belt = {
@@ -942,6 +942,10 @@ pf_sanctuary_system = {
 
 		init_effect = {
 			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = pf_infested_ringworld_habitable_entity
+				picture = pc_pf_infested_ringworld
+			}
 		}
 	}
 	planet = {
@@ -963,6 +967,14 @@ pf_sanctuary_system = {
 		orbit_distance = 0
 		deposit_blockers = none
 		modifiers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = pf_infested_ringworld_habitable_entity
+				picture = pc_pf_infested_ringworld
+			}
+		}
 	}
 
 	planet = {
@@ -989,7 +1001,10 @@ pf_sanctuary_system = {
 
 		init_effect = {
 			prevent_anomaly = yes
-			set_planet_entity = { entity = pf_infested_ringworld_habitable_entity }
+			set_planet_entity = {
+				entity = pf_infested_ringworld_habitable_entity
+				picture = pc_pf_infested_ringworld
+			}
 		}
 	}
 
@@ -1014,6 +1029,14 @@ pf_sanctuary_system = {
 		orbit_distance = 0
 		deposit_blockers = none
 		modifiers = none
+
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = pf_infested_ringworld_habitable_entity
+				picture = pc_pf_infested_ringworld
+			}
+		}
 	}
 
 	planet = {
