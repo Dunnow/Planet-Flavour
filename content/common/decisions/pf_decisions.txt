@@ -11,7 +11,10 @@ decision_pf_remove_prethoryn_biomass = {
 	}
 
     potential = {
-        has_modifier = pf_pm_infested_world
+        OR = {
+            has_modifier = pf_pm_infested_world
+            has_modifier = pf_pm_infested_ring
+        }
     }
 
     allow = {
@@ -19,7 +22,14 @@ decision_pf_remove_prethoryn_biomass = {
     }
 
     effect = {
-        remove_modifier = pf_pm_infested_world
+        if = {
+            limit = { has_modifier = pf_pm_infested_world }
+            remove_modifier = pf_pm_infested_world
+        }
+        if = {
+            limit = { has_modifier = pf_pm_infested_ring }
+            remove_modifier = pf_pm_infested_ring
+        }
     }
 
     ai_weight = {

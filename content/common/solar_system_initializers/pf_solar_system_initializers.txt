@@ -946,6 +946,7 @@ pf_sanctuary_system = {
 				entity = pf_infested_ringworld_habitable_entity
 				picture = pc_pf_infested_ringworld
 			}
+			add_modifier = { modifier = pf_pm_infested_ring }
 		}
 	}
 	planet = {
@@ -974,6 +975,7 @@ pf_sanctuary_system = {
 				entity = pf_infested_ringworld_habitable_entity
 				picture = pc_pf_infested_ringworld
 			}
+			add_modifier = { modifier = pf_pm_infested_ring }
 		}
 	}
 
@@ -1005,6 +1007,7 @@ pf_sanctuary_system = {
 				entity = pf_infested_ringworld_habitable_entity
 				picture = pc_pf_infested_ringworld
 			}
+			add_modifier = { modifier = pf_pm_infested_ring }
 		}
 	}
 
@@ -1036,6 +1039,7 @@ pf_sanctuary_system = {
 				entity = pf_infested_ringworld_habitable_entity
 				picture = pc_pf_infested_ringworld
 			}
+			add_modifier = { modifier = pf_pm_infested_ring }
 		}
 	}
 
