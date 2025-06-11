@@ -67,8 +67,7 @@ d_pf_imposing_canyon = {
 	potential = {
 		can_have_habitable_deposits = yes
 	}
-	# Disabled for now as the way to add new zones is extremely bad for compatibility.
-	#custom_tooltip = unlocks_zone_pf_psionic_fungi_all
+
 	planet_modifier = {
 		district_mining_max = 4
 		planet_miners_society_research_produces_add = 1
@@ -94,5 +93,53 @@ d_pf_imposing_canyon = {
 				}
 			}
 		}
+	}
+}
+
+d_pf_mysterious_monoliths = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_monument
+
+	planet_modifier = {
+		district_mining_max = 4
+		planet_miners_society_research_produces_add = 1
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_pf_flood_blocker = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_rotten_soil_blocker
+
+	planet_modifier = {
+		district_mining_max = 4
+		planet_miners_society_research_produces_add = 1
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_pf_ancient_crash_site_rw = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_ship_debris_blocker
+
+	planet_modifier = {
+		district_mining_max = 4
+		planet_miners_society_research_produces_add = 1
+	}
+
+	drop_weight = {
+		weight = 0
 	}
 }
