@@ -1,0 +1,10 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_zone_pf_psionic_fungi_materialist"
+		texturefile = "gfx/interface/icons/zones/zone_pf_psionic_fungus_science.dds"
+	}
+    spriteType = {
+		name = "GFX_zone_pf_psionic_fungi_spiritualist"
+		texturefile = "gfx/interface/icons/zones/zone_pf_psionic_fungus_unity.dds"
+	}
+}
