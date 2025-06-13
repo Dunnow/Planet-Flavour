@@ -15,7 +15,9 @@
 
   # Zones
   zone_pf_psionic_fungi_spiritualist: "Fungal Sanctuary"
+  zone_pf_psionic_fungi_spiritualist_desc: "Carefully curated groves and delicate architecture create an atmosphere of peace that resonates with the minds of all individuals."
   zone_pf_psionic_fungi_materialist: "Fungal Research Operations"
+  zone_pf_psionic_fungi_materialist_desc: "Focuses analysis and tissue sample cultivation enables deep insights into the nature of evolution and consciousness."
 
   # Planet Stuff
   NAME_pf_Zolqhast: "Zolqhast"

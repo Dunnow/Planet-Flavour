@@ -23,7 +23,11 @@ zone_pf_psionic_fungi_materialist = {
 
 	inline_script = {
 		script = jobs/zone_farmers_add
-		AMOUNT = @scaling_district_1_job
+		AMOUNT = @scaling_district_2_jobs
+	}
+	inline_script = {
+		script = jobs/zone_biologists_add
+		LARGE_AMOUNT = @scaling_district_2_jobs
 	}
 
 	zone_sets = {
