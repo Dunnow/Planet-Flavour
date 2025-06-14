@@ -2,6 +2,9 @@ zone_pf_psionic_fungi_materialist = {
 	icon = GFX_zone_pf_psionic_fungi_materialist
 	base_buildtime = @zone_buildtime
 
+	swap_type = district_pf_fungal_groves
+	swap_type_weight = 5
+
 	potential = { # planet scope
 		has_deposit = d_pf_psionic_fungi
 	}
@@ -52,6 +55,9 @@ zone_pf_psionic_fungi_materialist = {
 zone_pf_psionic_fungi_spiritualist = {
 	icon = GFX_zone_pf_psionic_fungi_spiritualist
 	base_buildtime = @zone_buildtime
+
+	swap_type = district_pf_fungal_sanctuaries
+	swap_type_weight = 5
 
 	potential = { # planet scope
 		has_deposit = d_pf_psionic_fungi

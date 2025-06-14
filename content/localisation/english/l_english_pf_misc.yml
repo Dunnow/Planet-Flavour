@@ -19,6 +19,15 @@
   zone_pf_psionic_fungi_materialist: "Fungal Research Operations"
   zone_pf_psionic_fungi_materialist_desc: "Focuses analysis and tissue sample cultivation enables deep insights into the nature of evolution and consciousness."
 
+  # Districts
+  district_pf_fungal_groves_plural: "Fungal Groves"
+  district_pf_fungal_groves: "Fungal Grove"
+  district_pf_fungal_groves_desc: "TODO"
+  
+  district_pf_fungal_groves_plural: "Fungal Groves"
+  district_pf_fungal_groves: "Fungal Grove"
+  district_pf_fungal_groves_desc: "TODO"
+
   # Planet Stuff
   NAME_pf_Zolqhast: "Zolqhast"
   NAME_pf_hive_star_nebula: "Kypellic Cloud"

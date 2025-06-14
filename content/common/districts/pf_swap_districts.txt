@@ -1,0 +1,50 @@
+district_pf_fungal_sanctuaries = {
+	is_capped_by_modifier = no
+	icon = district_pf_fungal_sanctuaries
+
+	zone_slots = {
+		slot_empty
+	}
+
+	show_on_uncolonized = {
+		always = no
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+district_pf_fungal_groves = {
+	is_capped_by_modifier = no
+	icon = district_pf_fungal_groves
+
+	zone_slots = {
+		slot_empty
+	}
+
+	show_on_uncolonized = {
+		always = no
+	}
+
+	potential = {
+		always = no
+	}
+}
+
+district_ring_world_fortress = {
+	is_capped_by_modifier = no
+	icon = district_arcology_fortress
+
+	zone_slots = {
+		slot_empty
+	}
+
+	show_on_uncolonized = {
+		always = no
+	}
+
+	potential = {
+		always = no
+	}
+}
