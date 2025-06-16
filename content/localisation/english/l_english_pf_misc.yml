@@ -22,11 +22,13 @@
   # Districts
   district_pf_fungal_groves_plural: "Fungal Groves"
   district_pf_fungal_groves: "Fungal Grove"
-  district_pf_fungal_groves_desc: "TODO"
+  district_pf_fungal_groves_desc: "Fields of carefully engineered orchards provide optimal growth and nourishment and ensure a steady supply of samples for study."
+  district_pf_fungal_groves_0: "Whispering Fields"
   
-  district_pf_fungal_groves_plural: "Fungal Groves"
-  district_pf_fungal_groves: "Fungal Grove"
-  district_pf_fungal_groves_desc: "TODO"
+  district_pf_fungal_sanctuaries_plural: "Fungal Sanctuaries"
+  district_pf_fungal_sanctuaries: "Fungal Sanctuary"
+  district_pf_fungal_sanctuaries_desc: "A complex of gardens, temples and retreats built around a rare grove of psionic-boosting fungal lifeforms."
+  district_pf_fungal_sanctuaries_0: "Temple Complexes"
 
   # Planet Stuff
   NAME_pf_Zolqhast: "Zolqhast"

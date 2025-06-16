@@ -38,9 +38,8 @@ zone_pf_psionic_fungi_materialist = {
 	}
 
 	included_building_sets = {
-		mining
-		betharian
-		automation
+		farming
+		society
 	}
 
 	planet_modifier = {
@@ -91,9 +90,8 @@ zone_pf_psionic_fungi_spiritualist = {
 	}
 
 	included_building_sets = {
-		mining
-		betharian
-		automation
+		farming
+		unity
 	}
 
 	planet_modifier = {
