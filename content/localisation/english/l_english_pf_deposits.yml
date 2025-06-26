@@ -11,3 +11,10 @@
   d_pf_exposed_ore_veins_desc: "To a sufficiently advanced environmental engineer, even the mountains themselves can be peeled away to expose their treasures."
   d_pf_organised_fields: "Organized Fields"
   d_pf_organised_fields_desc: "Endless rolling plains, fertile, irrigated and blessed by a carefully sculpted climate to be perfect for cultivation."
+
+  d_pf_environmental_enhancements_wet: "Environmental Enhancements"
+  d_pf_environmental_enhancements_wet_desc: "Advanced gene-cultivation techniques and soil revitalization efforts create patches of perfect unspoiled nature across this world."
+  d_pf_environmental_enhancements_dry: "Environmental Enhancements"
+  d_pf_environmental_enhancements_dry_desc: "Careful modification of local weather patterns and the seeding of gene-modified flora causes the arid badlands to bloom."
+  d_pf_environmental_enhancements_cold: "Environmental Enhancements"
+  d_pf_environmental_enhancements_cold_desc: "Deliberate sculpting of hydrology and geology produce an oasis of plant and animal life among the harsh cold of this [pf_planet_type]."

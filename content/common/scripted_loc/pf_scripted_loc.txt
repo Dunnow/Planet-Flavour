@@ -1,0 +1,30 @@
+# Planet Scope
+defined_text = {
+	name = pf_planet_type
+    random = no
+	text = {
+		trigger = { is_moon = yes }
+		localization_key = pf_moon_name
+	}
+	text = {
+		trigger = { is_ringworld = yes }
+		localization_key = pf_ring_name
+	}
+	text = {
+		trigger = { is_artificial = yes }
+		localization_key = pf_station_name
+	}
+	text = {
+		trigger = { is_asteroid = yes }
+		localization_key = pf_asteroid_name
+	}
+	text = {
+		trigger = { is_star = yes }
+		localization_key = pf_star_name
+	}
+	text = {
+		trigger = { is_planet_class = pc_gas_giant }
+		localization_key = pf_gas_giant_name
+	}
+    default = pf_planet_name
+}

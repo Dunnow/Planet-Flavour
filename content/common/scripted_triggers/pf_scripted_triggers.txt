@@ -1,5 +1,5 @@
 pf_is_valid_planet_for_extraplanetary_life = {
-    is_colonizable = yes
+    pf_is_habitable_planet = yes
     is_artificial = no
     is_colony = no
 
@@ -13,7 +13,7 @@ pf_is_valid_planet_for_extraplanetary_life = {
 }
 
 pf_is_world_with_ecosystems = {
-    is_colonizable = yes
+    pf_is_habitable_planet = yes
     is_artificial = no
 
     NOR = {
@@ -25,4 +25,9 @@ pf_is_world_with_ecosystems = {
     }
 }
 
-pf_
+pf_is_habitable_planet = {
+    OR = {
+        is_colonizable = yes
+        is_colony = yes
+    }
+}

@@ -447,3 +447,54 @@ event = {
         }
     }
 }
+
+
+# Swap micro terraforming environmental enhancement deposits
+planet_event = {
+    id = pf_core.50
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        OR = {
+            has_deposit = d_pf_environmental_enhancements_dry
+            has_deposit = d_pf_environmental_enhancements_wet
+            has_deposit = d_pf_environmental_enhancements_cold
+        }
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                pf_is_world_with_ecosystems = yes
+                is_dry = yes
+            }
+            remove_deposit = d_pf_environmental_enhancements_wet
+            remove_deposit = d_pf_environmental_enhancements_cold
+
+            add_deposit = d_pf_environmental_enhancements_dry
+        }
+
+        if = {
+            limit = {
+                pf_is_world_with_ecosystems = yes
+                is_wet = yes
+            }
+            remove_deposit = d_pf_environmental_enhancements_dry
+            remove_deposit = d_pf_environmental_enhancements_cold
+
+            add_deposit = d_pf_environmental_enhancements_wet
+        }
+
+        if = {
+            limit = {
+                pf_is_world_with_ecosystems = yes
+                is_cold = yes
+            }
+            remove_deposit = d_pf_environmental_enhancements_dry
+            remove_deposit = d_pf_environmental_enhancements_wet
+
+            add_deposit = d_pf_environmental_enhancements_cold
+        }
+    }
+}

@@ -44,3 +44,12 @@
 
   decision_pf_clear_impenetrable_jungles: "Clear Impenetrable Jungles"
   decision_pf_clear_impenetrable_jungles_desc: "A campaign of defoliation and cutbacks to render the land usable and open to development."
+
+  # Scripted Loc
+  pf_planet_name: "planet"
+  pf_moon_name: "moon"
+  pf_station_name: "station"
+  pf_ring_name: "ring"
+  pf_asteroid_name: "asteroid"
+  pf_star_name: "star"
+  pf_gas_giant_name: "gas giant"
