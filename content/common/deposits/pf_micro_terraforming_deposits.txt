@@ -55,3 +55,59 @@ d_pf_organised_fields = {
 	}
 }
 
+d_pf_environmental_enhancements_wet = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_lush_jungle
+
+	potential = {
+		always = no
+	}
+
+	planet_modifier = {
+		pop_environment_tolerance = 0.1
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_pf_environmental_enhancements_dry = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_alien_wildlife
+
+	potential = {
+		always = no
+	}
+
+	planet_modifier = {
+		pop_environment_tolerance = 0.1
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_pf_environmental_enhancements_cold = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_forgiving_tundra
+
+	potential = {
+		always = no
+	}
+
+	planet_modifier = {
+		pop_environment_tolerance = 0.1
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
