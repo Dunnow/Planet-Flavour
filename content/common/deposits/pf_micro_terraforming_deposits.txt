@@ -1,0 +1,57 @@
+d_pf_geothermal_taps = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_geothermal_vent
+
+	potential = {
+		always = no
+	}
+
+	planet_modifier = {
+		district_generator_max = 4
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_pf_exposed_ore_veins = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_prospectorium_strip_mine
+
+	potential = {
+		always = no
+	}
+
+	planet_modifier = {
+		district_mining_max = 4
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_pf_organised_fields = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_bountiful_plains
+
+	potential = {
+		always = no
+	}
+
+	planet_modifier = {
+		district_farming_max = 4
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
