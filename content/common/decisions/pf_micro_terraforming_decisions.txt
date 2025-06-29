@@ -1,0 +1,45 @@
+decision_pf_climate_enhancements = {
+    owned_planets_only = yes
+    icon = decision_satellite_in_orbit
+
+    enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			energy = 4000
+		}
+	}
+
+    potential = {
+        owner = { has_technology = tech_pf_micro_terraforming}
+        pf_is_world_with_ecosystems = yes
+        NOR = {
+            has_deposit = d_pf_environmental_enhancements_dry
+            has_deposit = d_pf_environmental_enhancements_wet
+            has_deposit = d_pf_environmental_enhancements_cold
+        }
+    }
+
+    allow = {
+        always = yes
+    }
+
+    effect = {
+        if = {
+            limit = { is_dry = yes }
+            add_deposit = d_pf_environmental_enhancements_dry
+        }
+        else_if = {
+            limit = { is_wet = yes }
+            add_deposit = d_pf_environmental_enhancements_wet
+        }
+        else_if = {
+            limit = { is_cold = yes }
+            add_deposit = d_pf_environmental_enhancements_cold
+        }
+    }
+
+    ai_weight = {
+        base = 100
+    }
+}

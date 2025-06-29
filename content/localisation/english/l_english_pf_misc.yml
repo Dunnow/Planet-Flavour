@@ -45,6 +45,15 @@
   decision_pf_clear_impenetrable_jungles: "Clear Impenetrable Jungles"
   decision_pf_clear_impenetrable_jungles_desc: "A campaign of defoliation and cutbacks to render the land usable and open to development."
 
+  decision_pf_climate_enhancements: "Develop Climate Enhancements"
+  decision_pf_climate_enhancements_desc: "With the careful application of gene-engineering, orbital climate control satellites and terrain resculpting, we can turn barren and undesirable regions of this [pf_planet_type] into fertile habitats for new life."
+
+  # Technology
+  tech_pf_micro_terraforming: "Micro-Terraforming Techniques"
+  tech_pf_micro_terraforming_desc: "Small, localized terraforming projects enable engineers to make specific alterations to the environment, allowing us to create specialised ecosystems on our worlds"
+  pf_terraforming_decisions:0 "§HUnlock Feature:§! Specialized Terraforming Decisions"
+  pf_terraforming_decisions_desc:0 "§H$tech_pf_micro_terraforming$§!\nUnlocks decisions to specialize a planet's environment."
+
   # Scripted Loc
   pf_planet_name: "planet"
   pf_moon_name: "moon"
