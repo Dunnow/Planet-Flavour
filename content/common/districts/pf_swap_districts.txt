@@ -1,0 +1,42 @@
+district_pf_fungal_sanctuaries = {
+	is_capped_by_modifier = no
+	icon = district_pf_fungal_sanctuaries
+
+	zone_slots = {
+		slot_empty
+	}
+
+	show_on_uncolonized = {
+		always = no
+	}
+
+	potential = {
+		always = no
+	}
+
+	triggered_name = {
+		text = district_pf_fungal_sanctuaries_0
+	}
+
+}
+
+district_pf_fungal_groves = {
+	is_capped_by_modifier = no
+	icon = district_pf_fungal_groves
+
+	zone_slots = {
+		slot_empty
+	}
+
+	show_on_uncolonized = {
+		always = no
+	}
+
+	potential = {
+		always = no
+	}
+
+	triggered_name = {
+		text = district_pf_fungal_groves_0
+	}
+}

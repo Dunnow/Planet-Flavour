@@ -354,3 +354,12 @@ pf_pm_fertile_silts = {
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_river.dds"
 	icon_frame = 1
 }
+
+pf_pm_psionic_gaia_world = {
+	pop_happiness = 0.1
+	planet_jobs_unity_produces_mult = 0.1
+	psionic_pop_bonus_workforce_mult = 0.1
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_shroud_storm.dds"
+	icon_frame = 1
+}

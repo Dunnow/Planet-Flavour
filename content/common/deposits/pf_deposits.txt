@@ -1,0 +1,98 @@
+@high = 16
+@med = 8
+@low = 4
+
+@high_rare = 0.5
+@mid_rare = 0.25
+@low_rare = 0.1
+
+@planet_type_bonus = 1.5
+
+d_pf_psionic_fungi = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_fungal_forest
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	
+	custom_tooltip = unlocks_zone_pf_psionic_fungi_all
+	planet_modifier = {
+		psionic_pop_bonus_workforce_mult = 0.1
+		district_farming_max = 4
+	}
+
+	drop_weight = {
+		weight = @mid_rare
+		modifier = {
+			factor = 2
+			is_planet_class = pc_gaia
+		}
+		modifier = {
+			factor = 500
+			has_modifier = pf_pm_psionic_gaia_world
+		}
+		modifier = {
+			factor = 2
+			has_modifier = living_sea
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				NOT = { is_planet_class = pc_gaia}
+				is_wet = no
+			}
+		}
+		modifier = {
+			factor = 0
+			solar_system = {
+				OR = {
+					has_star_flag = empire_home_system
+					has_star_flag = sol_system
+					has_star_flag = deneb_system
+				}
+			}
+		}
+	}
+}
+
+d_pf_imposing_canyon = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_pf_grand_canyon
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+	# Disabled for now as the way to add new zones is extremely bad for compatibility.
+	#custom_tooltip = unlocks_zone_pf_psionic_fungi_all
+	planet_modifier = {
+		district_mining_max = 4
+		planet_miners_society_research_produces_add = 1
+	}
+
+	drop_weight = {
+		weight = 0
+		modifier = {
+			add = @high_rare
+			is_dry = yes
+		}
+		modifier = {
+			factor = 3
+			has_modifier = pf_pm_canyon_world
+		}
+		modifier = {
+			factor = 0
+			solar_system = {
+				OR = {
+					has_star_flag = empire_home_system
+					has_star_flag = sol_system
+					has_star_flag = deneb_system
+				}
+			}
+		}
+	}
+}

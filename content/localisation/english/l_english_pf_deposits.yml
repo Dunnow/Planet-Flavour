@@ -1,0 +1,20 @@
+﻿l_english:
+  d_pf_psionic_fungi: "Psionic Fungi"
+  d_pf_psionic_fungi_desc: "A grove of psionically active fungal lifeforms. Their proximity promotes feelings of communality and oneness."
+  d_pf_imposing_canyon: "Imposing Canyon"
+  d_pf_imposing_canyon_desc: "A massive fissure in the earth, carved by ancient riverways. Its tall rocky sides reveal eons of natural history and valuable resources."
+
+  # Micro Terraforming
+  d_pf_geothermal_taps: "Geothermal Taps"
+  d_pf_geothermal_taps_desc: "The application of tactical terraforming to targeted locations can expose valuable energies of the deep core for harvest."
+  d_pf_exposed_ore_veins: "Exposed Ore Veins"
+  d_pf_exposed_ore_veins_desc: "To a sufficiently advanced environmental engineer, even the mountains themselves can be peeled away to expose their treasures."
+  d_pf_organised_fields: "Organized Fields"
+  d_pf_organised_fields_desc: "Endless rolling plains, fertile, irrigated and blessed by a carefully sculpted climate to be perfect for cultivation."
+
+  d_pf_environmental_enhancements_wet: "Environmental Enhancements"
+  d_pf_environmental_enhancements_wet_desc: "Advanced gene-cultivation techniques and soil revitalization efforts create patches of perfect unspoiled nature across this world."
+  d_pf_environmental_enhancements_dry: "Environmental Enhancements"
+  d_pf_environmental_enhancements_dry_desc: "Careful modification of local weather patterns and the seeding of gene-modified flora causes the arid badlands to bloom."
+  d_pf_environmental_enhancements_cold: "Environmental Enhancements"
+  d_pf_environmental_enhancements_cold_desc: "Deliberate sculpting of hydrology and geology produce an oasis of plant and animal life among the harsh cold of this [pf_planet_type]."

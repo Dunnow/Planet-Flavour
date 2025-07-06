@@ -145,6 +145,10 @@ pf_pm_severe_droughts = {
 			factor = 0
 			has_planet_modifier = "pf_pm_severe_droughts"
 		}
+		modifier = {
+			factor = 0
+			has_modifier = "metal_planet"
+		}
 
 		modifier = {
 			factor = 0
@@ -539,7 +543,7 @@ pf_pm_subterranean_cave_systems = {
 
 pf_pm_dim_world = {
 	spawn_chance = {
-		# More distance worlds are more likely to get this
+		# More distant worlds are more likely to get this
 
 		modifier = {
 			add = 5
@@ -849,6 +853,10 @@ pf_pm_canyon_world = {
 			factor = 0
 			has_planet_modifier = "pf_pm_canyon_world"
 		}
+		modifier = {
+			factor = 0
+			has_modifier = "metal_planet"
+		}
 
 		modifier = {
 			factor = 0
@@ -989,6 +997,10 @@ pf_pm_chirping_plains = {
 			factor = 0
 			has_planet_modifier = "pf_pm_chirping_plains"
 		}
+		modifier = {
+			factor = 0
+			has_modifier = "metal_planet"
+		}
 
 		modifier = {
 			factor = 0
@@ -1011,21 +1023,25 @@ pf_pm_bone_world= {
 		}
 
 		modifier = {
-			add = 30
+			add = 20
 			is_planet_class = "pc_desert"
 		}
 		modifier = {
-			add = 30
+			add = 20
 			is_planet_class = "pc_savannah"
 		}
 		modifier = {
-			add = 30
+			add = 20
 			is_planet_class = "pc_arid"
 		}
 
 		modifier = {
 			factor = 0
 			has_planet_modifier = "pf_pm_bone_world"
+		}
+		modifier = {
+			factor = 0
+			has_modifier = "metal_planet"
 		}
 
 		modifier = {
@@ -1228,6 +1244,10 @@ pf_pm_harsh = {
 			factor = 0
 			has_planet_modifier = "pm_rich_mircoflora"
 		}
+		modifier = {
+			factor = 0
+			has_modifier = "metal_planet"
+		}
 
 		modifier = {
 			factor = 0
@@ -1377,6 +1397,10 @@ pf_pm_equatorial_deserts = {
 			factor = 0
 			has_planet_modifier = "pf_pm_equatorial_deserts"
 		}
+		modifier = {
+			factor = 0
+			has_modifier = "metal_planet"
+		}
 
 		modifier = {
 			factor = 0
@@ -1491,6 +1515,10 @@ pf_pm_wild_sandstorms = {
 			factor = 0
 			has_planet_modifier = "pf_pm_wild_sandstorms"
 		}
+		modifier = {
+			factor = 0
+			has_modifier = "metal_planet"
+		}
 
 		modifier = {
 			factor = 0
@@ -1520,6 +1548,10 @@ pf_pm_saline_seas = {
 		modifier = {
 			factor = 0
 			has_planet_modifier = "pf_pm_dry_world"
+		}
+		modifier = {
+			factor = 0
+			has_modifier = "metal_planet"
 		}
 
 		modifier = {
@@ -1600,6 +1632,10 @@ pf_pm_harsh_badlands = {
 			factor = 0
 			has_planet_modifier = "pf_pm_harsh_badlands"
 		}
+		modifier = {
+			factor = 0
+			has_modifier = "metal_planet"
+		}
 
 		modifier = {
 			factor = 0
@@ -1634,6 +1670,10 @@ pf_pm_verdant_oases = {
 			factor = 0
 			has_planet_modifier = "pf_pm_verdant_oases"
 		}
+		modifier = {
+			factor = 0
+			has_modifier = "metal_planet"
+		}
 
 		modifier = {
 			factor = 0
@@ -1667,6 +1707,11 @@ pf_pm_flash_floods = {
 
 		modifier = {
 			factor = 0
+			has_modifier = "metal_planet"
+		}
+
+		modifier = {
+			factor = 0
 			num_modifiers > 1
 		}
 	}
@@ -1693,6 +1738,11 @@ pf_pm_fertile_silts = {
 		modifier = {
 			factor = 0
 			has_planet_modifier = "pf_pm_fertile_silts"
+		}
+
+		modifier = {
+			factor = 0
+			has_modifier = "metal_planet"
 		}
 
 		modifier = {
