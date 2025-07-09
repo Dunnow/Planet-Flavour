@@ -138,7 +138,7 @@ planet_event = {
 			}
 			random_list = {
 				1 = { planet_event = { id = pf_content.111 }}
-				#2 = {}
+				1 = {}
 			}
 		}
     }
