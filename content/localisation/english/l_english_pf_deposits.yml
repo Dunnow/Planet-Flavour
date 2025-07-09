@@ -21,3 +21,6 @@
   d_pf_environmental_enhancements_dry_desc: "Careful modification of local weather patterns and the seeding of gene-modified flora causes the arid badlands to bloom."
   d_pf_environmental_enhancements_cold: "Environmental Enhancements"
   d_pf_environmental_enhancements_cold_desc: "Deliberate sculpting of hydrology and geology produce an oasis of plant and animal life among the harsh cold of this [pf_planet_type]."
+
+  d_pf_geothermic_extraction_sites: "Geothermic Extraction Sites"
+  d_pf_geothermic_extraction_sites_desc: "The active tectonics of this world provide a rich source of energy for our workers."

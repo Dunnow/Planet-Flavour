@@ -57,3 +57,11 @@ on_survey_planet = {
         pf_core.107                     # Add deposits for alloy modifiers
     }
 }
+
+# A planet has been colonized.
+# Scope = Planet
+on_colonized = {
+    events = {
+        pf_content.110      # Geothermal taps dice roll event
+    }
+}

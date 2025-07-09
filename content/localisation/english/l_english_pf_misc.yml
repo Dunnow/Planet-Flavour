@@ -93,6 +93,9 @@
   decision_pf_terraform_food: "Terraforming: Agricultural Enhancements"
   decision_pf_terraform_food_desc: "By rebuilding the hydrosphere and biosphere from the ground up, a region of barren, unproductive land can be transformed into lush and fertile farmland."
 
+  decision_pf_geothermic_extraction: "Construct Geothermic Extraction Sites"
+  decision_pf_geothermic_extraction_desc: "With some targeted investments and tactical terraforming efforts, we could harness the substantial tectonic forces of this world and unlock the potential energy beneath the surface"
+
   # Technology
   tech_pf_micro_terraforming: "Micro-Terraforming Techniques"
   tech_pf_micro_terraforming_desc: "Small, localized terraforming projects enable engineers to make specific alterations to the environment, allowing us to create specialised ecosystems on our worlds"

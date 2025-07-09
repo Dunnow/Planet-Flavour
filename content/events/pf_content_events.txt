@@ -126,6 +126,52 @@ ship_event = {
 	}
 }
 
+planet_event = {
+    id = pf_content.110
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+		if = {
+			limit = {
+				has_modifier = unstable_tectonics
+			}
+			random_list = {
+				1 = { planet_event = { id = pf_content.111 }}
+				#2 = {}
+			}
+		}
+    }
+}
+
+planet_event = {
+	id = pf_content.111
+	title = pf_content.111.name
+	desc = pf_content.111.desc
+	picture  = GFX_evt_mining_operations
+	location = this
+    is_triggered_only = yes
+
+	option = {
+		name = pf_content.111.a
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value > 2000
+				}
+			}
+		}
+		add_deposit = d_pf_geothermic_extraction_sites
+	}
+	option = {
+		name = pf_content.111.b
+		hidden_effect = {
+			set_planet_flag = pf_geothermic_extraction_decision_allowed
+		}
+	}
+}
+
 ship_event = {
 	id = pf_content.200
 	title = pf_content.200.name
