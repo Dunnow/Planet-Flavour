@@ -172,6 +172,133 @@ planet_event = {
 	}
 }
 
+
+
+# Initial Roll for Static Sandstorm modifiers
+planet_event = {
+	id = pf_content.120
+    hide_window = yes
+    is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					is_planet_class = pc_desert
+					is_planet_class = pc_arid
+					is_planet_class = pc_savannah
+				}
+			}
+			random_list = {
+				30 = {}
+				1 = {
+					planet_event = { id = pf_content.121 }
+					modifier = {
+						mult = 2
+						is_planet_class = pc_arid
+					}
+					modifier = {
+						mult = 3
+						is_planet_class = pc_desert
+					}
+					# Make it a bit kinder for desert dwelling empires
+					modifier = {
+						mult = 0.75
+						is_ideal_planet_class = {
+							who = owner
+							status = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# Engine event for static sandstorm world modifiers
+planet_event = {
+	id = pf_content.121
+    hide_window = yes
+    is_triggered_only = yes
+
+	immediate = {
+		if = {
+			# Lets us stop the random event silently when flag is cleared
+			limit = { NOT = { has_planet_flag =  pf_removed_static_sandstorm_world } }
+			set_planet_flag = pf_static_sandstorm_world
+			random_list = {
+				50 = { }
+				50 = { planet_event = { id = pf_content.122 }}
+			}
+			# Queue up the next dice roll
+			planet_event = { id = pf_content.121 years = 10 }
+		}
+	}
+}
+
+planet_event = {
+	id = pf_content.122
+	title = pf_content.122.name
+	desc = pf_content.122.desc
+	picture  = GFX_evt_storm_formation
+	location = this
+    is_triggered_only = yes
+
+	option = {
+		name = pf_content.122.a
+		random_list = {
+			1 = { add_modifier = { modifier = pf_pm_harsh_static_storms years = 5 } }
+			3 = { add_modifier = { modifier = pf_pm_static_storms years = 5 } }
+			2 = { add_modifier = { modifier = pf_pm_mild_static_storms years = 5 } }
+		}
+	}
+}
+
+# Check for sandstorm planet and remove effects if planet class has changed
+planet_event = {
+    id = pf_content.123
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+		if = {
+			limit = { has_planet_flag = pf_static_sandstorm_world }
+			planet_event = { id = pf_content.124 }
+		}
+    }
+}
+
+# Planet class has changed so we remove all the sandstorm nonsense.
+planet_event = {
+	id = pf_content.124
+	title = pf_content.124.name
+	desc = pf_content.124.desc
+	picture  = GFX_evt_pf_planet_space
+	location = this
+    is_triggered_only = yes
+
+	immediate = {
+		set_planet_flag = pf_removed_static_sandstorm_world
+		remove_planet_flag = pf_static_sandstorm_world
+	}
+
+	option = {
+		name = pf_content.124.a
+		if = {
+			limit = { has_modifier = pf_pm_harsh_static_storms }
+			remove_modifier = pf_pm_harsh_static_storms
+		}
+		if = {
+			limit = { has_modifier = pf_pm_static_storms }
+			remove_modifier = pf_pm_static_storms
+		}
+		if = {
+			limit = { has_modifier = pf_pm_mild_static_storms }
+			remove_modifier = pf_pm_mild_static_storms
+		}
+	}
+}
+
 ship_event = {
 	id = pf_content.200
 	title = pf_content.200.name

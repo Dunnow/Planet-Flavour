@@ -363,3 +363,30 @@ pf_pm_psionic_gaia_world = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_shroud_storm.dds"
 	icon_frame = 1
 }
+
+pf_pm_harsh_static_storms = {
+	planet_jobs_physics_research_produces_mult = -0.30
+	planet_pops_robotics_upkeep_mult = 0.30
+	pop_environment_tolerance = -0.15
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_strange_sandstorm.dds"
+	icon_frame = 3
+}
+
+pf_pm_static_storms = {
+	planet_jobs_physics_research_produces_mult = -0.20
+	planet_pops_robotics_upkeep_mult = 0.20
+	pop_environment_tolerance = -0.1
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_strange_sandstorm.dds"
+	icon_frame = 3
+}
+
+pf_pm_mild_static_storms = {
+	planet_jobs_physics_research_produces_mult = -0.1
+	planet_pops_robotics_upkeep_mult = 0.1
+	pop_environment_tolerance = -0.05
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_strange_sandstorm.dds"
+	icon_frame = 3
+}

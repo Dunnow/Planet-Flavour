@@ -90,6 +90,12 @@
   pf_pm_flash_floods_desc: "Periodic rainfall surges typically result in sudden flooding of the water bodies of this world."
   pf_pm_fertile_silts: "Fertile Silts"
   pf_pm_fertile_silts_desc: "Regular and stable cycles of flood and erosion have deposited abundant nutrients into the fertile soils that border this world's rivers."
+  pf_pm_static_storms: "Static Storms"
+  pf_pm_static_storms_desc: "Ferocious sandstorms across this planet stir up enormous electrical interference. Economic activities across the planet are affected, with computing and robotics particularly hard hit."
+  pf_pm_harsh_static_storms: "Harsh Static Storms"
+  pf_pm_harsh_static_storms_desc: "$pf_pm_static_storms_desc$"
+  pf_pm_mild_static_storms: "Mild Static Storms"
+  pf_pm_mild_static_storms_desc: "$pf_pm_static_storms_desc$"
 
   # Tomb World Modifiers
   pf_pm_glassed_world: "Glassed World"

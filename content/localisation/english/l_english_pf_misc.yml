@@ -96,6 +96,10 @@
   decision_pf_geothermic_extraction: "Construct Geothermic Extraction Sites"
   decision_pf_geothermic_extraction_desc: "With some targeted investments and tactical terraforming efforts, we could harness the substantial tectonic forces of this world and unlock the potential energy beneath the surface"
 
+  decision_pf_sandstorm_mitigation: "Conduct Sandstorm Mitigation"
+  decision_pf_sandstorm_mitigation_desc: "The major dust storms that wrack this world are the result of many interesting environmental factors. By carefully tweaking a few aspects of the climate and geology around the worst hotspots, we can prevent storms of a serious magnitude from forming at all."
+  pf_sandstorm_mitigation_tt: "§YPrevents any further Static Storms.§!"
+
   # Technology
   tech_pf_micro_terraforming: "Micro-Terraforming Techniques"
   tech_pf_micro_terraforming_desc: "Small, localized terraforming projects enable engineers to make specific alterations to the environment, allowing us to create specialised ecosystems on our worlds"
