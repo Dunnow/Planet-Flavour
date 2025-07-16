@@ -112,3 +112,25 @@
   # Special Modifiers
   pf_pm_psionic_gaia_world: "Psionic World"
   pf_pm_psionic_gaia_world_desc: "Life on this planet is interconnected, sharing a deep telepathic link with the environment around it."
+
+  # Luxury Modifiers
+  pf_pm_rare_wood_homeworld: "Exotic Hardwoods: Homeworld"
+  pf_pm_rare_wood_homeworld_desc: ""
+  pf_pm_iridescent_pearls_homeworld: "Iridescent Pearls: Homeworld"
+  pf_pm_iridescent_pearls_homeworld_desc: ""
+  pf_pm_sea_ferns_homeworld: "Mellifluous Sea Ferns: Homeworld"
+  pf_pm_sea_ferns_homeworld_desc: ""
+
+  pf_pm_rare_spices_homeworld: "Sundust Spices: Homeworld"
+  pf_pm_rare_spices_homeworld_desc: ""
+  pf_pm_desert_silks_homeworld: "Desert Silks: Homeworld"
+  pf_pm_desert_silks_homeworld_desc: ""
+  pf_pm_amberfruit_homeworld: "Amberfruit: Homeworld"
+  pf_pm_amberfruit_homeworld_desc: ""
+
+  pf_pm_mountain_flowers_homeworld: "Ice Flowers: Homeworld"
+  pf_pm_mountain_flowers_homeworld_desc: ""
+  pf_pm_fungal_caves_homeworld: ""
+  pf_pm_fungal_caves_homeworld_desc: ""
+  pf_pm_marsh_roots_homeworld: "Fragrant Marsh Roots: Homeworld"
+  pf_pm_marsh_roots_homeworld_desc: ""
