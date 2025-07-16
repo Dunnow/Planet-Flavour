@@ -8,6 +8,7 @@ on_game_start = {
         pf_core.40     # Apply tomb world modifiers
         pf_core.43     # Apply nuclear winter to old foes system
         pf_misc.110    # Roll to spawn Hive Stars
+        pf_core.200    # Distribute luxury homeworlds
     }
 }
 

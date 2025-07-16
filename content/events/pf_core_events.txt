@@ -498,3 +498,63 @@ planet_event = {
         }
     }
 }
+
+# Rare Resource distribution event
+event = {
+	id = pf_core.200
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        # Wet
+        inline_script = {
+            script = planet_flavour/pf_rare_resource_homeworld_spawn
+            MODIFIER = pf_pm_rare_wood_homeworld
+            PLANET_CLASS = pc_tropical
+        }
+        inline_script = {
+            script = planet_flavour/pf_rare_resource_homeworld_spawn
+            MODIFIER = pf_pm_iridescent_pearls_homeworld
+            PLANET_CLASS = pc_ocean
+        }
+        inline_script = {
+            script = planet_flavour/pf_rare_resource_homeworld_spawn
+            MODIFIER = pf_pm_sea_ferns_homeworld
+            PLANET_CLASS = pc_continental
+        }
+
+        # Dry
+        inline_script = {
+            script = planet_flavour/pf_rare_resource_homeworld_spawn
+            MODIFIER = pf_pm_desert_silks_homeworld
+            PLANET_CLASS = pc_desert
+        }
+        inline_script = {
+            script = planet_flavour/pf_rare_resource_homeworld_spawn
+            MODIFIER = pf_pm_rare_spices_homeworld
+            PLANET_CLASS = pc_arid
+        }
+        inline_script = {
+            script = planet_flavour/pf_rare_resource_homeworld_spawn
+            MODIFIER = pf_pm_amberfruit_homeworld
+            PLANET_CLASS = pc_savannah
+        }
+
+        # Cold
+        inline_script = {
+            script = planet_flavour/pf_rare_resource_homeworld_spawn
+            MODIFIER = pf_pm_mountain_flowers_homeworld
+            PLANET_CLASS = pc_alpine
+        }
+        inline_script = {
+            script = planet_flavour/pf_rare_resource_homeworld_spawn
+            MODIFIER = pf_pm_fungal_caves_homeworld
+            PLANET_CLASS = pc_arctic
+        }
+        inline_script = {
+            script = planet_flavour/pf_rare_resource_homeworld_spawn
+            MODIFIER = pf_pm_marsh_roots_homeworld
+            PLANET_CLASS = pc_tundra
+        }
+    }
+}

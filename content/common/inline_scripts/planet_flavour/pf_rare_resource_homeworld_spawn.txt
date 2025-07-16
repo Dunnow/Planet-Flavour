@@ -1,0 +1,9 @@
+random_galaxy_planet = {
+    limit = {
+        is_colony = no
+        NOT = { exists = owner }
+        is_planet_class = $PLANET_CLASS$
+    }
+    add_modifier = { modifier = $MODIFIER$ }
+    set_planet_flag = $MODIFIER$
+}
