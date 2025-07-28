@@ -14,6 +14,7 @@ switch = {
                     }
                     add_modifier = { modifier = $MODIFIER$ }
                     set_planet_flag = $MODIFIER$
+                    set_planet_flag = pf_luxury_resource_homeworld
                 }
             }
         }
@@ -32,6 +33,7 @@ switch = {
                     }
                     add_modifier = { modifier = $MODIFIER$ }
                     set_planet_flag = $MODIFIER$
+                    set_planet_flag = pf_luxury_resource_homeworld
                 }
             }
         }
@@ -50,6 +52,7 @@ switch = {
                     }
                     add_modifier = { modifier = $MODIFIER$ }
                     set_planet_flag = $MODIFIER$
+                    set_planet_flag = pf_luxury_resource_homeworld
                 }
             }
         }
@@ -68,6 +71,7 @@ switch = {
                     }
                     add_modifier = { modifier = $MODIFIER$ }
                     set_planet_flag = $MODIFIER$
+                    set_planet_flag = pf_luxury_resource_homeworld
                 }
             }
         }
@@ -83,6 +87,7 @@ switch = {
             }
             add_modifier = { modifier = $MODIFIER$ }
             set_planet_flag = $MODIFIER$
+            set_planet_flag = pf_luxury_resource_homeworld
         }
     }
 
@@ -96,6 +101,7 @@ switch = {
             }
             add_modifier = { modifier = $MODIFIER$ }
             set_planet_flag = $MODIFIER$
+            set_planet_flag = pf_luxury_resource_homeworld
         }
     }
 }
