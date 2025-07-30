@@ -867,6 +867,9 @@ pf_hive_stars_last_stand_initializer = {
 			add_modifier = { modifier = pf_pm_infested_world }
 			add_blocker = { type = d_pf_biomass_infestation }
 			set_planet_flag = pf_hive_stars_infested_relic_world
+			set_planet_entity = {
+				entity = planet_flavour_infested_relic_planet_entity
+			}
 		}
 	}
 
