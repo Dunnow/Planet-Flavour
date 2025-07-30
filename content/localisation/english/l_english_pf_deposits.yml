@@ -5,7 +5,7 @@
   d_pf_imposing_canyon_desc: "A massive fissure in the earth, carved by ancient riverways. Its tall rocky sides reveal eons of natural history and valuable resources."
   d_pf_biomass_infestation: "Biomass Infestation"
   d_pf_biomass_infestation_desc: "Entire regions of this planet are buried beneath thick stinking layers of alien biomass."
-  pf_has_not_cleared_infested_world: "$TRIGGER_FAIL$§RThis blocker will not be removeable as long as the §Y$pf_pm_infested_world$§! modifier is present.§!"
+  pf_has_not_cleared_infested_world: "$TRIGGER_FAIL$§RThis blocker will not be removable as long as the §Y$pf_pm_infested_world$§! modifier is present.§!"
 
   # Micro Terraforming
   d_pf_geothermal_taps: "Geothermal Taps"
