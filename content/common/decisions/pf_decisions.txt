@@ -20,6 +20,16 @@ decision_pf_remove_prethoryn_biomass = {
 
     effect = {
         remove_modifier = pf_pm_infested_world
+        hidden_effect = {
+            if = {
+                limit = {
+                    is_planet_class = pc_relic # Assume it still has the old entity
+                }
+                set_planet_entity = {
+                    entity = relic_world_01_entity
+                }
+            }
+        }
     }
 
     ai_weight = {

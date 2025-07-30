@@ -117,3 +117,39 @@ entity = {
 	}
 
 }
+
+entity = {
+	name = "planet_flavour_infested_relic_planet_entity"
+	pdxmesh = "planet_clouded_mesh"
+
+	#planet surface texture override
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "pf_relic_world_infested_diffuse.dds"
+		texture_normal = "relic_world_01_normal.dds"
+		texture_specular = "relic_world_01_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "nuked_clouds_medium_diffuse.dds"
+		texture_normal = "nuked_clouds_medium_normal.dds"
+		texture_specular = "nuked_clouds_medium_specular.dds"
+	}
+
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "clouds_medium_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+
+}
