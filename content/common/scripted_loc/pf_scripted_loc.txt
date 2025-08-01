@@ -78,3 +78,50 @@ defined_text = {
 	}
     default = pf_generic_surface
 }
+
+# Planet Scope
+defined_text = {
+	name = pf_luxury_resource
+    random = no
+
+	text = {
+		trigger = { pf_is_rare_wood_world = yes }
+		localization_key = pf_rare_wood_resource
+	}
+	text = {
+		trigger = { pf_is_iridescent_pearls_world = yes }
+		localization_key = pf_iridescent_pearls_resource
+	}
+	text = {
+		trigger = { pf_is_sea_ferns_world = yes }
+		localization_key = pf_sea_ferns_resource
+	}
+
+	text = {
+		trigger = { pf_is_rare_spices_world = yes }
+		localization_key = pf_rare_spices_resource
+	}
+	text = {
+		trigger = { pf_is_desert_silks_world = yes }
+		localization_key = pf_desert_silks_resource
+	}
+	text = {
+		trigger = { pf_is_amberfruit_world = yes }
+		localization_key = pf_amberfruit_resource
+	}
+
+	text = {
+		trigger = { pf_is_mountain_flowers_world = yes }
+		localization_key = pf_mountain_flowers_resource
+	}
+	text = {
+		trigger = { pf_is_fungal_caves_world = yes }
+		localization_key = pf_fungal_caves_resource
+	}
+	text = {
+		trigger = { pf_is_marsh_roots_world = yes }
+		localization_key = pf_marsh_roots_resource
+	}
+
+    default = pf_generic_luxury_resource
+}
