@@ -1,128 +1,47 @@
 # Wet
 picture = {
-    trigger = {
-        From = {
-            OR = {
-                has_planet_flag = pf_pm_rare_wood_homeworld
-                has_planet_flag = pf_pm_rare_wood_strong_plantation
-                has_planet_flag = pf_pm_rare_wood_normal_plantation
-                has_planet_flag = pf_pm_rare_wood_weak_plantation
-            }
-        }
-    }
+    trigger = { From = { pf_is_rare_wood_world = yes } }
     picture = GFX_evt_alien_nature
 }
 
 picture = {
-    trigger = {
-        From = {
-            OR = {
-                has_planet_flag = pf_pm_iridescent_pearls_homeworld
-                has_planet_flag = pf_pm_iridescent_pearls_strong_plantation
-                has_planet_flag = pf_pm_iridescent_pearls_normal_plantation
-                has_planet_flag = pf_pm_iridescent_pearls_weak_plantation
-            }
-        }
-    }
+    trigger = { From = { pf_is_iridescent_pearls_world = yes } }
     picture = GFX_evt_ocean
 }
 
 picture = {
-    trigger = {
-        From = {
-            OR = {
-                has_planet_flag = pf_pm_sea_ferns_homeworld
-                has_planet_flag = pf_pm_sea_ferns_strong_plantation
-                has_planet_flag = pf_pm_sea_ferns_normal_plantation
-                has_planet_flag = pf_pm_sea_ferns_weak_plantation
-            }
-        }
-    }
+    trigger = { From = { pf_is_sea_ferns_world = yes } }
     picture = GFX_evt_pf_kelp_forest
 }
 
 # Dry
 picture = {
-    trigger = {
-        From = {
-            OR = {
-                has_planet_flag = pf_pm_rare_spices_homeworld
-                has_planet_flag = pf_pm_rare_spices_strong_plantation
-                has_planet_flag = pf_pm_rare_spices_normal_plantation
-                has_planet_flag = pf_pm_rare_spices_weak_plantation
-            }
-        }
-    }
+    trigger = { From = { pf_is_rare_spices_world = yes } }
     picture = GFX_evt_arid
 }
 
 picture = {
-    trigger = {
-        From = {
-            OR = {
-                has_planet_flag = pf_pm_desert_silks_homeworld
-                has_planet_flag = pf_pm_desert_silks_strong_plantation
-                has_planet_flag = pf_pm_desert_silks_normal_plantation
-                has_planet_flag = pf_pm_desert_silks_weak_plantation
-            }
-        }
-    }
+    trigger = { From = { pf_is_desert_silks_world = yes } }
     picture = GFX_evt_desert
 }
 
 picture = {
-    trigger = {
-        From = {
-            OR = {
-                has_planet_flag = pf_pm_amberfruit_homeworld
-                has_planet_flag = pf_pm_amberfruit_strong_plantation
-                has_planet_flag = pf_pm_amberfruit_normal_plantation
-                has_planet_flag = pf_pm_amberfruit_weak_plantation
-            }
-        }
-    }
+    trigger = { From = { pf_is_amberfruit_world = yes } }
     picture = GFX_evt_pf_arid_wetlands
 }
 
 # Cold
 picture = {
-    trigger = {
-        From = {
-            OR = {
-                has_planet_flag = pf_pm_mountain_flowers_homeworld
-                has_planet_flag = pf_pm_mountain_flowers_strong_plantation
-                has_planet_flag = pf_pm_mountain_flowers_normal_plantation
-                has_planet_flag = pf_pm_mountain_flowers_weak_plantation
-            }
-        }
-    }
+    trigger = { From = { pf_is_mountain_flowers_world = yes } }
     picture = GFX_evt_pf_alpine_highlands
 }
 
 picture = {
-    trigger = {
-        From = {
-            OR = {
-                has_planet_flag = pf_pm_fungal_caves_homeworld
-                has_planet_flag = pf_pm_fungal_caves_strong_plantation
-                has_planet_flag = pf_pm_fungal_caves_normal_plantation
-                has_planet_flag = pf_pm_fungal_caves_weak_plantation
-            }
-        }
-    }
+    trigger = { From = { pf_is_fungal_caves_world = yes } }
     picture = GFX_evt_pf_glowing_nature
 }
 
 picture = {
-    trigger = {
-        From = {
-            OR = {
-                has_planet_flag = pf_pm_marsh_roots_homeworld
-                has_planet_flag = pf_pm_marsh_roots_strong_plantation
-                has_planet_flag = pf_pm_marsh_roots_normal_plantation
-                has_planet_flag = pf_pm_marsh_roots_weak_plantation
-            }
-        }
-    }
+    trigger = { From = { pf_is_marsh_roots_world = yes } }
     picture = GFX_evt_tundra
 }
