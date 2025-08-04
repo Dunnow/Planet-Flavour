@@ -125,3 +125,25 @@ ship_event = {
 		}
 	}
 }
+
+ship_event = {
+	id = pf_content.200
+	title = pf_content.200.name
+	desc = "pf_content.200.desc"
+	location = this
+    is_triggered_only = yes
+
+	trigger = { from = { has_planet_flag = pf_luxury_resource_homeworld } }
+
+	inline_script = {
+		script = planet_flavour/pf_rare_resource_event_picture_art
+		PLANET_SCOPE = FROM
+	}
+
+	option = {
+		name = pf_content.200.a
+		owner = {
+			add_resource = { society_research = 500 }
+		}
+	}
+}
