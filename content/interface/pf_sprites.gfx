@@ -15,7 +15,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_district_pf_fungal_sanctuaries_box_icon_rectangle"
-		texturefile = "gfx/interface/icons/districts/grid_box/district_farming_rectangle.dds"
+		texturefile = "gfx/interface/icons/districts/grid_box/district_pf_fungal_sanctuaries_rectangle.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 		noOfFrames = 3
 		animation = {
@@ -40,7 +40,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_district_pf_fungal_groves_box_icon_rectangle"
-		texturefile = "gfx/interface/icons/districts/grid_box/district_farming_rectangle.dds"
+		texturefile = "gfx/interface/icons/districts/grid_box/district_pf_fungal_groves_rectangle.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 		noOfFrames = 3
 		animation = {
