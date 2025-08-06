@@ -34,6 +34,22 @@ pf_is_habitable_planet = {
 
 # Luxuries
 
+pf_is_luxury_world = {
+    OR = {
+        pf_is_rare_wood_world = yes
+        pf_is_iridescent_pearls_world = yes
+        pf_is_sea_ferns_world = yes
+
+        pf_is_desert_silks_world = yes
+        pf_is_rare_spices_world = yes
+        pf_is_amberfruit_world = yes
+
+        pf_is_mountain_flowers_world = yes
+        pf_is_fungal_caves_world = yes
+        pf_is_marsh_roots_world = yes
+    }
+}
+
 pf_is_rare_wood_world = {
     OR = {
         has_planet_flag = pf_pm_rare_wood_homeworld
