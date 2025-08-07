@@ -11,6 +11,9 @@ pf_clear_always_removed_modifiers = {
 
     remove_modifier = pf_pm_bone_world
 
+    # Always remove these luxury modifiers
+    pf_clear_luxury_modifiers = yes
+    
     # Always remove these tomb modifiers
     remove_modifier = pf_pm_glassed_world
     remove_modifier = pf_pm_asteroid_impact
@@ -25,4 +28,33 @@ pf_clear_always_removed_modifiers = {
     remove_modifier = pf_pm_isotopic_atmosphere
     remove_modifier = pf_pm_ancient_impact_sites
     remove_modifier = pf_pm_primordial_world
+}
+
+pf_clear_luxury_modifiers = {
+    remove_modifier = pf_pm_rare_wood_homeworld
+    remove_modifier = pf_pm_iridescent_pearls_homeworld
+    remove_modifier = pf_pm_sea_ferns_homeworld
+
+    remove_modifier = pf_pm_rare_spices_homeworld
+    remove_modifier = pf_pm_desert_silks_homeworld
+    remove_modifier = pf_pm_amberfruit_homeworld
+
+    remove_modifier = pf_pm_mountain_flowers_homeworld
+    remove_modifier = pf_pm_fungal_caves_homeworld
+    remove_modifier = pf_pm_marsh_roots_homeworld
+
+    # Flags
+    remove_planet_flag = pf_luxury_resource_homeworld
+
+    remove_planet_flag = pf_pm_rare_wood_homeworld
+    remove_planet_flag = pf_pm_iridescent_pearls_homeworld
+    remove_planet_flag = pf_pm_sea_ferns_homeworld
+
+    remove_planet_flag = pf_pm_rare_spices_homeworld
+    remove_planet_flag = pf_pm_desert_silks_homeworld
+    remove_planet_flag = pf_pm_amberfruit_homeworld
+
+    remove_planet_flag = pf_pm_mountain_flowers_homeworld
+    remove_planet_flag = pf_pm_fungal_caves_homeworld
+    remove_planet_flag = pf_pm_marsh_roots_homeworld
 }
