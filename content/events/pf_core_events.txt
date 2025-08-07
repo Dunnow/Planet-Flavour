@@ -523,8 +523,6 @@ event = {
     }
 }
 
-
-
 # Add deposits for gas modifiers
 ship_event = {
 	id = pf_core.101
