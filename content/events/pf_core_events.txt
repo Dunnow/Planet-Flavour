@@ -667,6 +667,56 @@ ship_event = {
 	}
 }
 
+# Add deposits for society modifiers
+ship_event = {
+	id = pf_core.105
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			NOT = {
+				has_planet_flag = deposit_added
+			}
+			is_colonizable = no
+			OR = {
+				has_modifier = pf_pm_subsurface_oceans
+			}
+			NOR = {
+				has_deposit = d_society_3
+				has_deposit = d_society_4
+				has_deposit = d_society_5
+				has_deposit = d_society_6
+				has_deposit = d_society_7
+				has_deposit = d_society_8
+				has_deposit = d_society_9
+				has_deposit = d_society_10
+				has_deposit = d_society_15
+				has_deposit = d_society_25
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			prevent_anomaly = yes
+			hidden_effect = {
+				from = {
+					if = {
+						limit = {
+							NOT = { has_deposit_for = shipclass_research_station }
+						}
+						clear_deposits = yes
+					}
+					set_planet_flag = deposit_added
+                    add_deposit = d_society_2
+				}
+			}
+		}
+	}
+}
+
 # Rare Resource distribution event
 event = {
 	id = pf_core.200

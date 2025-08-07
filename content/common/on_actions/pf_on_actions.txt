@@ -45,9 +45,12 @@ on_entering_system_first_time = {
 # From = Planet
 on_survey_planet = {
 	events = {
-        pf_content.101      # Hive Stars Surveying Event
-        pf_content.200          # Luxury Resources discovered event
-        pf_content.101 # (Hidden) hive stars tracker
-		pf_core.100	# (Hidden) add deposits for pf non colonisable modifiers
+        pf_content.101                  # Hive Stars Surveying Event
+        pf_content.200         # Luxury Resources discovered event
+        pf_content.101                  # (Hidden) hive stars tracker
+		pf_core.101	                   # Add deposits for gas modifiers
+        pf_core.102	                   # Add deposits for motes modifiers
+        pf_core.103	                   # Add deposits for energy modifiers
+        pf_core.105	                   # Add deposits for society modifiers
     }
 }
