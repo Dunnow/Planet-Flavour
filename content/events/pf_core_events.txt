@@ -519,7 +519,11 @@ event = {
                 remove_modifier = pf_pm_ancient_impact_sites
                 remove_modifier = pf_pm_primordial_world
                 remove_modifier = pf_pm_cryovolcanoes
-                remove_modifier = pf_pm_subsurface_oceans
+                if = {
+                    # Lets us keep Europa with this
+                    limit = { solar_system = { not = { has_star_flag = sol_system} }}
+                    remove_modifier = pf_pm_subsurface_oceans
+                }
             }
         }
     }
@@ -665,6 +669,47 @@ ship_event = {
 			}
 		}
 	}
+}
+
+# Apply modifiers to Sol system
+event = {
+    id = pf_core.104
+    hide_window = yes
+    is_triggered_only = yes
+
+    # It's a bit crude the way that we identify planets, but it allows us to avoid overwriting
+    immediate = {
+        # If for some unhinged reason we have 2 Sols, this should still catch it
+        every_system = {
+            limit = { has_star_flag = sol_system }
+            # Jupiter
+            random_system_planet = {
+                limit = {
+                    AND = {
+                        is_planet_class = pc_gas_giant
+                        OR = {
+                            has_planet_flag = jupiter
+                            planet_size = 35
+                        }
+                    }
+                }
+                # Europa
+                random_moon = {
+                    limit = {
+                        AND = {
+                            is_planet_class = pc_frozen
+                            OR = {
+                                has_planet_flag = europa
+                                planet_size = 6
+                            }
+                        }
+                    }
+                    add_modifier = { modifier = pf_pm_subsurface_oceans }
+                    add_deposit = d_society_2
+                }
+            }
+        }
+    }
 }
 
 # Add deposits for society modifiers

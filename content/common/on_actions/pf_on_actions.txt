@@ -10,6 +10,7 @@ on_game_start = {
         pf_misc.110    # Roll to spawn Hive Stars
         pf_core.200    # Distribute luxury homeworlds
         pf_core.100    # Clear invalid modifiers from planets
+        pf_core.104    # Add Sol modifiers
     }
 }
 
