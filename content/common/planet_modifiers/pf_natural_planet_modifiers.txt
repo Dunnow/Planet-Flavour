@@ -254,7 +254,7 @@ pf_pm_floating_rocks = {
 			has_planet_modifier = "pf_pm_floating_rocks"
 		}
 		modifier = {
-			factor = 5
+			factor = 0.2
 			has_planet_modifier = "pm_weak_magnetic_field"
 		}
 		modifier = {
