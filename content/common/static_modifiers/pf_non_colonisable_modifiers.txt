@@ -32,3 +32,9 @@ pf_pm_primordial_world = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_molten_planet.dds"
 	icon_frame = 1
 }
+
+pf_pm_cryovolcanoes = {
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_carbon_world.dds"
+	icon_frame = 1
+}

@@ -518,6 +518,7 @@ event = {
                 remove_modifier = pf_pm_isotopic_atmosphere
                 remove_modifier = pf_pm_ancient_impact_sites
                 remove_modifier = pf_pm_primordial_world
+                remove_modifier = pf_pm_cryovolcanoes
             }
         }
     }

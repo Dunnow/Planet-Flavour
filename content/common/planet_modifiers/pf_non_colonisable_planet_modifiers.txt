@@ -107,5 +107,31 @@ pf_pm_primordial_world = {
 	}
 
 	modifier = "pf_pm_primordial_world"
+}
 
+pf_pm_cryovolcanoes = {
+    spawn_chance = {
+		modifier = {
+			add = 2
+			is_planet_class = "pc_barren_cold"
+		}
+		modifier = {
+			add = 5
+			is_planet_class = "pc_frozen"
+		}
+		modifier = {
+			factor = 5
+			is_moon = yes
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_cryovolcanoes"
+		}
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+
+	modifier = "pf_pm_cryovolcanoes"
 }
