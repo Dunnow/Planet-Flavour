@@ -29,6 +29,7 @@ pf_clear_always_removed_modifiers = {
     remove_modifier = pf_pm_ancient_impact_sites
     remove_modifier = pf_pm_primordial_world
     remove_modifier = pf_pm_cryovolcanoes
+    remove_modifier = pf_pm_subsurface_oceans
 }
 
 pf_clear_luxury_modifiers = {

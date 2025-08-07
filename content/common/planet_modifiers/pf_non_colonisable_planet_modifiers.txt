@@ -135,3 +135,30 @@ pf_pm_cryovolcanoes = {
 
 	modifier = "pf_pm_cryovolcanoes"
 }
+
+pf_pm_subsurface_oceans = {
+    spawn_chance = {
+		modifier = {
+			add = 5
+			is_planet_class = "pc_frozen"
+		}
+		modifier = {
+			factor = 2
+			is_moon = yes
+		}
+		modifier = {
+			factor = 2
+			has_planet_modifier = pf_pm_tidal_forces
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_subsurface_oceans"
+		}
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+
+	modifier = "pf_pm_subsurface_oceans"
+}

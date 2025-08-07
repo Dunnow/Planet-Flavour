@@ -148,3 +148,5 @@
   pf_pm_primordial_world_desc: "This planet has only recently formed. Magma showers and asteroid impacts are abundant across its surface."
   pf_pm_cryovolcanoes: "Cryovolcanoes"
   pf_pm_cryovolcanoes_desc: "Large volcanoes spew ammonia, water and hydrocarbons out onto this world's frozen surface."
+  pf_pm_subsurface_oceans: "Subsurface Oceans"
+  pf_pm_subsurface_oceans_desc: "This world has large, deep oceans beneath its thick ice shelf. Conditions could be suitable for primitive microbes to exist."

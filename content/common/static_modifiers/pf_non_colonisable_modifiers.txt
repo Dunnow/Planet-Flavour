@@ -1,11 +1,11 @@
-# For gas giants
+# Gas Giants
 pf_pm_mega_storms = {
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_gas_giant_red.dds"
 	icon_frame = 1
 }
 
-# For moons
+# Moons
 pf_pm_tidal_forces = {
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_chthonian_planet.dds"
@@ -33,8 +33,16 @@ pf_pm_primordial_world = {
 	icon_frame = 1
 }
 
+# Frozen + Cold Barren
 pf_pm_cryovolcanoes = {
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_carbon_world.dds"
+	icon_frame = 1
+}
+
+# Frozen
+pf_pm_subsurface_oceans = {
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_abyssal_seas.dds"
 	icon_frame = 1
 }
