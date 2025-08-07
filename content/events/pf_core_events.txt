@@ -791,7 +791,10 @@ event = {
                         }
                     }
                     add_modifier = { modifier = pf_pm_hot_gas_giant }
-                    solar_system = { set_star_flag = pf_hot_gas_giant} # DEBUG
+                    random_list = {
+                        2 = { set_planet_entity = { entity = planet_flavour_hot_gas_giant_entity_01 } }
+                        1 = { set_planet_entity = { entity = planet_flavour_hot_gas_giant_entity_02} }
+                    }
                 }
             }
         }
