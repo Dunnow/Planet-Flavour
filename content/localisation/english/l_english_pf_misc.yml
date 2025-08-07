@@ -34,6 +34,7 @@
 
   district_pf_plantations_plural: "Plantation Districts"
   district_pf_plantations: "Plantation District"
+  district_pf_plantations_desc: "$district_pf_plantations_default_desc$"
 
   district_pf_plantations_rare_wood: "Cultivated Xenoforests"
   district_pf_plantations_rare_wood_desc: "Artificial woodlands, ready for the harvest."
