@@ -11,6 +11,7 @@ on_game_start = {
         pf_core.200    # Distribute luxury homeworlds
         pf_core.100    # Clear invalid modifiers from planets
         pf_core.104    # Add Sol modifiers
+        pf_core.106    # Identify Hot Gas Giants
     }
 }
 

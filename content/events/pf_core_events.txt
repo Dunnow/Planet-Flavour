@@ -524,6 +524,7 @@ event = {
                     limit = { solar_system = { not = { has_star_flag = sol_system} }}
                     remove_modifier = pf_pm_subsurface_oceans
                 }
+                remove_modifier = pf_pm_hot_gas_giant
             }
         }
     }
@@ -760,6 +761,41 @@ ship_event = {
 			}
 		}
 	}
+}
+
+# Identify Hot Gas Giants
+event = {
+    id = pf_core.106
+    hide_window = yes
+    is_triggered_only = yes
+
+	immediate = {
+        every_system = {
+            limit = {
+                NOR = {
+                    has_star_flag = tiyanki_home_system     # We don't want to boil the Tiyanki
+                }
+                any_system_planet = {
+                    is_planet_class = pc_gas_giant
+                }
+            }
+            every_system_planet = {
+                limit = { is_planet_class = pc_gas_giant }
+                if = {
+                    limit = {
+                        distance = {
+                            source = system_star
+                            same_solar_system = yes
+							min_distance >= 1
+							max_distance <= 75 # Need to give this value a look, but it seems good.
+                        }
+                    }
+                    add_modifier = { modifier = pf_pm_hot_gas_giant }
+                    solar_system = { set_star_flag = pf_hot_gas_giant} # DEBUG
+                }
+            }
+        }
+    }
 }
 
 # Rare Resource distribution event
