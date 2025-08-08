@@ -40,7 +40,7 @@ pf_pm_overgrown = {
 
 pf_pm_floating_rocks = {
 	planet_jobs_physics_research_produces_mult = 0.25
-	planet_researchers_physics_research_produces_add = 1
+	planet_physicists_physics_research_produces_add = 1
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_gravity_aftermath_modifier.dds"
 	icon_frame = 1
@@ -192,7 +192,7 @@ pf_pm_chirping_plains = {
 }
 
 pf_pm_bone_world = {
-	planet_researchers_society_research_produces_add = 1
+	planet_biologists_society_research_produces_add = 1
 	planet_jobs_society_research_produces_mult = 0.20
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_bone_world.dds"
@@ -232,7 +232,7 @@ pf_pm_multi_planetary_ecosystem = {
 }
 
 pf_pm_arboreal_ecosystem = {
-	planet_researchers_food_produces_add = 2
+	planet_biologists_food_produces_add = 2
 	planet_farmers_society_research_produces_add = 2
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_huge_tree.dds"
