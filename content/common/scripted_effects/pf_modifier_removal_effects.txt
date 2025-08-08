@@ -31,6 +31,7 @@ pf_clear_always_removed_modifiers = {
     remove_modifier = pf_pm_cryovolcanoes
     remove_modifier = pf_pm_subsurface_oceans
     remove_modifier = pf_pm_hot_gas_giant
+    remove_modifier = pf_pm_metallic_asteroid
 }
 
 pf_clear_luxury_modifiers = {

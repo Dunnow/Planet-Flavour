@@ -152,3 +152,5 @@
   pf_pm_subsurface_oceans_desc: "This world has large, deep oceans beneath its thick ice shelf. Conditions could be suitable for primitive microbes to exist."
   pf_pm_hot_gas_giant: "Hot Gas Giant"
   pf_pm_hot_gas_giant_desc: "This world is unusually close to its parent star and experiences very high temperatures. Over time the stellar winds are likely to strip its atmosphere away."
+  pf_pm_metallic_asteroid: "Metallic Asteroid"
+  pf_pm_metallic_asteroid_desc: "The composition of this asteroid is unusually high in metals and naturally occurring alloys."

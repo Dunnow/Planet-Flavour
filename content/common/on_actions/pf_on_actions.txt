@@ -54,5 +54,6 @@ on_survey_planet = {
         pf_core.102	                   # Add deposits for motes modifiers
         pf_core.103	                   # Add deposits for energy modifiers
         pf_core.105	                   # Add deposits for society modifiers
+        pf_core.107                     # Add deposits for alloy modifiers
     }
 }

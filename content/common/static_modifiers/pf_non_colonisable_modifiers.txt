@@ -53,3 +53,10 @@ pf_pm_hot_gas_giant = {
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_gas_giant_red.dds"
 	icon_frame = 1
 }
+
+# Asteroid
+pf_pm_metallic_asteroid = {
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_asteroid.dds"
+	icon_frame = 1
+}
