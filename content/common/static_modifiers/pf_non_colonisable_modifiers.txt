@@ -26,11 +26,11 @@ pf_pm_ancient_impact_sites = {
 	icon_frame = 1
 }
 
-# Volcanic
+# Molten
 pf_pm_primordial_world = {
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_molten_planet.dds"
-	icon_frame = 1
+	icon_frame = 2
 }
 
 # Frozen + Cold Barren
@@ -59,4 +59,18 @@ pf_pm_metallic_asteroid = {
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_asteroid.dds"
 	icon_frame = 1
+}
+
+# Molten
+pf_pm_asteroid_bombardment = {
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_asteroid_bombardment.dds"
+	icon_frame = 2
+}
+
+# Stars
+pf_pm_protoplanetary_disk = {
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_protoplanetary_disk.dds"
+	icon_frame = 2
 }

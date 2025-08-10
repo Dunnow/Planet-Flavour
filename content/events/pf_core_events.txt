@@ -526,6 +526,8 @@ event = {
                 }
                 remove_modifier = pf_pm_hot_gas_giant
                 remove_modifier = pf_pm_metallic_asteroid
+                remove_modifier = pf_pm_asteroid_bombardment
+                remove_modifier = pf_pm_protoplanetary_disk
             }
         }
     }

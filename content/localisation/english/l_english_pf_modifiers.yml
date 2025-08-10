@@ -154,3 +154,7 @@
   pf_pm_hot_gas_giant_desc: "This world is unusually close to its parent star and experiences very high temperatures. Over time the stellar winds are likely to strip its atmosphere away."
   pf_pm_metallic_asteroid: "Metallic Asteroid"
   pf_pm_metallic_asteroid_desc: "The composition of this asteroid is unusually high in metals and naturally occurring alloys."
+  pf_pm_asteroid_bombardment: "Asteroid Bombardment"
+  pf_pm_asteroid_bombardment_desc: "This young world is continuously pelted by asteroid impacts."
+  pf_pm_protoplanetary_disk: "Protoplanetary Disk"
+  pf_pm_protoplanetary_disk_desc: "This star is surrounded by a dense disk of gas and dust. Over millions of years this will gradually condense into planetary objects."
