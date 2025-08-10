@@ -909,24 +909,24 @@ pf_hive_stars_last_stand_initializer = {
 }
 
 
-# Basic 1
+# Protoplanet system
 pf_basic_proto_system = {
 	class = "rl_pf_proto_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 30
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 60
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
+		radius = 90
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
 		radius = 120
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 180
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 240
 	}
 
 	usage = misc_system_init
@@ -934,6 +934,30 @@ pf_basic_proto_system = {
 
 	init_effect = {
 		set_star_flag = pf_proto_system
+		# Create nebula effect
+		create_ambient_object = {
+			type = "nebula_L4_entity"
+			entity_offset_height = -5
+			location = this
+		}
+		last_created_ambient_object = {
+			set_location = {
+				target = prev
+				distance = 0
+				angle = random
+			}
+		}
+		# Create protoplanet disk effect
+		star = {
+			if = {
+				limit = { is_planet_class = pc_k_star }
+				set_planet_entity = { entity = pf_proto_k_star_class_star_entity }
+			}
+			if = {
+				limit = { is_planet_class = pc_g_star }
+				set_planet_entity = { entity = pf_proto_g_star_class_star_entity }
+			}
+		}
 	}
 
 	planet = {
@@ -945,7 +969,7 @@ pf_basic_proto_system = {
 		has_ring = no
 	}
 
-	change_orbit = 60
+	change_orbit = 30
 
 	planet = {
 		count = { min = 1 max = 2 }
@@ -954,7 +978,7 @@ pf_basic_proto_system = {
 		orbit_angle = { min = 90 max = 270 }
 	}
 
-	change_orbit = 60
+	change_orbit = 30
 
 	planet = {
 		count = { min = 2 max = 3 }
@@ -963,7 +987,7 @@ pf_basic_proto_system = {
 		orbit_angle = { min = 90 max = 270 }
 	}
 
-	change_orbit = 60
+	change_orbit = 30
 
 	planet = {
 		count = { min = 3 max = 4 }
@@ -972,7 +996,7 @@ pf_basic_proto_system = {
 		orbit_angle = { min = 90 max = 270 }
 	}
 
-	change_orbit = 60
+	change_orbit = 30
 
 	planet = {
 		count = { min = 4 max = 5 }

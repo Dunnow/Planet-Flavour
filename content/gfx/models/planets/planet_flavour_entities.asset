@@ -240,3 +240,48 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
+
+entity = { # G
+	name = "pf_proto_g_star_class_star_entity"
+	pdxmesh = "star_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0.0 node = "planet" particle = "g_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "amb_star_fusion" } }
+	}
+	locator = { name = "planet" }
+	attach = { "planet" = "pf_protoplanetary_disk" }
+	scale = 1.0
+	cull_radius = 20000
+}
+
+entity = { # K
+	name = "pf_proto_k_star_class_star_entity"
+	pdxmesh = "star_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0.0 node = "planet" particle = "k_class_star_particle"  keep_particle = no trigger_once = yes sound = { soundeffect = "amb_star_fusion" } }
+	}
+	locator = { name = "planet" }
+	attach = { "planet" = "pf_protoplanetary_disk" }
+	scale = 1.0
+	cull_radius = 20000
+}
+
+entity = {
+	name = "pf_protoplanetary_disk"
+	pdxmesh = "pf_protoplanet_rings"
+
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+
+	scale = 1.5
+
+	game_data = {
+		uv_animation_speed   = -0.025
+		uv_animation_direction  = { 0.4 0.4 }
+	}
+
+	cull_radius = 20000
+}
