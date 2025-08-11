@@ -957,6 +957,7 @@ pf_basic_proto_system_01 = {
 				limit = { is_planet_class = pc_g_star }
 				set_planet_entity = { entity = pf_proto_g_star_class_star_entity }
 			}
+			add_modifier = { modifier = pf_pm_protoplanetary_disk }
 		}
 	}
 
