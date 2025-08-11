@@ -795,8 +795,18 @@ event = {
                     }
                     add_modifier = { modifier = pf_pm_hot_gas_giant }
                     random_list = {
-                        2 = { set_planet_entity = { entity = planet_flavour_hot_gas_giant_entity_01 } }
-                        1 = { set_planet_entity = { entity = planet_flavour_hot_gas_giant_entity_02} }
+                        2 = {
+                            set_planet_entity = {
+                                entity = planet_flavour_hot_gas_giant_entity_01
+                                atmosphere_color = hsv { 0.05 0.65 1.4 }
+                            }
+                        }
+                        1 = {
+                            set_planet_entity = {
+                                entity = planet_flavour_hot_gas_giant_entity_02
+                                atmosphere_color = hsv { 0.548 0.519 0.9 }
+                            }
+                        }
                     }
                 }
             }
