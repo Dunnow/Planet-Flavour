@@ -65,6 +65,15 @@
   NAME_pf_straggler_swarms_fleet_medium: "Feral Swarm"
   NAME_pf_straggler_swarms_fleet_small: "Stray Brood"
 
+  # Nebula Names
+  pf_stellar_nursery_nebula_name_1: "Dubboid Rift"
+  pf_stellar_nursery_nebula_name_2: "Nicera Cloud Complex"
+  pf_stellar_nursery_nebula_name_3: "Dark Trunk Nebula"
+  pf_stellar_nursery_nebula_name_4: "Karin Molecular Cloud"
+  pf_stellar_nursery_nebula_name_5: "Basvara Stellar Nursery"
+  pf_stellar_nursery_nebula_name_6: "Hassaleh Stellar Nursery"
+  pf_stellar_nursery_nebula_name_7: "Olluna Stellar Nursery"
+
   # Decisions
   decision_pf_remove_prethoryn_biomass: "Remove Alien Biomass"
   decision_pf_remove_prethoryn_biomass_desc: "[This.GetName] is choked by an omnipresent infestation of alien biomass. We must burn it, clear it and sterilize it to allow the colony to function."

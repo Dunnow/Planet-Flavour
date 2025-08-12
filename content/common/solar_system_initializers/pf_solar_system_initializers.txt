@@ -932,8 +932,9 @@ pf_basic_proto_system_01 = {
 	usage = misc_system_init
 	usage_odds = 2
 
+	flags = {  pf_proto_system }
+
 	init_effect = {
-		set_star_flag = pf_proto_system
 		# Create nebula effect
 		create_ambient_object = {
 			type = "nebula_L4_entity"
@@ -1026,8 +1027,9 @@ pf_basic_proto_system_02 = {
 	usage = misc_system_init
 	usage_odds = 2
 
+	flags = {  pf_proto_system }
+
 	init_effect = {
-		set_star_flag = pf_proto_system
 		# Create nebula effect
 		create_ambient_object = {
 			type = "nebula_L4_entity"
@@ -1082,6 +1084,121 @@ pf_basic_proto_system_02 = {
 			clear_planet_modifiers = yes
 			add_modifier = { modifier = pf_pm_asteroid_bombardment }
 		}
+	}
+
+	change_orbit = 30
+
+	planet = {
+		count = { min = 3 max = 4 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 30
+
+	planet = {
+		count = { min = 4 max = 5 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+}
+
+# Protoplanet system nebula-core. Same as 01 but spawns a nebula + neighbours
+pf_basic_proto_system_03 = {
+	class = "rl_pf_proto_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 30
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 60
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 90
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 120
+	}
+
+	usage = misc_system_init
+	usage_odds = 1
+	max_instances = 5
+	scaled_spawn_chance = 8
+
+	flags = { pf_stellar_nursery_system pf_proto_system }
+
+	init_effect = {
+		set_spawn_system_batch = begin
+		while = {
+			count = 2
+			spawn_system = {
+				min_distance >= 10
+				max_distance <= 25
+				initializer = pf_basic_proto_system_01
+				hyperlane = yes
+				effect = {
+					set_star_flag = pf_stellar_nursery_system
+					add_extra_hyperlane_to_spawned_system_effect = yes
+				}
+			}
+		}
+		spawn_system = {
+			min_distance >= 10
+			max_distance <= 25
+			initializer = pf_basic_proto_system_02
+			hyperlane = yes
+			effect = {
+				set_star_flag = pf_stellar_nursery_system
+				add_extra_hyperlane_to_spawned_system_effect = yes
+			}
+		}
+		set_spawn_system_batch = end
+		pf_create_stellar_nursery_nebula = yes
+
+		# Create protoplanet disk effect
+		star = {
+			if = {
+				limit = { is_planet_class = pc_k_star }
+				set_planet_entity = { entity = pf_proto_k_star_class_star_entity }
+			}
+			if = {
+				limit = { is_planet_class = pc_g_star }
+				set_planet_entity = { entity = pf_proto_g_star_class_star_entity }
+			}
+			add_modifier = { modifier = pf_pm_protoplanetary_disk }
+		}
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 30
+
+	planet = {
+		count = { min = 1 max = 2 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 30
+
+	planet = {
+		count = { min = 2 max = 3 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
 	}
 
 	change_orbit = 30
