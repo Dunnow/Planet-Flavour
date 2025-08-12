@@ -1133,31 +1133,6 @@ pf_basic_proto_system_03 = {
 	flags = { pf_stellar_nursery_system pf_proto_system }
 
 	init_effect = {
-		set_spawn_system_batch = begin
-		while = {
-			count = 2
-			spawn_system = {
-				min_distance >= 10
-				max_distance <= 25
-				initializer = pf_basic_proto_system_01
-				hyperlane = yes
-				effect = {
-					set_star_flag = pf_stellar_nursery_system
-					add_extra_hyperlane_to_spawned_system_effect = yes
-				}
-			}
-		}
-		spawn_system = {
-			min_distance >= 10
-			max_distance <= 25
-			initializer = pf_basic_proto_system_02
-			hyperlane = yes
-			effect = {
-				set_star_flag = pf_stellar_nursery_system
-				add_extra_hyperlane_to_spawned_system_effect = yes
-			}
-		}
-		set_spawn_system_batch = end
 		pf_create_stellar_nursery_nebula = yes
 
 		# Create protoplanet disk effect
@@ -1217,5 +1192,22 @@ pf_basic_proto_system_03 = {
 		class = pc_asteroid
 		orbit_distance = 0
 		orbit_angle = { min = 90 max = 270 }
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 1 }
+		initializer = "pf_basic_proto_system_01"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 1 }
+		initializer = "pf_basic_proto_system_01"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 1 }
+		initializer = "pf_basic_proto_system_02"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 1 }
+		initializer = "pf_basic_proto_system_02"
 	}
 }
