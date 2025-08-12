@@ -163,3 +163,93 @@ pf_spawn_straggler_swarm_fleet_small = {
 		}
 	}
 }
+
+# Roundabout way of controlling the nebula names since it doesn't seem to be possible to pass a random list to pick from
+pf_create_stellar_nursery_nebula = {
+	random_list = {
+		1 = {
+			modifier = {
+				mult = 0
+				has_global_flag = pf_used_stellar_nursery_name_1
+			}
+
+			create_nebula = {
+				radius = 30
+				name = pf_stellar_nursery_nebula_name_1
+			}
+			set_global_flag = pf_used_stellar_nursery_name_1
+		}
+		1 = {
+			modifier = {
+				mult = 0
+				has_global_flag = pf_used_stellar_nursery_name_2
+			}
+
+			create_nebula = {
+				radius = 30
+				name = pf_stellar_nursery_nebula_name_2
+			}
+			set_global_flag = pf_used_stellar_nursery_name_2
+		}
+		1 = {
+			modifier = {
+				mult = 0
+				has_global_flag = pf_used_stellar_nursery_name_3
+			}
+
+			create_nebula = {
+				radius = 30
+				name = pf_stellar_nursery_nebula_name_3
+			}
+			set_global_flag = pf_used_stellar_nursery_name_3
+		}
+		1 = {
+			modifier = {
+				mult = 0
+				has_global_flag = pf_used_stellar_nursery_name_4
+			}
+
+			create_nebula = {
+				radius = 30
+				name = pf_stellar_nursery_nebula_name_4
+			}
+			set_global_flag = pf_used_stellar_nursery_name_4
+		}
+		1 = {
+			modifier = {
+				mult = 0
+				has_global_flag = pf_used_stellar_nursery_name_5
+			}
+
+			create_nebula = {
+				radius = 30
+				name = pf_stellar_nursery_nebula_name_5
+			}
+			set_global_flag = pf_used_stellar_nursery_name_5
+		}
+		1 = {
+			modifier = {
+				mult = 0
+				has_global_flag = pf_used_stellar_nursery_name_6
+			}
+
+			create_nebula = {
+				radius = 30
+				name = pf_stellar_nursery_nebula_name_6
+			}
+			set_global_flag = pf_used_stellar_nursery_name_6
+		}
+		1 = {
+			modifier = {
+				mult = 0
+				has_global_flag = pf_used_stellar_nursery_name_7
+			}
+
+			create_nebula = {
+				radius = 30
+				name = pf_stellar_nursery_nebula_name_7
+			}
+			set_global_flag = pf_used_stellar_nursery_name_7
+		}
+	}
+}

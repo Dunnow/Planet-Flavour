@@ -34,6 +34,7 @@
 
   district_pf_plantations_plural: "Plantation Districts"
   district_pf_plantations: "Plantation District"
+  district_pf_plantations_desc: "$district_pf_plantations_default_desc$"
 
   district_pf_plantations_rare_wood: "Cultivated Xenoforests"
   district_pf_plantations_rare_wood_desc: "Artificial woodlands, ready for the harvest."
@@ -63,6 +64,15 @@
   NAME_pf_straggler_swarms_fleet_large: "Forgotten Cluster"
   NAME_pf_straggler_swarms_fleet_medium: "Feral Swarm"
   NAME_pf_straggler_swarms_fleet_small: "Stray Brood"
+
+  # Nebula Names
+  pf_stellar_nursery_nebula_name_1: "Dubboid Rift"
+  pf_stellar_nursery_nebula_name_2: "Nicera Cloud Complex"
+  pf_stellar_nursery_nebula_name_3: "Dark Trunk Nebula"
+  pf_stellar_nursery_nebula_name_4: "Karin Molecular Cloud"
+  pf_stellar_nursery_nebula_name_5: "Basvara Stellar Nursery"
+  pf_stellar_nursery_nebula_name_6: "Hassaleh Stellar Nursery"
+  pf_stellar_nursery_nebula_name_7: "Olluna Stellar Nursery"
 
   # Decisions
   decision_pf_remove_prethoryn_biomass: "Remove Alien Biomass"

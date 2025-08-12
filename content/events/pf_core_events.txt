@@ -448,7 +448,6 @@ event = {
     }
 }
 
-
 # Swap micro terraforming environmental enhancement deposits
 planet_event = {
     id = pf_core.50
@@ -495,8 +494,372 @@ planet_event = {
             remove_deposit = d_pf_environmental_enhancements_wet
 
             add_deposit = d_pf_environmental_enhancements_cold
+		}
+	}
+}
+
+# Clear uninhabitable modifiers from invalid systems
+event = {
+    id = pf_core.100
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_system = {
+            limit = {
+                OR = {
+                    any_system_planet = { is_colony = yes }
+                    has_owner = yes
+                }
+            }
+            every_system_planet = {
+                remove_modifier = pf_pm_mega_storms
+                remove_modifier = pf_pm_tidal_forces
+                remove_modifier = pf_pm_isotopic_atmosphere
+                remove_modifier = pf_pm_ancient_impact_sites
+                remove_modifier = pf_pm_primordial_world
+                remove_modifier = pf_pm_cryovolcanoes
+                if = {
+                    # Lets us keep Europa with this
+                    limit = { solar_system = { not = { has_star_flag = sol_system} }}
+                    remove_modifier = pf_pm_subsurface_oceans
+                }
+                remove_modifier = pf_pm_hot_gas_giant
+                remove_modifier = pf_pm_metallic_asteroid
+                remove_modifier = pf_pm_asteroid_bombardment
+                remove_modifier = pf_pm_protoplanetary_disk
+            }
         }
     }
+}
+
+# Add deposits for gas modifiers
+ship_event = {
+	id = pf_core.101
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			NOT = {
+				has_planet_flag = deposit_added
+			}
+			is_colonizable = no
+			OR = {
+				has_modifier = pf_pm_isotopic_atmosphere
+			}
+			NOR = {
+                has_deposit  = d_exotic_gases_3
+				has_deposit = d_exotic_gases_4
+				has_deposit = d_exotic_gases_5
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			prevent_anomaly = yes
+			hidden_effect = {
+				from = {
+					if = {
+						limit = {
+							NOT = { has_deposit_for = shipclass_mining_station }
+						}
+						clear_deposits = yes
+					}
+					set_planet_flag = deposit_added
+                    random_list = {
+                        1 = { add_deposit = d_exotic_gases_1 }
+                        1 = { add_deposit = d_exotic_gases_2 }
+                    }
+				}
+			}
+		}
+	}
+}
+
+# Add deposits for motes modifiers
+ship_event = {
+	id = pf_core.102
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			NOT = {
+				has_planet_flag = deposit_added
+			}
+			is_colonizable = no
+			OR = {
+				has_modifier = pf_pm_ancient_impact_sites
+			}
+			NOR = {
+                has_deposit  = d_volatile_motes_3
+				has_deposit = d_volatile_motes_4
+				has_deposit = d_volatile_motes_5
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			prevent_anomaly = yes
+			hidden_effect = {
+				from = {
+					if = {
+						limit = {
+							NOT = { has_deposit_for = shipclass_mining_station }
+						}
+						clear_deposits = yes
+					}
+					set_planet_flag = deposit_added
+                    random_list = {
+                        1 = { add_deposit = d_volatile_motes_1 }
+                        1 = { add_deposit = d_volatile_motes_2 }
+                    }
+				}
+			}
+		}
+	}
+}
+
+# Add deposits for energy modifiers
+ship_event = {
+	id = pf_core.103
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			NOT = {
+				has_planet_flag = deposit_added
+			}
+			is_colonizable = no
+			OR = {
+				has_modifier = pf_pm_mega_storms
+                has_modifier = pf_pm_tidal_forces
+			}
+			NOR = {
+				has_deposit = d_energy_7
+				has_deposit = d_energy_8
+				has_deposit = d_energy_9
+				has_deposit = d_energy_10
+				has_deposit = d_guardian_dragon_hoard
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			prevent_anomaly = yes
+			hidden_effect = {
+				from = {
+					if = {
+						limit = {
+							NOT = { has_deposit_for = shipclass_mining_station }
+						}
+						clear_deposits = yes
+					}
+					set_planet_flag = deposit_added
+                    random_list = {
+					    3 = { add_deposit = d_energy_4 }
+					    2 = { add_deposit = d_energy_5 }
+					    1 = { add_deposit = d_energy_6 }
+                    }
+				}
+			}
+		}
+	}
+}
+
+# Apply modifiers to Sol system
+event = {
+    id = pf_core.104
+    hide_window = yes
+    is_triggered_only = yes
+
+    # It's a bit crude the way that we identify planets, but it allows us to avoid overwriting
+    immediate = {
+        # If for some unhinged reason we have 2 Sols, this should still catch it
+        every_system = {
+            limit = { has_star_flag = sol_system }
+            # Jupiter
+            random_system_planet = {
+                limit = {
+                    AND = {
+                        is_planet_class = pc_gas_giant
+                        OR = {
+                            has_planet_flag = jupiter
+                            planet_size = 35
+                        }
+                    }
+                }
+                # Europa
+                random_moon = {
+                    limit = {
+                        AND = {
+                            is_planet_class = pc_frozen
+                            OR = {
+                                has_planet_flag = europa
+                                planet_size = 6
+                            }
+                        }
+                    }
+                    add_modifier = { modifier = pf_pm_subsurface_oceans }
+                    add_deposit = d_society_2
+                }
+            }
+        }
+    }
+}
+
+# Add deposits for society modifiers
+ship_event = {
+	id = pf_core.105
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			NOT = {
+				has_planet_flag = deposit_added
+			}
+			is_colonizable = no
+			OR = {
+				has_modifier = pf_pm_subsurface_oceans
+			}
+			NOR = {
+				has_deposit = d_society_3
+				has_deposit = d_society_4
+				has_deposit = d_society_5
+				has_deposit = d_society_6
+				has_deposit = d_society_7
+				has_deposit = d_society_8
+				has_deposit = d_society_9
+				has_deposit = d_society_10
+				has_deposit = d_society_15
+				has_deposit = d_society_25
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			prevent_anomaly = yes
+			hidden_effect = {
+				from = {
+					if = {
+						limit = {
+							NOT = { has_deposit_for = shipclass_research_station }
+						}
+						clear_deposits = yes
+					}
+					set_planet_flag = deposit_added
+                    add_deposit = d_society_2
+				}
+			}
+		}
+	}
+}
+
+# Identify Hot Gas Giants
+event = {
+    id = pf_core.106
+    hide_window = yes
+    is_triggered_only = yes
+
+	immediate = {
+        every_system = {
+            limit = {
+                NOR = {
+                    has_star_flag = tiyanki_home_system     # We don't want to boil the Tiyanki
+                }
+                any_system_planet = {
+                    is_planet_class = pc_gas_giant
+                }
+            }
+            every_system_planet = {
+                limit = { is_planet_class = pc_gas_giant }
+                if = {
+                    limit = {
+                        distance = {
+                            source = system_star
+                            same_solar_system = yes
+							min_distance >= 1
+							max_distance <= 75 # Need to give this value a look, but it seems good.
+                        }
+                    }
+                    add_modifier = { modifier = pf_pm_hot_gas_giant }
+                    random_list = {
+                        2 = {
+                            set_planet_entity = {
+                                entity = planet_flavour_hot_gas_giant_entity_01
+                                atmosphere_color = hsv { 0.05 0.65 1.4 }
+                            }
+                        }
+                        1 = {
+                            set_planet_entity = {
+                                entity = planet_flavour_hot_gas_giant_entity_02
+                                atmosphere_color = hsv { 0.548 0.519 0.9 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+# Add deposits for alloy modifiers
+ship_event = {
+	id = pf_core.107
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			NOT = {
+				has_planet_flag = deposit_added
+			}
+			is_colonizable = no
+			OR = {
+				has_modifier = pf_pm_metallic_asteroid
+			}
+			NOR = {
+				has_deposit = d_alloys_4
+				has_deposit = d_alloys_5
+				has_deposit = d_alloys_10
+				has_deposit = d_alloys_25
+			}
+		}
+	}
+
+	immediate = {
+		from = {
+			prevent_anomaly = yes
+			hidden_effect = {
+				from = {
+					if = {
+						limit = {
+							NOT = { has_deposit_for = shipclass_mining_station }
+						}
+						clear_deposits = yes
+					}
+					set_planet_flag = deposit_added
+                    random_list = {
+					    1 = { add_deposit = d_alloys_1 }
+					    1 = { add_deposit = d_alloys_2 }
+					    1 = { add_deposit = d_alloys_3 }
+                    }
+				}
+			}
+		}
+	}
 }
 
 # Rare Resource distribution event
