@@ -299,6 +299,70 @@ planet_event = {
 	}
 }
 
+# Hyperbloom gatekeeper
+planet_event = {
+    id = pf_content.130
+    hide_window = yes
+    is_triggered_only = yes
+
+	trigger = {
+		has_modifier = pf_pm_overgrown
+	}
+
+    immediate = {
+		# Will it trigger at all
+		random_list = {
+			10 = {}
+			5 = {
+				# When will the next one trigger
+				random_list = {
+					1 = { planet_event = { id = pf_content.131 years = 5 }}
+					2 = { planet_event = { id = pf_content.131 years = 10 }}
+					2 = { planet_event = { id = pf_content.131 years = 15 }}
+					1 = { planet_event = { id = pf_content.131 years = 20 }}
+				}
+			}
+		}
+    }
+}
+
+# Hyperbloom
+planet_event = {
+    id = pf_content.131
+	title = pf_content.131.name
+	desc = pf_content.131.desc
+	picture  = GFX_evt_alien_nature
+	location = this
+    is_triggered_only = yes
+
+	trigger = {
+		has_modifier = pf_pm_overgrown
+	}
+
+    immediate = {
+		hidden_effect = {
+			# Trigger the next bloom
+			random_list = {
+				1 = { planet_event = { id = pf_content.131 years = 5 }}
+				2 = { planet_event = { id = pf_content.131 years = 10 }}
+				2 = { planet_event = { id = pf_content.131 years = 15 }}
+				2 = { planet_event = { id = pf_content.131 years = 20 }}
+				1 = { planet_event = { id = pf_content.131 years = 25 }}
+			}
+		}
+    }
+
+	option = {
+		name = pf_content.131.a
+			random_list = {
+				1 = { add_modifier = { modifier = pf_pm_hyperbloom years = 5 }}
+				1 = { add_modifier = { modifier = pf_pm_hyperbloom years = 10 }}
+				1 = { add_modifier = { modifier = pf_pm_hyperbloom years = 15 }}
+			}
+
+	}
+}
+
 ship_event = {
 	id = pf_content.200
 	title = pf_content.200.name

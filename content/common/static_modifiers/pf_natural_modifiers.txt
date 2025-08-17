@@ -390,3 +390,10 @@ pf_pm_mild_static_storms = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_strange_sandstorm.dds"
 	icon_frame = 3
 }
+
+pf_pm_hyperbloom = {
+	planet_jobs_food_produces_mult = 0.5
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_cultivated_worldscaping.dds"
+	icon_frame = 1
+}

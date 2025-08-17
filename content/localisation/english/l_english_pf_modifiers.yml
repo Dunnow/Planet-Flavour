@@ -96,6 +96,8 @@
   pf_pm_harsh_static_storms_desc: "$pf_pm_static_storms_desc$"
   pf_pm_mild_static_storms: "Mild Static Storms"
   pf_pm_mild_static_storms_desc: "$pf_pm_static_storms_desc$"
+  pf_pm_hyperbloom: "Verdant Hyperbloom"
+  pf_pm_hyperbloom_desc: "The naturally rapid proliferation of this world's flora has resulted in a period of greatly increased crop yields."
 
   # Tomb World Modifiers
   pf_pm_glassed_world: "Glassed World"

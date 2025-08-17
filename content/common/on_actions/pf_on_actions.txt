@@ -65,5 +65,6 @@ on_colonized = {
     events = {
         pf_content.110      # Geothermal taps dice roll event
         pf_content.120      # Static Sandstorms dice roll event
+        pf_content.130      # Verdant Hyperbloom  dice roll event
     }
 }

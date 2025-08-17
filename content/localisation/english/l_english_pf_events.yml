@@ -29,6 +29,10 @@
   pf_content.124.desc: "Following the dramatic changes to [This.GetName]'s environment, the dust storms that have plagued our colony with electrical interference are no more.\n\nThe new climate and environment of [This.GetName] lacks the fine particulate and strong winds that caused these devastating storms, leaving the inhabitants of our colony in peace."
   pf_content.124.a: "Excellent."
 
+  pf_content.131.name: "Blooming Planet"
+  pf_content.131.desc: "The extraordinarily rapid growth of this [This.GetName]'s native flora has proven to be a significant asset to the local farmers. Incorporating native life into our agricultural processes has resulted in periodic episodes of greatly increased yields."
+  pf_content.131.a: "Excellent"
+
   pf_content.200.name: "Natural Treasures"
   pf_content.200.desc: "The [from.pf_planet_surface] of [from.GetName] contain an alluring natural wonder - §H[from.pf_luxury_resource]§!. With proper cultivation they could have significant commercial value. \n\nThis valuable resource is native only to this planet, but with effort could be grown elsewhere. The potential economic benefits are enormous."
   pf_content.200.a: "Interesting."
