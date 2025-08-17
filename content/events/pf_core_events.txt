@@ -777,6 +777,7 @@ event = {
             limit = {
                 NOR = {
                     has_star_flag = tiyanki_home_system     # We don't want to boil the Tiyanki
+                    has_star_flag = tiyanki_spawn_system
                 }
                 any_system_planet = {
                     is_planet_class = pc_gas_giant
