@@ -1013,7 +1013,7 @@ pf_basic_proto_system_02 = {
 	class = "rl_pf_proto_stars"
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 59
+		radius = 50
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
