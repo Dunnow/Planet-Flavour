@@ -914,19 +914,19 @@ pf_basic_proto_system_01 = {
 	class = "rl_pf_proto_stars"
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 30
+		radius = 50
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 60
+		radius = 80
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 90
+		radius = 110
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 120
+		radius = 140
 	}
 
 	usage = misc_system_init
@@ -971,7 +971,7 @@ pf_basic_proto_system_01 = {
 		has_ring = no
 	}
 
-	change_orbit = 30
+	change_orbit = 50
 
 	planet = {
 		count = { min = 1 max = 2 }
@@ -1013,15 +1013,15 @@ pf_basic_proto_system_02 = {
 	class = "rl_pf_proto_stars"
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 30
+		radius = 59
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 100
+		radius = 120
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 130
+		radius = 150
 	}
 
 	usage = misc_system_init
@@ -1066,7 +1066,7 @@ pf_basic_proto_system_02 = {
 		has_ring = no
 	}
 
-	change_orbit = 30
+	change_orbit = 50
 
 	planet = {
 		count = { min = 1 max = 2 }
@@ -1110,19 +1110,19 @@ pf_basic_proto_system_03 = {
 	class = "rl_pf_proto_stars"
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 30
+		radius = 50
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 60
+		radius = 80
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 90
+		radius = 110
 	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 120
+		radius = 140
 	}
 
 	usage = misc_system_init
@@ -1158,7 +1158,7 @@ pf_basic_proto_system_03 = {
 		has_ring = no
 	}
 
-	change_orbit = 30
+	change_orbit = 50
 
 	planet = {
 		count = { min = 1 max = 2 }
