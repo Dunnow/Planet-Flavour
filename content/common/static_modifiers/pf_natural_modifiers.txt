@@ -397,3 +397,10 @@ pf_pm_hyperbloom = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_cultivated_worldscaping.dds"
 	icon_frame = 1
 }
+
+pf_pm_axial_tilt = {
+	pop_environment_tolerance = -0.05
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
+	icon_frame = 3
+}

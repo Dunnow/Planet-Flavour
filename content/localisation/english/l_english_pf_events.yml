@@ -15,7 +15,6 @@
   pf_content.102.desc: "Scans taken by the [This.GetName] of the biological material covering [event_target:pf_second_infested_world_surveyed.GetName] show near-identical genetic markers to the samples taken in the [event_target:pf_first_hive_star_system_surveyed.GetName] system.\n\nThey appear to be part of a common interstellar ecosystem composed of planetary and spacefaring lifeforms. It is unclear just how far they have spread throughout the cluster."
   pf_content.102.a: "Alarming."
   
-  
   pf_content.111.name: "Geothermal Bounty"
   pf_content.111.desc: "[This.GetName] is an unusually tectonically active world. This leads to severe earthquakes and volcanic activity, but also drives significant quantities of energetic magma close to the surface.\n\nWith some targeted investments and tactical terraforming efforts, we could clear several of the most promising sites and unlock the potential energy beneath the surface.\n\nOne such storm of unusual size has grown large enough to affect our colony."
   pf_content.111.a: "We will make the necessary investments."
@@ -36,3 +35,4 @@
   pf_content.200.name: "Natural Treasures"
   pf_content.200.desc: "The [from.pf_planet_surface] of [from.GetName] contain an alluring natural wonder - §H[from.pf_luxury_resource]§!. With proper cultivation they could have significant commercial value. \n\nThis valuable resource is native only to this planet, but with effort could be grown elsewhere. The potential economic benefits are enormous."
   pf_content.200.a: "Interesting."
+

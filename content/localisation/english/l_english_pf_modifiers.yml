@@ -98,6 +98,8 @@
   pf_pm_mild_static_storms_desc: "$pf_pm_static_storms_desc$"
   pf_pm_hyperbloom: "Verdant Hyperbloom"
   pf_pm_hyperbloom_desc: "The naturally rapid proliferation of this world's flora has resulted in a period of greatly increased crop yields."
+  pf_pm_axial_tilt: "Severe Axial Tilt"
+  pf_pm_axial_tilt_desc: "This planet is highly offset from its orbital axis and experiences long and intense seasonal variation."
 
   # Tomb World Modifiers
   pf_pm_glassed_world: "Glassed World"
