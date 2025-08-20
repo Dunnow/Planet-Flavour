@@ -1,0 +1,15 @@
+special_project = {
+    key = pf_presapients_research_facility
+	days_to_research = 360
+	tech_department = society_technology
+	picture = GFX_evt_pf_dry_highlands
+	icon = "gfx/interface/icons/situation_log/situation_log_quest.dds"
+
+	event_scope = planet_event
+
+	location = yes
+
+	on_success = {
+		planet_event = { id = pf_content.311 }
+	}
+}

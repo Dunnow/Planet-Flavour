@@ -128,3 +128,18 @@ d_pf_biomass_infestation = {
 		weight = 0
 	}
 }
+
+d_pf_mysterious_ruins = {
+    is_for_colonizable = yes
+	icon = d_ruins_small
+    category = deposit_cat_rare
+
+    planet_modifier = {
+        planet_jobs_society_research_produces_mult = 0.1
+    }
+
+	potential = {
+        always = no
+	}
+	drop_weight = { weight = 0 }
+}

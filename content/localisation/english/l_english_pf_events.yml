@@ -30,9 +30,17 @@
 
   pf_content.131.name: "Blooming Planet"
   pf_content.131.desc: "The extraordinarily rapid growth of this [This.GetName]'s native flora has proven to be a significant asset to the local farmers. Incorporating native life into our agricultural processes has resulted in periodic episodes of greatly increased yields."
-  pf_content.131.a: "Excellent"
+  pf_content.131.a: "Excellent."
 
   pf_content.200.name: "Natural Treasures"
   pf_content.200.desc: "The [from.pf_planet_surface] of [from.GetName] contain an alluring natural wonder - §H[from.pf_luxury_resource]§!. With proper cultivation they could have significant commercial value. \n\nThis valuable resource is native only to this planet, but with effort could be grown elsewhere. The potential economic benefits are enormous."
   pf_content.200.a: "Interesting."
 
+  pf_content.310.name: "Ruins in the Desert"
+  pf_content.310.desc: "An advance party of colonists on [This.Getname] has encountered the long buried ruins of alien origin in a region of dry highlands.\n\nIt is not clear who its builders were, or for what purpose the structures were built."
+  pf_content.310.a: "We must investigate further."
+  pf_content.310.b: "Search the ruins for any useful technology."
+
+  pf_content.311.name: "Forgotten Studies"
+  pf_content.311.desc: "The exact identities of the makers of the facility encountered on [This.GetName] continues to elude us, but they appear to have been members of a spacefaring confederation some 75,000 years ago.\n\nTheir research facility was established as part of an effort to study one of the native lifeforms of [This.GetName] as candidates for uplifting. It is unclear what the final result was, but the pre-sapient species remains abundant to this day."
+  pf_content.311.a: "Remarkable"

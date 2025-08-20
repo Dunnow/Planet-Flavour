@@ -24,3 +24,6 @@
 
   d_pf_geothermic_extraction_sites: "Geothermic Extraction Sites"
   d_pf_geothermic_extraction_sites_desc: "The active tectonics of this world provide a rich source of energy for our workers."
+
+  d_pf_mysterious_ruins: "Mysterious Ruins"
+  d_pf_mysterious_ruins_desc: "The long buried remains of an ancient civilization's outpost on this world."

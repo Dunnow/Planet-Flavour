@@ -384,3 +384,71 @@ ship_event = {
 		}
 	}
 }
+
+# Engine event for generic colony events
+planet_event = {
+	id = pf_content.300
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			150 = {}
+			2 = { planet_event = { id = pf_content.310 } }
+		}
+	}
+}
+
+# Colonists find ruins in the desert
+planet_event = {
+	id = pf_content.310
+	title = pf_content.310.name
+	desc = "pf_content.310.desc"
+	picture  = GFX_evt_pf_dry_highlands
+	location = this
+    is_triggered_only = yes
+
+	option = {
+		name = pf_content.310.a
+		add_deposit = d_pf_mysterious_ruins
+		enable_special_project = { name = pf_presapients_research_facility }
+	}
+	option = {
+		name = pf_content.310.b
+		add_deposit = d_pf_mysterious_ruins
+		owner = {
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				value = @tier1researchreward
+				min = @tier1researchmin
+				max = @tier1researchmax
+			}
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier1researchreward
+				min = @tier1researchmin
+				max = @tier1researchmax
+			}
+		}
+	}
+}
+
+# We've investigate the pre-sapient research facility
+planet_event = {
+	id = pf_content.311
+	title = pf_content.311.name
+	desc = "pf_content.311.desc"
+	picture  = GFX_evt_society_research
+	location = this
+    is_triggered_only = yes
+
+	option = {
+		name = pf_content.311.a
+		add_tech_option_or_research_effect = {
+			CATEGORY = society_research
+			TECH = tech_epigenetic_triggers
+			PROGRESS = 0.1
+		}
+		spawn_presapient_species_randomizer_effect = yes
+	}
+}
