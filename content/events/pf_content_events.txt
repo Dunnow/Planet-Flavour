@@ -408,6 +408,10 @@ planet_event = {
 	location = this
     is_triggered_only = yes
 
+	trigger = {
+		is_dry = yes
+	}
+
 	option = {
 		name = pf_content.310.a
 		add_deposit = d_pf_mysterious_ruins
