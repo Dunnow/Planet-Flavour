@@ -444,11 +444,17 @@ planet_event = {
 
 	option = {
 		name = pf_content.311.a
-		add_tech_option_or_research_effect = {
-			CATEGORY = society_research
-			TECH = tech_epigenetic_triggers
-			PROGRESS = 0.1
+		custom_tooltip = pf_content.311.a.tt
+		owner = {
+			add_tech_option_or_research_effect = {
+				CATEGORY = society_research
+				TECH = tech_epigenetic_triggers
+				PROGRESS = 0.1
+			}
 		}
-		spawn_presapient_species_randomizer_effect = yes
+		hidden_effect = {
+			save_event_target_as = pre_sapient_planet
+			spawn_presapient_species_randomizer_effect = yes
+		}
 	}
 }
