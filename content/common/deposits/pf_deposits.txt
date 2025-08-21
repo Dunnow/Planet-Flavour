@@ -141,5 +141,34 @@ d_pf_mysterious_ruins = {
 	potential = {
         always = no
 	}
+
+	drop_weight = { weight = 0 }
+}
+
+d_pf_olympus_mons = {
+    is_for_colonizable = yes
+	icon = d_pf_olympus_mons
+    category = deposit_cat_rare
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}
+
+d_pf_ruined_mars_colony = {
+    is_for_colonizable = yes
+	icon = d_pf_drilling_for_gas
+    category = deposit_cat_rare
+
+    planet_modifier = {
+        planet_jobs_society_research_produces_mult = 0.1
+    }
+
+	potential = {
+        always = no
+	}
+
 	drop_weight = { weight = 0 }
 }

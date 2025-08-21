@@ -686,6 +686,27 @@ event = {
         # If for some unhinged reason we have 2 Sols, this should still catch it
         every_system = {
             limit = { has_star_flag = sol_system }
+            # Mars
+            random_system_planet = {
+                limit = {
+                    AND = {
+                        is_planet_class = pc_barren
+                        OR = {
+                            has_planet_flag = planet_mars
+                            planet_size = 13
+                        }
+                    }
+                }
+                add_deposit = d_pf_olympus_mons
+                # Nuked sol only
+                if = {
+                    limit = { solar_system = { has_star_flag = nuked_sol }}
+                    random_list = {
+                        1 = { add_deposit = d_pf_ruined_mars_colony }
+                        2 = {}
+                    }
+                }
+            }
             # Jupiter
             random_system_planet = {
                 limit = {
