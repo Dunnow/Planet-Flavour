@@ -21,7 +21,7 @@ d_pf_psionic_fungi = {
 	custom_tooltip = unlocks_zone_pf_psionic_fungi_all
 	planet_modifier = {
 		psionic_pop_bonus_workforce_mult = 0.1
-		district_farming_max = 4
+		district_farming_max_add = 4
 	}
 
 	drop_weight = {
@@ -70,7 +70,7 @@ d_pf_imposing_canyon = {
 	# Disabled for now as the way to add new zones is extremely bad for compatibility.
 	#custom_tooltip = unlocks_zone_pf_psionic_fungi_all
 	planet_modifier = {
-		district_mining_max = 4
+		district_mining_max_add = 4
 		planet_miners_society_research_produces_add = 1
 	}
 
