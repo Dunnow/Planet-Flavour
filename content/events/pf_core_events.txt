@@ -106,6 +106,7 @@ planet_event = {
             remove_modifier = pf_pm_arboreal_ecosystem
             remove_modifier = pf_pm_abyssal_seas
             remove_modifier = pf_pm_fertile_tundras
+            remove_modifier = pf_pm_leviathan_oceans
         }
 
         # Changed to a cold world
@@ -127,6 +128,7 @@ planet_event = {
             remove_modifier = pf_pm_verdant_oases
 
             remove_modifier = pf_pm_fertile_silts
+            remove_modifier = pf_pm_leviathan_oceans
 
             if = {
                 limit = { NOT = { is_planet_class = pc_arctic}}
@@ -216,6 +218,7 @@ planet_event = {
             remove_modifier = pf_pm_verdant_oases
             remove_modifier = pf_pm_flash_floods
             remove_modifier = pf_pm_fertile_silts
+            remove_modifier = pf_pm_leviathan_oceans
         }
     }
 }

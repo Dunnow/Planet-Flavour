@@ -100,6 +100,8 @@
   pf_pm_hyperbloom_desc: "The naturally rapid proliferation of this world's flora has resulted in a period of greatly increased crop yields."
   pf_pm_axial_tilt: "Severe Axial Tilt"
   pf_pm_axial_tilt_desc: "This planet is highly offset from its orbital axis and experiences long and intense seasonal variation."
+  pf_pm_leviathan_oceans: "Leviathan Oceans"
+  pf_pm_leviathan_oceans_desc: "This world's oceans are unusually deep and productive, hosting enormous marine lifeforms."
 
   # Tomb World Modifiers
   pf_pm_glassed_world: "Glassed World"

@@ -934,7 +934,7 @@ pf_pm_volcanic_soils = {
 		}
 
 		modifier = {
-			add = 20
+			add = 15
 			is_planet_class = "pc_continental"
 		}
 		modifier = {
@@ -942,7 +942,7 @@ pf_pm_volcanic_soils = {
 			is_planet_class = "pc_tropical"
 		}
 		modifier = {
-			add = 30
+			add = 25
 			is_planet_class = "pc_ocean"
 		}
 
@@ -1756,41 +1756,41 @@ pf_pm_fertile_silts = {
 pf_pm_axial_tilt = {
 	spawn_chance = {
 		modifier = {
-			add = 5
+			add = 10
 			is_planet_class = "pc_continental"
 		}
 		modifier = {
-			add = 5
+			add = 10
 			is_planet_class = "pc_ocean"
 		}
 		modifier = {
-			add = 5
+			add = 10
 			is_planet_class = "pc_tropical"
 		}
 
 		modifier = {
-			add = 5
+			add = 10
 			is_planet_class = "pc_desert"
 		}
 		modifier = {
-			add = 5
+			add = 10
 			is_planet_class = "pc_arid"
 		}
 		modifier = {
-			add = 5
+			add = 10
 			is_planet_class = "pc_savannah"
 		}
 
 		modifier = {
-			add = 5
+			add = 10
 			is_planet_class = "pc_tundra"
 		}
 		modifier = {
-			add = 5
+			add = 10
 			is_planet_class = "pc_arctic"
 		}
 		modifier = {
-			add = 5
+			add = 10
 			is_planet_class = "pc_alpine"
 		}
 
@@ -1805,4 +1805,39 @@ pf_pm_axial_tilt = {
 		}
 	}
 	modifier = "pf_pm_axial_tilt"
+}
+
+pf_pm_leviathan_oceans = {
+	spawn_chance = {
+		modifier = {
+			add = 30
+			is_planet_class = "pc_ocean"
+		}
+
+		modifier = {
+			add = 10
+			is_planet_class = "pc_continental"
+		}
+
+		modifier = {
+			add = 10
+			is_planet_class = "pc_tropical"
+		}
+
+		modifier = {
+			add = 20
+			is_planet_class = "pc_gaia"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_leviathan_oceans"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_leviathan_oceans"
 }

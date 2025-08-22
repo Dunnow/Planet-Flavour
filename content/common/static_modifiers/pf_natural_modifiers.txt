@@ -404,3 +404,11 @@ pf_pm_axial_tilt = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
 	icon_frame = 3
 }
+
+pf_pm_leviathan_oceans = {
+	planet_jobs_society_research_produces_mult = 0.15
+	planet_anglers_food_produces_add = 1
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_tides.dds"
+	icon_frame = 1
+}
