@@ -462,3 +462,133 @@ planet_event = {
 		}
 	}
 }
+
+# Tomb world colony event gatekeeper
+planet_event = {
+	id = pf_content.320
+	hide_window = yes
+    is_triggered_only = yes
+
+	trigger = {
+		is_planet_class = pc_nuked
+	}
+
+	immediate = {
+		if = {
+			limit = { has_modifier = pf_pm_nuclear_exchange }
+			random_list = {
+				1 = {
+					random_list = {
+						1 = { planet_event = { id = pf_content.321 }}
+						1 = { planet_event = { id = pf_content.323 }}
+					}
+				}
+				4 = {} # Nothing
+			}
+		}
+		else_if = {
+			limit = { has_modifier = pf_pm_glassed_world }
+			random_list = {
+				1 = {
+					random_list = {
+						1 = { planet_event = { id = pf_content.323 }}
+						1 = { planet_event = { id = pf_content.322 }}
+					}
+				}
+				4 = {} # Nothing
+			}
+		}
+		else_if = {
+			limit = { has_modifier = pf_pm_recovering_biosphere }
+			random_list = {
+				1 = {
+					random_list = {
+						4 = { planet_event = { id = pf_content.323 }}
+						1 = {}
+					}
+				}
+				4 = {} # Nothing
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_modifier = pf_pm_asteroid_impact
+					has_modifier = pf_pm_recent_asteroid_impact
+				}
+			}
+			random_list = {
+				1 = {
+					random_list = {
+						1 = { planet_event = { id = pf_content.323 }}
+					}
+				}
+				4 = {} # Nothing
+			}
+		}
+	}
+}
+
+# Rad storms
+planet_event = {
+	id = pf_content.321
+	title = pf_content.321.name
+	desc = "pf_content.321.desc"
+	picture  = GFX_evt_kaleidoscopic_lights
+	location = this
+    is_triggered_only = yes
+
+	option = {
+		name = pf_content.321.a
+		add_blocker = {
+			type = d_pf_radstorms
+			blocked_deposit = random
+		}
+		add_planet_devastation = 20
+	}
+	option = {
+		name = pf_content.321.b
+		trigger = {
+			has_toxic_baths = yes
+		}
+		owner = {
+			add_resource = {
+				energy = 4000
+			}
+		}
+	}
+}
+
+# Machinery breakdown
+planet_event = {
+	id = pf_content.322
+	title = pf_content.322.name
+	desc = "pf_content.322.desc"
+	picture  = GFX_evt_poor_stormshelter
+	location = this
+    is_triggered_only = yes
+
+	option = {
+		name = pf_content.322.a
+		add_modifier = {
+			modifier = pf_pm_silica_storms
+		}
+	}
+}
+
+# Blooming wastelands
+planet_event = {
+	id = pf_content.323
+	title = pf_content.323.name
+	desc = "pf_content.323.desc"
+	picture  = GFX_evt_animal_wildlife
+	location = this
+    is_triggered_only = yes
+
+	option = {
+		name = pf_content.323.a
+		add_modifier = {
+			modifier = pf_pm_ecosystem_reconstitution
+		}
+	}
+}

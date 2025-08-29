@@ -43,5 +43,18 @@
 
   pf_content.311.name: "Forgotten Studies"
   pf_content.311.desc: "The exact identity of the makers of the facility encountered on [This.GetName] continues to elude us. However they appear to have been members of a spacefaring confederation active in this region of space some 75,000 years ago.\n\nTheir research facility was established as part of an effort to study one of the native lifeforms of [This.GetName] as candidates for uplifting. It is unclear whether they were ultimately successful, but the pre-sapient species remains abundant to this day."
-  pf_content.311.a: "Remarkable"
+  pf_content.311.a: "Remarkable."
   pf_content.311.a.tt: "§YA random pre-sapient species will be created on [This.GetName]§!"
+
+  pf_content.321.name: "Rad Storms"
+  pf_content.321.desc: "Although the nuclear holocaust that descended upon [This.GetName] is long passed, the intense radiation left behind lingers on in many regions of the world.\n\nSome regions that experience intense weather conditions have experienced high energy storms that constantly churn the radioactive fallout, impeding settlement."
+  pf_content.321.a: "Unfortunate."
+  pf_content.321.b: "And? Harvest the energy of these storms."
+
+  pf_content.322.name: "Dust in the Gears"
+  pf_content.322.desc: "The intense plasma bombardment that scorched [This.GetName] left the planet's surface as little more than tortured silica.\n\nSince our colonies establishment, our settlers have experienced continuous issues as dust storms stir razor sharp fragments of glass and silica into machinery and delicate electronic systems."
+  pf_content.322.a: "Unfortunate"
+
+  pf_content.323.name: "Blooming Wastelands"
+  pf_content.323.desc: "Although the cataclysm that devastated [This.GetName] left little behind in its wake, bit by bit the planets lifeforms have begun to weave new ecosystems together.\n\nAlthough much reduced, life on [This.GetName] seems determined to recover."
+  pf_content.323.a: "Excellent."

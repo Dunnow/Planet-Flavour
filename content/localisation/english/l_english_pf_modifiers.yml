@@ -116,6 +116,10 @@
   pf_pm_recovering_biosphere_desc: "Although this planet experienced a cataclysm in its past, the native lifeforms have begun to recover as the ecosystem repairs itself."
   pf_pm_junk_world: "Junk World"
   pf_pm_junk_world_desc: "Towering piles of trash cover this world. Enterprising recyclers can recover valuable resource from the debris."
+  pf_pm_ecosystem_reconstitution: "Ecosystem Reconstitution"
+  pf_pm_ecosystem_reconstitution_desc: "The native lifeforms of this planet are gradually adapting to the new state of their world."
+  pf_pm_silica_storms: "Silica Storms"
+  pf_pm_silica_storms_desc: "The surface of this planet is constantly scoured by storms of razor sharp silica shards, grinding machinery to a halt."
 
   # Relic World Modifiers
   pf_pm_infested_world: "Infested World"

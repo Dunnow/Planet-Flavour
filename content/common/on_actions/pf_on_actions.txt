@@ -72,5 +72,6 @@ on_colonized = {
 on_colony_2_years_old = {
     events = {
         pf_content.300      # Colony Event gatekeeper
+        pf_content.320      # Tomb World Colony event gatekeeper
     }
 }
