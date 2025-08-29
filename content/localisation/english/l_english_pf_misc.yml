@@ -102,8 +102,8 @@
   pf_sandstorm_mitigation_tt: "§YPrevents any further Static Storms.§!"
 
   # Special Projects
-   pf_presapients_research_facility: "Investigate the Mysterious Facility"
-   pf_presapients_research_facility_DESC: "Colonists have found a mysterious alien facility in the highlands of [This.GetName]. Its purpose and origin are unclear."
+  pf_presapients_research_facility: "Investigate the Mysterious Facility"
+  pf_presapients_research_facility_DESC: "Colonists have found a mysterious alien facility in the highlands of [This.GetName]. Its purpose and origin are unclear."
 
   # Technology
   tech_pf_micro_terraforming: "Micro-Terraforming Techniques"
