@@ -1445,6 +1445,10 @@ pf_pm_ideal_sunshine = {
 			factor = 0
 			has_planet_modifier = "pf_pm_ideal_sunshine"
 		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_axial_tilt"
+		}
 
 		modifier = {
 			factor = 0
@@ -1797,6 +1801,10 @@ pf_pm_axial_tilt = {
 		modifier = {
 			factor = 0
 			has_planet_modifier = "pf_pm_axial_tilt"
+		}
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_ideal_sunshine"
 		}
 
 		modifier = {
