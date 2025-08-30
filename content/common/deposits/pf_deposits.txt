@@ -195,3 +195,44 @@ d_pf_radstorms = {
 		weight = 0
 	}
 }
+
+d_pf_alien_grasslands = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_buzzing_plains
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = {
+		planet_farmers_food_produces_add = 1
+		district_farming_max_add = 2
+	}
+
+	drop_weight = {
+		weight = @mid_rare
+		modifier = {
+			factor = 2
+			is_planet_class = pc_gaia
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				NOT = { is_planet_class = pc_gaia}
+				is_wet = no
+			}
+		}
+		modifier = {
+			factor = 0
+			solar_system = {
+				OR = {
+					has_star_flag = empire_home_system
+					has_star_flag = sol_system
+					has_star_flag = deneb_system
+				}
+			}
+		}
+	}
+}

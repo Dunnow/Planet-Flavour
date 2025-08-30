@@ -6,6 +6,8 @@
   d_pf_biomass_infestation: "Biomass Infestation"
   d_pf_biomass_infestation_desc: "Entire regions of this planet are buried beneath thick stinking layers of alien biomass."
   pf_has_not_cleared_infested_world: "$TRIGGER_FAIL$§RThis blocker will not be removable as long as the §Y$pf_pm_infested_world$§! modifier is present.§!"
+  d_pf_alien_grasslands: "Alien Grasslands"
+  d_pf_alien_grasslands_desc: "An endless sea of thick grass tall enough to swallow entire vehicles. The soil is fertile and excellent for cultivation."
 
   # Micro Terraforming
   d_pf_geothermal_taps: "Geothermal Taps"
