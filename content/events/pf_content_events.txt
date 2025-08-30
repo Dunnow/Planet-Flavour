@@ -404,12 +404,32 @@ planet_event = {
 	id = pf_content.310
 	title = pf_content.310.name
 	desc = "pf_content.310.desc"
+	show_sound = pc_desert
 	picture  = GFX_evt_pf_dry_highlands
 	location = this
     is_triggered_only = yes
 
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+
 	trigger = {
 		is_dry = yes
+		NOR = {
+			has_planet_flag = colony_event
+			owner = { has_country_flag = pf_presapient_research_facility_event }
+		}
+	}
+
+	immediate = {
+		set_planet_flag = colony_event
+		owner = { set_country_flag = pf_presapient_research_facility_event }
 	}
 
 	option = {
@@ -464,6 +484,7 @@ planet_event = {
 }
 
 # Tomb world colony event gatekeeper
+# TODO: This can use a lot more content
 planet_event = {
 	id = pf_content.320
 	hide_window = yes
@@ -565,6 +586,7 @@ planet_event = {
 	title = pf_content.322.name
 	desc = "pf_content.322.desc"
 	picture  = GFX_evt_poor_stormshelter
+	show_sound = event_wind_ruins
 	location = this
     is_triggered_only = yes
 
@@ -582,6 +604,7 @@ planet_event = {
 	title = pf_content.323.name
 	desc = "pf_content.323.desc"
 	picture  = GFX_evt_animal_wildlife
+	show_sound = event_alien_nature
 	location = this
     is_triggered_only = yes
 
