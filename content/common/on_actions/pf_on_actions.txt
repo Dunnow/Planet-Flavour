@@ -75,3 +75,9 @@ on_colony_2_years_old = {
         pf_content.320      # Tomb World Colony event gatekeeper
     }
 }
+
+on_colony_5_years_old = {
+    events = {
+        pf_content.140      # Hyper Blizzards gatekeeper
+    }
+}

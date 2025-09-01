@@ -363,6 +363,160 @@ planet_event = {
 	}
 }
 
+# Blizzards gatekeeper
+planet_event = {
+    id = pf_content.140
+    hide_window = yes
+    is_triggered_only = yes
+
+	trigger = {
+		has_modifier = pf_pm_ice_age
+		NOT = { has_planet_flag = pf_blizzard_prevention_complete} # You shouldn't really have it here
+	}
+
+    immediate = {
+		# Will it trigger at all
+		random_list = {
+			10 = {}
+			5 = {
+				# When will the next one trigger
+				random_list = {
+					1 = { planet_event = { id = pf_content.141 years = 5 }}
+					2 = { planet_event = { id = pf_content.141 years = 10 }}
+					2 = { planet_event = { id = pf_content.141 years = 15 }}
+					1 = { planet_event = { id = pf_content.141 years = 20 }}
+				}
+			}
+		}
+    }
+}
+
+# First blizzard
+planet_event = {
+    id = pf_content.141
+	title = pf_content.141.name
+	desc = pf_content.141.desc
+	picture  = GFX_evt_pf_alpine_highlands
+	location = this
+    is_triggered_only = yes
+
+	trigger = {
+		has_modifier = pf_pm_ice_age
+		NOT = { has_planet_flag = pf_blizzard_prevention_complete} # You shouldn't really have it here
+	}
+
+    immediate = {
+		hidden_effect = {
+			# Trigger the next bloom
+			random_list = {
+				1 = { planet_event = { id = pf_content.142 years = 5 }}
+				2 = { planet_event = { id = pf_content.142 years = 10 }}
+				2 = { planet_event = { id = pf_content.142 years = 15 }}
+				2 = { planet_event = { id = pf_content.142 years = 20 }}
+				1 = { planet_event = { id = pf_content.142 years = 25 }}
+			}
+		}
+    }
+
+	option = {
+		name = pf_content.141.a
+		add_planet_devastation = 25
+	}
+}
+
+# Next blizzard - do something!
+planet_event = {
+    id = pf_content.142
+	title = pf_content.142.name
+	desc = pf_content.142.desc
+	picture  = GFX_evt_weather_manipulators
+	location = this
+    is_triggered_only = yes
+
+	trigger = {
+		has_modifier = pf_pm_ice_age
+		NOT = { has_planet_flag = pf_blizzard_prevention_complete} # You shouldn't really have it here
+	}
+
+    immediate = {
+		hidden_effect = {
+			# Trigger the next blizzard
+			random_list = {
+				1 = { planet_event = { id = pf_content.143 years = 5 }}
+				2 = { planet_event = { id = pf_content.143 years = 10 }}
+				2 = { planet_event = { id = pf_content.143 years = 15 }}
+				2 = { planet_event = { id = pf_content.143 years = 20 }}
+				1 = { planet_event = { id = pf_content.143 years = 25 }}
+			}
+		}
+    }
+
+	option = {
+		name = pf_content.142.a
+		enable_special_project = { name = pf_hyper_blizzards_prevention }
+		add_planet_devastation = 25
+	}
+}
+
+# Repeatable blizzard until you do the special project
+planet_event = {
+    id = pf_content.143
+	title = pf_content.143.name
+	desc = pf_content.143.desc
+	picture  = GFX_evt_weather_manipulators
+	location = this
+    is_triggered_only = yes
+
+	trigger = {
+		has_modifier = pf_pm_ice_age
+		NOT = { has_planet_flag = pf_blizzard_prevention_complete}
+	}
+
+    immediate = {
+		hidden_effect = {
+			# Trigger the next bloom
+			random_list = {
+				1 = { planet_event = { id = pf_content.143 years = 5 }}
+				2 = { planet_event = { id = pf_content.143 years = 10 }}
+				2 = { planet_event = { id = pf_content.143 years = 15 }}
+				2 = { planet_event = { id = pf_content.143 years = 20 }}
+				1 = { planet_event = { id = pf_content.143 years = 25 }}
+			}
+		}
+    }
+
+	option = {
+		name = pf_content.143.a
+		add_planet_devastation = 25
+	}
+}
+
+# We fixed the blizzards
+planet_event = {
+    id = pf_content.144
+	title = pf_content.144.name
+	desc = pf_content.144.desc
+	picture  = GFX_evt_pf_planet_space
+	location = this
+    is_triggered_only = yes
+
+    immediate = {
+		set_planet_flag = pf_blizzard_prevention_complete
+    }
+
+	option = {
+		name = pf_content.143.a
+		owner = {
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = @tier1researchreward
+				min = @tier1researchmin
+				max = @tier1researchmax
+			}
+		}
+	}
+}
+
 ship_event = {
 	id = pf_content.200
 	title = pf_content.200.name

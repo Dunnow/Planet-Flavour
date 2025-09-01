@@ -32,6 +32,22 @@
   pf_content.131.desc: "The extraordinarily rapid growth of this [This.GetName]'s native flora has proven to be a significant asset to the local farmers. Incorporating native life into our agricultural processes has resulted in periodic episodes of greatly increased yields."
   pf_content.131.a: "Excellent."
 
+  pf_content.141.name: "Glacial Blizzards "
+  pf_content.141.desc: "The cold climate of [This.GetName] is perfectly suited for the formation of unusually large and severe blizzards. A particularly devastating manifestation has struck our fledgling colony, causing damage and disruption."
+  pf_content.141.a: "Unfortunate."
+
+  pf_content.142.name: "Catastrophic Snowstorms"
+  pf_content.142.desc: "Another massive polar cyclone has struck our colony on [This.GetName]. With major transport lines down and large swathes of the planet experiencing significant snowfall, production has ground to a halt.\n\nSome of the colony's senior administration believe that the intensity of the snowstorms can be alleviated by distributing aerosol particulates in the upper atmosphere to prevent the specific conditions that cause the storms."
+  pf_content.142.a: "Make it so."
+
+  pf_content.143.name: "Icy Winters"
+  pf_content.143.desc: "Another massive polar cyclone has struck our colony on [This.GetName]. Without concerted effort to prevent the formation of these weather events, our colony will continue to periodically experience severe storms."
+  pf_content.143.a: "Understood."
+
+  pf_content.144.name: "Clear Skies"
+  pf_content.144.desc: "Our weather modification efforts on [This.GetName] have finally been completed. Our meteorologists are confident that any future storms, while large, will not come close to the energy required to cause such significant damage to our colony.\n\nAs part of the project, our science team has been able to gather valuable data about high-energy weather patterns and their applications."
+  pf_content.144.a: "Excellent."
+
   pf_content.200.name: "Natural Treasures"
   pf_content.200.desc: "The [from.pf_planet_surface] of [from.GetName] contain an alluring natural wonder - §H[from.pf_luxury_resource]§!. With proper cultivation they could have significant commercial value. \n\nThis valuable resource is native only to this planet, but with effort could be grown elsewhere. The potential economic benefits are enormous."
   pf_content.200.a: "Interesting."

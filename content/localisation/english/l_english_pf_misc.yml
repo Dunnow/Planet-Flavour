@@ -104,7 +104,8 @@
   # Special Projects
   pf_presapients_research_facility: "Investigate the Mysterious Facility"
   pf_presapients_research_facility_DESC: "Colonists have found a mysterious alien facility in the highlands of [This.GetName]. Its purpose and origin are unclear."
-
+  pf_hyper_blizzards_prevention: "Atmospheric Aerosol Seeding"
+  pf_hyper_blizzards_prevention_desc: "By seeding the skies of [This.GetName] with sunlight-absorbing nano-particulates, we can disrupt the unique conditions that allow the formation of devastating high energy storms."
   # Technology
   tech_pf_micro_terraforming: "Micro-Terraforming Techniques"
   tech_pf_micro_terraforming_desc: "Small, localized terraforming projects enable engineers to make specific alterations to the environment, allowing us to create specialised ecosystems on our worlds"
