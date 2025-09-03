@@ -549,6 +549,7 @@ planet_event = {
 		random_list = {
 			150 = {}
 			2 = { planet_event = { id = pf_content.310 }}
+			2 = { planet_event = { id = pf_content.330 }} # Colonists find habitable caves
 			2 = { planet_event = { id = pf_content.340 }} # Colonists find evidence of ancient neutron sweep
 		}
 	}
@@ -771,6 +772,47 @@ planet_event = {
 	}
 }
 
+# Colonists find habitable caves
+planet_event = {
+	id = pf_content.330
+	title = pf_content.330.name
+	desc = "pf_content.330.desc"
+	picture  = GFX_evt_in_the_dark
+	location = this
+    is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+
+	trigger = {
+		NOR = {
+			has_planet_flag = colony_event
+			owner = { has_country_flag = pf_habitable_caves_found }
+		}
+	}
+
+	immediate = {
+		set_planet_flag = colony_event
+		owner = { set_country_flag = pf_habitable_caves_found }
+	}
+
+	option = {
+		name = pf_content.330.a
+		add_deposit = d_pf_habitable_caves
+	}
+	option = {
+		name = pf_content.330.b
+		trigger = { is_subterranean_empire = yes }
+		add_deposit = d_pf_habitable_caves_large
+	}
+}
 
 # Colonists find evidence of ancient neutron sweep
 planet_event = {

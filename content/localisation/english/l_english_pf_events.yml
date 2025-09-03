@@ -75,6 +75,11 @@
   pf_content.323.desc: "Although the cataclysm that devastated [This.GetName] left little behind in its wake, bit by bit the planets lifeforms have begun to weave new ecosystems together.\n\nAlthough much reduced, life on [This.GetName] seems determined to recover."
   pf_content.323.a: "Excellent."
 
+  pf_content.330.name: "Under the Mountain"
+  pf_content.330.desc: "Our colonists on [This.GetName] have encountered an extensive network of subterranean caves just beneath the surface.\n\nAlthough poor in minerals and ores, they are large and seismically stable. Several of our colonial settlements have already begun to incorporate the added space into their urban layout."
+  pf_content.330.a: "Excellent."
+  pf_content.330.b: "Expand the network even further."
+
   pf_content.340.name: "Ashes Under Stone"
   pf_content.340.desc: "Geologists prospecting on [This.GetName] have discovered an unusual layer of rock buried beneath several geological strata.\n\nIt appears to be built up of layers of decomposed biological matter. An initial catastrophic event seems to have gradually killed off large chunks of the ecosystem over time.\n\nAlthough the evidence of the incident is buried everywhere within rock, the nature of the event itself that struck [This.GetName] appears to be a complete mystery."
   pf_content.340.a: "Unusual."

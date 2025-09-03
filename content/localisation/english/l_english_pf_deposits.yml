@@ -8,6 +8,10 @@
   pf_has_not_cleared_infested_world: "$TRIGGER_FAIL$§RThis blocker will not be removable as long as the §Y$pf_pm_infested_world$§! modifier is present.§!"
   d_pf_alien_grasslands: "Alien Grasslands"
   d_pf_alien_grasslands_desc: "An endless sea of thick grass tall enough to swallow entire vehicles. The soil is fertile and excellent for cultivation."
+  d_pf_habitable_caves: "Habitable Caves"
+  d_pf_habitable_caves_desc: "This planet is home to a number of large caves and chasms capable of hosting settlements and industrial infrastructure."
+  d_pf_habitable_caves_large: "Extensive Habitable Cave System"
+  d_pf_habitable_caves_large_desc: "This planet is home to a sprawling system of caverns and subterranean chambers, providing ample room for enterprising colonists."
 
   # Micro Terraforming
   d_pf_geothermal_taps: "Geothermal Taps"

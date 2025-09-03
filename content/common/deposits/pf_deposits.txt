@@ -236,3 +236,35 @@ d_pf_alien_grasslands = {
 		}
 	}
 }
+
+d_pf_habitable_caves = {
+    is_for_colonizable = yes
+	icon = d_ore_rich_caverns
+    category = deposit_cat_rare
+
+    planet_modifier = {
+        planet_max_districts_add = 1
+    }
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}
+
+d_pf_habitable_caves_large = {
+    is_for_colonizable = yes
+	icon = d_fungal_caves
+    category = deposit_cat_rare
+
+    planet_modifier = {
+        planet_max_districts_add = 2
+    }
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}
