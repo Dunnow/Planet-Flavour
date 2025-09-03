@@ -21,7 +21,7 @@ d_pf_psionic_fungi = {
 	custom_tooltip = unlocks_zone_pf_psionic_fungi_all
 	planet_modifier = {
 		psionic_pop_bonus_workforce_mult = 0.1
-		district_farming_max = 4
+		district_farming_max_add = 4
 	}
 
 	drop_weight = {
@@ -70,7 +70,7 @@ d_pf_imposing_canyon = {
 	# Disabled for now as the way to add new zones is extremely bad for compatibility.
 	#custom_tooltip = unlocks_zone_pf_psionic_fungi_all
 	planet_modifier = {
-		district_mining_max = 4
+		district_mining_max_add = 4
 		planet_miners_society_research_produces_add = 1
 	}
 
@@ -127,4 +127,144 @@ d_pf_biomass_infestation = {
 	drop_weight = {
 		weight = 0
 	}
+}
+
+d_pf_mysterious_ruins = {
+    is_for_colonizable = yes
+	icon = d_ruins_small
+    category = deposit_cat_rare
+
+    planet_modifier = {
+        planet_jobs_society_research_produces_mult = 0.1
+    }
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}
+
+d_pf_olympus_mons = {
+    is_for_colonizable = yes
+	icon = d_pf_olympus_mons
+    category = deposit_cat_rare
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}
+
+d_pf_ruined_mars_colony = {
+    is_for_colonizable = yes
+	icon = d_pf_drilling_for_gas
+    category = deposit_cat_rare
+
+    planet_modifier = {
+        planet_jobs_society_research_produces_mult = 0.1
+    }
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}
+
+d_pf_radstorms = {
+	time = 270
+	icon = d_radioactive_wasteland
+
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+
+	resources = {
+		category = deposit_blockers_natural
+		cost = {
+			energy = 1000
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -2
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_pf_alien_grasslands = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	icon = d_buzzing_plains
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = {
+		planet_farmers_food_produces_add = 1
+		district_farming_max_add = 2
+	}
+
+	drop_weight = {
+		weight = @mid_rare
+		modifier = {
+			factor = 2
+			is_planet_class = pc_gaia
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				NOT = { is_planet_class = pc_gaia}
+				is_wet = no
+			}
+		}
+		modifier = {
+			factor = 0
+			solar_system = {
+				OR = {
+					has_star_flag = empire_home_system
+					has_star_flag = sol_system
+					has_star_flag = deneb_system
+				}
+			}
+		}
+	}
+}
+
+d_pf_habitable_caves = {
+    is_for_colonizable = yes
+	icon = d_ore_rich_caverns
+    category = deposit_cat_rare
+
+    planet_modifier = {
+        planet_max_districts_add = 1
+    }
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}
+
+d_pf_habitable_caves_large = {
+    is_for_colonizable = yes
+	icon = d_fungal_caves
+    category = deposit_cat_rare
+
+    planet_modifier = {
+        planet_max_districts_add = 2
+    }
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
 }

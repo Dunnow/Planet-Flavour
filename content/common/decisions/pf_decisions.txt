@@ -88,3 +88,78 @@ decision_pf_clear_impenetrable_jungles = {
         }
     }
 }
+
+decision_pf_geothermic_extraction = {
+    owned_planets_only = yes
+    icon = decision_drilling_for_gas
+
+    enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 2000
+		}
+	}
+
+    potential = {
+        has_planet_flag = pf_geothermic_extraction_decision_allowed
+    }
+
+    allow = {
+        always = yes
+    }
+
+    effect = {
+        add_deposit = d_pf_geothermic_extraction_sites
+        hidden_effect = { remove_planet_flag = pf_geothermic_extraction_decision_allowed }
+    }
+
+    ai_weight = {
+        base = 100
+    }
+}
+
+decision_pf_sandstorm_mitigation = {
+    owned_planets_only = yes
+    icon = decision_arid_planet
+
+    enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			energy = 3000
+		}
+	}
+
+    potential = {
+        has_planet_flag = pf_static_sandstorm_world
+    }
+
+    allow = {
+        always = yes
+    }
+
+    effect = {
+        custom_tooltip = pf_sandstorm_mitigation_tt
+		if = {
+			limit = { has_modifier = pf_pm_harsh_static_storms }
+			remove_modifier = pf_pm_harsh_static_storms
+		}
+		if = {
+			limit = { has_modifier = pf_pm_static_storms }
+			remove_modifier = pf_pm_static_storms
+		}
+		if = {
+			limit = { has_modifier = pf_pm_mild_static_storms }
+			remove_modifier = pf_pm_mild_static_storms
+		}
+        hidden_effect = {
+            set_planet_flag = pf_removed_static_sandstorm_world
+            remove_planet_flag = pf_static_sandstorm_world
+        }
+    }
+
+    ai_weight = {
+        base = 25
+    }
+}

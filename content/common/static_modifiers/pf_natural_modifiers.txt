@@ -111,7 +111,7 @@ pf_pm_extraplanetary_life = {
 
 # Also a relatively common modifiers
 pf_pm_planetary_rings = {
-	district_mining_max = 2
+	district_mining_max_add = 2
 	planet_jobs_minerals_produces_mult = 0.10
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_asteroid_belt.dds"
@@ -119,7 +119,7 @@ pf_pm_planetary_rings = {
 }
 
 pf_pm_megacoral_reefs = {
-	district_farming_max = 2
+	district_farming_max_add = 2
 	planet_jobs_food_produces_mult = 0.10
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_coral_ecosystems.dds"
@@ -152,7 +152,7 @@ pf_pm_abundant_parasites = {
 }
 
 pf_pm_canyon_world = {
-	district_mining_max = 2
+	district_mining_max_add = 2
 	planet_miners_volatile_motes_produces_add = 0.1
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_canyons.dds"
@@ -177,7 +177,7 @@ pf_pm_snowball_world = {
 
 pf_pm_volcanic_soils = {
 	planet_jobs_food_produces_mult = 0.3
-	district_farming_max = 4
+	district_farming_max_add = 4
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_volcanic_soils.dds"
 	icon_frame = 1
@@ -348,7 +348,7 @@ pf_pm_flash_floods = {
 }
 
 pf_pm_fertile_silts = {
-	district_farming_max = 3
+	district_farming_max_add = 3
 	planet_jobs_food_produces_mult = 0.1
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_river.dds"
@@ -361,5 +361,61 @@ pf_pm_psionic_gaia_world = {
 	psionic_pop_bonus_workforce_mult = 0.1
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_shroud_storm.dds"
+	icon_frame = 1
+}
+
+pf_pm_harsh_static_storms = {
+	planet_jobs_physics_research_produces_mult = -0.30
+	planet_pops_robotics_upkeep_mult = 0.30
+	pop_environment_tolerance = -0.15
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_strange_sandstorm.dds"
+	icon_frame = 3
+}
+
+pf_pm_static_storms = {
+	planet_jobs_physics_research_produces_mult = -0.20
+	planet_pops_robotics_upkeep_mult = 0.20
+	pop_environment_tolerance = -0.1
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_strange_sandstorm.dds"
+	icon_frame = 3
+}
+
+pf_pm_mild_static_storms = {
+	planet_jobs_physics_research_produces_mult = -0.1
+	planet_pops_robotics_upkeep_mult = 0.1
+	pop_environment_tolerance = -0.05
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_strange_sandstorm.dds"
+	icon_frame = 3
+}
+
+pf_pm_hyperbloom = {
+	planet_jobs_food_produces_mult = 0.5
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_cultivated_worldscaping.dds"
+	icon_frame = 1
+}
+
+pf_pm_axial_tilt = {
+	pop_environment_tolerance = -0.05
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
+	icon_frame = 3
+}
+
+pf_pm_leviathan_oceans = {
+	planet_jobs_society_research_produces_mult = 0.15
+	planet_anglers_food_produces_add = 1
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_tides.dds"
+	icon_frame = 1
+}
+
+pf_pm_ancient_fossil_strata = {
+	planet_miners_society_research_produces_add = 1
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_seismological_disturbances.dds"
 	icon_frame = 1
 }

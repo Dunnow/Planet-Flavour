@@ -90,6 +90,20 @@
   pf_pm_flash_floods_desc: "Periodic rainfall surges typically result in sudden flooding of the water bodies of this world."
   pf_pm_fertile_silts: "Fertile Silts"
   pf_pm_fertile_silts_desc: "Regular and stable cycles of flood and erosion have deposited abundant nutrients into the fertile soils that border this world's rivers."
+  pf_pm_static_storms: "Static Storms"
+  pf_pm_static_storms_desc: "Ferocious sandstorms across this planet stir up enormous electrical interference. Economic activities across the planet are affected, with computing and robotics particularly hard hit."
+  pf_pm_harsh_static_storms: "Harsh Static Storms"
+  pf_pm_harsh_static_storms_desc: "$pf_pm_static_storms_desc$"
+  pf_pm_mild_static_storms: "Mild Static Storms"
+  pf_pm_mild_static_storms_desc: "$pf_pm_static_storms_desc$"
+  pf_pm_hyperbloom: "Verdant Hyperbloom"
+  pf_pm_hyperbloom_desc: "The naturally rapid proliferation of this world's flora has resulted in a period of greatly increased crop yields."
+  pf_pm_axial_tilt: "Severe Axial Tilt"
+  pf_pm_axial_tilt_desc: "This planet is highly offset from its orbital axis and experiences long and intense seasonal variation."
+  pf_pm_leviathan_oceans: "Leviathan Oceans"
+  pf_pm_leviathan_oceans_desc: "This world's oceans are unusually deep and productive, hosting enormous marine lifeforms."
+  pf_pm_ancient_fossil_strata: "Ancient Fossil Strata"
+  pf_pm_ancient_fossil_strata_desc: "This planet bears the scars of an ancient extinction event in its rocks."
 
   # Tomb World Modifiers
   pf_pm_glassed_world: "Glassed World"
@@ -104,6 +118,10 @@
   pf_pm_recovering_biosphere_desc: "Although this planet experienced a cataclysm in its past, the native lifeforms have begun to recover as the ecosystem repairs itself."
   pf_pm_junk_world: "Junk World"
   pf_pm_junk_world_desc: "Towering piles of trash cover this world. Enterprising recyclers can recover valuable resource from the debris."
+  pf_pm_ecosystem_reconstitution: "Ecosystem Reconstitution"
+  pf_pm_ecosystem_reconstitution_desc: "The native lifeforms of this planet are gradually adapting to the new state of their world."
+  pf_pm_silica_storms: "Silica Storms"
+  pf_pm_silica_storms_desc: "The surface of this planet is constantly scoured by storms of razor sharp silica shards, grinding machinery to a halt."
 
   # Relic World Modifiers
   pf_pm_infested_world: "Infested World"

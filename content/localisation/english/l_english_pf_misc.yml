@@ -4,6 +4,7 @@
   mod_planet_farmers_engineering_research_produces_add: "£engineering_research£ $engineering_research$ per 100 £job_farmer£ $job_farmer_plural$"
   mod_planet_farmers_sr_zro_produces_add: "£zro£ $sr_zro$ per 100 £job_farmer£ $job_farmer_plural$"
   mod_planet_researchers_food_produces_add: "£food£ $food$ per 100 £job_researcher£ $job_researcher_plural$"
+  mod_planet_anglers_food_produces_add: "£food£ $food$ per 100 £job_angler£ $job_angler_plural$"
   mod_planet_anglers_society_research_produces_add: "£society_research£ $society_research$ per 100 £job_angler£ $job_angler_plural$"
   mod_planet_anglers_engineering_research_produces_add: "£engineering_research£ $engineering_research$ per 100 £job_angler£ $job_angler_plural$"
   mod_planet_miners_consumer_goods_produces_add: "£consumer_goods£ $consumer_goods$ per 100 £job_miner£ $job_miner$"
@@ -92,6 +93,21 @@
 
   decision_pf_terraform_food: "Terraforming: Agricultural Enhancements"
   decision_pf_terraform_food_desc: "By rebuilding the hydrosphere and biosphere from the ground up, a region of barren, unproductive land can be transformed into lush and fertile farmland."
+
+  decision_pf_geothermic_extraction: "Construct Geothermic Extraction Sites"
+  decision_pf_geothermic_extraction_desc: "With some targeted investments and tactical terraforming efforts, we could harness the substantial tectonic forces of this world and unlock the potential energy beneath the surface"
+
+  decision_pf_sandstorm_mitigation: "Conduct Sandstorm Mitigation"
+  decision_pf_sandstorm_mitigation_desc: "The major dust storms that wrack this world are the result of many interesting environmental factors. By carefully tweaking a few aspects of the climate and geology around the worst hotspots, we can prevent storms of a serious magnitude from forming at all."
+  pf_sandstorm_mitigation_tt: "§YPrevents any further Static Storms.§!"
+
+  # Special Projects
+  pf_presapients_research_facility: "Investigate the Mysterious Facility"
+  pf_presapients_research_facility_DESC: "Colonists have found a mysterious alien facility in the highlands of [This.GetName]. Its purpose and origin are unclear."
+  pf_hyper_blizzards_prevention: "Atmospheric Aerosol Seeding"
+  pf_hyper_blizzards_prevention_DESC: "By seeding the skies of [This.GetName] with sunlight-absorbing nano-particulates, we can disrupt the unique conditions that allow the formation of devastating high energy storms."
+  pf_ancient_neutron_sweep_investigation: "Fossilized Devastation"
+  pf_ancient_neutron_sweep_investigation_DESC: "[This.GetName] bears the evidence of an ancient cataclysm that devastated life - but no signs of the cause itself. Our scientists are eager to learn more."
 
   # Technology
   tech_pf_micro_terraforming: "Micro-Terraforming Techniques"

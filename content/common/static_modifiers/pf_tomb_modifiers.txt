@@ -42,3 +42,19 @@ pf_pm_junk_world = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_trash_rings.dds"
 	icon_frame = 2
 }
+
+pf_pm_ecosystem_reconstitution = {
+	planet_jobs_society_research_produces_mult = 0.10
+	pop_environment_tolerance = 0.05
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_natural_beauty.dds"
+	icon_frame = 1
+}
+
+pf_pm_silica_storms = {
+	planet_building_build_speed_mult = -0.20
+	planet_buildings_upkeep_mult = 0.15
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_strange_sandstorm.dds"
+	icon_frame = 3
+}

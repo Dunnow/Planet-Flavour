@@ -106,6 +106,7 @@ planet_event = {
             remove_modifier = pf_pm_arboreal_ecosystem
             remove_modifier = pf_pm_abyssal_seas
             remove_modifier = pf_pm_fertile_tundras
+            remove_modifier = pf_pm_leviathan_oceans
         }
 
         # Changed to a cold world
@@ -127,6 +128,7 @@ planet_event = {
             remove_modifier = pf_pm_verdant_oases
 
             remove_modifier = pf_pm_fertile_silts
+            remove_modifier = pf_pm_leviathan_oceans
 
             if = {
                 limit = { NOT = { is_planet_class = pc_arctic}}
@@ -216,6 +218,7 @@ planet_event = {
             remove_modifier = pf_pm_verdant_oases
             remove_modifier = pf_pm_flash_floods
             remove_modifier = pf_pm_fertile_silts
+            remove_modifier = pf_pm_leviathan_oceans
         }
     }
 }
@@ -686,6 +689,27 @@ event = {
         # If for some unhinged reason we have 2 Sols, this should still catch it
         every_system = {
             limit = { has_star_flag = sol_system }
+            # Mars
+            random_system_planet = {
+                limit = {
+                    AND = {
+                        is_planet_class = pc_barren
+                        OR = {
+                            has_planet_flag = planet_mars
+                            planet_size = 13
+                        }
+                    }
+                }
+                add_deposit = d_pf_olympus_mons
+                # Nuked sol only
+                if = {
+                    limit = { solar_system = { has_star_flag = nuked_sol }}
+                    random_list = {
+                        1 = { add_deposit = d_pf_ruined_mars_colony }
+                        2 = {}
+                    }
+                }
+            }
             # Jupiter
             random_system_planet = {
                 limit = {
@@ -777,6 +801,7 @@ event = {
             limit = {
                 NOR = {
                     has_star_flag = tiyanki_home_system     # We don't want to boil the Tiyanki
+                    has_star_flag = tiyanki_spawn_system
                 }
                 any_system_planet = {
                     is_planet_class = pc_gas_giant

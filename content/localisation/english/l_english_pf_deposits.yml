@@ -6,6 +6,12 @@
   d_pf_biomass_infestation: "Biomass Infestation"
   d_pf_biomass_infestation_desc: "Entire regions of this planet are buried beneath thick stinking layers of alien biomass."
   pf_has_not_cleared_infested_world: "$TRIGGER_FAIL$§RThis blocker will not be removable as long as the §Y$pf_pm_infested_world$§! modifier is present.§!"
+  d_pf_alien_grasslands: "Alien Grasslands"
+  d_pf_alien_grasslands_desc: "An endless sea of thick grass tall enough to swallow entire vehicles. The soil is fertile and excellent for cultivation."
+  d_pf_habitable_caves: "Habitable Caves"
+  d_pf_habitable_caves_desc: "This planet is home to a number of large caves and chasms capable of hosting settlements and industrial infrastructure."
+  d_pf_habitable_caves_large: "Extensive Habitable Cave System"
+  d_pf_habitable_caves_large_desc: "This planet is home to a sprawling system of caverns and subterranean chambers, providing ample room for enterprising colonists."
 
   # Micro Terraforming
   d_pf_geothermal_taps: "Geothermal Taps"
@@ -21,3 +27,16 @@
   d_pf_environmental_enhancements_dry_desc: "Careful modification of local weather patterns and the seeding of gene-modified flora causes the arid badlands to bloom."
   d_pf_environmental_enhancements_cold: "Environmental Enhancements"
   d_pf_environmental_enhancements_cold_desc: "Deliberate sculpting of hydrology and geology produce an oasis of plant and animal life among the harsh cold of this [pf_planet_type]."
+
+  d_pf_geothermic_extraction_sites: "Geothermic Extraction Sites"
+  d_pf_geothermic_extraction_sites_desc: "The active tectonics of this world provide a rich source of energy for our workers."
+
+  d_pf_mysterious_ruins: "Mysterious Ruins"
+  d_pf_mysterious_ruins_desc: "The long buried remains of an ancient civilization's outpost on this world."
+  d_pf_olympus_mons: "Ancient Supervolcano"
+  d_pf_olympus_mons_desc: "A massive shield volcano. Although long-dead, its sheer size makes it a truly imposing sight."
+  d_pf_ruined_mars_colony: "Abandoned Outposts"
+  d_pf_ruined_mars_colony_desc: "The ruined first steps of a primitive pre-FTL civilization."
+
+  d_pf_radstorms: "Rad Storms"
+  d_pf_radstorms_desc: "Pockets of intense weather blanket these regions in radioactive contaminaton."
