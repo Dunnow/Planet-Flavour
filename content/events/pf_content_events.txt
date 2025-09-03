@@ -548,7 +548,8 @@ planet_event = {
 	immediate = {
 		random_list = {
 			150 = {}
-			2 = { planet_event = { id = pf_content.310 } }
+			2 = { planet_event = { id = pf_content.310 }}
+			2 = { planet_event = { id = pf_content.340 }} # Colonists find evidence of ancient neutron sweep
 		}
 	}
 }
@@ -766,6 +767,88 @@ planet_event = {
 		name = pf_content.323.a
 		add_modifier = {
 			modifier = pf_pm_ecosystem_reconstitution
+		}
+	}
+}
+
+
+# Colonists find evidence of ancient neutron sweep
+planet_event = {
+	id = pf_content.340
+	title = pf_content.340.name
+	desc = "pf_content.340.desc"
+	picture  = GFX_evt_alien_wildlife
+	location = this
+    is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+
+	trigger = {
+		NOR = {
+			has_planet_flag = colony_event
+			owner = { has_country_flag = pf_ancient_neutron_sweep }
+		}
+	}
+
+	immediate = {
+		set_planet_flag = colony_event
+		owner = { set_country_flag = pf_ancient_neutron_sweep }
+	}
+
+	option = {
+		name = pf_content.340.a
+		enable_special_project = { name = pf_ancient_neutron_sweep_investigation }
+	}
+}
+
+# We find out about the neutron sweep
+planet_event = {
+	id = pf_content.341
+	title = pf_content.341.name
+	desc = "pf_content.341.desc"
+	picture  = GFX_evt_planet_beam
+	location = this
+    is_triggered_only = yes
+
+	option = {
+		name = pf_content.341.a
+		add_modifier = {
+			modifier = pf_pm_ancient_fossil_strata
+		}
+	}
+
+	option = {
+		name = pf_content.341.b
+		trigger = {
+			owner = {
+				has_technology = tech_pk_neutron
+			}
+		}
+		owner = {
+			add_resource = {
+				physics_research = 10000
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.341.c
+		trigger = {
+			owner = {
+				has_ascension_perk = ap_colossus
+				NOT = { has_technology = tech_pk_neutron }
+			}
+		}
+		owner = {
+			add_research_option = tech_pk_neutron
 		}
 	}
 }

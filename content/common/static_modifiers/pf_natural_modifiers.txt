@@ -412,3 +412,10 @@ pf_pm_leviathan_oceans = {
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_tides.dds"
 	icon_frame = 1
 }
+
+pf_pm_ancient_fossil_strata = {
+	planet_miners_society_research_produces_add = 1
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_seismological_disturbances.dds"
+	icon_frame = 1
+}
