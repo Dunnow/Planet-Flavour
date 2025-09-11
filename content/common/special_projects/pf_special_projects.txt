@@ -16,7 +16,6 @@ special_project = {
 
 special_project = {
     key = pf_hyper_blizzards_prevention
-	days_to_research = 360
 	tech_department = physics_technology
 	cost = 1000
 	picture = GFX_evt_pf_planet_space
@@ -33,7 +32,6 @@ special_project = {
 
 special_project = {
     key = pf_ancient_neutron_sweep_investigation
-	days_to_research = 360
 	tech_department = society_technology
 	cost = 1000
 	picture = GFX_evt_archaeological_dig
