@@ -71,3 +71,72 @@ event = {
 		}
 	}
 }
+
+# Hive Stars spawn system
+system_event = {
+	id = pf_misc.200
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		# We're on a random system. We need to find the furthest from us.
+
+		spawn_system = {
+			min_distance >= 10
+			max_distance <= 20
+			direction = rimwards
+			initializer = pf_ringworld_network_01
+			hyperlane = yes
+		}
+
+		last_created_system = {
+			save_event_target_as = pf_first_system
+			save_event_target_as = pf_distance_check_source
+			set_variable = {
+				which = pf_best_distance
+				value = 0
+			}
+			every_system = {
+				limit = { not = { has_star_flag = crisis_spawn_exclude } } #is_rim_system = yes
+				save_event_target_as = pf_distance_check_target
+				set_variable = {
+					which = pf_candidate_distance
+					value = value:pf_star_distance_euclidean
+				}
+				log = "Comparing for [This.GetName], Distance [This.pf_candidate_distance], Best [pf_distance_check_source.pf_best_distance]"
+				if = {
+					limit = {
+						# Check if it's farther than our current best
+						event_target:pf_distance_check_source = {
+							check_variable = {
+								which = pf_best_distance
+								value < prev.pf_candidate_distance
+							}
+						}
+					}
+					log = "Found new best candidate [This.GetName]. Old candidate [pf_best_candidate.GetName]"
+					save_event_target_as = pf_best_candidate
+					event_target:pf_distance_check_source = {
+						set_variable = {
+							which = pf_best_distance
+							value = prev.pf_candidate_distance
+						}
+					}
+				}
+			}
+			event_target:pf_best_candidate = {
+				set_star_flag = pf_best_candidate
+				spawn_system = {
+					min_distance >= 10
+					max_distance <= 20
+					direction = rimwards
+					initializer = pf_ringworld_network_01
+					hyperlane = no
+				}
+			}
+			last_created_system = {
+				save_event_target_as = pf_second_system
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+pf_star_distance_euclidean = {
+    base = 0
+    complex_trigger_modifier = {
+        trigger = distance
+        trigger_scope = event_target:pf_distance_check_target
+        parameters = {
+            source = event_target:pf_distance_check_source
+            type = euclidean
+        }
+        mode = add
+    }
+}
+
+pf_galactic_radius_centre = {
+    base = 0
+
+}
