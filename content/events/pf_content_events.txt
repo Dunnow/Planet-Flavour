@@ -726,7 +726,7 @@ planet_event = {
 	option = {
 		name = pf_content.321.b
 		trigger = {
-			has_toxic_baths = yes
+			OWNER = { has_toxic_baths = yes }
 		}
 		owner = {
 			add_resource = {
