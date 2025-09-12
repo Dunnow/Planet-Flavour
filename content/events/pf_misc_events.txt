@@ -82,8 +82,8 @@ system_event = {
 		# We're on a random system. We need to find the furthest from us.
 
 		spawn_system = {
-			min_distance >= 10
-			max_distance <= 20
+			min_distance >= 70
+			max_distance <= 90
 			direction = rimwards
 			initializer = pf_ringworld_network_01
 			hyperlane = yes
@@ -97,7 +97,10 @@ system_event = {
 				value = 0
 			}
 			every_system = {
-				limit = { not = { has_star_flag = crisis_spawn_exclude } } #is_rim_system = yes
+				limit = {
+					is_rim_system = yes
+					not = { has_star_flag = crisis_spawn_exclude }
+				}
 				save_event_target_as = pf_distance_check_target
 				set_variable = {
 					which = pf_candidate_distance
@@ -127,8 +130,8 @@ system_event = {
 			event_target:pf_best_candidate = {
 				set_star_flag = pf_best_candidate
 				spawn_system = {
-					min_distance >= 10
-					max_distance <= 20
+					min_distance >= 70
+					max_distance <= 90
 					direction = rimwards
 					initializer = pf_ringworld_network_01
 					hyperlane = no
@@ -136,6 +139,18 @@ system_event = {
 			}
 			last_created_system = {
 				save_event_target_as = pf_second_system
+			}
+
+			# Cleanup
+			every_system = {
+				#clear_variable = pf_best_distance
+				#clear_variable = pf_candidate_distance
+			}
+			event_target:pf_first_system = {
+				set_variable = {
+					which = pf_galactic_hypotenuse
+					value = value:pf_galactic_hypotenuse
+				}
 			}
 		}
 	}
