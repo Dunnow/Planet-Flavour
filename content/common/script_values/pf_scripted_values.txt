@@ -11,9 +11,10 @@ pf_star_distance_euclidean = {
     }
 }
 
+# This needs the the diameter set on the second system. It's a pretty specialised use case, so this is fine for now.
 pf_galactic_hypotenuse = {
     base = 0
-    add = event_target:pf_best_candidate.pf_galactic_diameter
+    add = event_target:pf_second_system_spawn_candidate.pf_galactic_diameter
     divide = 2
     square = yes
     mult = 2
