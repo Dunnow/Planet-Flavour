@@ -79,96 +79,92 @@ system_event = {
 	hide_window = yes
 
 	immediate = {
-		# Spawn the first system
-		spawn_system = {
-			min_distance >= 70
-			max_distance <= 90
-			direction = rimwards
-			initializer = pf_ringworld_network_01
-			hyperlane = no
-			effect = {
-				set_star_flag = pf_first_system
-				save_event_target_as = pf_first_system
+		random_rim_system = {
+			limit = { NOT = { has_star_flag = crisis_spawn_exclude } }
+			# Spawn the first system
+			spawn_system = {
+				min_distance >= 70
+				max_distance <= 90
+				direction = rimwards
+				initializer = pf_ringworld_network_01
+				hyperlane = no
+				effect = {
+					save_event_target_as = pf_first_system
+				}
 			}
-		}
 
-		# Now find the furthest location for the 2nd system
-		event_target:pf_first_system = {
-			ordered_rim_system = {
-				limit = {
-					NOT = { has_star_flag = crisis_spawn_exclude}
-				}
-				position = 0
-				order_by = value:pf_star_distance_euclidean
+			# Now find the furthest location for the 2nd system
+			event_target:pf_first_system = {
+				ordered_rim_system = {
+					limit = {
+						NOT = { has_star_flag = crisis_spawn_exclude}
+					}
+					position = 0
+					order_by = value:pf_star_distance_euclidean
 
-				# Save these for when we need to calculate the hypotenuse
-				save_event_target_as = pf_second_system_spawn_candidate
-				set_variable = {
-					which = pf_galactic_diameter
-					value = value:pf_star_distance_euclidean
-				}
+					# Save these for when we need to calculate the hypotenuse
+					save_event_target_as = pf_second_system_spawn_candidate
+					set_variable = {
+						which = pf_galactic_diameter
+						value = value:pf_star_distance_euclidean
+					}
 
-				# Spawn the 2nd System
-				spawn_system = {
-					min_distance >= 70
-					max_distance <= 90
-					direction = rimwards
-					initializer = pf_ringworld_network_01
-					hyperlane = no
-					effect = {
-						set_star_flag = pf_second_system
-						save_event_target_as = pf_second_system
+					# Spawn the 2nd System
+					spawn_system = {
+						min_distance >= 70
+						max_distance <= 90
+						direction = rimwards
+						initializer = pf_ringworld_network_01
+						hyperlane = no
+						effect = {
+							save_event_target_as = pf_second_system
+						}
 					}
 				}
 			}
-		}
 
-		# Spawn the 3rd system. Find the closest rim system on the hypotenuse arc.
-		event_target:pf_second_system = {
-			ordered_rim_system = {
-				limit = {
-					NOT = { has_star_flag = crisis_spawn_exclude }
-				}
-				position = 0
-				inverse = yes
-				order_by = value:pf_closeness_to_galactic_hypotenuse
-				set_variable = {
-					which = pf_hypotenuse_closeness
-					value = value:pf_closeness_to_galactic_hypotenuse
-				}
+			# Spawn the 3rd system. Find the closest rim system on the hypotenuse arc.
+			event_target:pf_second_system = {
+				ordered_rim_system = {
+					limit = {
+						NOT = { has_star_flag = crisis_spawn_exclude }
+					}
+					position = 0
+					inverse = yes
+					order_by = value:pf_closeness_to_galactic_hypotenuse
+					set_variable = {
+						which = pf_hypotenuse_closeness
+						value = value:pf_closeness_to_galactic_hypotenuse
+					}
 
-				spawn_system = {
-					min_distance >= 70
-					max_distance <= 90
-					direction = rimwards
-					initializer = pf_ringworld_network_01
-					hyperlane = no
-					effect = {
-						set_star_flag = pf_third_system
-						save_event_target_as = pf_third_system
+					spawn_system = {
+						min_distance >= 70
+						max_distance <= 90
+						direction = rimwards
+						initializer = pf_ringworld_network_01
+						hyperlane = no
+						effect = {
+							save_event_target_as = pf_third_system
+						}
 					}
 				}
 			}
-		}
 
-		# Finally, find the furthest system from the 3rd system to spawn the 4th from
-		event_target:pf_third_system = {
-			ordered_rim_system = {
-				limit = {
-					NOT = { has_star_flag = crisis_spawn_exclude}
-				}
-				position = 0
-				order_by = value:pf_star_distance_euclidean
+			# Finally, find the furthest system from the 3rd system to spawn the 4th from
+			event_target:pf_third_system = {
+				ordered_rim_system = {
+					limit = {
+						NOT = { has_star_flag = crisis_spawn_exclude}
+					}
+					position = 0
+					order_by = value:pf_star_distance_euclidean
 
-				spawn_system = {
-					min_distance >= 70
-					max_distance <= 90
-					direction = rimwards
-					initializer = pf_ringworld_network_01
-					hyperlane = no
-					effect = {
-						set_star_flag = pf_fourth_system
-						save_event_target_as = pf_fourth_system
+					spawn_system = {
+						min_distance >= 70
+						max_distance <= 90
+						direction = rimwards
+						initializer = pf_ringworld_network_01
+						hyperlane = no
 					}
 				}
 			}
