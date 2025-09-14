@@ -2,16 +2,28 @@ pf_star_distance_euclidean = {
     base = 0
     complex_trigger_modifier = {
         trigger = distance
-        trigger_scope = event_target:pf_distance_check_target
+        trigger_scope = prev
         parameters = {
-            source = event_target:pf_distance_check_source
+            source = prev
             type = euclidean
         }
         mode = add
     }
 }
 
-pf_galactic_radius_centre = {
+pf_galactic_hypotenuse = {
     base = 0
+    add = event_target:pf_best_candidate.pf_galactic_diameter
+    divide = 2
+    square = yes
+    mult = 2
+    square_root = yes
+}
 
+# Needs to be used in the same scope as pf_star_distance_euclidean, with pf_best_candidate set
+pf_closeness_to_galactic_hypotenuse = {
+    base = 0
+    add = value:pf_galactic_hypotenuse
+    subtract = value:pf_star_distance_euclidean
+    abs = yes
 }
