@@ -69,10 +69,15 @@ event = {
 				}
 			}
 		}
+
+		# DEBUG
+		random_rim_system = {
+			system_event = { id = pf_misc.200 }
+		}
 	}
 }
 
-# Hive Stars spawn system
+# Spawn Ringworld Network
 system_event = {
 	id = pf_misc.200
 	is_triggered_only = yes

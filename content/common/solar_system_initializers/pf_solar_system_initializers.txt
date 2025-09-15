@@ -1213,90 +1213,113 @@ pf_basic_proto_system_03 = {
 }
 
 pf_ringworld_network_01 = {
-	class = "rl_standard_stars"
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 50
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 80
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 110
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 140
-	}
+	#name = "NAME_Cybrex_Beta"
+	class = "sc_g"
 
-	usage = misc_system_init
-	usage_odds = 0
-	max_instances = 5
-	scaled_spawn_chance = 8
+	flags = {
+		ring_world_built
+		pf_ringworld_network
+		pf_ringworld_network_01
 
-	flags = { pf_ringworld_network pf_ringworld_network_01 }
-
-	init_effect = {
-		pf_create_stellar_nursery_nebula = yes
-
-		# Create protoplanet disk effect
-		star = {
-			if = {
-				limit = { is_planet_class = pc_k_star }
-				set_planet_entity = { entity = pf_proto_k_star_class_star_entity }
-			}
-			if = {
-				limit = { is_planet_class = pc_g_star }
-				set_planet_entity = { entity = pf_proto_g_star_class_star_entity }
-			}
-			add_modifier = { modifier = pf_pm_protoplanetary_disk }
-		}
 	}
 
 	planet = {
-		count = 1
 		class = star
 		orbit_distance = 0
-		orbit_angle = 1
-		size = { min = 20 max = 30 }
-		has_ring = no
 	}
 
-	change_orbit = 50
+	change_orbit = 45
 
 	planet = {
-		count = { min = 1 max = 2 }
-		class = pc_asteroid
+		class = "pc_shattered_ring_habitable"
+		orbit_angle = 30
 		orbit_distance = 0
-		orbit_angle = { min = 90 max = 270 }
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			set_planet_entity = {
+				entity = pf_infested_ringworld_habitable_entity
+				picture = pc_pf_infested_ringworld
+			}
+		}
 	}
-
-	change_orbit = 30
-
 	planet = {
-		count = { min = 2 max = 3 }
-		class = pc_asteroid
+		class = "pc_ringworld_tech"
+		orbit_angle = 30
 		orbit_distance = 0
-		orbit_angle = { min = 90 max = 270 }
 	}
-
-	change_orbit = 30
-
 	planet = {
-		count = { min = 3 max = 4 }
-		class = pc_asteroid
+		class = "pc_ringworld_seam"
+		orbit_angle = 30
 		orbit_distance = 0
-		orbit_angle = { min = 90 max = 270 }
 	}
-
-	change_orbit = 30
-
 	planet = {
-		count = { min = 4 max = 5 }
-		class = pc_asteroid
+		class = "pc_shattered_ring_habitable"
+		orbit_angle = 30
 		orbit_distance = 0
-		orbit_angle = { min = 90 max = 270 }
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			set_planet_entity = {
+				entity = pf_infested_ringworld_habitable_entity
+				picture = pc_pf_infested_ringworld
+			}
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_shattered_ring_habitable"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			set_planet_entity = {
+				entity = pf_infested_ringworld_habitable_entity
+				picture = pc_pf_infested_ringworld
+			}
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_shattered_ring_habitable"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			set_planet_entity = {
+				entity = pf_infested_ringworld_habitable_entity
+				picture = pc_pf_infested_ringworld
+			}
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		orbit_angle = 30
+		orbit_distance = 0
 	}
 }
