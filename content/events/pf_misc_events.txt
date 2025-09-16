@@ -119,7 +119,7 @@ system_event = {
 						min_distance >= 70
 						max_distance <= 90
 						direction = rimwards
-						initializer = pf_ringworld_network_01
+						initializer = pf_ringworld_network_02
 						hyperlane = no
 						effect = {
 							save_event_target_as = pf_second_system
@@ -146,7 +146,7 @@ system_event = {
 						min_distance >= 70
 						max_distance <= 90
 						direction = rimwards
-						initializer = pf_ringworld_network_01
+						initializer = pf_ringworld_network_03
 						hyperlane = no
 						effect = {
 							save_event_target_as = pf_third_system
@@ -168,7 +168,7 @@ system_event = {
 						min_distance >= 70
 						max_distance <= 90
 						direction = rimwards
-						initializer = pf_ringworld_network_01
+						initializer = pf_ringworld_network_04
 						hyperlane = no
 					}
 				}

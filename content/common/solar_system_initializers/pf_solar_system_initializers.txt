@@ -1213,14 +1213,396 @@ pf_basic_proto_system_03 = {
 }
 
 pf_ringworld_network_01 = {
-	#name = "NAME_Cybrex_Beta"
 	class = "sc_g"
 
 	flags = {
 		ring_world_built
 		pf_ringworld_network
 		pf_ringworld_network_01
+		pf_jump_drive_access_restricted
+	}
 
+	planet = {
+		class = star
+		orbit_distance = 0
+	}
+
+	change_orbit = 45
+
+	planet = {
+		class = "pc_ringworld_habitable_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+	}
+	planet = {
+		class = "pc_ringworld_tech_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_habitable_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+	}
+	planet = {
+		class = "pc_ringworld_tech_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_habitable_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+	}
+	planet = {
+		class = "pc_ringworld_tech_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_habitable_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+	}
+	planet = {
+		class = "pc_ringworld_tech_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam_damaged"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+}
+
+pf_ringworld_network_02 = {
+	class = "sc_g"
+
+	flags = {
+		ring_world_built
+		pf_ringworld_network
+		pf_ringworld_network_02
+		pf_jump_drive_access_restricted
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+
+		init_effect = {
+			create_ambient_object = {
+				type = "large_debris_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "small_debris_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+		}
+	}
+
+	change_orbit = 45
+
+	init_effect = {
+		spawn_megastructure = {
+			type = "ring_world_ruined"
+			orbit_angle = 0
+			orbit_distance = 45
+		}
+		spawn_megastructure = {
+			type = "ring_world_ruined"
+			orbit_angle = 90
+			orbit_distance = 45
+		}
+		spawn_megastructure = {
+			type = "ring_world_ruined"
+			orbit_angle = 180
+			orbit_distance = 45
+		}
+		spawn_megastructure = {
+			type = "ring_world_ruined"
+			orbit_angle = 270
+			orbit_distance = 45
+		}
+
+		create_ambient_object = {
+			type = "large_debris_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "large_debris_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "large_debris_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "medium_debris_01_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "medium_debris_02_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "medium_debris_01_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "medium_debris_02_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "small_debris_object"
+			location = solar_system
+		}
+	}
+}
+
+pf_ringworld_network_03 = {
+	class = "sc_g"
+
+	flags = {
+		ring_world_built
+		pf_ringworld_network
+		pf_ringworld_network_03
+		pf_jump_drive_access_restricted
+	}
+
+	planet = {
+		class = star
+		orbit_distance = 0
+	}
+
+	change_orbit = 45
+
+	planet = {
+		class = "pc_shattered_ring_habitable"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			set_planet_entity = {
+				entity = pf_infested_ringworld_habitable_entity
+				picture = pc_pf_infested_ringworld
+			}
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_shattered_ring_habitable"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			set_planet_entity = {
+				entity = pf_infested_ringworld_habitable_entity
+				picture = pc_pf_infested_ringworld
+			}
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_shattered_ring_habitable"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			set_planet_entity = {
+				entity = pf_infested_ringworld_habitable_entity
+				picture = pc_pf_infested_ringworld
+			}
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_shattered_ring_habitable"
+		orbit_angle = 30
+		orbit_distance = 0
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			set_planet_entity = {
+				entity = pf_infested_ringworld_habitable_entity
+				picture = pc_pf_infested_ringworld
+			}
+		}
+	}
+	planet = {
+		class = "pc_ringworld_tech"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+	planet = {
+		class = "pc_ringworld_seam"
+		orbit_angle = 30
+		orbit_distance = 0
+	}
+}
+
+pf_ringworld_network_04 = {
+	class = "sc_g"
+
+	flags = {
+		ring_world_built
+		pf_ringworld_network
+		pf_ringworld_network_04
+		pf_jump_drive_access_restricted
 	}
 
 	planet = {
