@@ -1666,8 +1666,7 @@ pf_ringworld_network_04 = {
 		modifiers = none
 		init_effect = {
 			set_planet_entity = {
-				entity = pf_infested_ringworld_habitable_entity
-				picture = pc_pf_infested_ringworld
+				entity = pf_ringworld_weapons_array_entity
 			}
 		}
 	}
