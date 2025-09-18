@@ -8,7 +8,8 @@ pf_pm_infested_world = {
 
 # Ringworld
 pf_pm_infested_ring = {
-	pop_environment_tolerance = -0.50
+	pop_environment_tolerance = -1.0
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_infested_world.dds"
 	icon_frame = 3
+}
