@@ -11,7 +11,10 @@ decision_pf_remove_prethoryn_biomass = {
 	}
 
     potential = {
-        has_modifier = pf_pm_infested_world
+        OR = {
+            has_modifier = pf_pm_infested_world
+            has_modifier = pf_pm_infested_ring
+        }
     }
 
     allow = {
@@ -19,14 +22,32 @@ decision_pf_remove_prethoryn_biomass = {
     }
 
     effect = {
-        remove_modifier = pf_pm_infested_world
+        if = {
+            limit = { has_modifier = pf_pm_infested_world }
+            remove_modifier = pf_pm_infested_world
+        }
+        if = {
+            limit = { has_modifier = pf_pm_infested_ring }
+            remove_modifier = pf_pm_infested_ring
+        }
+
         hidden_effect = {
-            if = {
-                limit = {
-                    is_planet_class = pc_relic # Assume it still has the old entity
+            switch = {
+                trigger = is_planet_class
+                pc_relic = {
+                    set_planet_entity = {
+                        entity = relic_world_01_entity
+                    }
                 }
-                set_planet_entity = {
-                    entity = relic_world_01_entity
+                pc_ringworld_habitable = {
+                    set_planet_entity = {
+                        entity = ringworld_habitable_entity_01_entity
+                    }
+                }
+                pc_shattered_ring_habitable = {
+                    set_planet_entity = {
+                        entity = ringworld_habitable_entity_01_entity
+                    }
                 }
             }
         }
