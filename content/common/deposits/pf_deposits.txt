@@ -67,8 +67,8 @@ d_pf_imposing_canyon = {
 	potential = {
 		can_have_habitable_deposits = yes
 	}
-	# Disabled for now as the way to add new zones is extremely bad for compatibility.
-	#custom_tooltip = unlocks_zone_pf_psionic_fungi_all
+
+	# Shouldn't add society, should add something else I think.
 	planet_modifier = {
 		district_mining_max_add = 4
 		planet_miners_society_research_produces_add = 1
@@ -267,4 +267,42 @@ d_pf_habitable_caves_large = {
 	}
 
 	drop_weight = { weight = 0 }
+}
+
+d_pf_abandoned_hives = {
+    is_for_colonizable = yes
+	icon = d_pf_underground_hives
+    category = deposit_cat_rare
+
+    planet_modifier = {
+        planet_max_districts_add = 1
+		planet_miners_society_research_produces_add = 1
+    }
+
+	drop_weight = {
+		weight = @mid_rare
+		modifier = {
+			factor = 2
+			is_dry = yes
+		}
+		modifier = {
+			factor = 0.5
+			is_planet_class = pc_gaia
+		}
+		modifier = {
+			factor = 0.5
+			is_cold = yes
+		}
+
+		modifier = {
+			factor = 0
+			solar_system = {
+				OR = {
+					has_star_flag = empire_home_system
+					has_star_flag = sol_system
+					has_star_flag = deneb_system
+				}
+			}
+		}
+	}
 }
