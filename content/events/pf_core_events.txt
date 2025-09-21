@@ -335,19 +335,32 @@ event = {
                     is_planet_class = pc_nuked
                     is_colony = no # No modifiers on colony worlds.
                 }
-                random_list = {
-                    20 = {}
-                    5 = { add_modifier = { modifier = pf_pm_nuclear_exchange }}
-                    5 = { add_modifier = { modifier = pf_pm_glassed_world }}
-                    5 = { add_modifier = { modifier = pf_pm_asteroid_impact }}
-                    1 = {
-                        add_modifier = { modifier = pf_pm_recent_asteroid_impact }
-                        # 25 years + 50 year random delay.
-                        planet_event = { id = pf_content.20 days = 9000 random = 18000 }
+                # Lets us control for special content worlds
+                switch = {
+                    trigger = has_planet_flag
+                    more_earths_red_refuge_earth = {
+                        add_modifier = { modifier = pf_pm_nuclear_exchange }
                     }
-                    5 = {
-                        add_modifier = { modifier = pf_pm_recovering_biosphere }
-                        set_planet_entity = { entity = planet_flavour_recovering_tomb_planet_entity }
+                    more_earths_kpg_impact_earth = {
+                        add_modifier = { modifier = pf_pm_asteroid_impact }
+                    }
+
+                    default = {
+                        random_list = {
+                            20 = {}
+                            5 = { add_modifier = { modifier = pf_pm_nuclear_exchange }}
+                            5 = { add_modifier = { modifier = pf_pm_glassed_world }}
+                            5 = { add_modifier = { modifier = pf_pm_asteroid_impact }}
+                            1 = {
+                                add_modifier = { modifier = pf_pm_recent_asteroid_impact }
+                                # 25 years + 50 year random delay.
+                                planet_event = { id = pf_content.20 days = 9000 random = 18000 }
+                            }
+                            5 = {
+                                add_modifier = { modifier = pf_pm_recovering_biosphere }
+                                set_planet_entity = { entity = planet_flavour_recovering_tomb_planet_entity }
+                            }
+                        }
                     }
                 }
             }
