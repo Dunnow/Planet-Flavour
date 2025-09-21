@@ -894,3 +894,90 @@ planet_event = {
 		}
 	}
 }
+
+# Add anomaly for ruined subspace observation post
+ship_event = {
+	id = pf_content.400
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			has_planet_flag = pf_observation_station_planet
+		}
+	}
+
+	immediate = {
+		from = { # Planet
+			add_anomaly = {
+				category = pf_abandoned_telescope_station
+				target = prev.owner
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = pf_content.401
+	title = pf_content.401.name
+	desc = "pf_content.401.desc"
+	picture  = GFX_evt_physics_research
+	location = this
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			owner = {
+				country_event = { id = story.5 days = 30 }
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.401.a
+		owner = {
+			add_tech_option_or_research_effect = {
+				TECH = tech_sensors_3
+				CATEGORY = physics_research
+				PROGRESS = 0.25
+			}
+		}
+		hidden_effect = {
+			# If the Prethoryn are coming and have not arrived yet.
+			if = {
+				limit = {
+					AND = {
+						is_crises_allowed = yes
+						OR = {
+							allowed_crisis_type = all
+							allowed_crisis_type = prethoryn
+						}
+						NOT = { has_global_flag = prethoryn_invasion_happened}
+					}
+				}
+				ship_event = {
+					id = pf_content.402
+					days = 360
+				}
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = pf_content.402
+	title = pf_content.402.name
+	desc = "pf_content.402.desc"
+	picture  = GFX_evt_glitchy_matrix
+	location = this
+    is_triggered_only = yes
+
+	option = {
+		name = pf_content.402.a
+		owner = {
+			add_resource = {
+				physics_research = 6000
+			}
+		}
+	}
+}

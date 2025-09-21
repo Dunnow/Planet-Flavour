@@ -253,3 +253,25 @@ pf_create_stellar_nursery_nebula = {
 		}
 	}
 }
+
+pf_create_galactic_rim_observation_station = {
+	random_rim_system = {
+		limit = {
+			NOT = { has_star_flag = crisis_spawn_exclude }
+			NOT = { exists = owner }
+		}
+		set_star_flag = pf_observation_station_system
+		# Might want to change from vanilla loc, but this is generic enough for us.
+		random_system_planet = {
+			set_planet_flag = pf_observation_station_planet
+			create_ambient_object = {
+				type = pf_derelict_particle_accelerator
+				location = this
+			}
+			create_ambient_object = {
+				type = medium_debris_01_object
+				location = this
+			}
+		}
+	}
+}

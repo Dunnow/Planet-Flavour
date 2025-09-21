@@ -89,3 +89,11 @@
   pf_content.341.a: "Disconcerting."
   pf_content.341.b: "Compare the evidence with the expected results from our own Neutron Sweep."
   pf_content.341.c: "Another potential avenue of research for our weapons systems."
+
+  pf_content.401.name: "Deep Space Observation"
+  pf_content.401.desc: "The structure encountered by the [This.GetName] appears to have been an automated listening post constructed nearly 100,000 years ago by an unknown race.\n\nDesigned to monitor the deep space between galaxies for scientific research, it has an extraordinarily sensitive subspace telescope array.\n\nUnfortunately it seems to have suffered a micrometeorite collision 86,000 years ago, disabling its communications array and critically damaging the reactor. The builders appear to have been uninterested in its fate."
+  pf_content.401.a: "A fascinating implementation of subspace technology."
+
+  pf_content.402.name: "Anomalies in the Data."
+  pf_content.402.desc: "Our analysts aboard the [This.GetName] have been looking through the data extracts recovered from the subspace observation station they recently encountered.\n\nThey've highlighted some alarming results. Several thousand years ago, long after the communications systems were damaged, readings indicate an enormous anomaly, consistent with a huge mass entering subspace from deep space.\n\nIf these readings are correct, this impossible anomaly would be heading for our galaxy."
+  pf_content.402.a: "How curious - an instrument error perhaps? Review the logs again."

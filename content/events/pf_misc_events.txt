@@ -55,6 +55,7 @@ system_event = {
 	}
 }
 
+# Random content spawner
 event = {
 	id = pf_misc.110
 	is_triggered_only = yes
@@ -63,11 +64,13 @@ event = {
 	immediate = {
 		random_list = {
 			3 = { } # nothing
-			1 = {
+			1 = { # Hive stars
 				random_rim_system = {
 					system_event = { id = pf_misc.100 }
 				}
 			}
 		}
+		# Create the observation system
+		pf_create_galactic_rim_observation_station = yes
 	}
 }

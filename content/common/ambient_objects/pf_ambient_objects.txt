@@ -1,0 +1,9 @@
+# Derelict Station
+ambient_object = {
+	name = "pf_derelict_particle_accelerator"
+	entity = "sensor_station_01_entity"
+	selectable = yes
+	show_name = yes
+	tooltip = "pf_derelict_particle_accelerator_desc"
+	description = "pf_derelict_particle_accelerator_desc"
+}

@@ -115,6 +115,14 @@
   pf_terraforming_decisions: "§HUnlock Feature:§! Specialized Terraforming Decisions"
   pf_terraforming_decisions_desc: "§H$tech_pf_micro_terraforming$§!\nUnlocks decisions to specialize a planet's environment."
 
+  # Ambient Objects
+  pf_derelict_particle_accelerator: "$derelict_particle_accelerator$"
+  pf_derelict_particle_accelerator_desc: "$derelict_particle_accelerator_desc$"
+
+  # Anomalies
+  pf_abandoned_telescope_station: "Abandoned Station"
+  pf_abandoned_telescope_station_desc: "A derelict station drifts aimlessly in a silent orbit around this world. An enormous impact has gouged away part of the structure."
+
   # Scripted Loc
   pf_planet_name: "planet"
   pf_moon_name: "moon"
