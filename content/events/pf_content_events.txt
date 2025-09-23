@@ -726,7 +726,7 @@ planet_event = {
 	option = {
 		name = pf_content.321.b
 		trigger = {
-			has_toxic_baths = yes
+			owner = { has_toxic_baths = yes }
 		}
 		owner = {
 			add_resource = {
@@ -809,7 +809,7 @@ planet_event = {
 	}
 	option = {
 		name = pf_content.330.b
-		trigger = { is_subterranean_empire = yes }
+		trigger = { owner = { is_subterranean_empire = yes } }
 		add_deposit = d_pf_habitable_caves_large
 	}
 }
