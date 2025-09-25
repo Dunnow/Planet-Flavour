@@ -917,6 +917,7 @@ ship_event = {
 	}
 }
 
+# Ancient Rim Telescope
 ship_event = {
 	id = pf_content.401
 	title = pf_content.401.name
@@ -980,4 +981,96 @@ ship_event = {
 			}
 		}
 	}
+}
+
+# Icy Terraforming World
+ship_event = {
+	id = pf_content.410
+	title = "pf_content.410.name"
+	desc = "pf_content.410.desc"
+	picture = GFX_evt_frozen
+	show_sound = event_machinery
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			owner = {
+				country_event = { id = story.5 days = 30 }
+			}
+			from = {
+				create_ambient_object = {
+					type = pf_ancient_terraforming_station
+					location = this
+				}
+				last_created_ambient_object = {
+					set_ambient_object_flag = pf_ancient_terraforming_station
+				}
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.410.a
+		trigger = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 5000
+				}
+			}
+		}
+		owner = {
+			add_resource = { 
+				energy = -5000
+			}
+		}
+		from = {
+			enable_special_project = {
+				name = pf_fix_frozen_terraforming_equipment
+				location = this
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.410.b
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = pf_content.411
+	#title = "pf_content.411.name"
+	#desc = "pf_content.411.desc"
+	#picture = GFX_evt_pf_planet_space
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		change_pc = pc_arctic
+		reroll_deposits = yes
+
+		add_modifier = { modifier = pf_pm_recovering_biosphere }
+
+		solar_system = {
+			random_system_ambient_object = {
+				limit = { has_ambient_object_flag = pf_ancient_terraforming_station }
+				destroy_ambient_object = this
+			}
+		}
+	}
+
+	#option = {
+	#	name = pf_content.411.a
+	#}
 }

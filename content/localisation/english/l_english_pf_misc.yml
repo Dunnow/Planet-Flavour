@@ -108,6 +108,8 @@
   pf_hyper_blizzards_prevention_DESC: "By seeding the skies of [This.GetName] with sunlight-absorbing nano-particulates, we can disrupt the unique conditions that allow the formation of devastating high energy storms."
   pf_ancient_neutron_sweep_investigation: "Fossilized Devastation"
   pf_ancient_neutron_sweep_investigation_DESC: "[This.GetName] bears the evidence of an ancient cataclysm that devastated life - but no signs of the cause itself. Our scientists are eager to learn more."
+  pf_fix_frozen_terraforming_equipment: "Iced Out"
+  pf_fix_frozen_terraforming_equipment_DESC: "[This.GetName] appears to have been subject to a prolonged period of terraforming by an unknown alien species. In their absence it seems to have been neglected and left to cause runaway glaciation across the planet."
 
   # Technology
   tech_pf_micro_terraforming: "Micro-Terraforming Techniques"
@@ -118,10 +120,14 @@
   # Ambient Objects
   pf_derelict_particle_accelerator: "$derelict_particle_accelerator$"
   pf_derelict_particle_accelerator_desc: "$derelict_particle_accelerator_desc$"
+  pf_ancient_terraforming_station: "Ancient Terraforming Station"
+  pf_ancient_terraforming_station_desc: "A long abandoned outpost drifts lazily in orbit of this world. Its mission of climate modification continues unchecked."
 
   # Anomalies
   pf_abandoned_telescope_station: "Abandoned Station"
   pf_abandoned_telescope_station_desc: "A derelict station drifts aimlessly in a silent orbit around this world. An enormous impact has gouged away part of the structure."
+  pf_churning_beneath_the_ice: "Under the Ice"
+  pf_churning_beneath_the_ice_desc: "Seismic scans of this icy world indicate river valleys and seabeds buried under the ice. It was host to an active hydrosphere - possibly even life."
 
   # Scripted Loc
   pf_planet_name: "planet"

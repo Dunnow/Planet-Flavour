@@ -9,3 +9,24 @@ pf_abandoned_telescope_station = {
 
 	on_success = pf_content.401
 }
+
+pf_churning_beneath_the_ice = {
+	desc = "pf_churning_beneath_the_ice_desc"
+	picture = "GFX_evt_frozen"
+	level = 5
+
+	spawn_chance = {
+        base = 0
+
+
+		modifier = {
+			add = 2
+			OR = {
+				is_planet_class = pc_frozen
+			}
+			has_any_strategic_resource = no
+		}
+	}
+
+	on_success = pf_content.410
+}

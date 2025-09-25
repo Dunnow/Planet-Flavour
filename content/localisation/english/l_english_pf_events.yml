@@ -97,3 +97,13 @@
   pf_content.402.name: "Anomalies in the Data."
   pf_content.402.desc: "Our analysts aboard the [This.GetName] have been looking through the data extracts recovered from the subspace observation station they recently encountered.\n\nThey've highlighted some alarming results. Several thousand years ago, long after the communications systems were damaged, readings indicate an enormous anomaly, consistent with a huge mass entering subspace from deep space.\n\nIf these readings are correct, this impossible anomaly would be heading for our galaxy."
   pf_content.402.a: "How curious - an instrument error perhaps? Review the logs again."
+
+  pf_content.410.name: "Ancient Ice"
+  pf_content.410.desc: "[From.GetName] was once a lush world. Trace samples recovered by the [This.GetName] prove that even now, some single-celled life remains.\n\nIt looks like spacefaring civilization chose to initiate terraforming processes on on the world, lowering the temperature significantly.\n\nSomething seems to have gone wrong, with the process continuing indefinitely, snuffing out the planets native life and leaving only a few surviving microbial colonies."
+  pf_content.410.a: "Perhaps the planet could be made capable of hosting life again."
+  pf_content.410.b: "A tragic tale of life's fragility in the cosmos."
+
+  # This has been made a hidden event
+  #pf_content.411.name: "TODO"
+  #pf_content.411.desc: "TODO"
+  #pf_content.411.a: "Excellent"
