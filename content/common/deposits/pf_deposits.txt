@@ -306,3 +306,23 @@ d_pf_abandoned_hives = {
 		}
 	}
 }
+
+d_pf_ancient_databanks = {
+    is_for_colonizable = yes
+	icon = d_glitchy_matrix
+    category = deposit_cat_rare
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			society_research = 20
+            unity = 20
+		}
+	}
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}

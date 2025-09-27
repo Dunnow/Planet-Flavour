@@ -1049,9 +1049,6 @@ ship_event = {
 
 planet_event = {
 	id = pf_content.411
-	#title = "pf_content.411.name"
-	#desc = "pf_content.411.desc"
-	#picture = GFX_evt_pf_planet_space
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -1069,8 +1066,36 @@ planet_event = {
 			}
 		}
 	}
+}
 
-	#option = {
-	#	name = pf_content.411.a
-	#}
+# Strange heat emissions - we've discovered the server rooms
+ship_event = {
+	id = pf_content.420
+	title = "pf_content.420.name"
+	desc = "pf_content.420.desc"
+	picture = GFX_evt_ancient_databank
+	show_sound = event_machinery
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			owner = {
+				country_event = { id = story.5 days = 30 }
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.420.a
+		owner = {
+			add_resource = {
+				society_research = 500
+			}
+		}
+		from = {
+			add_deposit = d_pf_ancient_databanks
+		}
+	}
 }

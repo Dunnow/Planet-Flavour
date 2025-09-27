@@ -103,7 +103,6 @@
   pf_content.410.a: "Perhaps the planet could be made capable of hosting life again."
   pf_content.410.b: "A tragic tale of life's fragility in the cosmos."
 
-  # This has been made a hidden event
-  #pf_content.411.name: "TODO"
-  #pf_content.411.desc: "TODO"
-  #pf_content.411.a: "Excellent"
+  pf_content.420.name: "Buried Beneath the Mountain"
+  pf_content.420.desc: "[This.leader.GetName] has made a remarkable discovery. Positioned in the cold mountains of [This.GetName] are sprawling complexes of alien databanks.\n\nFrom what the science team aboard [This.GetName] has been able to decrypt, it seems to be a vast repository of cultural records from a long dead civilization.\n\nLittle detail survives about the makers, but enough of the databanks are intact that we can piece together many of the narratives and cultural works that make up their contents."
+  pf_content.420.a: "Remarkable."

@@ -18,7 +18,6 @@ pf_churning_beneath_the_ice = {
 	spawn_chance = {
         base = 0
 
-
 		modifier = {
 			add = 2
 			OR = {
@@ -29,4 +28,21 @@ pf_churning_beneath_the_ice = {
 	}
 
 	on_success = pf_content.410
+}
+
+pf_strange_heat_emissions = {
+	desc = "pf_strange_heat_emissions_desc"
+	picture = "GFX_evt_pf_alpine_highlands"
+	level = 3
+
+	spawn_chance = {
+        base = 0
+
+		modifier = {
+			add = 3
+			is_planet_class = pc_alpine
+		}
+	}
+
+	on_success = pf_content.420
 }

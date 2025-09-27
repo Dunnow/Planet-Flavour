@@ -128,6 +128,8 @@
   pf_abandoned_telescope_station_desc: "A derelict station drifts aimlessly in a silent orbit around this world. An enormous impact has gouged away part of the structure."
   pf_churning_beneath_the_ice: "Under the Ice"
   pf_churning_beneath_the_ice_desc: "Seismic scans of this icy world indicate river valleys and seabeds buried under the ice. It was host to an active hydrosphere - possibly even life."
+  pf_strange_heat_emissions: "Strange Heat Emissions"
+  pf_strange_heat_emissions_desc: "Something appears to be expelling large quantities of heat from the otherwise frozen mountaintops of [This.GetName]."
 
   # Scripted Loc
   pf_planet_name: "planet"
