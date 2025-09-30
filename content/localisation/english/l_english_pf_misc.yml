@@ -122,6 +122,8 @@
   pf_derelict_particle_accelerator_desc: "$derelict_particle_accelerator_desc$"
   pf_ancient_terraforming_station: "Ancient Terraforming Station"
   pf_ancient_terraforming_station_desc: "A long abandoned outpost drifts lazily in orbit of this world. Its mission of climate modification continues unchecked."
+  pf_derelict_ship_object: "Derelict Ship"
+  pf_derelict_ship_object_desc: "The broken remains of an ancient warship. Time and scavengers have stripped the hulk bare."
 
   # Anomalies
   pf_abandoned_telescope_station: "Abandoned Station"
