@@ -1598,6 +1598,15 @@ pf_ancient_battlefield_system = {
 			orbit_distance = 5
 		}
 		init_effect = {
+			switch = {
+				trigger = is_planet_class
+				pc_frozen = { add_deposit = d_pf_preserved_bases }
+				pc_barren_cold = { add_deposit = d_pf_crashed_starships }
+				pc_barren = { add_deposit = d_pf_crashed_starships }
+				pc_gas_giant = { add_deposit = d_pf_ring_of_debris }
+				default = {  }
+			}
+
 			create_ambient_object = {
 				type = "large_debris_object"
 				entity_offset_height = { min = -0 max = -25 }

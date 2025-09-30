@@ -41,7 +41,14 @@
   d_pf_ruined_mars_colony_desc: "The ruined first steps of a primitive pre-FTL civilization."
 
   d_pf_radstorms: "Rad Storms"
-  d_pf_radstorms_desc: "Pockets of intense weather blanket these regions in radioactive contaminaton."
+  d_pf_radstorms_desc: "Pockets of intense weather blanket these regions in radioactive contamination."
 
   d_pf_ancient_databanks: "Ancient Databanks"
   d_pf_ancient_databanks_desc: "The preserved cultural archives of a long-dead civilization."
+
+  d_pf_ring_of_debris: "Debris Ring"
+  d_pf_ring_of_debris_desc: "Ruined hulks of ancient starships float silently around this world."
+  d_pf_crashed_starships: "Crashed Starships"
+  d_pf_crashed_starships_desc: "The remains of long dead warfleets."
+  d_pf_preserved_bases: "Preserved Bases"
+  d_pf_preserved_bases_desc: "A string of shattered outposts, bunkers and command centers dot this world."

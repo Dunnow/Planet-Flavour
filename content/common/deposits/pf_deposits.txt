@@ -326,3 +326,76 @@ d_pf_ancient_databanks = {
 
 	drop_weight = { weight = 0 }
 }
+
+d_pf_ring_of_debris = {
+	icon = unused/d_ruined_system
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			alloys = 3
+		}
+	}
+	station = shipclass_mining_station
+	is_for_colonizable = no
+
+	potential = {
+		always = no
+	}
+
+	habitat_modifier = {
+		district_hab_mining_max_add = 1
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_pf_crashed_starships = {
+	icon = d_crashed_ship
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			alloys = 1
+		}
+	}
+	station = shipclass_mining_station
+	is_for_colonizable = no
+
+	potential = {
+		always = no
+	}
+
+	habitat_modifier = {
+		district_hab_mining_max_add = 1
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_pf_preserved_bases = {
+	icon = unused/d_city_ruins
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			engineering_research = 2
+			society_research = 2
+		}
+	}
+	station = shipclass_research_station
+	is_for_colonizable = no
+
+	potential = {
+		always = no
+	}
+
+	habitat_modifier = {
+		district_hab_science_max_add = 1
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
