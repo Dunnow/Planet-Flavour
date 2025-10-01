@@ -40,8 +40,8 @@ on_planet_zero_pops = {
 # FromFrom = Country
 on_entering_system_first_time = {
     events = {
-        pf_content.100          # Hive stars first encounter event
-        pf_content.430
+        pf_content.100           # Hive stars first encounter event
+        pf_content.430      # Ancient Battlefield notification event
     }
 }
 # A ship has surveyed a planet.
