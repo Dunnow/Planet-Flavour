@@ -1099,3 +1099,39 @@ ship_event = {
 		}
 	}
 }
+
+ship_event = {
+	id = pf_content.430
+	title = pf_content.430.name
+	desc = "pf_content.430.desc"
+	picture  = GFX_evt_space_debris
+	location = this
+    is_triggered_only = yes
+
+	trigger = {
+		solar_system = {
+			has_star_flag = pf_ancient_battlefield_system
+		}
+		owner = {
+			not = { has_country_flag = pf_has_encountered_ancient_battlefield}
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_country_flag = pf_has_encountered_ancient_battlefield
+		}
+		hidden_effect = {
+			owner = {
+				country_event = { id = story.5 days = 30 }
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.430.a
+		owner = {
+			add_resource = { engineering_research = 500 }
+		}
+	}
+}

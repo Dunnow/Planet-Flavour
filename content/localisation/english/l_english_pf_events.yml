@@ -106,3 +106,7 @@
   pf_content.420.name: "Buried Beneath the Mountain"
   pf_content.420.desc: "[This.leader.GetName] has made a remarkable discovery. Positioned in the cold mountains of [This.GetName] are sprawling complexes of alien databanks.\n\nFrom what the science team aboard [This.GetName] has been able to decrypt, it seems to be a vast repository of cultural records from a long dead civilization.\n\nLittle detail survives about the makers, but enough of the databanks are intact that we can piece together many of the narratives and cultural works that make up their contents."
   pf_content.420.a: "Remarkable."
+
+  pf_content.430.name: "Ancient Battlegrounds"
+  pf_content.430.desc: "The primary star of the [This.solar_system.GetName] system is surrounded by enormous clouds of shattered debris - quite clearly artificial in nature.\n\nMany of the planets in the system bear the marks of orbital bombardment or host starship of various designs.\n\nIt seems quite clear that this system was the host of an enormous space battle deep in the past."
+  pf_content.430.a: "Interesting."
