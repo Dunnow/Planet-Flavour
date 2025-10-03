@@ -328,7 +328,7 @@ d_pf_ancient_databanks = {
 }
 
 d_pf_ring_of_debris = {
-	icon = unused/d_ruined_system
+	icon = d_ruined_system
 	resources = {
 		category = orbital_mining_deposits
 		produces = {
@@ -393,6 +393,23 @@ d_pf_preserved_bases = {
 
 	habitat_modifier = {
 		district_hab_science_max_add = 1
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_pf_aerosol_mining_stations = {
+	icon = "d_pf_aerosol_stations"
+	station = shipclass_mining_station
+	is_for_colonizable = no
+
+	resources = {
+		category = orbital_mining_deposits
+		produces = {
+			exotic_gases = 5
+		}
 	}
 
 	drop_weight = {

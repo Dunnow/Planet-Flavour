@@ -110,3 +110,8 @@
   pf_content.430.name: "Ancient Battlegrounds"
   pf_content.430.desc: "The primary star of the [This.solar_system.GetName] system is surrounded by enormous clouds of shattered debris - quite clearly artificial in nature.\n\nMany of the planets in the system bear the marks of orbital bombardment or host starship of various designs.\n\nIt seems quite clear that this system was the host of an enormous space battle deep in the past."
   pf_content.430.a: "Interesting."
+
+  pf_content.440.name: "Aerosol Stations"
+  pf_content.440.desc: "The upper atmosphere of [From.GetName] hosts a number of suspended structures. Their exact composition is unclear, but they seem to have been built to capture and extract trace quantities of exotic gases from the planet's atmosphere.\n\nOur engineering teams are quite confident that with a little bit of time, they can be restored to partial working order."
+  pf_content.440.a: "Let's make use of these facilities."
+  pf_content.440.b: "Dismantle them and examine their construction."

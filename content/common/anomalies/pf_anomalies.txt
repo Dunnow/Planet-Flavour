@@ -46,3 +46,20 @@ pf_strange_heat_emissions = {
 
 	on_success = pf_content.420
 }
+
+pf_ancient_gas_mines = {
+	desc = "pf_ancient_gas_mines_desc"
+	picture = "GFX_evt_gas_giant"
+	level = 4
+
+	spawn_chance = {
+        base = 0
+
+		modifier = {
+			add = 3
+			is_planet_class = pc_gas_giant
+		}
+	}
+
+	on_success = pf_content.440
+}

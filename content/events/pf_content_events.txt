@@ -1100,6 +1100,7 @@ ship_event = {
 	}
 }
 
+# Ancient Battlefield first encounter event
 ship_event = {
 	id = pf_content.430
 	title = pf_content.430.name
@@ -1132,6 +1133,44 @@ ship_event = {
 		name = pf_content.430.a
 		owner = {
 			add_resource = { engineering_research = 500 }
+		}
+	}
+}
+
+# Ancient Gas Mines anomaly
+ship_event = {
+	id = pf_content.440
+	title = "pf_content.440.name"
+	desc = "pf_content.440.desc"
+	picture = GFX_evt_gas_giant_station
+	show_sound = event_machinery
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			owner = {
+				country_event = { id = story.5 days = 30 }
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.440.a
+		# Planet scope
+		from = {
+			add_deposit = d_exotic_gases_5
+		}
+	}
+
+	option = {
+		name = pf_content.440.b
+		owner = {
+			add_resource = {
+				engineering_research = 2000
+				minor_artifacts = 50
+			}
 		}
 	}
 }

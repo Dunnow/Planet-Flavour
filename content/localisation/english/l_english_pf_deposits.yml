@@ -52,3 +52,5 @@
   d_pf_crashed_starships_desc: "The remains of long dead warfleets."
   d_pf_preserved_bases: "Preserved Bases"
   d_pf_preserved_bases_desc: "A string of shattered outposts, bunkers and command centers dot this world."
+  d_pf_aerosol_mining_stations: "Aerosol Stations"
+  d_pf_aerosol_mining_stations_desc: "An ancient array of advanced gas filtration facilities."

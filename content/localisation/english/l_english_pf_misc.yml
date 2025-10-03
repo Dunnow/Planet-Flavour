@@ -132,6 +132,8 @@
   pf_churning_beneath_the_ice_desc: "Seismic scans of this icy world indicate river valleys and seabeds buried under the ice. It was host to an active hydrosphere - possibly even life."
   pf_strange_heat_emissions: "Strange Heat Emissions"
   pf_strange_heat_emissions_desc: "Something appears to be expelling large quantities of heat from the otherwise frozen mountaintops of [This.GetName]."
+  pf_ancient_gas_mines: "Derelict Cloud Stations"
+  pf_ancient_gas_mines_desc: "Strange structures are suspended in the atmosphere of this world."
 
   # Scripted Loc
   pf_planet_name: "planet"
