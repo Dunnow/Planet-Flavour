@@ -1211,3 +1211,450 @@ pf_basic_proto_system_03 = {
 		initializer = "pf_basic_proto_system_02"
 	}
 }
+
+pf_ancient_battlefield_system = {
+	class = sc_m_giant
+	prevent_anomalies = yes
+	usage = misc_system_init
+
+	usage_odds = {
+		base = @spawn_system_extreme #@spawn_system_common
+		modifier = {
+			factor = 0
+			has_distar = no
+		}
+		modifier = {
+			factor = 0
+			is_fe_cluster = yes
+		}
+		modifier = {
+			factor = 0
+			has_star_flag = empire_cluster
+		}
+	}
+
+	max_instances = 4
+	scaled_spawn_chance = 8
+
+	flags = { pf_ancient_battlefield_system }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+		init_effect = {
+			prevent_anomaly = yes
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 37
+					angle = 30
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 30
+				}
+				save_global_event_target_as = debris_field_01
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 43
+					angle = 30
+				}
+			}
+			while = {
+				count = 2
+				create_ambient_object = {
+					type = "large_debris_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 65
+						angle = random
+					}
+				}
+			}
+			while = {
+				count = 1
+				create_ambient_object = {
+					type = "ancient_battlefield_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 65
+						angle = random
+					}
+					save_global_event_target_as = debris_field_02
+				}
+			}
+			while = {
+				count = 3
+				create_ambient_object = {
+					type = "medium_debris_01_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 80
+						angle = random
+					}
+				}
+			}
+			while = {
+				count = 4
+				create_ambient_object = {
+					type = "small_debris_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 90
+						angle = random
+					}
+				}
+			}
+			while = {
+				count = 3
+				create_ambient_object = {
+					type = "large_debris_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 100
+						angle = random
+					}
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 97
+					angle = 270
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 100
+					angle = 265
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 100
+					angle = 270
+				}
+				save_global_event_target_as = debris_field_03
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 100
+					angle = 275
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 103
+					angle = 270
+				}
+			}
+			while = {
+				count = 2
+				create_ambient_object = {
+					type = "abandoned_ship_2_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 100
+						angle = random
+					}
+				}
+			}
+			while = {
+				count = 4
+				create_ambient_object = {
+					type = "medium_debris_01_object"
+					location = solar_system
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 110
+						angle = random
+					}
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 117
+					angle = 180
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 120
+					angle = 175
+				}
+			}
+			while = {
+				count = 4
+				create_ambient_object = {
+					type = "large_debris_object"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 120
+						angle = random
+					}
+				}
+			}
+			create_ambient_object = {
+				type = "pf_derelict_ship_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 83
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 120
+					angle = 180
+				}
+				save_global_event_target_as = debris_field_04
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 120
+					angle = 185
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 123
+					angle = 180
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 115
+					angle = 0
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 117
+					angle = 350
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 117
+					angle = 0
+				}
+				save_global_event_target_as = debris_field_05
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 117
+					angle = 10
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 120
+					angle = 0
+				}
+			}
+			create_ambient_object = {
+				type = "pf_derelict_ship_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 43
+					angle = random
+				}
+			}
+		}
+	}
+
+	change_orbit = 45
+
+	planet = {
+		count = { min = 4 max = 6 }
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+		init_effect = {
+			switch = {
+				trigger = is_planet_class
+				pc_frozen = { add_deposit = d_pf_preserved_bases }
+				pc_barren_cold = { add_deposit = d_pf_crashed_starships }
+				pc_barren = { add_deposit = d_pf_crashed_starships }
+				pc_gas_giant = { add_deposit = d_pf_ring_of_debris }
+				default = {  }
+			}
+
+			create_ambient_object = {
+				type = "large_debris_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 15
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 15
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 15
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "small_debris_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 15
+					angle = random
+				}
+			}
+		}
+	}
+}

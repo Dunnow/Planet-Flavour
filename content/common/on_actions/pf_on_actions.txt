@@ -40,7 +40,8 @@ on_planet_zero_pops = {
 # FromFrom = Country
 on_entering_system_first_time = {
     events = {
-        pf_content.100          # Hive stars first encounter event
+        pf_content.100           # Hive stars first encounter event
+        pf_content.430      # Ancient Battlefield notification event
     }
 }
 # A ship has surveyed a planet.
@@ -56,6 +57,7 @@ on_survey_planet = {
         pf_core.103	                   # Add deposits for energy modifiers
         pf_core.105	                   # Add deposits for society modifiers
         pf_core.107                     # Add deposits for alloy modifiers
+        pf_content.400                  # Add anomaly for ruined subspace observation post
     }
 }
 

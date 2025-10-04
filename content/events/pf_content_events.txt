@@ -726,7 +726,7 @@ planet_event = {
 	option = {
 		name = pf_content.321.b
 		trigger = {
-			has_toxic_baths = yes
+			owner = { has_toxic_baths = yes }
 		}
 		owner = {
 			add_resource = {
@@ -809,7 +809,7 @@ planet_event = {
 	}
 	option = {
 		name = pf_content.330.b
-		trigger = { is_subterranean_empire = yes }
+		trigger = { owner = { is_subterranean_empire = yes } }
 		add_deposit = d_pf_habitable_caves_large
 	}
 }
@@ -891,6 +891,286 @@ planet_event = {
 		}
 		owner = {
 			add_research_option = tech_pk_neutron
+		}
+	}
+}
+
+# Add anomaly for ruined subspace observation post
+ship_event = {
+	id = pf_content.400
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			has_planet_flag = pf_observation_station_planet
+		}
+	}
+
+	immediate = {
+		from = { # Planet
+			add_anomaly = {
+				category = pf_abandoned_telescope_station
+				target = prev.owner
+			}
+		}
+	}
+}
+
+# Ancient Rim Telescope
+ship_event = {
+	id = pf_content.401
+	title = pf_content.401.name
+	desc = "pf_content.401.desc"
+	picture  = GFX_evt_physics_research
+	location = this
+    is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			owner = {
+				country_event = { id = story.5 days = 30 }
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.401.a
+		owner = {
+			add_tech_option_or_research_effect = {
+				TECH = tech_sensors_3
+				CATEGORY = physics_research
+				PROGRESS = 0.25
+			}
+		}
+		hidden_effect = {
+			# If the Prethoryn are coming and have not arrived yet.
+			if = {
+				limit = {
+					AND = {
+						is_crises_allowed = yes
+						OR = {
+							allowed_crisis_type = all
+							allowed_crisis_type = prethoryn
+						}
+						NOT = { has_global_flag = prethoryn_invasion_happened}
+					}
+				}
+				ship_event = {
+					id = pf_content.402
+					days = 360
+				}
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = pf_content.402
+	title = pf_content.402.name
+	desc = "pf_content.402.desc"
+	picture  = GFX_evt_glitchy_matrix
+	location = this
+    is_triggered_only = yes
+
+	option = {
+		name = pf_content.402.a
+		owner = {
+			add_resource = {
+				physics_research = 6000
+			}
+		}
+	}
+}
+
+# Icy Terraforming World
+ship_event = {
+	id = pf_content.410
+	title = "pf_content.410.name"
+	desc = "pf_content.410.desc"
+	picture = GFX_evt_frozen
+	show_sound = event_machinery
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			owner = {
+				country_event = { id = story.5 days = 30 }
+			}
+			from = {
+				create_ambient_object = {
+					type = pf_ancient_terraforming_station
+					location = this
+				}
+				last_created_ambient_object = {
+					set_ambient_object_flag = pf_ancient_terraforming_station
+				}
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.410.a
+		trigger = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 5000
+				}
+			}
+		}
+		owner = {
+			add_resource = { 
+				energy = -5000
+			}
+		}
+		from = {
+			enable_special_project = {
+				name = pf_fix_frozen_terraforming_equipment
+				location = this
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.410.b
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = pf_content.411
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		change_pc = pc_arctic
+		reroll_deposits = yes
+
+		add_modifier = { modifier = pf_pm_recovering_biosphere }
+
+		solar_system = {
+			random_system_ambient_object = {
+				limit = { has_ambient_object_flag = pf_ancient_terraforming_station }
+				destroy_ambient_object = this
+			}
+		}
+	}
+}
+
+# Strange heat emissions - we've discovered the server rooms
+ship_event = {
+	id = pf_content.420
+	title = "pf_content.420.name"
+	desc = "pf_content.420.desc"
+	picture = GFX_evt_ancient_databank
+	show_sound = event_machinery
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			owner = {
+				country_event = { id = story.5 days = 30 }
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.420.a
+		owner = {
+			add_resource = {
+				society_research = 500
+			}
+		}
+		from = {
+			add_deposit = d_pf_ancient_databanks
+		}
+	}
+}
+
+# Ancient Battlefield first encounter event
+ship_event = {
+	id = pf_content.430
+	title = pf_content.430.name
+	desc = "pf_content.430.desc"
+	picture  = GFX_evt_space_debris
+	location = this
+    is_triggered_only = yes
+
+	trigger = {
+		solar_system = {
+			has_star_flag = pf_ancient_battlefield_system
+		}
+		owner = {
+			not = { has_country_flag = pf_has_encountered_ancient_battlefield}
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_country_flag = pf_has_encountered_ancient_battlefield
+		}
+		hidden_effect = {
+			owner = {
+				country_event = { id = story.5 days = 30 }
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.430.a
+		owner = {
+			add_resource = { engineering_research = 500 }
+		}
+	}
+}
+
+# Ancient Gas Mines anomaly
+ship_event = {
+	id = pf_content.440
+	title = "pf_content.440.name"
+	desc = "pf_content.440.desc"
+	picture = GFX_evt_gas_giant_station
+	show_sound = event_machinery
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			owner = {
+				country_event = { id = story.5 days = 30 }
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.440.a
+		# Planet scope
+		from = {
+			add_deposit = d_exotic_gases_5
+		}
+	}
+
+	option = {
+		name = pf_content.440.b
+		owner = {
+			add_resource = {
+				engineering_research = 2000
+				minor_artifacts = 50
+			}
 		}
 	}
 }
