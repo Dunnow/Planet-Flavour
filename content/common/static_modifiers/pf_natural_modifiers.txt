@@ -419,3 +419,10 @@ pf_pm_ancient_fossil_strata = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_seismological_disturbances.dds"
 	icon_frame = 1
 }
+
+pf_pm_betharian_world = {
+	planet_miners_energy_produces_mult = 0.25
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_betharian_world.dds"
+	icon_frame = 1
+}

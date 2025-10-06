@@ -122,6 +122,8 @@
   pf_pm_ecosystem_reconstitution_desc: "The native lifeforms of this planet are gradually adapting to the new state of their world."
   pf_pm_silica_storms: "Silica Storms"
   pf_pm_silica_storms_desc: "The surface of this planet is constantly scoured by storms of razor sharp silica shards, grinding machinery to a halt."
+  pf_pm_betharian_world: "Betharian World"
+  pf_pm_betharian_world_desc: "This planet has an extraordinary abundance of high-energy Betharian stones easily accessible."
 
   # Relic World Modifiers
   pf_pm_infested_world: "Infested World"
