@@ -52,7 +52,6 @@ on_survey_planet = {
 	events = {
         pf_content.101                  # Hive Stars Surveying Event
         pf_content.200         # Luxury Resources discovered event
-        pf_content.101                  # (Hidden) hive stars tracker
 		pf_core.101	                   # Add deposits for gas modifiers
         pf_core.102	                   # Add deposits for motes modifiers
         pf_core.103	                   # Add deposits for energy modifiers
