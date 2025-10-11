@@ -18,7 +18,7 @@ d_pf_psionic_fungi = {
 		can_have_habitable_deposits = yes
 	}
 	
-	custom_tooltip = unlocks_zone_pf_psionic_fungi_all
+	custom_tooltip = unlocks_zone_pf_psionic_fungi_all_tt
 	planet_modifier = {
 		psionic_pop_bonus_workforce_mult = 0.1
 		district_farming_max_add = 4

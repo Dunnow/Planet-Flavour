@@ -135,25 +135,25 @@
 
   # Luxury Modifiers
   pf_pm_rare_wood_homeworld: "Exotic Hardwoods: Homeworld"
-  pf_pm_rare_wood_homeworld_desc: "The thick jungles of this world are home to several species of exotic hardwoods. The value of these materials for ornamentation and artisans is high."
+  pf_pm_rare_wood_homeworld_desc: "The thick jungles of this world are home to several species of exotic hardwoods. The value of these materials for ornamentation and artisans is high.\n\n§W$unlocks_zone_zone_pf_plantations_tt$§!"
   pf_pm_iridescent_pearls_homeworld: "Iridescent Pearls: Homeworld"
-  pf_pm_iridescent_pearls_homeworld_desc: "This world is home to several species of aquatic life that produce lustrous pearls. These natural jewels are unrivalled by any others anywhere in the galaxy."
+  pf_pm_iridescent_pearls_homeworld_desc: "This world is home to several species of aquatic life that produce lustrous pearls. These natural jewels are unrivalled by any others anywhere in the galaxy.\n\n§W$unlocks_zone_zone_pf_plantations_tt$§!"
   pf_pm_sea_ferns_homeworld: "Mellifluous Sea Ferns: Homeworld"
-  pf_pm_sea_ferns_homeworld_desc: "Enormous forests of kelp grow beneath the coastal seas of this world. They have a mild psychoactive effect on sentient life."
+  pf_pm_sea_ferns_homeworld_desc: "Enormous forests of kelp grow beneath the coastal seas of this world. They have a mild psychoactive effect on sentient life.\n\n§W$unlocks_zone_zone_pf_plantations_tt$§!"
 
   pf_pm_rare_spices_homeworld: "Sundust Spices: Homeworld"
-  pf_pm_rare_spices_homeworld_desc: "Certain hardy mountain plants that grow in the cooler valleys of this world can be refined to produce a rare and appealing food supplement."
+  pf_pm_rare_spices_homeworld_desc: "Certain hardy mountain plants that grow in the cooler valleys of this world can be refined to produce a rare and appealing food supplement.\n\n§W$unlocks_zone_zone_pf_plantations_tt$§!"
   pf_pm_desert_silks_homeworld: "Desert Silks: Homeworld"
-  pf_pm_desert_silks_homeworld_desc: "The xenocacti native to this world's desert produce long, smooth fibers that can be spun into fabrics of unparalleled softness and durability."
+  pf_pm_desert_silks_homeworld_desc: "The xenocacti native to this world's desert produce long, smooth fibers that can be spun into fabrics of unparalleled softness and durability.\n\n§W$unlocks_zone_zone_pf_plantations_tt$§!"
   pf_pm_amberfruit_homeworld: "Amberfruit: Homeworld"
-  pf_pm_amberfruit_homeworld_desc: "Some of the limited forests of this world contain bushes that produce highly a nutritious and flavorful fruit.\n\nWhether eaten raw, fermented into beverages, or refined into food additives, it has appeal for nearly every species in the galaxy."
+  pf_pm_amberfruit_homeworld_desc: "Some of the limited forests of this world contain bushes that produce highly a nutritious and flavorful fruit.\n\nWhether eaten raw, fermented into beverages, or refined into food additives, it has appeal for nearly every species in the galaxy.\n\n§W$unlocks_zone_zone_pf_plantations_tt$§!"
 
   pf_pm_mountain_flowers_homeworld: "Ice Flowers: Homeworld"
-  pf_pm_mountain_flowers_homeworld_desc: "The alpine peaks of this world are home to several varieties of stunningly beautiful fragrant flowers. These delicate plants are extremely valuable."
+  pf_pm_mountain_flowers_homeworld_desc: "The alpine peaks of this world are home to several varieties of stunningly beautiful fragrant flowers. These delicate plants are extremely valuable.\n\n§W$unlocks_zone_zone_pf_plantations_tt$§!"
   pf_pm_fungal_caves_homeworld: "Trancebloom Fungi: Homeworld"
-  pf_pm_fungal_caves_homeworld_desc: "The caves of this world are the home to a rare form of fungal life that has unique psychoactive properties for almost all lifeforms. Cultivation is challenging."
+  pf_pm_fungal_caves_homeworld_desc: "The caves of this world are the home to a rare form of fungal life that has unique psychoactive properties for almost all lifeforms. Cultivation is challenging.\n\n§W$unlocks_zone_zone_pf_plantations_tt$§!"
   pf_pm_marsh_roots_homeworld: "Fragrant Marsh Roots: Homeworld"
-  pf_pm_marsh_roots_homeworld_desc: "A small region of cold bogs of this world are the native habitat of a specific variety of tree. The roots produce a pleasing aroma when burned as a form of incense."
+  pf_pm_marsh_roots_homeworld_desc: "A small region of cold bogs of this world are the native habitat of a specific variety of tree. The roots produce a pleasing aroma when burned as a form of incense.\n\n§W$unlocks_zone_zone_pf_plantations_tt$§!"
 
   # Uninhabitable Modifiers
   pf_pm_mega_storms: "Atmospheric Megastorms"

@@ -10,9 +10,10 @@
   mod_planet_miners_consumer_goods_produces_add: "£consumer_goods£ $consumer_goods$ per 100 £job_miner£ $job_miner$"
 
   # Tooltips
-  unlocks_zone_pf_psionic_fungi_all: "$unlocks_zone_pf_psionic_fungi_materialist$\n$unlocks_zone_pf_psionic_fungi_spiritualist$"
-  unlocks_zone_pf_psionic_fungi_spiritualist: "Unlocks Zone: §Y$zone_pf_psionic_fungi_spiritualist$§!"
-  unlocks_zone_pf_psionic_fungi_materialist: "Unlocks Zone: §Y$zone_pf_psionic_fungi_materialist$§!"
+  unlocks_zone_pf_psionic_fungi_all_tt: "$unlocks_zone_pf_psionic_fungi_materialist_tt$\n$unlocks_zone_pf_psionic_fungi_spiritualist_tt$"
+  unlocks_zone_pf_psionic_fungi_spiritualist_tt: "Unlocks Agriculture District Specialization: §Y£zone£ $zone_pf_psionic_fungi_spiritualist$§!"
+  unlocks_zone_pf_psionic_fungi_materialist_tt: "Unlocks Agriculture District Specialization: §Y£zone£ $zone_pf_psionic_fungi_materialist$§!"
+  unlocks_zone_zone_pf_plantations_tt: "Unlocks Agriculture District Specialization: §Y£zone£ $zone_pf_plantations$§!"
 
   # Zones
   zone_pf_psionic_fungi_spiritualist: "Fungal Sanctuary"
