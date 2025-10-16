@@ -1,5 +1,5 @@
 zone_pf_psionic_fungi_materialist = {
-	icon = GFX_zone_pf_psionic_fungi_materialist
+	icon = GFX_district_specialization_pf_psionic_fungi_materialist
 	base_buildtime = @zone_buildtime
 
 	swap_type = district_pf_fungal_groves
@@ -52,7 +52,7 @@ zone_pf_psionic_fungi_materialist = {
 }
 
 zone_pf_psionic_fungi_spiritualist = {
-	icon = GFX_zone_pf_psionic_fungi_spiritualist
+	icon = GFX_district_specialization_pf_psionic_fungi_spiritualist
 	base_buildtime = @zone_buildtime
 
 	swap_type = district_pf_fungal_sanctuaries
@@ -104,7 +104,7 @@ zone_pf_psionic_fungi_spiritualist = {
 }
 
 zone_pf_plantations = {
-	icon = GFX_zone_pf_plantations
+	icon = GFX_district_specialization_pf_plantations
 	base_buildtime = @zone_buildtime
 
 	swap_type = district_pf_plantations

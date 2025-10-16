@@ -74,3 +74,10 @@ pf_pm_protoplanetary_disk = {
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_protoplanetary_disk.dds"
 	icon_frame = 2
 }
+
+# System Modifier
+pf_pm_protoplanetary_system = {
+	ship_speed_reduction = 0.5
+	ship_disengage_chance_mult = -0.25
+	ship_emergency_ftl_mult = 0.25
+}

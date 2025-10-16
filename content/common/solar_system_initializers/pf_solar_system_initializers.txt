@@ -935,6 +935,8 @@ pf_basic_proto_system_01 = {
 	flags = {  pf_proto_system }
 
 	init_effect = {
+		# Add protoplanetary debris modifier
+		add_modifier = { modifier = pf_pm_protoplanetary_system }
 		# Create nebula effect
 		create_ambient_object = {
 			type = "nebula_L4_entity"
@@ -1030,6 +1032,8 @@ pf_basic_proto_system_02 = {
 	flags = {  pf_proto_system }
 
 	init_effect = {
+		# Add protoplanetary debris modifier
+		add_modifier = { modifier = pf_pm_protoplanetary_system }
 		# Create nebula effect
 		create_ambient_object = {
 			type = "nebula_L4_entity"
@@ -1133,6 +1137,9 @@ pf_basic_proto_system_03 = {
 	flags = { pf_stellar_nursery_system pf_proto_system }
 
 	init_effect = {
+		# Add protoplanetary debris modifier
+		add_modifier = { modifier = pf_pm_protoplanetary_system }
+
 		pf_create_stellar_nursery_nebula = yes
 
 		# Create protoplanet disk effect
@@ -1218,7 +1225,7 @@ pf_ancient_battlefield_system = {
 	usage = misc_system_init
 
 	usage_odds = {
-		base = @spawn_system_extreme #@spawn_system_common
+		base = @spawn_system_common
 		modifier = {
 			factor = 0
 			has_distar = no
@@ -1655,6 +1662,151 @@ pf_ancient_battlefield_system = {
 					angle = random
 				}
 			}
+		}
+	}
+}
+
+# Betharian Primitives
+pf_betharian_primitives = {
+	class = "rl_standard_stars"
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 120
+	}
+
+	usage = misc_system_init
+	usage_odds = {
+		base = @spawn_system_common
+		inline_script = "solar_system_initializers/initializer_modifiers_habitable_world_systems"
+	}
+	primitive_system = yes
+	scaled_spawn_chance = 8
+	max_instances = 1
+
+	flags = { pf_betharian_primitives_system }
+
+	planet = {
+		class = star
+		orbit_distance = 0
+	}
+
+	change_orbit = 30
+
+	planet = {
+		count = 2
+		class = "rl_unhabitable_planets"
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 16 }
+	}
+
+	change_orbit = 30
+
+	planet = {
+		count = { min = 1 max = 4 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 20
+
+	planet = {
+		count = 1
+		class = pc_gas_giant
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 20 max = 30 }
+		has_ring = no
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			class = "pc_tropical"
+			size = 12
+			orbit_distance = 10
+			orbit_angle = 70
+			has_ring = no
+
+			init_effect = {
+				clear_planet_modifiers = yes
+				create_species = {
+					name = random
+					class = REP
+					portrait = rep1
+					homeworld = THIS
+					namelist = "REP2"
+					traits = {
+						trait = "trait_docile"
+						trait = "trait_communal"
+						trait = "trait_slow_learners"
+						trait = "trait_pc_tropical_preference"
+					}
+				}
+				create_country = {
+					name = random
+					authority = auth_democratic
+					civics = {
+						civic = civic_secret_of_fire
+						civic = civic_the_wheel
+					}
+					species = last_created_species
+					ethos = {
+						ethic = "ethic_fanatic_pacifist"
+						ethic = "ethic_spiritualist"
+					}
+					origin = "origin_default"
+					flag = {
+						icon = {
+							category = "pre_ftl"
+							file = "preftl_stone_age.dds"
+						}
+						background= {
+							category = "backgrounds"
+							file = "new_dawn.dds"
+						}
+						colors={
+							"turquoise"
+							"green"
+							"null"
+							"null"
+						}
+					}
+					type = primitive
+				}
+				last_created_country = {
+					set_country_flag = stone_age
+					set_pre_ftl_age = stone_age
+					set_graphical_culture = preindustrial_01
+				}
+				set_owner = last_created_country
+				set_capital = yes
+				every_deposit = {
+					limit = { is_deposit_type = d_dangerous_wildlife_blocker }
+					clear_blocker = yes
+				}
+				while = {
+					count = 4
+					create_pop_group = {
+						species = last_created_species
+					}
+				}
+				add_building = building_crude_huts
+				remove_building = building_colony_shelter
+
+				# Planet Stuff now
+				add_modifier = { modifier = pf_pm_arboreal_ecosystem }
+				add_modifier = { modifier = pf_pm_betharian_world }
+				add_deposit = d_betharian_deposit
+			}
+		}
+
+		moon = {
+			count = { min = 0 max = 3 }
+			size = { min = 6 max = 12 }
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 7
 		}
 	}
 }

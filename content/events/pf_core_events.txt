@@ -59,6 +59,76 @@ event = {
     }
 }
 
+# Clear pf modifiers from pre-ftl worlds
+event = {
+    id = pf_core.12
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        every_country = {
+            limit = {
+                is_country_type = primitive
+            }
+            capital_scope = {
+                remove_modifier = pf_pm_ice_age
+                remove_modifier = pf_pm_floral_world
+                remove_modifier = pf_pm_biocrystals
+                remove_modifier = pf_pm_severe_droughts
+                remove_modifier = pf_pm_overgrown
+                remove_modifier = pf_pm_floating_rocks
+                remove_modifier = pf_pm_thick_atmosphere
+                remove_modifier = pf_pm_thin_atmosphere
+                remove_modifier = pf_pm_irradiated_world
+                remove_modifier = pf_pm_subterranean_cave_systems
+                remove_modifier = pf_pm_dim_world
+                remove_modifier = pf_pm_tidal_surges
+                remove_modifier = pf_pm_fungal_world
+                remove_modifier = pf_pm_extraplanetary_life
+                remove_modifier = pf_pm_megacoral_reefs
+                remove_modifier = pf_pm_bioluminescent_flora
+                remove_modifier = pf_pm_toxic_spores
+                remove_modifier = pf_pm_abundant_parasites
+                remove_modifier = pf_pm_canyon_world
+                remove_modifier = pf_pm_tropical_archipelagos
+                remove_modifier = pf_pm_snowball_world
+                remove_modifier = pf_pm_volcanic_soils
+                remove_modifier = pf_pm_chirping_plains
+                remove_modifier = pf_pm_bone_world
+                remove_modifier = pf_pm_dry_world
+                remove_modifier = pf_pm_swamp_world
+                remove_modifier = pf_pm_aurora_lights
+                if = {
+                    limit = {
+                        solar_system = {
+                            NOT = { has_star_flag = pf_betharian_primitives_system }
+                        }
+                    }
+                    remove_modifier = pf_pm_arboreal_ecosystem
+                }
+                remove_modifier = pf_pm_harsh
+                remove_modifier = pf_pm_abyssal_seas
+                remove_modifier = pf_pm_irregular_orbit
+                remove_modifier = pf_pm_subglacial_seas
+                remove_modifier = pf_pm_equatorial_deserts
+                remove_modifier = pf_pm_ideal_sunshine
+                remove_modifier = pf_pm_harmonious_ecosystems
+                remove_modifier = pf_pm_wild_sandstorms
+                remove_modifier = pf_pm_saline_seas
+                remove_modifier = pf_pm_impenetrable_jungles
+                remove_modifier = pf_pm_fertile_tundras
+                remove_modifier = pf_pm_harsh_badlands
+                remove_modifier = pf_pm_verdant_oases
+                remove_modifier = pf_pm_flash_floods
+                remove_modifier = pf_pm_fertile_silts
+                remove_modifier = pf_pm_axial_tilt
+                remove_modifier = pf_pm_leviathan_oceans
+                remove_modifier = pf_pm_ancient_fossil_strata
+            }
+        }
+    }
+}
+
 # Terraforming cleanup
 planet_event = {
     id = pf_core.20
