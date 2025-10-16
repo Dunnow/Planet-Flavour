@@ -935,6 +935,8 @@ pf_basic_proto_system_01 = {
 	flags = {  pf_proto_system }
 
 	init_effect = {
+		# Add protoplanetary debris modifier
+		add_modifier = { modifier = pf_pm_protoplanetary_system }
 		# Create nebula effect
 		create_ambient_object = {
 			type = "nebula_L4_entity"
@@ -1030,6 +1032,8 @@ pf_basic_proto_system_02 = {
 	flags = {  pf_proto_system }
 
 	init_effect = {
+		# Add protoplanetary debris modifier
+		add_modifier = { modifier = pf_pm_protoplanetary_system }
 		# Create nebula effect
 		create_ambient_object = {
 			type = "nebula_L4_entity"
@@ -1133,6 +1137,9 @@ pf_basic_proto_system_03 = {
 	flags = { pf_stellar_nursery_system pf_proto_system }
 
 	init_effect = {
+		# Add protoplanetary debris modifier
+		add_modifier = { modifier = pf_pm_protoplanetary_system }
+
 		pf_create_stellar_nursery_nebula = yes
 
 		# Create protoplanet disk effect

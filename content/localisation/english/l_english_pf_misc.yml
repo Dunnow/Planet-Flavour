@@ -9,6 +9,8 @@
   mod_planet_anglers_engineering_research_produces_add: "£engineering_research£ $engineering_research$ per 100 £job_angler£ $job_angler_plural$"
   mod_planet_miners_consumer_goods_produces_add: "£consumer_goods£ $consumer_goods$ per 100 £job_miner£ $job_miner$"
 
+  pf_pm_protoplanetary_system: "Protoplanetary Debris"
+
   # Tooltips
   unlocks_zone_pf_psionic_fungi_all_tt: "$unlocks_zone_pf_psionic_fungi_materialist_tt$\n$unlocks_zone_pf_psionic_fungi_spiritualist_tt$"
   unlocks_zone_pf_psionic_fungi_spiritualist_tt: "Unlocks Agriculture District Specialization: §Y£zone£ $zone_pf_psionic_fungi_spiritualist$§!"
