@@ -307,6 +307,82 @@ d_pf_abandoned_hives = {
 	}
 }
 
+d_pf_holy_world_monoliths = {
+    is_for_colonizable = yes
+	icon = d_monument
+    category = deposit_cat_rare
+
+	resources = {
+		category = planet_deposits
+		produces = {
+            unity = 20
+		}
+	}
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}
+
+d_pf_holy_world_psionic_leylines = {
+    is_for_colonizable = yes
+	icon = d_surreal_visions
+    category = deposit_cat_rare
+
+	resources = {
+		category = planet_deposits
+		produces = {
+            unity = 20
+		}
+	}
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}
+
+d_pf_holy_world_sacred_groves = {
+    is_for_colonizable = yes
+	icon = d_pf_arid_groves
+    category = deposit_cat_rare
+
+	resources = {
+		category = planet_deposits
+		produces = {
+            unity = 20
+		}
+	}
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}
+
+d_pf_holy_world_overgrown_temples = {
+    is_for_colonizable = yes
+	icon = d_ruins_small
+    category = deposit_cat_rare
+
+	resources = {
+		category = planet_deposits
+		produces = {
+            unity = 20
+		}
+	}
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}
+
 d_pf_ancient_databanks = {
     is_for_colonizable = yes
 	icon = d_glitchy_matrix

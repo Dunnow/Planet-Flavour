@@ -129,6 +129,42 @@ event = {
     }
 }
 
+# Add holy world deposits
+event = {
+    id = pf_core.13
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+        every_system = {
+            limit = {
+                OR = {
+                    has_star_flag = holy_system_1
+                    has_star_flag = holy_system_2
+                    has_star_flag = holy_system_3
+                    has_star_flag = holy_system_4
+                }
+            }
+            every_system_planet = {
+                limit = { has_planet_flag = holy_world_1 }
+                add_deposit = d_pf_holy_world_monoliths
+            }
+            every_system_planet = {
+                limit = { has_planet_flag = holy_world_2 }
+                add_deposit = d_pf_holy_world_psionic_leylines
+            }
+            every_system_planet = {
+                limit = { has_planet_flag = holy_world_3 }
+                add_deposit = d_pf_holy_world_sacred_groves
+            }
+            every_system_planet = {
+                limit = { has_planet_flag = holy_world_4 }
+                add_deposit = d_pf_holy_world_overgrown_temples
+            }
+        }
+    }
+}
+
 # Terraforming cleanup
 planet_event = {
     id = pf_core.20

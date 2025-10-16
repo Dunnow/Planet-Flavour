@@ -54,3 +54,12 @@
   d_pf_preserved_bases_desc: "A string of shattered outposts, bunkers and command centers dot this world."
   d_pf_aerosol_mining_stations: "Aerosol Stations"
   d_pf_aerosol_mining_stations_desc: "An ancient array of advanced gas filtration facilities."
+
+  d_pf_holy_world_monoliths: "Ancient Monoliths"
+  d_pf_holy_world_monoliths_desc: "Esoteric structures dot the verdant landscape."
+  d_pf_holy_world_psionic_leylines: "Psionic Leylines"
+  d_pf_holy_world_psionic_leylines_desc: "Esoteric energies from another plane bubble up in these loci of power."
+  d_pf_holy_world_sacred_groves: "Sacred Groves"
+  d_pf_holy_world_sacred_groves_desc: "The susurrating wind gently stirs the leaves."
+  d_pf_holy_world_overgrown_temples: "Overgrown Temples"
+  d_pf_holy_world_overgrown_temples_desc: "Ancient monuments raised to commemorate long dead gods."
