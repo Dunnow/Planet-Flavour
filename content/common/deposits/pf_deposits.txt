@@ -279,6 +279,11 @@ d_pf_abandoned_hives = {
 		planet_miners_society_research_produces_add = 1
     }
 
+	potential = {
+        is_colony = no
+		can_have_habitable_deposits = yes
+	}
+
 	drop_weight = {
 		weight = @mid_rare
 		modifier = {
