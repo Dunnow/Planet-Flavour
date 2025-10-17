@@ -548,9 +548,10 @@ planet_event = {
 	immediate = {
 		random_list = {
 			150 = {}
-			2 = { planet_event = { id = pf_content.310 }}
-			2 = { planet_event = { id = pf_content.330 }} # Colonists find habitable caves
-			2 = { planet_event = { id = pf_content.340 }} # Colonists find evidence of ancient neutron sweep
+			2 = { planet_event = { id = pf_content.310 }}		# Colonists find ruins in the desert
+			2 = { planet_event = { id = pf_content.330 }}  	# Colonists find habitable caves
+			2 = { planet_event = { id = pf_content.340 }}  	# Colonists find evidence of ancient neutron sweep
+			2 = { planet_event = { id = pf_content.350 }}  	# Deep sea mining opportunities
 		}
 	}
 }
@@ -894,6 +895,44 @@ planet_event = {
 		}
 	}
 }
+
+# Colonists find deep sea mineral beds
+planet_event = {
+	id = pf_content.350
+	title = pf_content.350.name
+	desc = "pf_content.350.desc"
+	picture  = GFX_evt_ocean
+	location = this
+    is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+
+	trigger = {
+		NOR = {
+			has_planet_flag = colony_event
+			owner = { has_country_flag = pf_deep_sea_mining_opportunities }
+		}
+	}
+
+	immediate = {
+		set_planet_flag = colony_event
+		owner = { set_country_flag = pf_deep_sea_mining_opportunities }
+	}
+
+	option = {
+		name = pf_content.340.a
+		add_modifier = { modifier = pf_pm_deep_sea_mineral_beds }
+	}
+}
+
 
 # Add anomaly for ruined subspace observation post
 ship_event = {

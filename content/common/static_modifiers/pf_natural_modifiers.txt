@@ -111,16 +111,16 @@ pf_pm_extraplanetary_life = {
 
 # Also a relatively common modifiers
 pf_pm_planetary_rings = {
-	district_mining_max_add = 2
 	planet_jobs_minerals_produces_mult = 0.10
+	district_mining_max_add = 2
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_asteroid_belt.dds"
 	icon_frame = 1
 }
 
 pf_pm_megacoral_reefs = {
-	district_farming_max_add = 2
 	planet_jobs_food_produces_mult = 0.10
+	district_farming_max_add = 2
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_coral_ecosystems.dds"
 	icon_frame = 1
@@ -152,8 +152,8 @@ pf_pm_abundant_parasites = {
 }
 
 pf_pm_canyon_world = {
-	district_mining_max_add = 2
 	planet_miners_volatile_motes_produces_add = 0.1
+	district_mining_max_add = 2
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_canyons.dds"
 	icon_frame = 1
@@ -424,5 +424,13 @@ pf_pm_betharian_world = {
 	planet_miners_energy_produces_mult = 0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_betharian_world.dds"
+	icon_frame = 1
+}
+
+pf_pm_deep_sea_mineral_beds = {
+	planet_miners_minerals_produces_add = 2
+	planet_miners_energy_upkeep_add = 0.5
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_tides.dds"
 	icon_frame = 1
 }

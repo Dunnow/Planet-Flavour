@@ -213,6 +213,8 @@ planet_event = {
             remove_modifier = pf_pm_abyssal_seas
             remove_modifier = pf_pm_fertile_tundras
             remove_modifier = pf_pm_leviathan_oceans
+
+            remove_modifier = pf_pm_deep_sea_mineral_beds
         }
 
         # Changed to a cold world
@@ -235,6 +237,7 @@ planet_event = {
 
             remove_modifier = pf_pm_fertile_silts
             remove_modifier = pf_pm_leviathan_oceans
+            remove_modifier = pf_pm_deep_sea_mineral_beds
 
             if = {
                 limit = { NOT = { is_planet_class = pc_arctic}}

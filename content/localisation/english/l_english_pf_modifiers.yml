@@ -104,6 +104,10 @@
   pf_pm_leviathan_oceans_desc: "This world's oceans are unusually deep and productive, hosting enormous marine lifeforms."
   pf_pm_ancient_fossil_strata: "Ancient Fossil Strata"
   pf_pm_ancient_fossil_strata_desc: "This planet bears the scars of an ancient extinction event in its rocks."
+  pf_pm_betharian_world: "Betharian World"
+  pf_pm_betharian_world_desc: "This planet has an extraordinary abundance of high-energy Betharian stones easily accessible."
+  pf_pm_deep_sea_mineral_beds: "Deep Sea Mineral Beds"
+  pf_pm_deep_sea_mineral_beds_desc: "This planet has large formations of valuable ores accessible beneath the waves."
 
   # Tomb World Modifiers
   pf_pm_glassed_world: "Glassed World"
@@ -122,8 +126,6 @@
   pf_pm_ecosystem_reconstitution_desc: "The native lifeforms of this planet are gradually adapting to the new state of their world."
   pf_pm_silica_storms: "Silica Storms"
   pf_pm_silica_storms_desc: "The surface of this planet is constantly scoured by storms of razor sharp silica shards, grinding machinery to a halt."
-  pf_pm_betharian_world: "Betharian World"
-  pf_pm_betharian_world_desc: "This planet has an extraordinary abundance of high-energy Betharian stones easily accessible."
 
   # Relic World Modifiers
   pf_pm_infested_world: "Infested World"
