@@ -934,6 +934,42 @@ planet_event = {
 }
 
 
+# Supervolcano discovered
+planet_event = {
+	id = pf_content.360
+	title = pf_content.360.name
+	desc = "pf_content.360.desc"
+	picture  = GFX_evt_molten
+	location = this
+    is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+
+	trigger = {
+		NOR = {
+			has_planet_flag = colony_event
+			owner = { has_country_flag = pf_supervolcano_found }
+		}
+	}
+
+	immediate = {
+		set_planet_flag = colony_event
+		owner = { set_country_flag = pf_supervolcano_found }
+	}
+
+	option = {
+		name = pf_content.360.a
+	}
+}
+
 # Add anomaly for ruined subspace observation post
 ship_event = {
 	id = pf_content.400
