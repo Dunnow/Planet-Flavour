@@ -240,7 +240,7 @@ planet_event = {
 	id = pf_content.122
 	title = pf_content.122.name
 	desc = pf_content.122.desc
-	picture  = GFX_evt_storm_formation
+	picture  = GFX_evt_strange_sands
 	location = this
     is_triggered_only = yes
 
