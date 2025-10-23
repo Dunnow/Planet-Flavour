@@ -285,3 +285,21 @@ entity = {
 
 	cull_radius = 20000
 }
+
+entity = {
+	name = "pf_desert_relic_entity"
+	pdxmesh = "planet_clouded_mesh"
+
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = 	"pf_desert_relic_diffuse.dds"
+		texture_normal = 	"pf_desert_relic_normal.dds"
+		texture_specular = 	"pf_desert_relic_specular.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
