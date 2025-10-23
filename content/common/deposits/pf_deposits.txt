@@ -497,3 +497,26 @@ d_pf_aerosol_mining_stations = {
 		weight = 0
 	}
 }
+
+d_pf_unstable_ground = {
+	time = 720
+	icon = d_pf_molten_planet
+
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+
+	resources = {
+		category = deposit_blockers_natural
+		cost = {
+			energy = 3000
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -3
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}

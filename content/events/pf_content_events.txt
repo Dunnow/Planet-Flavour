@@ -935,6 +935,7 @@ planet_event = {
 
 
 # Supervolcano discovered
+#TODO: add event that has bombardment trigger the supervolcano
 planet_event = {
 	id = pf_content.360
 	title = pf_content.360.name
@@ -962,11 +963,13 @@ planet_event = {
 
 	immediate = {
 		set_planet_flag = colony_event
+		set_planet_flag = pf_has_supervolcano
 		owner = { set_country_flag = pf_supervolcano_found }
 	}
 
 	option = {
 		name = pf_content.360.a
+		add_deposit = d_pf_unstable_ground
 	}
 }
 
