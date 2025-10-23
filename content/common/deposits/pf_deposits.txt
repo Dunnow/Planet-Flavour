@@ -504,12 +504,17 @@ d_pf_unstable_ground = {
 
 	is_for_colonizable = yes
 	category = deposit_cat_blockers
+	use_weights_for_blocker_swap_types = no
 
 	resources = {
 		category = deposit_blockers_natural
 		cost = {
 			energy = 3000
 		}
+	}
+
+	blocker_swap_types = {
+		d_pf_geothermal_region
 	}
 
 	planet_modifier = {
@@ -519,4 +524,20 @@ d_pf_unstable_ground = {
 	drop_weight = {
 		weight = 0
 	}
+}
+
+d_pf_geothermal_region = {
+    is_for_colonizable = yes
+	icon = d_building_complex
+    category = deposit_cat_rare
+
+    planet_modifier = {
+		district_generator_max_add = 3
+    }
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
 }

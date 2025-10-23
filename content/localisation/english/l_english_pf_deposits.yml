@@ -44,6 +44,8 @@
   d_pf_radstorms_desc: "Pockets of intense weather blanket these regions in radioactive contamination."
   d_pf_unstable_ground: "Unstable Ground"
   d_pf_unstable_ground_desc: "A region of tectonically active forces. Earthquakes and eruptions make construction extraordinarily difficult."
+  d_pf_geothermal_region: "Geothermal Region"
+  d_pf_geothermal_region_desc: "Unusually strong tectonic forces provide a bounty of geothermal energy to harvest."
 
   d_pf_ancient_databanks: "Ancient Databanks"
   d_pf_ancient_databanks_desc: "The preserved cultural archives of a long-dead civilization."
