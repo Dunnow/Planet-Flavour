@@ -1096,7 +1096,7 @@ ship_event = {
 
 	option = {
 		name = pf_content.410.a
-		trigger = {
+		allow = {
 			owner = {
 				resource_stockpile_compare = {
 					resource = energy
