@@ -162,6 +162,11 @@ planet_event = {
 				}
 			}
 		}
+		owner = {
+			add_resource = {
+				energy = -2000
+			}
+		}
 		add_deposit = d_pf_geothermic_extraction_sites
 	}
 	option = {
