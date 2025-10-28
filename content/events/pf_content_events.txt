@@ -1257,3 +1257,82 @@ ship_event = {
 		}
 	}
 }
+
+# Add anomaly for desert relic ruins
+ship_event = {
+	id = pf_content.450
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			has_planet_flag = pf_desert_relic_world
+			# If we somehow find this planet abandoned we don't want the event to pop
+			is_planet_class = pc_desert
+		}
+	}
+
+	immediate = {
+		from = { # Planet
+			add_anomaly = {
+				category = pf_desert_relic_ruins
+				target = prev.owner
+			}
+		}
+	}
+}
+
+
+# Desert Relic Ruins Anomaly Completed
+ship_event = {
+	id = pf_content.451
+	title = "pf_content.451.name"
+	desc = "pf_content.451.desc"
+	picture = GFX_evt_relic_world_street
+	show_sound = pc_desert
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			owner = {
+				country_event = { id = story.5 days = 30 }
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.451.a
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 5000
+				}
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 200
+				}
+			}
+		}
+
+		owner = {
+			add_resource = { minerals = -5000 }
+			add_resource = { influence = -200 }
+		}
+		from = {
+			change_pc = pc_relic
+			set_planet_entity = { entity = pf_desert_relic_entity}
+		}
+	}
+
+	option = {
+		name = pf_content.451.b
+		hidden_effect = {
+			from = {
+				set_planet_flag = pf_desert_relic_transform_decision_allowed
+			}
+		}
+	}
+}

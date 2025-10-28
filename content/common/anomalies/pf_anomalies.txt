@@ -63,3 +63,16 @@ pf_ancient_gas_mines = {
 
 	on_success = pf_content.440
 }
+
+pf_desert_relic_ruins = {
+	desc = "pf_desert_relic_ruins_desc"
+	picture = "GFX_evt_pf_dry_highlands"
+	level = 4
+
+
+	spawn_chance = {
+        base = 0
+	}
+
+	on_success = pf_content.451
+}

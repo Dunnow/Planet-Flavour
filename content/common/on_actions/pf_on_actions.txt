@@ -59,6 +59,7 @@ on_survey_planet = {
         pf_core.105	                   # Add deposits for society modifiers
         pf_core.107                     # Add deposits for alloy modifiers
         pf_content.400                  # Add anomaly for ruined subspace observation post
+        pf_content.450                  # Add anomaly for the desert relic ruins
     }
 }
 

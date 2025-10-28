@@ -123,3 +123,8 @@
   pf_content.440.desc: "The upper atmosphere of [From.GetName] hosts a number of suspended structures. Their exact composition is unclear, but they seem to have been built to capture and extract trace quantities of exotic gases from the planet's atmosphere.\n\nOur engineering teams are quite confident that with a little bit of time, they can be restored to partial working order."
   pf_content.440.a: "Let's make use of these facilities."
   pf_content.440.b: "Dismantle them and examine their construction."
+
+  pf_content.451.name: "Rubble and Dust"
+  pf_content.451.desc: "Buried amongst the desert of [From.GetName] is the rubble of a truly ancient city world. Very little survives intact among the dunes, but the foundations of enormous infrastructure and huge arcologies can still be identified.\n\nSome of the [This.GetName]'s crew have suggested that we could repurpose some of the surviving infrastructure for a colony, but it would require a significant expenditure of resources."
+  pf_content.451.a: "Salvage the ruins. Our colonists can build on them."
+  pf_content.451.b: "We don't have the resources to fully explore them right now."

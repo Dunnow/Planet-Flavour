@@ -1810,3 +1810,150 @@ pf_betharian_primitives = {
 		}
 	}
 }
+
+
+pf_desert_relic_system = {
+	class = "rl_binary_stars"
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 168
+	}
+
+	usage = misc_system_init
+
+	usage_odds = {
+		base = @spawn_system_common
+		modifier = {
+			factor = 0
+			is_bottleneck_system = yes
+		}
+		 modifier = {
+			factor = 0
+			has_ancrel = no
+		}
+		inline_script = {
+			script = solar_system_initializers/initializer_modifiers_habitable_world_systems_mult
+			VALUE = 0.4 # e.g. 0.5x habitable = factor of 0.2; 5x habitable worlds = factor of 2
+		}
+	}
+
+	max_instances = 1
+	scaled_spawn_chance = 4
+
+	flags = { pf_desert_relic_system }
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 25
+		orbit_angle = 0
+		size = { min = 30 max = 35 }
+		has_ring = no
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		size = { min = 15 max = 25 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+	planet = {
+		class = pc_molten
+		size = 13
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		class = pc_molten
+		size = 9
+		orbit_distance = 25
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	planet = {
+		class = pc_molten
+		size = 17
+		orbit_distance = 25
+		orbit_angle = { min = 90 max = 270 }
+
+		moon = {
+			class = "pc_barren"
+			orbit_distance = 12
+			size = 10
+			orbit_angle = { min = 90 max = 270 }
+		}
+	}
+
+	change_orbit = 30
+
+	planet = {
+		count = { min = 2 max = 3 }
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 35
+
+	planet = {
+		class = pc_toxic
+		size = 26
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 30
+
+	planet = {
+		class = pc_desert
+		size = 20
+		has_ring = no
+		orbit_angle = { min = 90 max = 270 }
+		flags = { pf_desert_relic_world }
+
+		init_effect = {
+			prevent_anomaly = yes
+			set_planet_entity = {
+				entity = pf_desert_relic_entity
+			}
+		}
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 12
+			size = 10
+			has_ring = no
+			orbit_angle = { min = 90 max = 270 }
+
+			init_effect = { prevent_anomaly = yes }
+		}
+	}
+
+	planet = {
+		class = pc_gas_giant
+		size = 22
+		orbit_distance = 30
+		orbit_angle = { min = 90 max = 270 }
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 14
+			orbit_angle = { min = 90 max = 270 }
+		}
+
+		moon = {
+			class = "pc_barren_cold"
+			orbit_distance = 6
+			orbit_angle = { min = 90 max = 270 }
+		}
+
+		moon = {
+			class = "pc_frozen"
+			orbit_distance = 6
+			orbit_angle = { min = 90 max = 270 }
+		}
+	}
+}

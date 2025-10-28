@@ -137,6 +137,8 @@
   pf_strange_heat_emissions_desc: "Something appears to be expelling large quantities of heat from the otherwise frozen mountaintops of [This.GetName]."
   pf_ancient_gas_mines: "Derelict Cloud Stations"
   pf_ancient_gas_mines_desc: "Strange structures are suspended in the atmosphere of this world."
+  pf_desert_relic_ruins: "Ruins in the Desert"
+  pf_desert_relic_ruins_desc: "The sandy dunes of [This.GetName] are dotted with the buried ruins of an immense, world-spanning city."
 
   # Scripted Loc
   pf_planet_name: "planet"
