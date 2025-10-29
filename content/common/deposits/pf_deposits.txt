@@ -285,7 +285,7 @@ d_pf_abandoned_hives = {
 	}
 
 	drop_weight = {
-		weight = 0.05
+		weight = @low_rare
 		modifier = {
 			factor = 2
 			is_dry = yes
