@@ -116,6 +116,8 @@
   pf_pm_tectonically_inactive_desc: "This planet exhibits little tectonic activity, preventing the formation of significant mountain ranges and leaving many valuable heavy elements accessible close to the surface."
   pf_pm_seed_world: "Seed World"
   pf_pm_seed_world_desc: "This world's ecosystem appears to have been deliberately seeded by an unknown race millions of years ago. The slow process of evolution has begun to diverge the pioneer organisms into exotic new forms."
+  pf_pm_micro_moons: "Micro Moons"
+  pf_pm_micro_moons_desc: "This world has captured a large number of asteroids in its immediate orbit, severely complicating navigation and maneuvering for visiting vessels."
 
   # Tomb World Modifiers
   pf_pm_glassed_world: "Glassed World"
