@@ -469,6 +469,6 @@ pf_pm_micro_moons = {
 	planet_jobs_trade_produces_mult = -0.1
 	planet_orbital_bombardment_damage = -0.25
 
-	icon = "gfx/interface/icons/planet_modifiers/pm_extensive_moon_system.dds"
+	icon = "gfx/interface/icons/planet_modifiers/pm_asteroid_belt.dds"
 	icon_frame = 2
 }

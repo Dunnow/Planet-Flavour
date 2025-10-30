@@ -124,6 +124,9 @@ event = {
                 remove_modifier = pf_pm_axial_tilt
                 remove_modifier = pf_pm_leviathan_oceans
                 remove_modifier = pf_pm_ancient_fossil_strata
+                remove_modifier = pf_pm_delta_world
+                remove_modifier = pf_pm_seed_world
+                remove_modifier = pf_pm_rain_world
             }
         }
     }
@@ -190,6 +193,8 @@ planet_event = {
 
             remove_modifier = pf_pm_verdant_oases
             remove_modifier = pf_pm_fertile_silts
+            remove_modifier = pf_pm_rain_world
+            remove_modifier = pf_pm_seed_world
         }
         # Changed to a dry world
         if = {
@@ -215,6 +220,9 @@ planet_event = {
             remove_modifier = pf_pm_leviathan_oceans
 
             remove_modifier = pf_pm_deep_sea_mineral_beds
+            remove_modifier = pf_pm_delta_world
+            remove_modifier = pf_pm_seed_world
+            remove_modifier = pf_pm_rain_world
         }
 
         # Changed to a cold world
@@ -243,6 +251,10 @@ planet_event = {
                 limit = { NOT = { is_planet_class = pc_arctic}}
                 remove_modifier = pf_pm_snowball_world
             }
+
+            remove_modifier = pf_pm_delta_world
+            remove_modifier = pf_pm_seed_world
+            remove_modifier = pf_pm_rain_world
         }
     }
 }
@@ -328,6 +340,10 @@ planet_event = {
             remove_modifier = pf_pm_flash_floods
             remove_modifier = pf_pm_fertile_silts
             remove_modifier = pf_pm_leviathan_oceans
+
+            remove_modifier = pf_pm_delta_world
+            remove_modifier = pf_pm_seed_world
+            remove_modifier = pf_pm_rain_world
         }
     }
 }

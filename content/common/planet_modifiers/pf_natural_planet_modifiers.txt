@@ -147,6 +147,10 @@ pf_pm_severe_droughts = {
 		}
 		modifier = {
 			factor = 0
+			has_planet_modifier = "pf_pm_delta_world"
+		}
+		modifier = {
+			factor = 0
 			has_modifier = "metal_planet"
 		}
 
@@ -1848,4 +1852,158 @@ pf_pm_leviathan_oceans = {
 		}
 	}
 	modifier = "pf_pm_leviathan_oceans"
+}
+
+pf_pm_delta_world = {
+	spawn_chance = {
+		modifier = {
+			add = 20
+			is_planet_class = "pc_ocean"
+		}
+
+		modifier = {
+			add = 20
+			is_planet_class = "pc_continental"
+		}
+
+		modifier = {
+			add = 30
+			is_planet_class = "pc_tropical"
+		}
+
+		modifier = {
+			add = 20
+			is_planet_class = "pc_gaia"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_delta_world"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_severe_droughts"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_delta_world"
+}
+
+pf_pm_rain_world = {
+	spawn_chance = {
+		modifier = {
+			add = 10
+			is_planet_class = "pc_ocean"
+		}
+
+		modifier = {
+			add = 10
+			is_planet_class = "pc_continental"
+		}
+
+		modifier = {
+			add = 30
+			is_planet_class = "pc_tropical"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_rain_world"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_rain_world"
+}
+
+pf_pm_tectonically_inactive = {
+	spawn_chance = {
+		modifier = {
+			add = 20
+			is_planet_class = "pc_arctic"
+		}
+
+		modifier = {
+			add = 20
+			is_planet_class = "pc_tundra"
+		}
+
+		modifier = {
+			add = 30
+			is_planet_class = "pc_alpine"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_tectonically_inactive"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_tectonically_inactive"
+}
+
+pf_pm_micro_moons = {
+	spawn_chance = {
+		modifier = {
+			add = 15
+			is_planet_class = "pc_savannah"
+		}
+		modifier = {
+			add = 15
+			is_planet_class = "pc_desert"
+		}
+		modifier = {
+			add = 15
+			is_planet_class = "pc_arid"
+		}
+
+		modifier = {
+			add = 15
+			is_planet_class = "pc_continental"
+		}
+		modifier = {
+			add = 15
+			is_planet_class = "pc_ocean"
+		}
+		modifier = {
+			add = 15
+			is_planet_class = "pc_tropical"
+		}
+
+		modifier = {
+			add = 15
+			is_planet_class = "pc_arctic"
+		}
+		modifier = {
+			add = 15
+			is_planet_class = "pc_tundra"
+		}
+		modifier = {
+			add = 15
+			is_planet_class = "pc_alpine"
+		}
+
+		modifier = {
+			factor = 0
+			has_planet_modifier = "pf_pm_micro_moons"
+		}
+
+		modifier = {
+			factor = 0
+			num_modifiers > 1
+		}
+	}
+	modifier = "pf_pm_micro_moons"
 }
