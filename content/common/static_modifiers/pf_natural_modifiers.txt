@@ -434,3 +434,33 @@ pf_pm_deep_sea_mineral_beds = {
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_tides.dds"
 	icon_frame = 1
 }
+
+pf_pm_delta_world = {
+	planet_amenities_mult = 0.1
+	planet_jobs_food_produces_mult = 0.1
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_delta_world.dds"
+	icon_frame = 1
+}
+
+pf_pm_rain_world = {
+	planet_building_build_speed_mult = -0.15
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_planet_from_space.dds"
+	icon_frame = 3
+}
+
+pf_pm_tectonically_inactive = {
+	planet_miners_volatile_motes_produces_add = 0.10
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_carbon_world.dds"
+	icon_frame = 1
+}
+
+pf_pm_seed_world = {
+	pop_environment_tolerance = 0.1
+	planet_biologists_society_research_produces_add = 1
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_animal_wildlife.dds"
+	icon_frame = 1
+}
