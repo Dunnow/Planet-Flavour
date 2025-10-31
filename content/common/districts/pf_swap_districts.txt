@@ -1,5 +1,4 @@
 district_pf_fungal_sanctuaries = {
-	is_capped_by_modifier = no
 	icon = district_pf_fungal_sanctuaries
 
 	zone_slots = {
@@ -21,7 +20,6 @@ district_pf_fungal_sanctuaries = {
 }
 
 district_pf_fungal_groves = {
-	is_capped_by_modifier = no
 	icon = district_pf_fungal_groves
 
 	zone_slots = {
@@ -42,7 +40,6 @@ district_pf_fungal_groves = {
 }
 
 district_pf_plantations = {
-	is_capped_by_modifier = no
 	icon = district_pf_plantations
 
 	zone_slots = {
