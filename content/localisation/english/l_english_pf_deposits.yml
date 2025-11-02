@@ -42,6 +42,10 @@
 
   d_pf_radstorms: "Rad Storms"
   d_pf_radstorms_desc: "Pockets of intense weather blanket these regions in radioactive contamination."
+  d_pf_unstable_ground: "Unstable Ground"
+  d_pf_unstable_ground_desc: "A region of tectonically active forces. Earthquakes and eruptions make construction extraordinarily difficult."
+  d_pf_geothermal_region: "Geothermal Region"
+  d_pf_geothermal_region_desc: "Unusually strong tectonic forces provide a bounty of geothermal energy to harvest."
 
   d_pf_ancient_databanks: "Ancient Databanks"
   d_pf_ancient_databanks_desc: "The preserved cultural archives of a long-dead civilization."
@@ -54,3 +58,12 @@
   d_pf_preserved_bases_desc: "A string of shattered outposts, bunkers and command centers dot this world."
   d_pf_aerosol_mining_stations: "Aerosol Stations"
   d_pf_aerosol_mining_stations_desc: "An ancient array of advanced gas filtration facilities."
+
+  d_pf_holy_world_monoliths: "Ancient Monoliths"
+  d_pf_holy_world_monoliths_desc: "Esoteric structures dot the verdant landscape."
+  d_pf_holy_world_psionic_leylines: "Psionic Leylines"
+  d_pf_holy_world_psionic_leylines_desc: "Esoteric energies from another plane bubble up in these loci of power."
+  d_pf_holy_world_sacred_groves: "Sacred Groves"
+  d_pf_holy_world_sacred_groves_desc: "The susurrating wind gently stirs the leaves."
+  d_pf_holy_world_overgrown_temples: "Overgrown Temples"
+  d_pf_holy_world_overgrown_temples_desc: "Ancient monuments raised to commemorate long dead gods."

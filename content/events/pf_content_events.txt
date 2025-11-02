@@ -162,6 +162,11 @@ planet_event = {
 				}
 			}
 		}
+		owner = {
+			add_resource = {
+				energy = -2000
+			}
+		}
 		add_deposit = d_pf_geothermic_extraction_sites
 	}
 	option = {
@@ -240,7 +245,7 @@ planet_event = {
 	id = pf_content.122
 	title = pf_content.122.name
 	desc = pf_content.122.desc
-	picture  = GFX_evt_storm_formation
+	picture  = GFX_evt_strange_sands
 	location = this
     is_triggered_only = yes
 
@@ -548,9 +553,10 @@ planet_event = {
 	immediate = {
 		random_list = {
 			150 = {}
-			2 = { planet_event = { id = pf_content.310 }}
-			2 = { planet_event = { id = pf_content.330 }} # Colonists find habitable caves
-			2 = { planet_event = { id = pf_content.340 }} # Colonists find evidence of ancient neutron sweep
+			2 = { planet_event = { id = pf_content.310 }}		# Colonists find ruins in the desert
+			2 = { planet_event = { id = pf_content.330 }}  	# Colonists find habitable caves
+			2 = { planet_event = { id = pf_content.340 }}  	# Colonists find evidence of ancient neutron sweep
+			2 = { planet_event = { id = pf_content.350 }}  	# Deep sea mining opportunities
 		}
 	}
 }
@@ -895,6 +901,83 @@ planet_event = {
 	}
 }
 
+# Colonists find deep sea mineral beds
+planet_event = {
+	id = pf_content.350
+	title = pf_content.350.name
+	desc = "pf_content.350.desc"
+	picture  = GFX_evt_ocean
+	location = this
+    is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+
+	trigger = {
+		NOR = {
+			has_planet_flag = colony_event
+			owner = { has_country_flag = pf_deep_sea_mining_opportunities }
+		}
+	}
+
+	immediate = {
+		set_planet_flag = colony_event
+		owner = { set_country_flag = pf_deep_sea_mining_opportunities }
+	}
+
+	option = {
+		name = pf_content.340.a
+		add_modifier = { modifier = pf_pm_deep_sea_mineral_beds }
+	}
+}
+
+
+# Supervolcano discovered
+#TODO: add event that has bombardment trigger the supervolcano
+planet_event = {
+	id = pf_content.360
+	title = pf_content.360.name
+	desc = "pf_content.360.desc"
+	picture  = GFX_evt_molten
+	location = this
+    is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+
+	trigger = {
+		NOR = {
+			has_planet_flag = colony_event
+			owner = { has_country_flag = pf_supervolcano_found }
+		}
+	}
+
+	immediate = {
+		set_planet_flag = colony_event
+		set_planet_flag = pf_has_supervolcano
+		owner = { set_country_flag = pf_supervolcano_found }
+	}
+
+	option = {
+		name = pf_content.360.a
+		add_deposit = d_pf_unstable_ground
+	}
+}
+
 # Add anomaly for ruined subspace observation post
 ship_event = {
 	id = pf_content.400
@@ -1013,7 +1096,7 @@ ship_event = {
 
 	option = {
 		name = pf_content.410.a
-		trigger = {
+		allow = {
 			owner = {
 				resource_stockpile_compare = {
 					resource = energy
@@ -1170,6 +1253,117 @@ ship_event = {
 			add_resource = {
 				engineering_research = 2000
 				minor_artifacts = 50
+			}
+		}
+	}
+}
+
+# Add anomaly for desert relic ruins
+ship_event = {
+	id = pf_content.450
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			has_planet_flag = pf_desert_relic_world
+			# If we somehow find this planet abandoned we don't want the event to pop
+			is_planet_class = pc_desert
+		}
+	}
+
+	immediate = {
+		from = { # Planet
+			add_anomaly = {
+				category = pf_desert_relic_ruins
+				target = prev.owner
+			}
+		}
+	}
+}
+
+# Desert Relic Ruins Anomaly Completed
+ship_event = {
+	id = pf_content.451
+	title = "pf_content.451.name"
+	desc = "pf_content.451.desc"
+	picture = GFX_evt_relic_world_street
+	show_sound = pc_desert
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			owner = {
+				country_event = { id = story.5 days = 30 }
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.451.a
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 5000
+				}
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 200
+				}
+			}
+		}
+
+		owner = {
+			add_resource = { minerals = -5000 }
+			add_resource = { influence = -200 }
+		}
+		from = {
+			change_pc = pc_relic
+			set_planet_entity = { entity = pf_desert_relic_entity}
+		}
+	}
+
+	option = {
+		name = pf_content.451.b
+		hidden_effect = {
+			from = {
+				set_planet_flag = pf_desert_relic_transform_decision_allowed
+			}
+		}
+	}
+}
+
+# Seed World Anomaly Completed
+ship_event = {
+	id = pf_content.460
+	title = "pf_content.460.name"
+	desc = "pf_content.460.desc"
+	picture = GFX_evt_pf_planet_space
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			owner = {
+				country_event = { id = story.5 days = 30 }
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.460.a
+
+		owner = {
+			add_modifier = { modifier = pf_pm_seed_world }
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
 			}
 		}
 	}

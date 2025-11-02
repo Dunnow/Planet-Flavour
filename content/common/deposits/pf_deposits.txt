@@ -279,8 +279,13 @@ d_pf_abandoned_hives = {
 		planet_miners_society_research_produces_add = 1
     }
 
+	potential = {
+        is_colony = no
+		can_have_habitable_deposits = yes
+	}
+
 	drop_weight = {
-		weight = @mid_rare
+		weight = @low_rare
 		modifier = {
 			factor = 2
 			is_dry = yes
@@ -305,6 +310,82 @@ d_pf_abandoned_hives = {
 			}
 		}
 	}
+}
+
+d_pf_holy_world_monoliths = {
+    is_for_colonizable = yes
+	icon = d_monument
+    category = deposit_cat_rare
+
+	resources = {
+		category = planet_deposits
+		produces = {
+            unity = 20
+		}
+	}
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}
+
+d_pf_holy_world_psionic_leylines = {
+    is_for_colonizable = yes
+	icon = d_surreal_visions
+    category = deposit_cat_rare
+
+	resources = {
+		category = planet_deposits
+		produces = {
+            unity = 20
+		}
+	}
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}
+
+d_pf_holy_world_sacred_groves = {
+    is_for_colonizable = yes
+	icon = d_pf_arid_groves
+    category = deposit_cat_rare
+
+	resources = {
+		category = planet_deposits
+		produces = {
+            unity = 20
+		}
+	}
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}
+
+d_pf_holy_world_overgrown_temples = {
+    is_for_colonizable = yes
+	icon = d_ruins_small
+    category = deposit_cat_rare
+
+	resources = {
+		category = planet_deposits
+		produces = {
+            unity = 20
+		}
+	}
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
 }
 
 d_pf_ancient_databanks = {
@@ -415,4 +496,48 @@ d_pf_aerosol_mining_stations = {
 	drop_weight = {
 		weight = 0
 	}
+}
+
+d_pf_unstable_ground = {
+	time = 720
+	icon = d_pf_molten_planet
+
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+	use_weights_for_blocker_swap_types = no
+
+	resources = {
+		category = deposit_blockers_natural
+		cost = {
+			energy = 3000
+		}
+	}
+
+	blocker_swap_types = {
+		d_pf_geothermal_region
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = -3
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_pf_geothermal_region = {
+    is_for_colonizable = yes
+	icon = d_building_complex
+    category = deposit_cat_rare
+
+    planet_modifier = {
+		district_generator_max_add = 3
+    }
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
 }

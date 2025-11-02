@@ -163,3 +163,40 @@ decision_pf_sandstorm_mitigation = {
         base = 25
     }
 }
+
+decision_pf_restore_desert_relic_world = {
+    owned_planets_only = yes
+    icon = decision_city_ruins
+
+    enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 5000
+            influence = 200
+		}
+	}
+
+    potential = {
+        has_planet_flag = pf_desert_relic_transform_decision_allowed
+        NOR = {
+            is_planet_class = pc_relic
+            is_planet_class = pc_city
+            pf_is_world_with_ecosystems = no
+        }
+    }
+
+    allow = {
+        always = yes
+    }
+
+    effect = {
+        change_pc = pc_relic
+        set_planet_entity = { entity = pf_desert_relic_entity}
+        remove_planet_flag = pf_desert_relic_transform_decision_allowed
+    }
+
+    ai_weight = {
+        base = 100
+    }
+}

@@ -90,6 +90,14 @@
   pf_content.341.b: "Compare the evidence with the expected results from our own Neutron Sweep."
   pf_content.341.c: "Another potential avenue of research for our weapons systems."
 
+  pf_content.350.name: "Deep Sea Treasures"
+  pf_content.350.desc: "Initial orbital scans of [This.GetName] seem to have missed large deep sea formations of valuable minerals on the ocean floor.\n\nOur colonists have been able to conduct seismic surveys that reveal an abundance of minerals that would be relatively easy to access. Our miners stand to benefit from these rich deposits."
+  pf_content.350.a: "Excellent."
+
+  pf_content.360.name: "The Angry Earth"
+  pf_content.360.desc: "Survey teams from our colony on [This.GetName] have uncovered the caldera of a large and potentially active supervolcano in the southern hemisphere of the planet.\n\nAlthough our readings indicate a full eruption is unlikely, the region has already been noted to have an unusually high level of tectonic activity, impeding our colonization efforts."
+  pf_content.360.a: "Concerning."
+
   pf_content.401.name: "Deep Space Observation"
   pf_content.401.desc: "The structure encountered by the [This.GetName] appears to have been an automated listening post constructed nearly 100,000 years ago by an unknown race.\n\nDesigned to monitor the deep space between galaxies for scientific research, it has an extraordinarily sensitive subspace telescope array.\n\nUnfortunately it seems to have suffered a micrometeorite collision 86,000 years ago, disabling its communications array and critically damaging the reactor. The builders appear to have been uninterested in its fate."
   pf_content.401.a: "A fascinating implementation of subspace technology."
@@ -115,3 +123,12 @@
   pf_content.440.desc: "The upper atmosphere of [From.GetName] hosts a number of suspended structures. Their exact composition is unclear, but they seem to have been built to capture and extract trace quantities of exotic gases from the planet's atmosphere.\n\nOur engineering teams are quite confident that with a little bit of time, they can be restored to partial working order."
   pf_content.440.a: "Let's make use of these facilities."
   pf_content.440.b: "Dismantle them and examine their construction."
+
+  pf_content.451.name: "Rubble and Dust"
+  pf_content.451.desc: "Buried amongst the desert of [From.GetName] is the rubble of a truly ancient city world. Very little survives intact among the dunes, but the foundations of enormous infrastructure and huge arcologies can still be identified.\n\nSome of the [This.GetName]'s crew have suggested that we could repurpose some of the surviving infrastructure for a colony, but it would require a significant expenditure of resources."
+  pf_content.451.a: "Salvage the ruins. Our colonists can build on them."
+  pf_content.451.b: "We don't have the resources to fully explore them right now."
+
+  pf_content.460.name: "Planetary Laboratory"
+  pf_content.460.desc: "[From.GetName] appears to be the site of a vast evolutionary experiment. The fauna and flora of this world appear to have been deliberately seeded millions of years ago by a precursor civilization.\n\nOver time, the limited number of species have slowly diverged to fill a broader range of niches, but the similarities to their ancestral forms are strikingly clear."
+  pf_content.460.a: "Remarkable"

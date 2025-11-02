@@ -4,6 +4,7 @@ on_game_start = {
         pf_core.10     # Apply extraplanetary life modifier
         pf_core.11     # Apply planetary rings modifier
         pf_core.12     # Clear pf modifiers from pre-ftl worlds
+        pf_core.13     # Add holy world deposits
         pf_core.30     # Apply dry world entity
         pf_core.31     # Apply swamp world blockers
         pf_core.40     # Apply tomb world modifiers
@@ -58,6 +59,7 @@ on_survey_planet = {
         pf_core.105	                   # Add deposits for society modifiers
         pf_core.107                     # Add deposits for alloy modifiers
         pf_content.400                  # Add anomaly for ruined subspace observation post
+        pf_content.450                  # Add anomaly for the desert relic ruins
     }
 }
 

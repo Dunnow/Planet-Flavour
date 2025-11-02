@@ -104,6 +104,9 @@
   decision_pf_sandstorm_mitigation_desc: "The major dust storms that wrack this world are the result of many interesting environmental factors. By carefully tweaking a few aspects of the climate and geology around the worst hotspots, we can prevent storms of a serious magnitude from forming at all."
   pf_sandstorm_mitigation_tt: "§YPrevents any further Static Storms.§!"
 
+  decision_pf_restore_desert_relic_world: "Salvage Desert Ruins"
+  decision_pf_restore_desert_relic_world_desc: "The sands of this world cover the ruins of long dead cityscapes. Some of these ruins are well enough-preserved that we could begin to use them as a foundation for our own needs."
+
   # Special Projects
   pf_presapients_research_facility: "Investigate the Mysterious Facility"
   pf_presapients_research_facility_DESC: "Colonists have found a mysterious alien facility in the highlands of [This.GetName]. Its purpose and origin are unclear."
@@ -137,6 +140,10 @@
   pf_strange_heat_emissions_desc: "Something appears to be expelling large quantities of heat from the otherwise frozen mountaintops of [This.GetName]."
   pf_ancient_gas_mines: "Derelict Cloud Stations"
   pf_ancient_gas_mines_desc: "Strange structures are suspended in the atmosphere of this world."
+  pf_desert_relic_ruins: "Among the Dunes"
+  pf_desert_relic_ruins_desc: "The sandy dunes of [This.GetName] are dotted with the buried ruins of an immense, world-spanning city."
+  pf_discovered_seed_world: "Strange Ecosystems"
+  pf_discovered_seed_world_desc: "The native fauna of this world is unusually homogenous. A wide variety of ecological niches are filled by very similar, clearly related species."
 
   # Scripted Loc
   pf_planet_name: "planet"
