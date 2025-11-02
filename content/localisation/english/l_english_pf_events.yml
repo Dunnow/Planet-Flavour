@@ -128,3 +128,7 @@
   pf_content.451.desc: "Buried amongst the desert of [From.GetName] is the rubble of a truly ancient city world. Very little survives intact among the dunes, but the foundations of enormous infrastructure and huge arcologies can still be identified.\n\nSome of the [This.GetName]'s crew have suggested that we could repurpose some of the surviving infrastructure for a colony, but it would require a significant expenditure of resources."
   pf_content.451.a: "Salvage the ruins. Our colonists can build on them."
   pf_content.451.b: "We don't have the resources to fully explore them right now."
+
+  pf_content.460.name: "Planetary Laboratory"
+  pf_content.460.desc: "[From.GetName] appears to be the site of a vast evolutionary experiment. The fauna and flora of this world appear to have been deliberately seeded millions of years ago by a precursor civilization.\n\nOver time, the limited number of species have slowly diverged to fill a broader range of niches, but the similarities to their ancestral forms are strikingly clear."
+  pf_content.460.a: "Remarkable"

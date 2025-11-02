@@ -142,6 +142,8 @@
   pf_ancient_gas_mines_desc: "Strange structures are suspended in the atmosphere of this world."
   pf_desert_relic_ruins: "Ruins in the Desert"
   pf_desert_relic_ruins_desc: "The sandy dunes of [This.GetName] are dotted with the buried ruins of an immense, world-spanning city."
+  pf_discovered_seed_world: "Strange Ecosystems"
+  pf_discovered_seed_world_desc: "The native fauna of this world is unusually homogenous. A wide variety of ecological niches are filled by very similar, clearly related species."
 
   # Scripted Loc
   pf_planet_name: "planet"

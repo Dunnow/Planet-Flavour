@@ -1282,7 +1282,6 @@ ship_event = {
 	}
 }
 
-
 # Desert Relic Ruins Anomaly Completed
 ship_event = {
 	id = pf_content.451
@@ -1332,6 +1331,39 @@ ship_event = {
 		hidden_effect = {
 			from = {
 				set_planet_flag = pf_desert_relic_transform_decision_allowed
+			}
+		}
+	}
+}
+
+# Seed World Anomaly Completed
+ship_event = {
+	id = pf_content.460
+	title = "pf_content.460.name"
+	desc = "pf_content.460.desc"
+	picture = GFX_evt_pf_planet_space
+	location = FROM
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			owner = {
+				country_event = { id = story.5 days = 30 }
+			}
+		}
+	}
+
+	option = {
+		name = pf_content.460.a
+
+		owner = {
+			add_modifier = { modifier = pf_pm_seed_world }
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier3researchreward
+				min = @tier3researchmin
+				max = @tier3researchmax
 			}
 		}
 	}
