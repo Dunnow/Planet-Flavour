@@ -159,6 +159,10 @@
   pf_pm_floating_cities_desc: "This planet's seas are dotted with artificial islands and floating cities and towns. Complex materials science and zero-g engineering are necessary just to keep them intact."
   pf_pm_seed_world: "Seed World"
   pf_pm_seed_world_desc: "This world's ecosystem appears to have been deliberately seeded by an unknown race millions of years ago. The slow process of evolution has begun to diverge the pioneer organisms into exotic new forms."
+  pf_pm_race_circuit: "Race Circuit"
+  pf_pm_race_circuit_desc: "The large desert expanses of this world are a favourite for high speed races and questionably legal competitions."
+  pf_pm_race_circuit_shut_down: "Banned Illegal Races"
+  pf_pm_race_circuit_shut_down_desc: "A recent crackdown on dangerous racers has seen widespread unpopularity amongst the local population."
 
   # Relic World Modifiers
   pf_pm_infested_world: "Infested World"

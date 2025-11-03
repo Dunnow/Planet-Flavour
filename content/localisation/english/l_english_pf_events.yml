@@ -136,3 +136,8 @@
   pf_content.470.name: "Maritime Culture emerges on [Root.GetName]"
   pf_content.470.desc: "An curious subculture has developed on the ocean colony of [Root.GetName] in recent years.\n\nA handful of adventurous pioneers have taken to the seas to form floating communities and settlements constructed among the many bays and islands of [Root.GetName]'s coastal waters."
   pf_content.470.a: "How quaint."
+
+  pf_content.480.name: "A Day at the Races"
+  pf_content.480.desc: "The dry plains of [Root.GetName] have seen a rise in high speed races, often using questionably built vehicles and across courses that are unlikely to be at all safe.\n\nWe could shut this down, but it is profitable and popular amongst locals and crime syndicates alike."
+  pf_content.480.a: "Now this is what I call racing."
+  pf_content.480.b: "Sounds dangerous, shut it down."

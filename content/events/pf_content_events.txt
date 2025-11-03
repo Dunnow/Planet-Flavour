@@ -558,6 +558,7 @@ planet_event = {
 			2 = { planet_event = { id = pf_content.340 }}  	# Colonists find evidence of ancient neutron sweep
 			2 = { planet_event = { id = pf_content.350 }}  	# Deep sea mining opportunities
 			4 = { planet_event = { id = pf_content.470 }} # Maritime Culture event.
+			2 = { planet_event = { id = pf_content.480 }}  	# Podracing
 		}
 	}
 }
@@ -1406,5 +1407,55 @@ planet_event = {
 	option = {
 		name = pf_content.470.a
 		add_modifier = { modifier = pf_pm_deep_sea_mineral_beds }
+	}
+}
+
+# Podracers event
+planet_event = {
+	id = pf_content.480
+	title = pf_content.480.name
+	desc = "pf_content.480.desc"
+	picture  = GFX_evt_pf_dry_highlands
+	location = this
+    is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+
+	trigger = {
+		is_dry = yes
+		NOR = {
+			has_planet_flag = colony_event
+			owner = { has_country_flag = pf_podracing }
+			owner = { is_gestalt = no }
+		}
+	}
+
+	immediate = {
+		set_planet_flag = colony_event
+		owner = { set_country_flag = pf_podracing }
+	}
+
+	option = {
+		name = pf_content.480.a
+		add_modifier = {
+			modifier = "pf_pm_race_circuit"
+			days = -1
+		}
+	}
+
+	option = {
+		name = pf_content.480.b
+		add_modifier = {
+			modifier = "pf_pm_race_circuit_shut_down"
+			days = 3600
+		}
 	}
 }
