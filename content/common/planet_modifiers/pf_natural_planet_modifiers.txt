@@ -1468,7 +1468,6 @@ pf_pm_harmonious_ecosystems = {
 			add = 10
 			is_planet_class = "pc_tropical"
 		}
-
 		modifier = {
 			add = 5
 			is_planet_class = "pc_continental"
@@ -1508,12 +1507,10 @@ pf_pm_wild_sandstorms = {
 			add = 5
 			is_planet_class = "pc_desert"
 		}
-
 		modifier = {
 			add = 10
 			is_planet_class = "pc_arid"
 		}
-
 		modifier = {
 			add = 10
 			is_planet_class = "pc_savannah"
@@ -1542,7 +1539,6 @@ pf_pm_saline_seas = {
 			add = 5
 			is_planet_class = "pc_desert"
 		}
-
 		modifier = {
 			add = 15
 			is_planet_class = "pc_arid"
@@ -1620,12 +1616,10 @@ pf_pm_harsh_badlands = {
 			add = 10
 			is_planet_class = "pc_desert"
 		}
-
 		modifier = {
 			add = 15
 			is_planet_class = "pc_arid"
 		}
-
 		modifier = {
 			add = 10
 			is_planet_class = "pc_savannah"
@@ -1659,12 +1653,10 @@ pf_pm_verdant_oases = {
 			add = 15
 			is_planet_class = "pc_desert"
 		}
-
 		modifier = {
 			add = 10
 			is_planet_class = "pc_arid"
 		}
-
 		modifier = {
 			add = 15
 			is_planet_class = "pc_savannah"
@@ -1697,12 +1689,10 @@ pf_pm_flash_floods = {
 			add = 5
 			is_planet_class = "pc_desert"
 		}
-
 		modifier = {
 			add = 10
 			is_planet_class = "pc_arid"
 		}
-
 		modifier = {
 			add = 15
 			is_planet_class = "pc_savannah"
@@ -1732,12 +1722,10 @@ pf_pm_fertile_silts = {
 			add = 10
 			is_planet_class = "pc_desert"
 		}
-
 		modifier = {
 			add = 15
 			is_planet_class = "pc_arid"
 		}
-
 		modifier = {
 			add = 15
 			is_planet_class = "pc_savannah"
@@ -1765,41 +1753,17 @@ pf_pm_axial_tilt = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			is_planet_class = "pc_continental"
-		}
-		modifier = {
-			add = 10
-			is_planet_class = "pc_ocean"
-		}
-		modifier = {
-			add = 10
-			is_planet_class = "pc_tropical"
+			is_wet = yes
 		}
 
 		modifier = {
 			add = 10
-			is_planet_class = "pc_desert"
-		}
-		modifier = {
-			add = 10
-			is_planet_class = "pc_arid"
-		}
-		modifier = {
-			add = 10
-			is_planet_class = "pc_savannah"
+			is_dry = yes
 		}
 
 		modifier = {
 			add = 10
-			is_planet_class = "pc_tundra"
-		}
-		modifier = {
-			add = 10
-			is_planet_class = "pc_arctic"
-		}
-		modifier = {
-			add = 10
-			is_planet_class = "pc_alpine"
+			is_cold = yes
 		}
 
 		modifier = {
@@ -1825,12 +1789,10 @@ pf_pm_leviathan_oceans = {
 			add = 30
 			is_planet_class = "pc_ocean"
 		}
-
 		modifier = {
 			add = 10
 			is_planet_class = "pc_continental"
 		}
-
 		modifier = {
 			add = 10
 			is_planet_class = "pc_tropical"
@@ -1860,12 +1822,10 @@ pf_pm_delta_world = {
 			add = 20
 			is_planet_class = "pc_ocean"
 		}
-
 		modifier = {
 			add = 20
 			is_planet_class = "pc_continental"
 		}
-
 		modifier = {
 			add = 30
 			is_planet_class = "pc_tropical"
@@ -1900,12 +1860,10 @@ pf_pm_rain_world = {
 			add = 10
 			is_planet_class = "pc_ocean"
 		}
-
 		modifier = {
 			add = 10
 			is_planet_class = "pc_continental"
 		}
-
 		modifier = {
 			add = 30
 			is_planet_class = "pc_tropical"
@@ -1930,12 +1888,10 @@ pf_pm_tectonically_inactive = {
 			add = 20
 			is_planet_class = "pc_arctic"
 		}
-
 		modifier = {
 			add = 20
 			is_planet_class = "pc_tundra"
 		}
-
 		modifier = {
 			add = 30
 			is_planet_class = "pc_alpine"
@@ -1958,41 +1914,17 @@ pf_pm_micro_moons = {
 	spawn_chance = {
 		modifier = {
 			add = 15
-			is_planet_class = "pc_savannah"
-		}
-		modifier = {
-			add = 15
-			is_planet_class = "pc_desert"
-		}
-		modifier = {
-			add = 15
-			is_planet_class = "pc_arid"
+			is_dry = yes
 		}
 
 		modifier = {
 			add = 15
-			is_planet_class = "pc_continental"
-		}
-		modifier = {
-			add = 15
-			is_planet_class = "pc_ocean"
-		}
-		modifier = {
-			add = 15
-			is_planet_class = "pc_tropical"
+			is_wet = yes
 		}
 
 		modifier = {
 			add = 15
-			is_planet_class = "pc_arctic"
-		}
-		modifier = {
-			add = 15
-			is_planet_class = "pc_tundra"
-		}
-		modifier = {
-			add = 15
-			is_planet_class = "pc_alpine"
+			is_cold = yes
 		}
 
 		modifier = {
@@ -2010,31 +1942,14 @@ pf_pm_micro_moons = {
 
 pf_pm_magnificent_lakes = {
 	spawn_chance = {
-
 		modifier = {
 			add = 5
-			is_planet_class = "pc_tropical"
-		}
-		modifier = {
-			add = 5
-			is_planet_class = "pc_continental"
-		}
-		modifier = {
-			add = 5
-			is_planet_class = "pc_ocean"
+			is_wet = yes
 		}
 
 		modifier = {
 			add = 5
-			is_planet_class = "pc_tundra"
-		}
-		modifier = {
-			add = 5
-			is_planet_class = "pc_arctic"
-		}
-		modifier = {
-			add = 5
-			is_planet_class = "pc_alpine"
+			is_cold = yes
 		}
 
 		modifier = {
@@ -2059,18 +1974,9 @@ pf_pm_magnificent_lakes = {
 
 pf_pm_warm_period = {
 	spawn_chance = {
-
 		modifier = {
 			add = 5
-			is_planet_class = "pc_desert"
-		}
-		modifier = {
-			add = 5
-			is_planet_class = "pc_arid"
-		}
-		modifier = {
-			add = 5
-			is_planet_class = "pc_savannah"
+			is_dry = yes
 		}
 
 		modifier = {
@@ -2107,7 +2013,6 @@ pf_pm_warm_period = {
 
 pf_pm_fire_ecosystems = {
 	spawn_chance = {
-
 		modifier = {
 			add = 5
 			is_planet_class = "pc_desert"
@@ -2142,18 +2047,9 @@ pf_pm_fire_ecosystems = {
 
 pf_pm_dry_inlands = {
 	spawn_chance = {
-
 		modifier = {
 			add = 10
-			is_planet_class = "pc_desert"
-		}
-		modifier = {
-			add = 10
-			is_planet_class = "pc_arid"
-		}
-		modifier = {
-			add = 10
-			is_planet_class = "pc_savannah"
+			is_dry = yes
 		}
 
 		modifier = {
@@ -2177,18 +2073,9 @@ pf_pm_dry_inlands = {
 
 pf_pm_algae_seas = {
 	spawn_chance = {
-
 		modifier = {
 			add = 5
-			is_planet_class = "pc_tropical"
-		}
-		modifier = {
-			add = 5
-			is_planet_class = "pc_continental"
-		}
-		modifier = {
-			add = 5
-			is_planet_class = "pc_ocean"
+			is_wet = yes
 		}
 
 		modifier = {
@@ -2216,31 +2103,13 @@ pf_pm_algae_seas = {
 
 pf_pm_underground_rivers = {
 	spawn_chance = {
-
 		modifier = {
 			add = 10
-			is_planet_class = "pc_desert"
+			is_dry = yes
 		}
 		modifier = {
 			add = 10
-			is_planet_class = "pc_arid"
-		}
-		modifier = {
-			add = 10
-			is_planet_class = "pc_savannah"
-		}
-
-		modifier = {
-			add = 10
-			is_planet_class = "pc_tundra"
-		}
-		modifier = {
-			add = 10
-			is_planet_class = "pc_arctic"
-		}
-		modifier = {
-			add = 10
-			is_planet_class = "pc_alpine"
+			is_cold = yes
 		}
 
 		modifier = {
@@ -2264,7 +2133,6 @@ pf_pm_underground_rivers = {
 
 pf_pm_alien_megaherds = {
 	spawn_chance = {
-
 		modifier = {
 			add = 10
 			is_planet_class = "pc_arid"
@@ -2290,12 +2158,10 @@ pf_pm_alien_megaherds = {
 
 pf_pm_alien_mats = {
 	spawn_chance = {
-
 		modifier = {
 			add = 5
 			is_wet = yes
 		}
-
 		modifier = {
 			add = 5
 			is_cold = yes
