@@ -541,3 +541,30 @@ d_pf_geothermal_region = {
 
 	drop_weight = { weight = 0 }
 }
+
+d_pf_imperial_palace = {
+    is_for_colonizable = yes
+	icon = d_pf_imperial_palace
+    category = deposit_cat_rare
+
+    planet_modifier = {
+        planet_max_districts_add = -1
+		planet_amenities_add = 600
+    }
+
+	triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_politician_add = 200
+	}
+
+	potential = {
+        always = no
+	}
+
+	drop_weight = { weight = 0 }
+}

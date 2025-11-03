@@ -141,3 +141,8 @@
   pf_content.480.desc: "The dry plains of [Root.GetName] have seen a rise in high speed races, often using questionably built vehicles and across courses that are unlikely to be at all safe.\n\nWe could shut this down, but it is profitable and popular amongst locals and crime syndicates alike."
   pf_content.480.a: "Now this is what I call racing."
   pf_content.480.b: "Sounds dangerous, shut it down."
+
+  pf_content.490.name: "An Imperial Retreat"
+  pf_content.490.desc: "On a recent state visit to [Root.GetName], a minor member of the ruling family seems to have fallen in love with the planet.\n\nThey've identified a region of spectacular natural beauty to construct a new residence for the Imperial household, but they lack the finances to complete the project alone."
+  pf_content.490.a: "Granted, it will make a valuable asset."
+  pf_content.490.b: "Denied. We have other uses for the land."
