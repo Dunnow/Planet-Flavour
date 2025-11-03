@@ -114,10 +114,25 @@
   pf_pm_rain_world_desc: "Hot and humid conditions on this world drive torrential downpours and localized flooding, presenting a constant challenge to colonization."
   pf_pm_tectonically_inactive: "Tectonically Inactive"
   pf_pm_tectonically_inactive_desc: "This planet exhibits little tectonic activity, preventing the formation of significant mountain ranges and leaving many valuable heavy elements accessible close to the surface."
-  pf_pm_seed_world: "Seed World"
-  pf_pm_seed_world_desc: "This world's ecosystem appears to have been deliberately seeded by an unknown race millions of years ago. The slow process of evolution has begun to diverge the pioneer organisms into exotic new forms."
   pf_pm_micro_moons: "Micro Moons"
   pf_pm_micro_moons_desc: "This world has captured a large number of asteroids in its immediate orbit, severely complicating navigation and maneuvering for visiting vessels."
+
+  pf_pm_magnificent_lakes: "Magnificent Lakes"
+  pf_pm_magnificent_lakes_desc: "The landscape is dotted with hundreds of clear lakes, ranging from enormous bodies of water to modest ponds."
+  pf_pm_warm_period: "Warm Period"
+  pf_pm_warm_period_desc: "This planet is currently experiencing a period of global warming and elevated temperatures. Thick vegetation and steamy rainforests have spread far from their historical ranges."
+  pf_pm_fire_ecosystems: "Fiery Ecosystems"
+  pf_pm_fire_ecosystems_desc: "The forest and shrubland ecosystems of this planet depend on vast periodic fires to rejuvenate the soil and allow new plants to grow. Although this makes settlement more difficult, it does result in extraordinarily fertile soil."
+  pf_pm_dry_inlands: "Dry Inlands"
+  pf_pm_dry_inlands_desc: "Rainfall on this world is unevenly distributed across its surface, with riverine and coastal regions receiving far more than the parched and inhospitable interior."
+  pf_pm_algae_seas: "Algae Seas"
+  pf_pm_algae_seas_desc: "The seas of this planet are coloured by vast algal blooms, choking out most other kinds of sea life."
+  pf_pm_underground_rivers: "Subterranean Rivers"
+  pf_pm_underground_rivers_desc: "Complex river systems wind their way beneath this world's surface. They provide a unique habitat for some distinctly strange lifeforms."
+  pf_pm_alien_megaherds: "Alien Megaherds"
+  pf_pm_alien_megaherds_desc: "The large open spaces of this world are populated by enormous herds of migrating herbivores millions-strong."
+  pf_pm_alien_mats: "Alien Mats"
+  pf_pm_alien_mats_desc: "The coastlines of this planet are covered in thick microbial mats that provide an important source of nutrients to the local ecosystems."
 
   # Tomb World Modifiers
   pf_pm_glassed_world: "Glassed World"
@@ -136,6 +151,18 @@
   pf_pm_ecosystem_reconstitution_desc: "The native lifeforms of this planet are gradually adapting to the new state of their world."
   pf_pm_silica_storms: "Silica Storms"
   pf_pm_silica_storms_desc: "The surface of this planet is constantly scoured by storms of razor sharp silica shards, grinding machinery to a halt."
+
+  # Event Modifiers
+  pf_pm_maritime_society: "Maritime Society"
+  pf_pm_maritime_society_desc: "This planet's bays and islands are filled with flotillas of floating towns, houseboats and fishing fleets."
+  pf_pm_floating_cities: "Seaborne Cities"
+  pf_pm_floating_cities_desc: "This planet's seas are dotted with artificial islands and floating cities and towns. Complex materials science and zero-g engineering are necessary just to keep them intact."
+  pf_pm_seed_world: "Seed World"
+  pf_pm_seed_world_desc: "This world's ecosystem appears to have been deliberately seeded by an unknown race millions of years ago. The slow process of evolution has begun to diverge the pioneer organisms into exotic new forms."
+  pf_pm_race_circuit: "Race Circuit"
+  pf_pm_race_circuit_desc: "The large desert expanses of this world are a favourite for high speed races and questionably legal competitions."
+  pf_pm_race_circuit_shut_down: "Banned Illegal Races"
+  pf_pm_race_circuit_shut_down_desc: "A recent crackdown on dangerous racers has seen widespread unpopularity amongst the local population."
 
   # Relic World Modifiers
   pf_pm_infested_world: "Infested World"

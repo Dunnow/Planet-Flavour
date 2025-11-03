@@ -472,3 +472,68 @@ pf_pm_micro_moons = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_asteroid_belt.dds"
 	icon_frame = 2
 }
+
+## ESPM Port
+pf_pm_magnificent_lakes = {
+	pop_happiness = 0.10
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_magnificent_lakes.dds"
+	icon_frame = 1
+}
+
+#TODO: I'd like this to spawn with some humid jungle blockers too
+pf_pm_warm_period = {
+	pop_environment_tolerance = -0.05
+	planet_jobs_food_produces_mult = 0.10
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_lush_jungle.dds"
+	icon_frame = 2
+}
+
+#TODO: Could have a fire storm event
+pf_pm_fire_ecosystems = {
+	pop_environment_tolerance = -0.10
+	planet_jobs_food_produces_mult = 0.10
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_burning_settlement.dds"
+	icon_frame = 2
+}
+
+pf_pm_dry_inlands = {
+	pop_environment_tolerance = -0.05
+	planet_jobs_food_produces_mult = -0.05
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_drylands.dds"
+	icon_frame = 3
+}
+
+pf_pm_algae_seas = {
+	pop_environment_tolerance = -0.05
+	planet_jobs_food_produces_mult = -0.15
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_microscopic_life.dds"
+	icon_frame = 3
+}
+
+pf_pm_underground_rivers = {
+	planet_miners_society_research_produces_add = 1
+	planet_miners_engineering_research_produces_add = 1
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_hollow_planet.dds"
+	icon_frame = 1
+}
+
+pf_pm_alien_megaherds = {
+	planet_jobs_society_research_produces_mult = 0.05
+	planet_jobs_food_produces_mult = 0.05
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_animal_wildlife.dds"
+	icon_frame = 1
+}
+
+pf_pm_alien_mats = {
+	planet_jobs_food_produces_mult = 0.10
+
+	icon = "gfx/interface/icons/planet_modifiers/pm_planet_surface.dds"
+	icon_frame = 1
+}

@@ -557,6 +557,9 @@ planet_event = {
 			2 = { planet_event = { id = pf_content.330 }}  	# Colonists find habitable caves
 			2 = { planet_event = { id = pf_content.340 }}  	# Colonists find evidence of ancient neutron sweep
 			2 = { planet_event = { id = pf_content.350 }}  	# Deep sea mining opportunities
+			4 = { planet_event = { id = pf_content.470 }} # Maritime Culture event.
+			2 = { planet_event = { id = pf_content.480 }}  	# Podracing
+			4 = { planet_event = { id = pf_content.490 }}		# Imperial Palace
 		}
 	}
 }
@@ -1366,5 +1369,139 @@ ship_event = {
 				max = @tier3researchmax
 			}
 		}
+	}
+}
+
+# Maritime society event
+planet_event = {
+	id = pf_content.470
+	title = pf_content.470.name
+	desc = "pf_content.470.desc"
+	picture  = GFX_evt_ocean
+	location = this
+    is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+
+	trigger = {
+		is_planet_class = pc_ocean
+		NOR = {
+			has_planet_flag = colony_event
+			owner = { has_country_flag = pf_maritime_society }
+			owner = { is_gestalt = no }
+		}
+	}
+
+	immediate = {
+		set_planet_flag = colony_event
+		owner = { set_country_flag = pf_maritime_society }
+	}
+
+	option = {
+		name = pf_content.470.a
+		add_modifier = { modifier = pf_pm_deep_sea_mineral_beds }
+	}
+}
+
+# Podracers event
+planet_event = {
+	id = pf_content.480
+	title = pf_content.480.name
+	desc = "pf_content.480.desc"
+	picture  = GFX_evt_pf_dry_highlands
+	location = this
+    is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+
+	trigger = {
+		is_dry = yes
+		NOR = {
+			has_planet_flag = colony_event
+			owner = { has_country_flag = pf_podracing }
+			owner = { is_gestalt = no }
+		}
+	}
+
+	immediate = {
+		set_planet_flag = colony_event
+		owner = { set_country_flag = pf_podracing }
+	}
+
+	option = {
+		name = pf_content.480.a
+		add_modifier = {
+			modifier = "pf_pm_race_circuit"
+			days = -1
+		}
+	}
+
+	option = {
+		name = pf_content.480.b
+		add_modifier = {
+			modifier = "pf_pm_race_circuit_shut_down"
+			days = 3600
+		}
+	}
+}
+
+# Imperial palace
+planet_event = {
+	id = pf_content.490
+	title = pf_content.490.name
+	desc = "pf_content.490.desc"
+	picture  = GFX_evt_medieval_alien_civilization
+	location = this
+    is_triggered_only = yes
+
+	pre_triggers = {
+		has_owner = yes
+		is_homeworld = no
+		original_owner = yes
+		is_ai = no
+		has_ground_combat = no
+		is_capital = no
+		is_occupied_flag = no
+	}
+
+	trigger = {
+		is_dry = yes
+		NOR = {
+			has_planet_flag = colony_event
+			owner = { has_country_flag = pf_podracing }
+			owner = { is_gestalt = no }
+			owner = { is_imperial_authority = yes}
+		}
+	}
+
+	immediate = {
+		set_planet_flag = colony_event
+		owner = { set_country_flag = pf_imperial_palace }
+	}
+
+	option = {
+		name = pf_content.490.a
+		add_deposit = d_pf_imperial_palace
+	}
+
+	option = {
+		name = pf_content.490.b
+		owner = { add_resource = { influence = 100 }}
 	}
 }
