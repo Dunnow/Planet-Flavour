@@ -132,3 +132,7 @@
   pf_content.460.name: "Planetary Laboratory"
   pf_content.460.desc: "[From.GetName] appears to be the site of a vast evolutionary experiment. The fauna and flora of this world appear to have been deliberately seeded millions of years ago by a precursor civilization.\n\nOver time, the limited number of species have slowly diverged to fill a broader range of niches, but the similarities to their ancestral forms are strikingly clear."
   pf_content.460.a: "Remarkable"
+
+  pf_content.470.name: "Maritime Culture emerges on [Root.GetName]"
+  pf_content.470.desc: "An curious subculture has developed on the ocean colony of [Root.GetName] in recent years.\n\nA handful of adventurous pioneers have taken to the seas to form floating communities and settlements constructed among the many bays and islands of [Root.GetName]'s coastal waters."
+  pf_content.470.a: "How quaint."

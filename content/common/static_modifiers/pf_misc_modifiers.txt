@@ -1,0 +1,13 @@
+pf_pm_maritime_society = {
+	planet_housing_add = 400
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_tropical_island.dds"
+	icon_frame = 1
+}
+
+pf_pm_floating_cities = {
+	planet_housing_add = 800
+
+	icon = "gfx/interface/icons/planet_modifiers/pf_pm_resort.dds"
+	icon_frame = 1
+}
