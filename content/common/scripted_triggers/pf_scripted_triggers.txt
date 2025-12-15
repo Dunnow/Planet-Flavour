@@ -9,6 +9,7 @@ pf_is_valid_planet_for_extraplanetary_life = {
         is_planet_class = pc_relic
         is_planet_class = pc_hive
         is_planet_class = pc_machine
+        is_planet_class = pc_volcanic
     }
 }
 
@@ -22,6 +23,7 @@ pf_is_world_with_ecosystems = {
         is_planet_class = pc_relic
         is_planet_class = pc_hive
         is_planet_class = pc_machine
+        is_planet_class = pc_volcanic
     }
 }
 
@@ -30,6 +32,11 @@ pf_is_habitable_planet = {
         is_colonizable = yes
         is_colony = yes
     }
+}
+
+pf_is_dry_not_volcanic = {
+    is_dry = yes
+    NOT = { is_planet_class = pc_volcanic }
 }
 
 # Luxuries

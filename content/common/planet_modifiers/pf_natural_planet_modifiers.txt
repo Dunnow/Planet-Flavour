@@ -2172,7 +2172,7 @@ pf_pm_warm_period = {
 	spawn_chance = {
 		modifier = {
 			add = 5
-			is_dry = yes
+			pf_is_dry_not_volcanic = yes
 		}
 
 		modifier = {
@@ -2253,7 +2253,7 @@ pf_pm_dry_inlands = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			is_dry = yes
+			pf_is_dry_not_volcanic = yes
 		}
 
 		modifier = {
@@ -2317,7 +2317,7 @@ pf_pm_underground_rivers = {
 	spawn_chance = {
 		modifier = {
 			add = 10
-			is_dry = yes
+			pf_is_dry_not_volcanic = yes
 		}
 		modifier = {
 			add = 10
