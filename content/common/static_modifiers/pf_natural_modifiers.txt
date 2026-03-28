@@ -39,7 +39,7 @@ pf_pm_overgrown = {
 }
 
 pf_pm_floating_rocks = {
-	planet_jobs_physics_research_produces_mult = 0.25
+	planet_jobs_physics_research_produces_mult = 0.20
 	planet_physicists_physics_research_produces_add = 1
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_gravity_aftermath_modifier.dds"
@@ -127,7 +127,7 @@ pf_pm_megacoral_reefs = {
 }
 
 pf_pm_bioluminescent_flora = {
-	pop_happiness = 0.1
+	pop_happiness = 0.05
 	planet_jobs_unity_produces_mult = 0.10
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_lush_jungle.dds"
@@ -160,7 +160,7 @@ pf_pm_canyon_world = {
 }
 
 pf_pm_tropical_archipelagos = {
-	pop_happiness = 0.1
+	planet_amenities_mult = 0.05
 	planet_jobs_food_produces_mult = 0.15
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_tropical_island.dds"
@@ -176,7 +176,7 @@ pf_pm_snowball_world = {
 }
 
 pf_pm_volcanic_soils = {
-	planet_jobs_food_produces_mult = 0.3
+	planet_jobs_food_produces_mult = 0.25
 	district_farming_max_add = 4
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_volcanic_soils.dds"
@@ -184,8 +184,8 @@ pf_pm_volcanic_soils = {
 }
 
 pf_pm_chirping_plains = {
-	pop_happiness = 0.1
-	planet_jobs_society_research_produces_mult = 0.15
+	pop_happiness = 0.05
+	planet_jobs_society_research_produces_mult = 0.10
 
 	icon = "gfx/interface/icons/planet_modifiers/pm_animal_wildlife.dds"
 	icon_frame = 1
@@ -193,7 +193,7 @@ pf_pm_chirping_plains = {
 
 pf_pm_bone_world = {
 	planet_biologists_society_research_produces_add = 1
-	planet_jobs_society_research_produces_mult = 0.20
+	planet_jobs_society_research_produces_mult = 0.15
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_bone_world.dds"
 	icon_frame = 1
@@ -232,8 +232,8 @@ pf_pm_multi_planetary_ecosystem = {
 }
 
 pf_pm_arboreal_ecosystem = {
-	planet_biologists_food_produces_add = 2
-	planet_farmers_society_research_produces_add = 2
+	planet_biologists_food_produces_add = 1
+	planet_farmers_society_research_produces_add = 1
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_huge_tree.dds"
 	icon_frame = 1
@@ -262,7 +262,7 @@ pf_pm_irregular_orbit = {
 }
 pf_pm_subglacial_seas = {
 	planet_farmers_engineering_research_produces_add = 1
-	planet_anglers_engineering_research_produces_add = 2
+	planet_anglers_engineering_research_produces_add = 1
 	planet_jobs_food_produces_mult = 0.1
 
 	icon = "gfx/interface/icons/planet_modifiers/pf_pm_ice_age.dds"
