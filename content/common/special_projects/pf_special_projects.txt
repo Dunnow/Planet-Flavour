@@ -42,7 +42,7 @@ special_project = {
 	location = yes
 
 	on_success = {
-		planet_event = { id = pf_content.144 }
+		planet_event = { id = pf_content.341 }
 	}
 }
 
