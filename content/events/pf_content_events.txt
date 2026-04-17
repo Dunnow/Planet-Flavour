@@ -510,7 +510,7 @@ planet_event = {
     }
 
 	option = {
-		name = pf_content.143.a
+		name = pf_content.144.a
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
@@ -735,7 +735,7 @@ planet_event = {
 	option = {
 		name = pf_content.321.b
 		trigger = {
-			owner = { has_toxic_baths = yes }
+			owner = { is_toxic_baths_empire = yes }
 		}
 		owner = {
 			add_resource = {
@@ -936,7 +936,7 @@ planet_event = {
 	}
 
 	option = {
-		name = pf_content.340.a
+		name = pf_content.350.a
 		add_modifier = { modifier = pf_pm_deep_sea_mineral_beds }
 	}
 }

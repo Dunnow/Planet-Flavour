@@ -4,7 +4,7 @@
   pf_content.10.a: "An unfortunate outcome."
 
   pf_content.20.name: "After the Ashes"
-  pf_content.20.desc: "Decades after the dramatic meteor strike that devastated [This.GetName], the worst affects are abating.\n\nThe choking dust clouds are fading and the biosphere has begun to re-establish itself. It will take thousands of years before the climate stabilises, but as [This.GetName] no longer resembles the [This.Owner.GetSpeciesName] underworld, life can begin to recover."
+  pf_content.20.desc: "Decades after the dramatic meteor strike that devastated [This.GetName], the worst effects are abating.\n\nThe choking dust clouds are fading and the biosphere has begun to re-establish itself. It will take thousands of years before the climate stabilises, but as [This.GetName] no longer resembles the [This.Owner.GetSpeciesName] underworld, life can begin to recover."
   pf_content.20.a: "Excellent."
 
   pf_content.100.name: "Tainted Worlds"
@@ -32,7 +32,7 @@
   pf_content.131.desc: "The extraordinarily rapid growth of this [This.GetName]'s native flora has proven to be a significant asset to the local farmers. Incorporating native life into our agricultural processes has resulted in periodic episodes of greatly increased yields."
   pf_content.131.a: "Excellent."
 
-  pf_content.141.name: "Glacial Blizzards "
+  pf_content.141.name: "Glacial Blizzards"
   pf_content.141.desc: "The cold climate of [This.GetName] is perfectly suited for the formation of unusually large and severe blizzards. A particularly devastating manifestation has struck our fledgling colony, causing damage and disruption."
   pf_content.141.a: "Unfortunate."
 
@@ -69,10 +69,10 @@
 
   pf_content.322.name: "Dust in the Gears"
   pf_content.322.desc: "The intense plasma bombardment that scorched [This.GetName] left the planet's surface as little more than tortured silica.\n\nSince our colony's establishment, our settlers have experienced continuous issues as dust storms stir razor sharp fragments of glass and silica into machinery and delicate electronic systems."
-  pf_content.322.a: "Unfortunate"
+  pf_content.322.a: "Unfortunate."
 
   pf_content.323.name: "Blooming Wastelands"
-  pf_content.323.desc: "Although the cataclysm that devastated [This.GetName] left little behind in its wake, bit by bit the planets lifeforms have begun to weave new ecosystems together.\n\nAlthough much reduced, life on [This.GetName] seems determined to recover."
+  pf_content.323.desc: "Although the cataclysm that devastated [This.GetName] left little behind in its wake, bit by bit the planet's lifeforms have begun to weave new ecosystems together.\n\nAlthough much reduced, life on [This.GetName] seems determined to recover."
   pf_content.323.a: "Excellent."
 
   pf_content.330.name: "Under the Mountain"
