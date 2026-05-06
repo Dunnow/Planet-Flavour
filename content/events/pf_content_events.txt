@@ -131,6 +131,10 @@ planet_event = {
     hide_window = yes
     is_triggered_only = yes
 
+	trigger = {
+		pf_is_artificial_world = no
+	}
+
     immediate = {
 		if = {
 			limit = {
@@ -184,6 +188,10 @@ planet_event = {
 	id = pf_content.120
     hide_window = yes
     is_triggered_only = yes
+
+	trigger = {
+		pf_is_artificial_world = no
+	}
 
 	immediate = {
 		if = {
@@ -311,6 +319,7 @@ planet_event = {
     is_triggered_only = yes
 
 	trigger = {
+		pf_is_artificial_world = no
 		has_modifier = pf_pm_overgrown
 	}
 
@@ -375,6 +384,7 @@ planet_event = {
     is_triggered_only = yes
 
 	trigger = {
+		pf_is_artificial_world = no
 		has_modifier = pf_pm_ice_age
 		NOT = { has_planet_flag = pf_blizzard_prevention_complete} # You shouldn't really have it here
 	}
@@ -552,14 +562,19 @@ planet_event = {
 
 	immediate = {
 		random_list = {
-			150 = {}
-			2 = { planet_event = { id = pf_content.310 }}		# Colonists find ruins in the desert
-			2 = { planet_event = { id = pf_content.330 }}  	# Colonists find habitable caves
-			2 = { planet_event = { id = pf_content.340 }}  	# Colonists find evidence of ancient neutron sweep
-			2 = { planet_event = { id = pf_content.350 }}  	# Deep sea mining opportunities
-			4 = { planet_event = { id = pf_content.470 }} # Maritime Culture event.
-			2 = { planet_event = { id = pf_content.480 }}  	# Podracing
-			4 = { planet_event = { id = pf_content.490 }}		# Imperial Palace
+			150 = {} # No Event
+			# Event!
+			20 = {
+				random_list = {
+					2 = { planet_event = { id = pf_content.310 }}		# Colonists find ruins in the desert
+					2 = { planet_event = { id = pf_content.330 }}  	# Colonists find habitable caves
+					2 = { planet_event = { id = pf_content.340 }}  	# Colonists find evidence of ancient neutron sweep
+					2 = { planet_event = { id = pf_content.350 }}  	# Deep sea mining opportunities
+					4 = { planet_event = { id = pf_content.470 }} # Maritime Culture event.
+					2 = { planet_event = { id = pf_content.480 }}  	# Podracing
+					4 = { planet_event = { id = pf_content.490 }}		# Imperial Palace
+				}
+			}
 		}
 	}
 }
@@ -585,6 +600,7 @@ planet_event = {
 	}
 
 	trigger = {
+		pf_is_artificial_world = no
 		is_dry = yes
 		NOR = {
 			has_planet_flag = colony_event
@@ -801,6 +817,7 @@ planet_event = {
 	}
 
 	trigger = {
+		pf_is_artificial_world = no
 		NOR = {
 			has_planet_flag = colony_event
 			owner = { has_country_flag = pf_habitable_caves_found }
@@ -843,6 +860,7 @@ planet_event = {
 	}
 
 	trigger = {
+		pf_is_artificial_world = no
 		NOR = {
 			has_planet_flag = colony_event
 			owner = { has_country_flag = pf_ancient_neutron_sweep }
@@ -924,6 +942,7 @@ planet_event = {
 	}
 
 	trigger = {
+		pf_is_artificial_world = no
 		NOR = {
 			has_planet_flag = colony_event
 			owner = { has_country_flag = pf_deep_sea_mining_opportunities }
@@ -1392,6 +1411,7 @@ planet_event = {
 	}
 
 	trigger = {
+		pf_is_artificial_world = no
 		is_planet_class = pc_ocean
 		NOR = {
 			has_planet_flag = colony_event
@@ -1431,6 +1451,7 @@ planet_event = {
 	}
 
 	trigger = {
+		pf_is_artificial_world = no
 		is_dry = yes
 		NOR = {
 			has_planet_flag = colony_event
@@ -1481,6 +1502,7 @@ planet_event = {
 	}
 
 	trigger = {
+		pf_is_artificial_world = no
 		is_dry = yes
 		NOR = {
 			has_planet_flag = colony_event

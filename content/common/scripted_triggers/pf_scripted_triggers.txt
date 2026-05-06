@@ -34,6 +34,22 @@ pf_is_habitable_planet = {
     }
 }
 
+pf_is_artificial_world = {
+    # TODO: Do we want to add some special carveouts for ringworlds? Having ancient ringworlds with unique content is interesting.
+    OR = {
+        # Ecus technically aren't artificial, but the intended use case of this trigger is "does it have a natural biosphere"
+        is_planet_class = pc_city
+        is_planet_class = pc_ringworld_habitable
+        is_planet_class = pc_shattered_ring_habitable
+        is_planet_class = pc_habitat
+        is_planet_class = pc_habitat_shielded
+        is_planet_class = pc_ringworld_shielded
+        is_planet_class = pc_crystal_habitat
+        # Final Catchall
+        is_artificial = yes
+    }
+}
+
 pf_is_dry_not_volcanic = {
     is_dry = yes
     NOT = { is_planet_class = pc_volcanic }
