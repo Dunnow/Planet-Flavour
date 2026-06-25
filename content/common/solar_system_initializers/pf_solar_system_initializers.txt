@@ -1597,10 +1597,11 @@ pf_ancient_battlefield_system = {
 		init_effect = {
 			switch = {
 				trigger = is_planet_class
-				pc_frozen = { add_deposit = d_pf_preserved_bases }
-				pc_barren_cold = { add_deposit = d_pf_crashed_starships }
-				pc_barren = { add_deposit = d_pf_crashed_starships }
-				pc_gas_giant = { add_deposit = d_pf_ring_of_debris }
+				# Clear deposits before adding ours so we don't get blocked by naturally occurring deposits of a different class
+				pc_frozen = { clear_deposits = yes add_deposit = d_pf_preserved_bases }
+				pc_barren_cold = { clear_deposits = yes add_deposit = d_pf_crashed_starships }
+				pc_barren = { clear_deposits = yes add_deposit = d_pf_crashed_starships }
+				pc_gas_giant = { clear_deposits = yes add_deposit = d_pf_ring_of_debris }
 				default = {  }
 			}
 
