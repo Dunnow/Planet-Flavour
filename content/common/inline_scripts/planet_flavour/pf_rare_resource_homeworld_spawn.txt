@@ -13,8 +13,8 @@ switch = {
                         is_planet_class = $PLANET_CLASS$
                     }
                     add_modifier = { modifier = $MODIFIER$ }
-                    set_planet_flag = $MODIFIER$
-                    set_planet_flag = pf_luxury_resource_homeworld
+                    set_carrier_flag = $MODIFIER$
+                    set_carrier_flag = pf_luxury_resource_homeworld
                 }
             }
         }

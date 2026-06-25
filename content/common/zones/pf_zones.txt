@@ -110,11 +110,11 @@ zone_pf_plantations = {
 	swap_type = district_pf_plantations
 	swap_type_weight = 5
 
-	potential = { # planet scope
+	potential = { # carrier scope
 		pf_is_luxury_world = yes
 	}
 
-	unlock = { # planet scope
+	unlock = { # carrier scope
 		hidden_trigger = {
 			pf_is_luxury_world = yes
 			exists = owner
