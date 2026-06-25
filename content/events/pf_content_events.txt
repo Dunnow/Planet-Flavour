@@ -126,12 +126,13 @@ ship_event = {
 	}
 }
 
-planet_event = {
+carrier_event = {
     id = pf_content.110
     hide_window = yes
     is_triggered_only = yes
 
 	trigger = {
+		pf_is_planetary_carrier = yes # Gates it from triggering for arkships
 		pf_is_artificial_world = no
 	}
 
@@ -141,7 +142,7 @@ planet_event = {
 				has_modifier = unstable_tectonics
 			}
 			random_list = {
-				1 = { planet_event = { id = pf_content.111 }}
+				1 = { planet_event = { id = pf_content.111 }} # We can assume the carrier is a planet
 				1 = {}
 			}
 		}
@@ -184,12 +185,13 @@ planet_event = {
 
 
 # Initial Roll for Static Sandstorm modifiers
-planet_event = {
+carrier_event = {
 	id = pf_content.120
     hide_window = yes
     is_triggered_only = yes
 
 	trigger = {
+		pf_is_planetary_carrier = yes
 		pf_is_artificial_world = no
 	}
 
@@ -313,12 +315,13 @@ planet_event = {
 }
 
 # Hyperbloom gatekeeper
-planet_event = {
+carrier_event = {
     id = pf_content.130
     hide_window = yes
     is_triggered_only = yes
 
 	trigger = {
+		pf_is_planetary_carrier = yes
 		pf_is_artificial_world = no
 		has_modifier = pf_pm_overgrown
 	}
@@ -378,12 +381,13 @@ planet_event = {
 }
 
 # Blizzards gatekeeper
-planet_event = {
+carrier_event = {
     id = pf_content.140
     hide_window = yes
     is_triggered_only = yes
 
 	trigger = {
+		pf_is_planetary_carrier = yes # Gates it from triggering for arkships
 		pf_is_artificial_world = no
 		has_modifier = pf_pm_ice_age
 		NOT = { has_planet_flag = pf_blizzard_prevention_complete} # You shouldn't really have it here

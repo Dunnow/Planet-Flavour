@@ -102,7 +102,8 @@ decision_pf_geothermic_extraction = {
 	}
 
     potential = {
-        has_planet_flag = pf_geothermic_extraction_decision_allowed
+        pf_is_planetary_carrier = yes
+        has_carrier_flag = pf_geothermic_extraction_decision_allowed
     }
 
     allow = {
@@ -132,7 +133,8 @@ decision_pf_sandstorm_mitigation = {
 	}
 
     potential = {
-        has_planet_flag = pf_static_sandstorm_world
+        pf_is_planetary_carrier = yes
+        has_carrier_flag= pf_static_sandstorm_world
     }
 
     allow = {
@@ -178,7 +180,8 @@ decision_pf_restore_desert_relic_world = {
 	}
 
     potential = {
-        has_planet_flag = pf_desert_relic_transform_decision_allowed
+        pf_is_planetary_carrier = yes
+        has_carrier_flag = pf_desert_relic_transform_decision_allowed
         NOR = {
             is_planet_class = pc_relic
             is_planet_class = pc_city

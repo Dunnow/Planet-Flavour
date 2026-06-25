@@ -63,8 +63,8 @@ on_survey_planet = {
     }
 }
 
-# A planet has been colonized.
-# Scope = Planet
+# A carrier has been colonized.
+# Scope = Carrier
 on_colonized = {
     events = {
         pf_content.110      # Geothermal taps dice roll event

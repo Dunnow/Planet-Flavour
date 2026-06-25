@@ -55,6 +55,11 @@ pf_is_dry_not_volcanic = {
     NOT = { is_planet_class = pc_volcanic }
 }
 
+# Carrier scope, checks if we're on a planet or a ship
+pf_is_planetary_carrier = {
+    is_scope_type = planet
+}
+
 # Luxuries
 # Carrier scope, but not gonna be be used on a ship
 pf_is_luxury_world = {
