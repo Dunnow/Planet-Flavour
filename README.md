@@ -5,7 +5,7 @@ A flavour and content mod for [Stellaris](https://store.steampowered.com/app/281
 [![Steam Workshop](https://img.shields.io/badge/Steam_Workshop-Subscribe-1b2838?logo=steam)](https://steamcommunity.com/sharedfiles/filedetails/?id=3599349985)
 [![Discord](https://img.shields.io/badge/Discord-Modding_Den-5865F2?logo=discord&logoColor=white)](https://discord.gg/bHVez2C)
 
-**Stellaris compatibility:** 4.3.\*
+**Stellaris compatibility:** 4.4.\*
 
 ---
 
